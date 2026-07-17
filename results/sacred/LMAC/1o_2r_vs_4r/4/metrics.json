@@ -1,0 +1,57 @@
+{
+  "battle_won_mean": {
+    "steps": [
+      50
+    ],
+    "timestamps": [
+      "2026-07-13T18:01:36.093172"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "ep_length_mean": {
+    "steps": [
+      50
+    ],
+    "timestamps": [
+      "2026-07-13T18:01:36.093295"
+    ],
+    "values": [
+      50.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      50
+    ],
+    "timestamps": [
+      "2026-07-13T18:01:36.093420"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      50
+    ],
+    "timestamps": [
+      "2026-07-13T18:01:36.092760"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      50
+    ],
+    "timestamps": [
+      "2026-07-13T18:01:36.093035"
+    ],
+    "values": [
+      0.0
+    ]
+  }
+}

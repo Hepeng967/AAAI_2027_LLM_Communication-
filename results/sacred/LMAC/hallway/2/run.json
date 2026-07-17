@@ -1,0 +1,121 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_e0ce06a7a698c9a592a780d8db3b2acd.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_be089fa9bb5782ac3208d64f92e8c575.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-07-17T10:48:43.980071",
+  "host": {
+    "ENV": {},
+    "cpu": "AMD EPYC 7T83 64-Core Processor",
+    "gpus": {
+      "driver_version": "550.100",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        }
+      ]
+    },
+    "hostname": "autodl-container-b41946aba7-bc9059ce",
+    "os": [
+      "Linux",
+      "Linux-5.4.0-153-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "comm_code_paths": [
+        "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py"
+      ],
+      "important_state": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "name": "LMAC_ORIGINAL_HALLWAY",
+      "phase": "multi_train",
+      "running_algorithm_name": "(hallway)LMAC_ORIGINAL",
+      "save_model": false,
+      "seed": 1236,
+      "t_max": 2050000,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "seed=1236",
+        "t_max=2050000",
+        "name=LMAC_ORIGINAL_HALLWAY",
+        "running_algorithm_name=(hallway)LMAC_ORIGINAL",
+        "comm_code_paths=['/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py']",
+        "important_state=[0,1,2,3]",
+        "phase=multi_train",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-16T23:21:15.971975",
+  "status": "COMPLETED",
+  "stop_time": "2026-07-17T10:48:43.955425"
+}

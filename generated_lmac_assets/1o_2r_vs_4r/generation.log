@@ -1,0 +1,9 @@
+[generation-only] Original LMAC phase-0 generation completed.
+Map: 1o_2r_vs_4r
+Model: deepseek-v4-pro
+Step 1: important state succeeded on attempt 1.
+Step 2: communication(o) failed syntax validation on attempt 1 and succeeded on attempt 2.
+Input shape: (2, 3, 66)
+Output shape: (2, 3, 112)
+Message dim: 46
+See generation_manifest.json and comm_update_attempt1_error.txt for full artifacts.

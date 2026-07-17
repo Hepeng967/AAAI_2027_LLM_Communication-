@@ -1,0 +1,62 @@
+Stage: import_module
+
+Traceback (most recent call last):
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/llm_core.py", line 708, in protocol_phase_0_step2_init_comm
+    cur_module = self.code_utils.import_and_reload_module(code_file_path)
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/code_utils.py", line 49, in import_and_reload_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/data/hp/LLM_Communication/LMAC-main/generated_lmac_assets/1o_2r_vs_4r/comm_init.py", line 27
+    )
+    ^
+SyntaxError: unmatched ')'
+
+Communication function code:
+def communication(o):
+    """
+    Builds enhanced observations with teammate messages.
+
+    Input:
+        o: torch.tensor of shape (2, 3, 66)
+            2 scenes, 3 agents, 66 observation features.
+    Output:
+        torch.tensor of shape (2, 3, 66 + 46)
+            Concatenation of original observation and the two other agents' messages.
+    """
+    device = o.device
+    batch_size, n_agents, _ = o.shape
+
+    # Indices for the compact per‑agent message (sender's view)
+    # Enemies: 4 enemies * {visible, relX, relY, health}
+    enemy_idx = []
+    for e in range(4):
+        base = 4 + e * 8          # visible flag
+        enemy_idx.extend([base, base+2, base+3, base+4])  # visible, relX, relY, health
+    # Own status
+    own_health   = [50]           # own health ratio
+    own_type     = [51, 52]       # unit type bits (Roach, Overseer)
+    move_caps    = [0, 1, 2, 3]   # can move N, S, E, W
+
+    msg_indices = enemy_idx + own_health + own_type + move_caps   # length = 23
+    msg_indices = th.tensor(msg_indices, device=device, dtype=th.long)
+
+    # Extract message from every agent: (2, 3, 23)
+    all_msgs = o[:, :, msg_indices]
+
+    # Build recipient‑specific messages by concatenating the two other agents' messages.
+    # For agent i the other agents are determined by a fixed order:
+    other_map = th.tensor([[1, 2],
+                           [0, 2],
+                           [0, 1]], device=device)   # (3, 2)
+
+    # Gather: shape (2, 3, 2, 23)
+    gathered = all_msgs[:, other_map]   # advanced indexing on the agent dimension
+    # Flatten to (2, 3, 46)
+    others_msg = gathered.reshape(batch_size, n_agents, -1)
+
+    # Append to original observation → (2, 3, 66+46)
+    enhanced_o = th.cat([o, others_msg], dim=-1)
+    return enhanced_o

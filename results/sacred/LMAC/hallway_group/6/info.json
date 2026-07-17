@@ -1,0 +1,84 @@
+{
+  "battle_won_mean": [
+    0.0
+  ],
+  "battle_won_mean_T": [
+    3
+  ],
+  "ep_length_mean": [
+    3.0
+  ],
+  "ep_length_mean_T": [
+    3
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    3
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_mean_T": [
+    3
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    3
+  ],
+  "test_battle_won_mean": [
+    0.0
+  ],
+  "test_battle_won_mean_T": [
+    3
+  ],
+  "test_ep_length_mean": [
+    15.96
+  ],
+  "test_ep_length_mean_T": [
+    3
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_mean_T": [
+    3
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_std_T": [
+    3
+  ],
+  "test_win_group_mean": [
+    0.0
+  ],
+  "test_win_group_mean_T": [
+    3
+  ],
+  "win_group_mean": [
+    0.0
+  ],
+  "win_group_mean_T": [
+    3
+  ]
+}

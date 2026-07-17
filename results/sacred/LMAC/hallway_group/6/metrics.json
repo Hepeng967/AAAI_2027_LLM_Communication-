@@ -1,0 +1,123 @@
+{
+  "battle_won_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.474343"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "ep_length_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.474489"
+    ],
+    "values": [
+      3.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.474628"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.473608"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.474016"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_battle_won_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:53:27.723551"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_ep_length_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:53:27.723692"
+    ],
+    "values": [
+      15.96
+    ]
+  },
+  "test_return_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:53:27.722850"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_return_std": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:53:27.723245"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_win_group_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:53:27.723407"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "win_group_mean": {
+    "steps": [
+      3
+    ],
+    "timestamps": [
+      "2026-07-16T21:52:05.474173"
+    ],
+    "values": [
+      0.0
+    ]
+  }
+}

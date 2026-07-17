@@ -1,0 +1,715 @@
+src/main_llm_final.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+[DEBUG 07:21:15] git.cmd Popen(['git', 'version'], cwd=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 07:21:15] git.cmd Popen(['git', 'version'], cwd=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 07:21:15] git.util sys.platform='linux', git_executable='git'
+[DEBUG 07:21:15] git.util sys.platform='linux', git_executable='git'
+[DEBUG 07:21:15] git.util sys.platform='linux', git_executable='git'
+[INFO 07:21:15] root Saving to FileStorageObserver in results/sacred.
+[DEBUG 07:21:15] pymarl Using capture mode "fd"
+[INFO 07:21:15] pymarl Running command 'my_main'
+[INFO 07:21:15] pymarl Started run with ID "3"
+[DEBUG 07:21:15] pymarl Starting Heartbeat
+[DEBUG 07:21:15] my_main Started
+[INFO 07:21:15] my_main Experiment Parameters:
+[INFO 07:21:15] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': 'data/',
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py'],
+    'common_reward': True,
+    'consistency_lambda': 1,
+    'debug_mode': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'env': 'hallway',
+    'env_args': {   'is_print': False,
+                    'key': 'default',
+                    'n_agents': 4,
+                    'obs_last_action': False,
+                    'print_rew': False,
+                    'print_steps': 1000,
+                    'reward_win': 1,
+                    'seed': 1234,
+                    'state_last_action': False,
+                    'state_numbers': [   4,
+                                         6,
+                                         8,
+                                         10]},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'important_state': [   0,
+                           1,
+                           2,
+                           3],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 100000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 100000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'meta': 'meta',
+    'meta_lambda': 0.1,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LMAC_ORIGINAL_HALLWAY',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 1.0,
+    'render': False,
+    'repeat_id': 1,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 100000,
+    'running_algorithm_name': '(hallway)LMAC_ORIGINAL',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': 'data/',
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1234,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 2050000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 100,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': ''}
+
+[INFO 07:21:16] my_main *******************
+[INFO 07:21:16] my_main Tensorboard logging dir:
+[INFO 07:21:16] my_main /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/results/tb_logs/LMAC_ORIGINAL_HALLWAY_seed1234_default_2026-07-17 07:21:15.977381
+[INFO 07:21:16] my_main *******************
+use_wandb: False LMAC  online
+[INFO 07:21:16] my_main Beginning training for 2050000 timesteps
+[INFO 07:21:17] my_main t_env: 1 / 2050000
+[INFO 07:21:17] my_main Estimated time left: 50 seconds. Time passed: 0 seconds
+[INFO 07:26:00] my_main t_env: 10003 / 2050000
+[INFO 07:26:00] my_main Estimated time left: 16 hours, 1 minutes, 56 seconds. Time passed: 4 minutes, 43 seconds
+[INFO 07:30:44] my_main t_env: 20021 / 2050000
+[INFO 07:30:44] my_main Estimated time left: 15 hours, 59 minutes, 16 seconds. Time passed: 9 minutes, 27 seconds
+[INFO 07:34:51] my_main t_env: 30022 / 2050000
+[INFO 07:34:51] my_main Estimated time left: 13 hours, 50 minutes, 56 seconds. Time passed: 13 minutes, 34 seconds
+[INFO 07:39:21] my_main t_env: 40029 / 2050000
+[INFO 07:39:21] my_main Estimated time left: 15 hours, 6 minutes, 20 seconds. Time passed: 18 minutes, 4 seconds
+[INFO 07:43:15] my_main t_env: 50034 / 2050000
+[INFO 07:43:15] my_main Estimated time left: 12 hours, 58 minutes, 15 seconds. Time passed: 21 minutes, 58 seconds
+[INFO 07:46:34] my_main t_env: 60053 / 2050000
+[INFO 07:46:34] my_main Estimated time left: 10 hours, 57 minutes, 52 seconds. Time passed: 25 minutes, 17 seconds
+[INFO 07:49:55] my_main t_env: 70069 / 2050000
+[INFO 07:49:55] my_main Estimated time left: 11 hours, 1 minutes, 54 seconds. Time passed: 28 minutes, 38 seconds
+[INFO 07:53:14] my_main t_env: 80078 / 2050000
+[INFO 07:53:14] my_main Estimated time left: 10 hours, 54 minutes, 1 seconds. Time passed: 31 minutes, 57 seconds
+[INFO 07:56:38] my_main t_env: 90097 / 2050000
+[INFO 07:56:38] my_main Estimated time left: 11 hours, 4 minutes, 29 seconds. Time passed: 35 minutes, 21 seconds
+[INFO 07:59:56] my_main Recent Stats | t_env:     100004 | Episode:     7942
+Consistency_loss:          0.1000	MSE_per_agent_0:          24.8922	MSE_per_agent_1:          24.8555	MSE_per_agent_2:          24.8710
+MSE_per_agent_3:          24.8738	Meta_loss:                 0.7096	Model_D_loss:             25.0441	Mse_loss:                 24.8731
+Mse_per_state_0:           8.0684	Mse_per_state_1:          17.9451	Mse_per_state_2:          27.4136	Mse_per_state_3:          46.0653
+battle_won_mean:           0.0000	ep_length_mean:            6.7966	epsilon:                   0.0500	grad_norm:               2906.4724
+loss:                    379.4794	q_taken_mean:              8.0658	return_mean:               0.0000	return_std:                0.0000
+target_mean:               9.2800	td_error_abs:             14.1813	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 07:59:58] my_main t_env: 100108 / 2050000
+[INFO 07:59:58] my_main Estimated time left: 10 hours, 49 minutes, 21 seconds. Time passed: 38 minutes, 41 seconds
+[INFO 08:03:17] my_main t_env: 110114 / 2050000
+[INFO 08:03:17] my_main Estimated time left: 10 hours, 42 minutes, 30 seconds. Time passed: 42 minutes, 0 seconds
+[INFO 08:06:34] my_main t_env: 120131 / 2050000
+[INFO 08:06:34] my_main Estimated time left: 10 hours, 34 minutes, 6 seconds. Time passed: 45 minutes, 17 seconds
+[INFO 08:09:50] my_main t_env: 130132 / 2050000
+[INFO 08:09:50] my_main Estimated time left: 10 hours, 27 minutes, 2 seconds. Time passed: 48 minutes, 33 seconds
+[INFO 08:13:03] my_main t_env: 140135 / 2050000
+[INFO 08:13:03] my_main Estimated time left: 10 hours, 14 minutes, 1 seconds. Time passed: 51 minutes, 46 seconds
+[INFO 08:16:11] my_main t_env: 150137 / 2050000
+[INFO 08:16:11] my_main Estimated time left: 9 hours, 56 minutes, 14 seconds. Time passed: 54 minutes, 54 seconds
+[INFO 08:19:20] my_main t_env: 160156 / 2050000
+[INFO 08:19:20] my_main Estimated time left: 9 hours, 53 minutes, 15 seconds. Time passed: 58 minutes, 3 seconds
+[INFO 08:22:31] my_main t_env: 170165 / 2050000
+[INFO 08:22:31] my_main Estimated time left: 9 hours, 57 minutes, 16 seconds. Time passed: 1 hours, 1 minutes, 14 seconds
+[INFO 08:25:48] my_main t_env: 180178 / 2050000
+[INFO 08:25:48] my_main Estimated time left: 10 hours, 14 minutes, 56 seconds. Time passed: 1 hours, 4 minutes, 32 seconds
+[INFO 08:29:02] my_main t_env: 190194 / 2050000
+[INFO 08:29:02] my_main Estimated time left: 9 hours, 59 minutes, 46 seconds. Time passed: 1 hours, 7 minutes, 45 seconds
+[INFO 08:32:19] my_main Recent Stats | t_env:     200023 | Episode:    13588
+Consistency_loss:          0.0514	MSE_per_agent_0:          12.4657	MSE_per_agent_1:          12.4450	MSE_per_agent_2:          12.4551
+MSE_per_agent_3:          12.4580	Meta_loss:                 0.5815	Model_D_loss:             12.5655	Mse_loss:                 12.4559
+Mse_per_state_0:           4.0466	Mse_per_state_1:           8.9955	Mse_per_state_2:          13.7296	Mse_per_state_3:          23.0520
+battle_won_mean:           0.0000	ep_length_mean:           10.4361	epsilon:                   0.0500	grad_norm:               1456.4604
+loss:                    189.7458	q_taken_mean:              4.2162	return_mean:               0.0000	return_std:                0.0000
+target_mean:               4.8182	td_error_abs:              7.1347	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 08:32:22] my_main t_env: 200211 / 2050000
+[INFO 08:32:22] my_main Estimated time left: 10 hours, 15 minutes, 28 seconds. Time passed: 1 hours, 11 minutes, 5 seconds
+[INFO 08:35:44] my_main t_env: 210219 / 2050000
+[INFO 08:35:44] my_main Estimated time left: 10 hours, 18 minutes, 21 seconds. Time passed: 1 hours, 14 minutes, 27 seconds
+[INFO 08:39:02] my_main t_env: 220230 / 2050000
+[INFO 08:39:02] my_main Estimated time left: 10 hours, 4 minutes, 9 seconds. Time passed: 1 hours, 17 minutes, 45 seconds
+[INFO 08:42:16] my_main t_env: 230248 / 2050000
+[INFO 08:42:16] my_main Estimated time left: 9 hours, 46 minutes, 53 seconds. Time passed: 1 hours, 20 minutes, 59 seconds
+[INFO 08:45:25] my_main t_env: 240251 / 2050000
+[INFO 08:45:25] my_main Estimated time left: 9 hours, 29 minutes, 4 seconds. Time passed: 1 hours, 24 minutes, 8 seconds
+[INFO 08:48:47] my_main t_env: 250258 / 2050000
+[INFO 08:48:47] my_main Estimated time left: 10 hours, 4 minutes, 55 seconds. Time passed: 1 hours, 27 minutes, 30 seconds
+[INFO 08:52:41] my_main t_env: 260259 / 2050000
+[INFO 08:52:41] my_main Estimated time left: 11 hours, 37 minutes, 36 seconds. Time passed: 1 hours, 31 minutes, 24 seconds
+[INFO 08:56:01] my_main t_env: 270265 / 2050000
+[INFO 08:56:01] my_main Estimated time left: 9 hours, 52 minutes, 26 seconds. Time passed: 1 hours, 34 minutes, 44 seconds
+[INFO 08:59:23] my_main t_env: 280282 / 2050000
+[INFO 08:59:23] my_main Estimated time left: 9 hours, 55 minutes, 34 seconds. Time passed: 1 hours, 38 minutes, 6 seconds
+[INFO 09:02:41] my_main t_env: 290292 / 2050000
+[INFO 09:02:41] my_main Estimated time left: 9 hours, 41 minutes, 56 seconds. Time passed: 1 hours, 41 minutes, 24 seconds
+[INFO 09:05:49] my_main Recent Stats | t_env:     300033 | Episode:    19751
+Consistency_loss:          0.0346	MSE_per_agent_0:           8.3162	MSE_per_agent_1:           8.3018	MSE_per_agent_2:           8.3079
+MSE_per_agent_3:           8.3105	Meta_loss:                 0.4577	Model_D_loss:              8.3895	Mse_loss:                  8.3091
+Mse_per_state_0:           2.7009	Mse_per_state_1:           6.0039	Mse_per_state_2:           9.1579	Mse_per_state_3:          15.3738
+battle_won_mean:           0.0000	ep_length_mean:           11.8839	epsilon:                   0.0500	grad_norm:               971.1282
+loss:                    126.4976	q_taken_mean:              2.8365	return_mean:               0.0000	return_std:                0.0000
+target_mean:               3.2375	td_error_abs:              4.7644	test_battle_won_mean:      0.0000	test_ep_length_mean:      17.0760
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 09:05:54] my_main t_env: 300293 / 2050000
+[INFO 09:05:54] my_main Estimated time left: 9 hours, 20 minutes, 12 seconds. Time passed: 1 hours, 44 minutes, 37 seconds
+[INFO 09:09:15] my_main t_env: 310296 / 2050000
+[INFO 09:09:15] my_main Estimated time left: 9 hours, 43 minutes, 15 seconds. Time passed: 1 hours, 47 minutes, 58 seconds
+[INFO 09:12:35] my_main t_env: 320298 / 2050000
+[INFO 09:12:35] my_main Estimated time left: 9 hours, 37 minutes, 47 seconds. Time passed: 1 hours, 51 minutes, 18 seconds
+[INFO 09:15:52] my_main t_env: 330301 / 2050000
+[INFO 09:15:52] my_main Estimated time left: 9 hours, 24 minutes, 44 seconds. Time passed: 1 hours, 54 minutes, 35 seconds
+[INFO 09:19:08] my_main t_env: 340311 / 2050000
+[INFO 09:19:08] my_main Estimated time left: 9 hours, 17 minutes, 43 seconds. Time passed: 1 hours, 57 minutes, 51 seconds
+[INFO 09:22:28] my_main t_env: 350322 / 2050000
+[INFO 09:22:28] my_main Estimated time left: 9 hours, 24 minutes, 12 seconds. Time passed: 2 hours, 1 minutes, 11 seconds
+[INFO 09:25:49] my_main t_env: 360329 / 2050000
+[INFO 09:25:49] my_main Estimated time left: 9 hours, 27 minutes, 43 seconds. Time passed: 2 hours, 4 minutes, 32 seconds
+[INFO 09:29:04] my_main t_env: 370339 / 2050000
+[INFO 09:29:04] my_main Estimated time left: 9 hours, 3 minutes, 4 seconds. Time passed: 2 hours, 7 minutes, 47 seconds
+[INFO 09:32:14] my_main t_env: 380352 / 2050000
+[INFO 09:32:14] my_main Estimated time left: 8 hours, 50 minutes, 34 seconds. Time passed: 2 hours, 10 minutes, 58 seconds
+[INFO 09:35:21] my_main t_env: 390370 / 2050000
+[INFO 09:35:21] my_main Estimated time left: 8 hours, 36 minutes, 19 seconds. Time passed: 2 hours, 14 minutes, 5 seconds
+[INFO 09:38:46] my_main Recent Stats | t_env:     400041 | Episode:    25231
+Consistency_loss:          0.0261	MSE_per_agent_0:           6.2398	MSE_per_agent_1:           6.2284	MSE_per_agent_2:           6.2334
+MSE_per_agent_3:           6.2353	Meta_loss:                 0.3743	Model_D_loss:              6.2978	Mse_loss:                  6.2342
+Mse_per_state_0:           2.0269	Mse_per_state_1:           4.5061	Mse_per_state_2:           6.8709	Mse_per_state_3:          11.5329
+battle_won_mean:           0.0000	ep_length_mean:           13.1571	epsilon:                   0.0500	grad_norm:               728.5581
+loss:                     94.8737	q_taken_mean:              2.1377	return_mean:               0.0000	return_std:                0.0000
+target_mean:               2.4389	td_error_abs:              3.5814	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 09:38:52] my_main t_env: 400384 / 2050000
+[INFO 09:38:52] my_main Estimated time left: 9 hours, 38 minutes, 8 seconds. Time passed: 2 hours, 17 minutes, 35 seconds
+[INFO 09:42:10] my_main t_env: 410385 / 2050000
+[INFO 09:42:10] my_main Estimated time left: 9 hours, 58 seconds. Time passed: 2 hours, 20 minutes, 53 seconds
+[INFO 09:45:19] my_main t_env: 420403 / 2050000
+[INFO 09:45:19] my_main Estimated time left: 8 hours, 31 minutes, 59 seconds. Time passed: 2 hours, 24 minutes, 2 seconds
+[INFO 09:48:37] my_main t_env: 430417 / 2050000
+[INFO 09:48:37] my_main Estimated time left: 8 hours, 52 minutes, 41 seconds. Time passed: 2 hours, 27 minutes, 20 seconds
+[INFO 09:51:54] my_main t_env: 440431 / 2050000
+[INFO 09:51:54] my_main Estimated time left: 8 hours, 48 minutes, 29 seconds. Time passed: 2 hours, 30 minutes, 37 seconds
+[INFO 09:55:16] my_main t_env: 450431 / 2050000
+[INFO 09:55:16] my_main Estimated time left: 8 hours, 59 minutes, 40 seconds. Time passed: 2 hours, 33 minutes, 59 seconds
+[INFO 09:58:30] my_main t_env: 460433 / 2050000
+[INFO 09:58:30] my_main Estimated time left: 8 hours, 34 minutes, 23 seconds. Time passed: 2 hours, 37 minutes, 13 seconds
+[INFO 10:01:47] my_main t_env: 470433 / 2050000
+[INFO 10:01:47] my_main Estimated time left: 8 hours, 37 minutes, 49 seconds. Time passed: 2 hours, 40 minutes, 30 seconds
+[INFO 10:04:54] my_main t_env: 480437 / 2050000
+[INFO 10:04:54] my_main Estimated time left: 8 hours, 8 minutes, 5 seconds. Time passed: 2 hours, 43 minutes, 37 seconds
+[INFO 10:08:01] my_main t_env: 490437 / 2050000
+[INFO 10:08:01] my_main Estimated time left: 8 hours, 5 minutes, 26 seconds. Time passed: 2 hours, 46 minutes, 44 seconds
+[INFO 10:11:11] my_main Recent Stats | t_env:     500058 | Episode:    30892
+Consistency_loss:          0.0210	MSE_per_agent_0:           4.9932	MSE_per_agent_1:           4.9840	MSE_per_agent_2:           4.9881
+MSE_per_agent_3:           4.9896	Meta_loss:                 0.3187	Model_D_loss:              5.0416	Mse_loss:                  4.9887
+Mse_per_state_0:           1.6224	Mse_per_state_1:           3.6062	Mse_per_state_2:           5.4983	Mse_per_state_3:           9.2280
+battle_won_mean:           0.0000	ep_length_mean:           16.4906	epsilon:                   0.0500	grad_norm:               583.0805
+loss:                     75.8990	q_taken_mean:              1.7116	return_mean:               0.0000	return_std:                0.0000
+target_mean:               1.9528	td_error_abs:              2.8687	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.9840
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 10:11:18] my_main t_env: 500444 / 2050000
+[INFO 10:11:18] my_main Estimated time left: 8 hours, 28 minutes, 57 seconds. Time passed: 2 hours, 50 minutes, 1 seconds
+[INFO 10:14:35] my_main t_env: 510444 / 2050000
+[INFO 10:14:35] my_main Estimated time left: 8 hours, 26 minutes, 55 seconds. Time passed: 2 hours, 53 minutes, 18 seconds
+[INFO 10:17:59] my_main t_env: 520459 / 2050000
+[INFO 10:17:59] my_main Estimated time left: 8 hours, 37 minutes, 57 seconds. Time passed: 2 hours, 56 minutes, 42 seconds
+[INFO 10:21:19] my_main t_env: 530468 / 2050000
+[INFO 10:21:19] my_main Estimated time left: 8 hours, 25 minutes, 35 seconds. Time passed: 3 hours, 2 seconds
+[INFO 10:24:34] my_main t_env: 540469 / 2050000
+[INFO 10:24:34] my_main Estimated time left: 8 hours, 10 minutes, 49 seconds. Time passed: 3 hours, 3 minutes, 17 seconds
+[INFO 10:27:49] my_main t_env: 550475 / 2050000
+[INFO 10:27:49] my_main Estimated time left: 8 hours, 6 minutes, 46 seconds. Time passed: 3 hours, 6 minutes, 32 seconds
+[INFO 10:30:55] my_main t_env: 560487 / 2050000
+[INFO 10:30:55] my_main Estimated time left: 7 hours, 42 minutes, 23 seconds. Time passed: 3 hours, 9 minutes, 38 seconds
+[INFO 10:34:12] my_main t_env: 570491 / 2050000
+[INFO 10:34:12] my_main Estimated time left: 8 hours, 5 minutes, 49 seconds. Time passed: 3 hours, 12 minutes, 55 seconds
+[INFO 10:37:31] my_main t_env: 580494 / 2050000
+[INFO 10:37:31] my_main Estimated time left: 8 hours, 5 minutes, 45 seconds. Time passed: 3 hours, 16 minutes, 14 seconds
+[INFO 10:40:47] my_main t_env: 590495 / 2050000
+[INFO 10:40:47] my_main Estimated time left: 7 hours, 57 minutes, 37 seconds. Time passed: 3 hours, 19 minutes, 30 seconds
+[INFO 10:43:53] my_main Recent Stats | t_env:     600077 | Episode:    36498
+Consistency_loss:          0.0011	MSE_per_agent_0:           0.0158	MSE_per_agent_1:           0.0139	MSE_per_agent_2:           0.0148
+MSE_per_agent_3:           0.0156	Meta_loss:                 0.1879	Model_D_loss:              0.0350	Mse_loss:                  0.0150
+Mse_per_state_0:           0.0091	Mse_per_state_1:           0.0176	Mse_per_state_2:           0.0169	Mse_per_state_3:           0.0165
+battle_won_mean:           0.0000	ep_length_mean:           17.5403	epsilon:                   0.0500	grad_norm:                 1.9589
+loss:                      0.0033	q_taken_mean:              0.1045	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.1033	td_error_abs:              0.0357	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.3020
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 10:44:00] my_main t_env: 600500 / 2050000
+[INFO 10:44:00] my_main Estimated time left: 7 hours, 46 minutes, 37 seconds. Time passed: 3 hours, 22 minutes, 43 seconds
+[INFO 10:47:09] my_main t_env: 610500 / 2050000
+[INFO 10:47:09] my_main Estimated time left: 7 hours, 32 minutes, 55 seconds. Time passed: 3 hours, 25 minutes, 52 seconds
+[INFO 10:50:21] my_main t_env: 620511 / 2050000
+[INFO 10:50:21] my_main Estimated time left: 7 hours, 36 minutes, 25 seconds. Time passed: 3 hours, 29 minutes, 4 seconds
+[INFO 10:53:44] my_main t_env: 630518 / 2050000
+[INFO 10:53:44] my_main Estimated time left: 8 hours, 45 seconds. Time passed: 3 hours, 32 minutes, 27 seconds
+[INFO 10:57:06] my_main t_env: 640533 / 2050000
+[INFO 10:57:06] my_main Estimated time left: 7 hours, 53 minutes, 46 seconds. Time passed: 3 hours, 35 minutes, 49 seconds
+[INFO 11:00:34] my_main t_env: 650539 / 2050000
+[INFO 11:00:34] my_main Estimated time left: 8 hours, 4 minutes, 9 seconds. Time passed: 3 hours, 39 minutes, 17 seconds
+[INFO 11:03:51] my_main t_env: 660542 / 2050000
+[INFO 11:03:51] my_main Estimated time left: 7 hours, 35 minutes, 39 seconds. Time passed: 3 hours, 42 minutes, 34 seconds
+[INFO 11:07:01] my_main t_env: 670557 / 2050000
+[INFO 11:07:01] my_main Estimated time left: 7 hours, 16 minutes, 39 seconds. Time passed: 3 hours, 45 minutes, 44 seconds
+[INFO 11:10:16] my_main t_env: 680570 / 2050000
+[INFO 11:10:16] my_main Estimated time left: 7 hours, 24 minutes, 7 seconds. Time passed: 3 hours, 48 minutes, 59 seconds
+[INFO 11:13:38] my_main t_env: 690576 / 2050000
+[INFO 11:13:38] my_main Estimated time left: 7 hours, 38 minutes, 28 seconds. Time passed: 3 hours, 52 minutes, 21 seconds
+[INFO 11:17:01] my_main Recent Stats | t_env:     700089 | Episode:    42260
+Consistency_loss:          0.0007	MSE_per_agent_0:           0.0091	MSE_per_agent_1:           0.0078	MSE_per_agent_2:           0.0081
+MSE_per_agent_3:           0.0081	Meta_loss:                 0.1095	Model_D_loss:              0.0199	Mse_loss:                  0.0083
+Mse_per_state_0:           0.0046	Mse_per_state_1:           0.0092	Mse_per_state_2:           0.0089	Mse_per_state_3:           0.0104
+battle_won_mean:           0.0000	ep_length_mean:           17.4687	epsilon:                   0.0500	grad_norm:                 0.7845
+loss:                      0.0010	q_taken_mean:              0.0341	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0347	td_error_abs:              0.0224	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 11:17:12] my_main t_env: 700582 / 2050000
+[INFO 11:17:12] my_main Estimated time left: 8 hours, 7 seconds. Time passed: 3 hours, 55 minutes, 55 seconds
+[INFO 11:20:24] my_main t_env: 710589 / 2050000
+[INFO 11:20:24] my_main Estimated time left: 7 hours, 8 minutes, 30 seconds. Time passed: 3 hours, 59 minutes, 7 seconds
+[INFO 11:23:40] my_main t_env: 720596 / 2050000
+[INFO 11:23:40] my_main Estimated time left: 7 hours, 14 minutes, 30 seconds. Time passed: 4 hours, 2 minutes, 23 seconds
+[INFO 11:26:59] my_main t_env: 730604 / 2050000
+[INFO 11:26:59] my_main Estimated time left: 7 hours, 16 minutes, 2 seconds. Time passed: 4 hours, 5 minutes, 42 seconds
+[INFO 11:30:15] my_main t_env: 740619 / 2050000
+[INFO 11:30:15] my_main Estimated time left: 7 hours, 8 minutes, 14 seconds. Time passed: 4 hours, 8 minutes, 58 seconds
+[INFO 11:33:36] my_main t_env: 750621 / 2050000
+[INFO 11:33:36] my_main Estimated time left: 7 hours, 14 minutes, 39 seconds. Time passed: 4 hours, 12 minutes, 19 seconds
+[INFO 11:36:49] my_main t_env: 760630 / 2050000
+[INFO 11:36:49] my_main Estimated time left: 6 hours, 55 minutes, 15 seconds. Time passed: 4 hours, 15 minutes, 32 seconds
+[INFO 11:40:03] my_main t_env: 770641 / 2050000
+[INFO 11:40:03] my_main Estimated time left: 6 hours, 52 minutes, 38 seconds. Time passed: 4 hours, 18 minutes, 46 seconds
+[INFO 11:43:18] my_main t_env: 780652 / 2050000
+[INFO 11:43:18] my_main Estimated time left: 6 hours, 51 minutes, 8 seconds. Time passed: 4 hours, 22 minutes, 1 seconds
+[INFO 11:46:32] my_main t_env: 790671 / 2050000
+[INFO 11:46:32] my_main Estimated time left: 6 hours, 46 minutes, 50 seconds. Time passed: 4 hours, 25 minutes, 15 seconds
+[INFO 11:49:40] my_main Recent Stats | t_env:     800090 | Episode:    48031
+Consistency_loss:          0.0006	MSE_per_agent_0:           0.0065	MSE_per_agent_1:           0.0058	MSE_per_agent_2:           0.0060
+MSE_per_agent_3:           0.0057	Meta_loss:                 0.0766	Model_D_loss:              0.0142	Mse_loss:                  0.0060
+Mse_per_state_0:           0.0028	Mse_per_state_1:           0.0058	Mse_per_state_2:           0.0069	Mse_per_state_3:           0.0085
+battle_won_mean:           0.0000	ep_length_mean:           17.6888	epsilon:                   0.0500	grad_norm:                 0.8809
+loss:                      0.0009	q_taken_mean:              0.0206	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0210	td_error_abs:              0.0215	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 11:49:52] my_main t_env: 800683 / 2050000
+[INFO 11:49:52] my_main Estimated time left: 6 hours, 55 minutes, 53 seconds. Time passed: 4 hours, 28 minutes, 35 seconds
+[INFO 11:53:12] my_main t_env: 810692 / 2050000
+[INFO 11:53:12] my_main Estimated time left: 6 hours, 53 minutes, 7 seconds. Time passed: 4 hours, 31 minutes, 55 seconds
+[INFO 11:56:35] my_main t_env: 820695 / 2050000
+[INFO 11:56:35] my_main Estimated time left: 6 hours, 54 minutes, 57 seconds. Time passed: 4 hours, 35 minutes, 18 seconds
+[INFO 11:59:57] my_main t_env: 830709 / 2050000
+[INFO 11:59:57] my_main Estimated time left: 6 hours, 50 minutes, 52 seconds. Time passed: 4 hours, 38 minutes, 40 seconds
+[INFO 12:03:15] my_main t_env: 840720 / 2050000
+[INFO 12:03:15] my_main Estimated time left: 6 hours, 37 minutes, 50 seconds. Time passed: 4 hours, 41 minutes, 58 seconds
+[INFO 12:06:31] my_main t_env: 850729 / 2050000
+[INFO 12:06:31] my_main Estimated time left: 6 hours, 33 minutes, 0 seconds. Time passed: 4 hours, 45 minutes, 14 seconds
+[INFO 12:09:49] my_main t_env: 860735 / 2050000
+[INFO 12:09:49] my_main Estimated time left: 6 hours, 31 minutes, 11 seconds. Time passed: 4 hours, 48 minutes, 32 seconds
+[INFO 12:13:05] my_main t_env: 870748 / 2050000
+[INFO 12:13:05] my_main Estimated time left: 6 hours, 25 minutes, 50 seconds. Time passed: 4 hours, 51 minutes, 49 seconds
+[INFO 12:16:21] my_main t_env: 880760 / 2050000
+[INFO 12:16:21] my_main Estimated time left: 6 hours, 19 minutes, 43 seconds. Time passed: 4 hours, 55 minutes, 4 seconds
+[INFO 12:19:33] my_main t_env: 890763 / 2050000
+[INFO 12:19:33] my_main Estimated time left: 6 hours, 11 minutes, 33 seconds. Time passed: 4 hours, 58 minutes, 16 seconds
+[INFO 12:22:35] my_main Recent Stats | t_env:     900095 | Episode:    53497
+Consistency_loss:          0.0005	MSE_per_agent_0:           0.0049	MSE_per_agent_1:           0.0050	MSE_per_agent_2:           0.0048
+MSE_per_agent_3:           0.0044	Meta_loss:                 0.0601	Model_D_loss:              0.0113	Mse_loss:                  0.0048
+Mse_per_state_0:           0.0021	Mse_per_state_1:           0.0035	Mse_per_state_2:           0.0059	Mse_per_state_3:           0.0076
+battle_won_mean:           0.0000	ep_length_mean:           17.6981	epsilon:                   0.0500	grad_norm:                 1.2570
+loss:                      0.0009	q_taken_mean:              0.0170	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0157	td_error_abs:              0.0228	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 12:22:48] my_main t_env: 900776 / 2050000
+[INFO 12:22:48] my_main Estimated time left: 6 hours, 12 minutes, 33 seconds. Time passed: 5 hours, 1 minutes, 31 seconds
+[INFO 12:26:05] my_main t_env: 910795 / 2050000
+[INFO 12:26:05] my_main Estimated time left: 6 hours, 14 minutes, 17 seconds. Time passed: 5 hours, 4 minutes, 48 seconds
+[INFO 12:29:11] my_main t_env: 920805 / 2050000
+[INFO 12:29:11] my_main Estimated time left: 5 hours, 48 minutes, 35 seconds. Time passed: 5 hours, 7 minutes, 54 seconds
+[INFO 12:32:20] my_main t_env: 930823 / 2050000
+[INFO 12:32:20] my_main Estimated time left: 5 hours, 53 minutes, 5 seconds. Time passed: 5 hours, 11 minutes, 3 seconds
+[INFO 12:35:28] my_main t_env: 940837 / 2050000
+[INFO 12:35:28] my_main Estimated time left: 5 hours, 47 minutes, 4 seconds. Time passed: 5 hours, 14 minutes, 11 seconds
+[INFO 12:38:42] my_main t_env: 950847 / 2050000
+[INFO 12:38:42] my_main Estimated time left: 5 hours, 54 minutes, 31 seconds. Time passed: 5 hours, 17 minutes, 25 seconds
+[INFO 12:41:51] my_main t_env: 960864 / 2050000
+[INFO 12:41:51] my_main Estimated time left: 5 hours, 43 minutes, 2 seconds. Time passed: 5 hours, 20 minutes, 34 seconds
+[INFO 12:45:07] my_main t_env: 970877 / 2050000
+[INFO 12:45:07] my_main Estimated time left: 5 hours, 51 minutes, 22 seconds. Time passed: 5 hours, 23 minutes, 50 seconds
+[INFO 12:48:23] my_main t_env: 980889 / 2050000
+[INFO 12:48:23] my_main Estimated time left: 5 hours, 48 minutes, 47 seconds. Time passed: 5 hours, 27 minutes, 6 seconds
+[INFO 12:51:46] my_main t_env: 990897 / 2050000
+[INFO 12:51:46] my_main Estimated time left: 5 hours, 58 minutes, 16 seconds. Time passed: 5 hours, 30 minutes, 29 seconds
+[INFO 12:54:47] my_main Recent Stats | t_env:    1000112 | Episode:    59029
+Consistency_loss:          0.0004	MSE_per_agent_0:           0.0042	MSE_per_agent_1:           0.0044	MSE_per_agent_2:           0.0040
+MSE_per_agent_3:           0.0038	Meta_loss:                 0.0485	Model_D_loss:              0.0094	Mse_loss:                  0.0041
+Mse_per_state_0:           0.0015	Mse_per_state_1:           0.0024	Mse_per_state_2:           0.0052	Mse_per_state_3:           0.0072
+battle_won_mean:           0.0000	ep_length_mean:           17.7805	epsilon:                   0.0500	grad_norm:                 1.0942
+loss:                      0.0008	q_taken_mean:              0.0247	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0233	td_error_abs:              0.0215	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 12:55:00] my_main t_env: 1000913 / 2050000
+[INFO 12:55:00] my_main Estimated time left: 5 hours, 38 minutes, 49 seconds. Time passed: 5 hours, 33 minutes, 43 seconds
+[INFO 12:58:13] my_main t_env: 1010932 / 2050000
+[INFO 12:58:13] my_main Estimated time left: 5 hours, 33 minutes, 53 seconds. Time passed: 5 hours, 36 minutes, 56 seconds
+[INFO 13:01:36] my_main t_env: 1020940 / 2050000
+[INFO 13:01:36] my_main Estimated time left: 5 hours, 47 minutes, 25 seconds. Time passed: 5 hours, 40 minutes, 19 seconds
+[INFO 13:04:51] my_main t_env: 1030947 / 2050000
+[INFO 13:04:51] my_main Estimated time left: 5 hours, 30 minutes, 52 seconds. Time passed: 5 hours, 43 minutes, 34 seconds
+[INFO 13:08:09] my_main t_env: 1040965 / 2050000
+[INFO 13:08:09] my_main Estimated time left: 5 hours, 32 minutes, 50 seconds. Time passed: 5 hours, 46 minutes, 52 seconds
+[INFO 13:11:26] my_main t_env: 1050971 / 2050000
+[INFO 13:11:26] my_main Estimated time left: 5 hours, 26 minutes, 55 seconds. Time passed: 5 hours, 50 minutes, 9 seconds
+[INFO 13:14:39] my_main t_env: 1060973 / 2050000
+[INFO 13:14:39] my_main Estimated time left: 5 hours, 18 minutes, 48 seconds. Time passed: 5 hours, 53 minutes, 22 seconds
+[INFO 13:18:00] my_main t_env: 1070984 / 2050000
+[INFO 13:18:00] my_main Estimated time left: 5 hours, 27 minutes, 32 seconds. Time passed: 5 hours, 56 minutes, 43 seconds
+[INFO 13:21:25] my_main t_env: 1080984 / 2050000
+[INFO 13:21:25] my_main Estimated time left: 5 hours, 31 minutes, 33 seconds. Time passed: 6 hours, 8 seconds
+[INFO 13:24:38] my_main t_env: 1091001 / 2050000
+[INFO 13:24:38] my_main Estimated time left: 5 hours, 7 minutes, 19 seconds. Time passed: 6 hours, 3 minutes, 21 seconds
+[INFO 13:27:38] my_main Recent Stats | t_env:    1100120 | Episode:    64581
+Consistency_loss:          0.0004	MSE_per_agent_0:           0.0036	MSE_per_agent_1:           0.0040	MSE_per_agent_2:           0.0035
+MSE_per_agent_3:           0.0037	Meta_loss:                 0.0440	Model_D_loss:              0.0085	Mse_loss:                  0.0037
+Mse_per_state_0:           0.0016	Mse_per_state_1:           0.0022	Mse_per_state_2:           0.0046	Mse_per_state_3:           0.0065
+battle_won_mean:           0.0000	ep_length_mean:           17.8148	epsilon:                   0.0500	grad_norm:                 1.0491
+loss:                      0.0008	q_taken_mean:              0.0247	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0225	td_error_abs:              0.0211	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.1880
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 13:27:54] my_main t_env: 1101020 / 2050000
+[INFO 13:27:54] my_main Estimated time left: 5 hours, 8 minutes, 39 seconds. Time passed: 6 hours, 6 minutes, 37 seconds
+[INFO 13:31:07] my_main t_env: 1111020 / 2050000
+[INFO 13:31:07] my_main Estimated time left: 5 hours, 3 minutes, 33 seconds. Time passed: 6 hours, 9 minutes, 51 seconds
+[INFO 13:34:27] my_main t_env: 1121031 / 2050000
+[INFO 13:34:27] my_main Estimated time left: 5 hours, 9 minutes, 2 seconds. Time passed: 6 hours, 13 minutes, 10 seconds
+[INFO 13:37:48] my_main t_env: 1131045 / 2050000
+[INFO 13:37:48] my_main Estimated time left: 5 hours, 6 minutes, 15 seconds. Time passed: 6 hours, 16 minutes, 31 seconds
+[INFO 13:41:04] my_main t_env: 1141052 / 2050000
+[INFO 13:41:04] my_main Estimated time left: 4 hours, 56 minutes, 47 seconds. Time passed: 6 hours, 19 minutes, 47 seconds
+[INFO 13:44:30] my_main t_env: 1151068 / 2050000
+[INFO 13:44:30] my_main Estimated time left: 5 hours, 8 minutes, 0 seconds. Time passed: 6 hours, 23 minutes, 13 seconds
+[INFO 13:47:45] my_main t_env: 1161074 / 2050000
+[INFO 13:47:45] my_main Estimated time left: 4 hours, 49 minutes, 5 seconds. Time passed: 6 hours, 26 minutes, 28 seconds
+[INFO 13:51:02] my_main t_env: 1171087 / 2050000
+[INFO 13:51:02] my_main Estimated time left: 4 hours, 48 minutes, 36 seconds. Time passed: 6 hours, 29 minutes, 45 seconds
+[INFO 13:54:20] my_main t_env: 1181106 / 2050000
+[INFO 13:54:20] my_main Estimated time left: 4 hours, 46 minutes, 16 seconds. Time passed: 6 hours, 33 minutes, 3 seconds
+[INFO 13:57:45] my_main t_env: 1191110 / 2050000
+[INFO 13:57:45] my_main Estimated time left: 4 hours, 52 minutes, 37 seconds. Time passed: 6 hours, 36 minutes, 28 seconds
+[INFO 14:00:51] my_main Recent Stats | t_env:    1200135 | Episode:    70241
+Consistency_loss:          0.0004	MSE_per_agent_0:           0.0030	MSE_per_agent_1:           0.0036	MSE_per_agent_2:           0.0031
+MSE_per_agent_3:           0.0033	Meta_loss:                 0.0377	Model_D_loss:              0.0074	Mse_loss:                  0.0033
+Mse_per_state_0:           0.0014	Mse_per_state_1:           0.0015	Mse_per_state_2:           0.0044	Mse_per_state_3:           0.0057
+battle_won_mean:           0.0000	ep_length_mean:           17.8774	epsilon:                   0.0500	grad_norm:                 0.9679
+loss:                      0.0007	q_taken_mean:              0.0275	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0256	td_error_abs:              0.0182	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 14:01:09] my_main t_env: 1201122 / 2050000
+[INFO 14:01:09] my_main Estimated time left: 4 hours, 48 minutes, 12 seconds. Time passed: 6 hours, 39 minutes, 52 seconds
+[INFO 14:04:28] my_main t_env: 1211134 / 2050000
+[INFO 14:04:28] my_main Estimated time left: 4 hours, 38 minutes, 38 seconds. Time passed: 6 hours, 43 minutes, 11 seconds
+[INFO 14:07:43] my_main t_env: 1221138 / 2050000
+[INFO 14:07:43] my_main Estimated time left: 4 hours, 29 minutes, 8 seconds. Time passed: 6 hours, 46 minutes, 26 seconds
+[INFO 14:11:01] my_main t_env: 1231154 / 2050000
+[INFO 14:11:01] my_main Estimated time left: 4 hours, 29 minutes, 50 seconds. Time passed: 6 hours, 49 minutes, 44 seconds
+[INFO 14:14:20] my_main t_env: 1241155 / 2050000
+[INFO 14:14:20] my_main Estimated time left: 4 hours, 27 minutes, 56 seconds. Time passed: 6 hours, 53 minutes, 3 seconds
+[INFO 14:17:39] my_main t_env: 1251169 / 2050000
+[INFO 14:17:39] my_main Estimated time left: 4 hours, 25 minutes, 4 seconds. Time passed: 6 hours, 56 minutes, 22 seconds
+[INFO 14:21:05] my_main t_env: 1261172 / 2050000
+[INFO 14:21:05] my_main Estimated time left: 4 hours, 30 minutes, 30 seconds. Time passed: 6 hours, 59 minutes, 48 seconds
+[INFO 14:24:29] my_main t_env: 1271184 / 2050000
+[INFO 14:24:29] my_main Estimated time left: 4 hours, 24 minutes, 27 seconds. Time passed: 7 hours, 3 minutes, 12 seconds
+[INFO 14:27:56] my_main t_env: 1281200 / 2050000
+[INFO 14:27:56] my_main Estimated time left: 4 hours, 24 minutes, 47 seconds. Time passed: 7 hours, 6 minutes, 39 seconds
+[INFO 14:31:15] my_main t_env: 1291216 / 2050000
+[INFO 14:31:15] my_main Estimated time left: 4 hours, 11 minutes, 38 seconds. Time passed: 7 hours, 9 minutes, 58 seconds
+[INFO 14:34:14] my_main Recent Stats | t_env:    1300136 | Episode:    75799
+Consistency_loss:          0.0003	MSE_per_agent_0:           0.0027	MSE_per_agent_1:           0.0031	MSE_per_agent_2:           0.0033
+MSE_per_agent_3:           0.0032	Meta_loss:                 0.0355	Model_D_loss:              0.0069	Mse_loss:                  0.0031
+Mse_per_state_0:           0.0016	Mse_per_state_1:           0.0011	Mse_per_state_2:           0.0043	Mse_per_state_3:           0.0053
+battle_won_mean:           0.0000	ep_length_mean:           18.0103	epsilon:                   0.0500	grad_norm:                 0.8901
+loss:                      0.0006	q_taken_mean:              0.0307	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0290	td_error_abs:              0.0169	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.7440
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 14:34:33] my_main t_env: 1301223 / 2050000
+[INFO 14:34:33] my_main Estimated time left: 4 hours, 6 minutes, 42 seconds. Time passed: 7 hours, 13 minutes, 16 seconds
+[INFO 14:37:54] my_main t_env: 1311232 / 2050000
+[INFO 14:37:54] my_main Estimated time left: 4 hours, 6 minutes, 41 seconds. Time passed: 7 hours, 16 minutes, 37 seconds
+[INFO 14:41:19] my_main t_env: 1321233 / 2050000
+[INFO 14:41:19] my_main Estimated time left: 4 hours, 9 minutes, 12 seconds. Time passed: 7 hours, 20 minutes, 2 seconds
+[INFO 14:44:42] my_main t_env: 1331239 / 2050000
+[INFO 14:44:42] my_main Estimated time left: 4 hours, 3 minutes, 8 seconds. Time passed: 7 hours, 23 minutes, 25 seconds
+[INFO 14:48:05] my_main t_env: 1341241 / 2050000
+[INFO 14:48:05] my_main Estimated time left: 3 hours, 59 minutes, 29 seconds. Time passed: 7 hours, 26 minutes, 48 seconds
+[INFO 14:51:29] my_main t_env: 1351259 / 2050000
+[INFO 14:51:29] my_main Estimated time left: 3 hours, 57 minutes, 42 seconds. Time passed: 7 hours, 30 minutes, 12 seconds
+[INFO 14:54:50] my_main t_env: 1361276 / 2050000
+[INFO 14:54:50] my_main Estimated time left: 3 hours, 50 minutes, 40 seconds. Time passed: 7 hours, 33 minutes, 34 seconds
+[INFO 14:58:12] my_main t_env: 1371293 / 2050000
+[INFO 14:58:12] my_main Estimated time left: 3 hours, 47 minutes, 49 seconds. Time passed: 7 hours, 36 minutes, 55 seconds
+[INFO 15:02:10] my_main t_env: 1381297 / 2050000
+[INFO 15:02:10] my_main Estimated time left: 4 hours, 24 minutes, 28 seconds. Time passed: 7 hours, 40 minutes, 53 seconds
+[INFO 15:05:55] my_main t_env: 1391308 / 2050000
+[INFO 15:05:55] my_main Estimated time left: 4 hours, 6 minutes, 48 seconds. Time passed: 7 hours, 44 minutes, 38 seconds
+[INFO 15:08:53] my_main Recent Stats | t_env:    1400148 | Episode:    81818
+Consistency_loss:          0.0003	MSE_per_agent_0:           0.0027	MSE_per_agent_1:           0.0031	MSE_per_agent_2:           0.0030
+MSE_per_agent_3:           0.0028	Meta_loss:                 0.0334	Model_D_loss:              0.0065	Mse_loss:                  0.0029
+Mse_per_state_0:           0.0017	Mse_per_state_1:           0.0009	Mse_per_state_2:           0.0040	Mse_per_state_3:           0.0049
+battle_won_mean:           0.0000	ep_length_mean:           17.6743	epsilon:                   0.0500	grad_norm:                 0.4324
+loss:                      0.0002	q_taken_mean:              0.0291	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0290	td_error_abs:              0.0107	test_battle_won_mean:      0.0000	test_ep_length_mean:      18.2600
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 15:09:14] my_main t_env: 1401311 / 2050000
+[INFO 15:09:14] my_main Estimated time left: 3 hours, 35 minutes, 31 seconds. Time passed: 7 hours, 47 minutes, 57 seconds
+[INFO 15:12:34] my_main t_env: 1411315 / 2050000
+[INFO 15:12:34] my_main Estimated time left: 3 hours, 32 minutes, 23 seconds. Time passed: 7 hours, 51 minutes, 17 seconds
+[INFO 15:15:55] my_main t_env: 1421334 / 2050000
+[INFO 15:15:55] my_main Estimated time left: 3 hours, 30 minutes, 11 seconds. Time passed: 7 hours, 54 minutes, 38 seconds
+[INFO 15:19:12] my_main t_env: 1431338 / 2050000
+[INFO 15:19:12] my_main Estimated time left: 3 hours, 22 minutes, 59 seconds. Time passed: 7 hours, 57 minutes, 55 seconds
+[INFO 15:22:27] my_main t_env: 1441353 / 2050000
+[INFO 15:22:27] my_main Estimated time left: 3 hours, 18 minutes, 5 seconds. Time passed: 8 hours, 1 minutes, 10 seconds
+[INFO 15:25:46] my_main t_env: 1451365 / 2050000
+[INFO 15:25:46] my_main Estimated time left: 3 hours, 18 minutes, 29 seconds. Time passed: 8 hours, 4 minutes, 29 seconds
+[INFO 15:29:04] my_main t_env: 1461379 / 2050000
+[INFO 15:29:04] my_main Estimated time left: 3 hours, 13 minutes, 50 seconds. Time passed: 8 hours, 7 minutes, 47 seconds
+[INFO 15:32:30] my_main t_env: 1471381 / 2050000
+[INFO 15:32:30] my_main Estimated time left: 3 hours, 17 minutes, 52 seconds. Time passed: 8 hours, 11 minutes, 13 seconds
+[INFO 15:35:42] my_main t_env: 1481385 / 2050000
+[INFO 15:35:42] my_main Estimated time left: 3 hours, 2 minutes, 25 seconds. Time passed: 8 hours, 14 minutes, 25 seconds
+[INFO 15:39:00] my_main t_env: 1491398 / 2050000
+[INFO 15:39:00] my_main Estimated time left: 3 hours, 4 minutes, 11 seconds. Time passed: 8 hours, 17 minutes, 43 seconds
+[INFO 15:41:53] my_main Recent Stats | t_env:    1500162 | Episode:    87292
+Consistency_loss:          0.0003	MSE_per_agent_0:           0.0027	MSE_per_agent_1:           0.0029	MSE_per_agent_2:           0.0029
+MSE_per_agent_3:           0.0025	Meta_loss:                 0.0313	Model_D_loss:              0.0061	Mse_loss:                  0.0028
+Mse_per_state_0:           0.0016	Mse_per_state_1:           0.0009	Mse_per_state_2:           0.0040	Mse_per_state_3:           0.0045
+battle_won_mean:           0.0000	ep_length_mean:           17.7125	epsilon:                   0.0500	grad_norm:                 0.5497
+loss:                      0.0002	q_taken_mean:              0.0221	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0214	td_error_abs:              0.0113	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 15:42:15] my_main t_env: 1501415 / 2050000
+[INFO 15:42:15] my_main Estimated time left: 2 hours, 57 minutes, 52 seconds. Time passed: 8 hours, 20 minutes, 58 seconds
+[INFO 15:45:33] my_main t_env: 1511424 / 2050000
+[INFO 15:45:33] my_main Estimated time left: 2 hours, 57 minutes, 9 seconds. Time passed: 8 hours, 24 minutes, 16 seconds
+[INFO 15:48:53] my_main t_env: 1521430 / 2050000
+[INFO 15:48:53] my_main Estimated time left: 2 hours, 56 minutes, 23 seconds. Time passed: 8 hours, 27 minutes, 36 seconds
+[INFO 15:52:15] my_main t_env: 1531433 / 2050000
+[INFO 15:52:15] my_main Estimated time left: 2 hours, 54 minutes, 25 seconds. Time passed: 8 hours, 30 minutes, 58 seconds
+[INFO 15:55:37] my_main t_env: 1541440 / 2050000
+[INFO 15:55:37] my_main Estimated time left: 2 hours, 51 minutes, 9 seconds. Time passed: 8 hours, 34 minutes, 20 seconds
+[INFO 15:59:00] my_main t_env: 1551451 / 2050000
+[INFO 15:59:00] my_main Estimated time left: 2 hours, 48 minutes, 10 seconds. Time passed: 8 hours, 37 minutes, 43 seconds
+[INFO 16:02:20] my_main t_env: 1561467 / 2050000
+[INFO 16:02:20] my_main Estimated time left: 2 hours, 42 minutes, 50 seconds. Time passed: 8 hours, 41 minutes, 3 seconds
+[INFO 16:05:44] my_main t_env: 1571475 / 2050000
+[INFO 16:05:44] my_main Estimated time left: 2 hours, 42 minutes, 57 seconds. Time passed: 8 hours, 44 minutes, 27 seconds
+[INFO 16:09:06] my_main t_env: 1581476 / 2050000
+[INFO 16:09:06] my_main Estimated time left: 2 hours, 37 minutes, 4 seconds. Time passed: 8 hours, 47 minutes, 49 seconds
+[INFO 16:12:28] my_main t_env: 1591482 / 2050000
+[INFO 16:12:28] my_main Estimated time left: 2 hours, 34 minutes, 37 seconds. Time passed: 8 hours, 51 minutes, 11 seconds
+[INFO 16:15:26] my_main Recent Stats | t_env:    1600174 | Episode:    93082
+Consistency_loss:          0.0002	MSE_per_agent_0:           0.0026	MSE_per_agent_1:           0.0025	MSE_per_agent_2:           0.0027
+MSE_per_agent_3:           0.0022	Meta_loss:                 0.0294	Model_D_loss:              0.0057	Mse_loss:                  0.0025
+Mse_per_state_0:           0.0013	Mse_per_state_1:           0.0009	Mse_per_state_2:           0.0038	Mse_per_state_3:           0.0041
+battle_won_mean:           0.0000	ep_length_mean:           17.5646	epsilon:                   0.0500	grad_norm:                 0.6185
+loss:                      0.0002	q_taken_mean:              0.0175	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0165	td_error_abs:              0.0105	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 16:15:49] my_main t_env: 1601489 / 2050000
+[INFO 16:15:49] my_main Estimated time left: 2 hours, 30 minutes, 31 seconds. Time passed: 8 hours, 54 minutes, 33 seconds
+[INFO 16:19:07] my_main t_env: 1611494 / 2050000
+[INFO 16:19:07] my_main Estimated time left: 2 hours, 24 minutes, 17 seconds. Time passed: 8 hours, 57 minutes, 50 seconds
+[INFO 16:22:29] my_main t_env: 1621506 / 2050000
+[INFO 16:22:29] my_main Estimated time left: 2 hours, 23 minutes, 58 seconds. Time passed: 9 hours, 1 minutes, 12 seconds
+[INFO 16:25:49] my_main t_env: 1631508 / 2050000
+[INFO 16:25:49] my_main Estimated time left: 2 hours, 19 minutes, 30 seconds. Time passed: 9 hours, 4 minutes, 32 seconds
+[INFO 16:29:11] my_main t_env: 1641519 / 2050000
+[INFO 16:29:11] my_main Estimated time left: 2 hours, 17 minutes, 32 seconds. Time passed: 9 hours, 7 minutes, 54 seconds
+[INFO 16:32:32] my_main t_env: 1651536 / 2050000
+[INFO 16:32:32] my_main Estimated time left: 2 hours, 13 minutes, 17 seconds. Time passed: 9 hours, 11 minutes, 15 seconds
+[INFO 16:35:54] my_main t_env: 1661549 / 2050000
+[INFO 16:35:54] my_main Estimated time left: 2 hours, 10 minutes, 33 seconds. Time passed: 9 hours, 14 minutes, 37 seconds
+[INFO 16:39:08] my_main t_env: 1671567 / 2050000
+[INFO 16:39:08] my_main Estimated time left: 2 hours, 2 minutes, 13 seconds. Time passed: 9 hours, 17 minutes, 51 seconds
+[INFO 16:42:27] my_main t_env: 1681570 / 2050000
+[INFO 16:42:27] my_main Estimated time left: 2 hours, 2 minutes, 6 seconds. Time passed: 9 hours, 21 minutes, 10 seconds
+[INFO 16:45:48] my_main t_env: 1691581 / 2050000
+[INFO 16:45:48] my_main Estimated time left: 1 hours, 59 minutes, 37 seconds. Time passed: 9 hours, 24 minutes, 31 seconds
+[INFO 16:48:42] my_main Recent Stats | t_env:    1700179 | Episode:    98645
+Consistency_loss:          0.0002	MSE_per_agent_0:           0.0025	MSE_per_agent_1:           0.0025	MSE_per_agent_2:           0.0026
+MSE_per_agent_3:           0.0022	Meta_loss:                 0.0281	Model_D_loss:              0.0055	Mse_loss:                  0.0024
+Mse_per_state_0:           0.0012	Mse_per_state_1:           0.0009	Mse_per_state_2:           0.0035	Mse_per_state_3:           0.0041
+battle_won_mean:           0.0000	ep_length_mean:           17.6258	epsilon:                   0.0500	grad_norm:                 0.7643
+loss:                      0.0002	q_taken_mean:              0.0147	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0131	td_error_abs:              0.0116	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.2000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 16:49:08] my_main t_env: 1701581 / 2050000
+[INFO 16:49:08] my_main Estimated time left: 1 hours, 56 minutes, 5 seconds. Time passed: 9 hours, 27 minutes, 51 seconds
+[INFO 16:52:30] my_main t_env: 1711583 / 2050000
+[INFO 16:52:30] my_main Estimated time left: 1 hours, 53 minutes, 54 seconds. Time passed: 9 hours, 31 minutes, 13 seconds
+[INFO 16:55:47] my_main t_env: 1721593 / 2050000
+[INFO 16:55:47] my_main Estimated time left: 1 hours, 48 minutes, 11 seconds. Time passed: 9 hours, 34 minutes, 30 seconds
+[INFO 16:59:14] my_main t_env: 1731606 / 2050000
+[INFO 16:59:14] my_main Estimated time left: 1 hours, 49 minutes, 38 seconds. Time passed: 9 hours, 37 minutes, 57 seconds
+[INFO 17:02:41] my_main t_env: 1741607 / 2050000
+[INFO 17:02:41] my_main Estimated time left: 1 hours, 46 minutes, 15 seconds. Time passed: 9 hours, 41 minutes, 24 seconds
+[INFO 17:06:04] my_main t_env: 1751613 / 2050000
+[INFO 17:06:04] my_main Estimated time left: 1 hours, 40 minutes, 50 seconds. Time passed: 9 hours, 44 minutes, 47 seconds
+[INFO 17:09:21] my_main t_env: 1761627 / 2050000
+[INFO 17:09:21] my_main Estimated time left: 1 hours, 34 minutes, 37 seconds. Time passed: 9 hours, 48 minutes, 4 seconds
+[INFO 17:12:51] my_main t_env: 1771639 / 2050000
+[INFO 17:12:51] my_main Estimated time left: 1 hours, 37 minutes, 21 seconds. Time passed: 9 hours, 51 minutes, 34 seconds
+[INFO 17:16:37] my_main t_env: 1781640 / 2050000
+[INFO 17:16:37] my_main Estimated time left: 1 hours, 41 minutes, 2 seconds. Time passed: 9 hours, 55 minutes, 20 seconds
+[INFO 17:19:58] my_main t_env: 1791646 / 2050000
+[INFO 17:19:58] my_main Estimated time left: 1 hours, 26 minutes, 25 seconds. Time passed: 9 hours, 58 minutes, 41 seconds
+[INFO 17:22:53] my_main Recent Stats | t_env:    1800180 | Episode:   104603
+Consistency_loss:          0.0002	MSE_per_agent_0:           0.0025	MSE_per_agent_1:           0.0023	MSE_per_agent_2:           0.0022
+MSE_per_agent_3:           0.0019	Meta_loss:                 0.0256	Model_D_loss:              0.0050	Mse_loss:                  0.0022
+Mse_per_state_0:           0.0012	Mse_per_state_1:           0.0011	Mse_per_state_2:           0.0032	Mse_per_state_3:           0.0033
+battle_won_mean:           0.0000	ep_length_mean:           17.3842	epsilon:                   0.0500	grad_norm:                 0.6899
+loss:                      0.0002	q_taken_mean:              0.0111	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0098	td_error_abs:              0.0100	test_battle_won_mean:      0.0000	test_ep_length_mean:      17.4640
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 17:23:20] my_main t_env: 1801663 / 2050000
+[INFO 17:23:20] my_main Estimated time left: 1 hours, 23 minutes, 26 seconds. Time passed: 10 hours, 2 minutes, 3 seconds
+[INFO 17:26:33] my_main t_env: 1811665 / 2050000
+[INFO 17:26:33] my_main Estimated time left: 1 hours, 16 minutes, 28 seconds. Time passed: 10 hours, 5 minutes, 16 seconds
+[INFO 17:29:47] my_main t_env: 1821684 / 2050000
+[INFO 17:29:47] my_main Estimated time left: 1 hours, 14 minutes, 1 seconds. Time passed: 10 hours, 8 minutes, 30 seconds
+[INFO 17:33:05] my_main t_env: 1831699 / 2050000
+[INFO 17:33:05] my_main Estimated time left: 1 hours, 11 minutes, 42 seconds. Time passed: 10 hours, 11 minutes, 48 seconds
+[INFO 17:36:24] my_main t_env: 1841709 / 2050000
+[INFO 17:36:24] my_main Estimated time left: 1 hours, 8 minutes, 57 seconds. Time passed: 10 hours, 15 minutes, 7 seconds
+[INFO 17:39:43] my_main t_env: 1851726 / 2050000
+[INFO 17:39:43] my_main Estimated time left: 1 hours, 5 minutes, 54 seconds. Time passed: 10 hours, 18 minutes, 26 seconds
+[INFO 17:42:59] my_main t_env: 1861730 / 2050000
+[INFO 17:42:59] my_main Estimated time left: 1 hours, 1 minutes, 18 seconds. Time passed: 10 hours, 21 minutes, 42 seconds
+[INFO 17:46:21] my_main t_env: 1871730 / 2050000
+[INFO 17:46:21] my_main Estimated time left: 59 minutes, 59 seconds. Time passed: 10 hours, 25 minutes, 4 seconds
+[INFO 17:49:40] my_main t_env: 1881741 / 2050000
+[INFO 17:49:40] my_main Estimated time left: 55 minutes, 40 seconds. Time passed: 10 hours, 28 minutes, 23 seconds
+[INFO 17:52:58] my_main t_env: 1891749 / 2050000
+[INFO 17:52:58] my_main Estimated time left: 52 minutes, 19 seconds. Time passed: 10 hours, 31 minutes, 41 seconds
+[INFO 17:55:54] my_main Recent Stats | t_env:    1900196 | Episode:   110263
+Consistency_loss:          0.0002	MSE_per_agent_0:           0.0022	MSE_per_agent_1:           0.0020	MSE_per_agent_2:           0.0021
+MSE_per_agent_3:           0.0020	Meta_loss:                 0.0234	Model_D_loss:              0.0046	Mse_loss:                  0.0021
+Mse_per_state_0:           0.0011	Mse_per_state_1:           0.0010	Mse_per_state_2:           0.0029	Mse_per_state_3:           0.0033
+battle_won_mean:           0.0000	ep_length_mean:           17.5952	epsilon:                   0.0500	grad_norm:                 0.6232
+loss:                      0.0002	q_taken_mean:              0.0095	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0082	td_error_abs:              0.0099	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 17:56:27] my_main t_env: 1901751 / 2050000
+[INFO 17:56:27] my_main Estimated time left: 51 minutes, 36 seconds. Time passed: 10 hours, 35 minutes, 10 seconds
+[INFO 18:00:42] my_main t_env: 1911768 / 2050000
+[INFO 18:00:42] my_main Estimated time left: 58 minutes, 36 seconds. Time passed: 10 hours, 39 minutes, 25 seconds
+[INFO 18:04:04] my_main t_env: 1921771 / 2050000
+[INFO 18:04:04] my_main Estimated time left: 43 minutes, 5 seconds. Time passed: 10 hours, 42 minutes, 47 seconds
+[INFO 18:07:21] my_main t_env: 1931786 / 2050000
+[INFO 18:07:21] my_main Estimated time left: 38 minutes, 52 seconds. Time passed: 10 hours, 46 minutes, 4 seconds
+[INFO 18:10:35] my_main t_env: 1941794 / 2050000
+[INFO 18:10:35] my_main Estimated time left: 34 minutes, 52 seconds. Time passed: 10 hours, 49 minutes, 18 seconds
+[INFO 18:13:56] my_main t_env: 1951813 / 2050000
+[INFO 18:13:56] my_main Estimated time left: 32 minutes, 51 seconds. Time passed: 10 hours, 52 minutes, 39 seconds
+[INFO 18:17:17] my_main t_env: 1961827 / 2050000
+[INFO 18:17:17] my_main Estimated time left: 29 minutes, 32 seconds. Time passed: 10 hours, 56 minutes, 0 seconds
+[INFO 18:20:40] my_main t_env: 1971836 / 2050000
+[INFO 18:20:40] my_main Estimated time left: 26 minutes, 25 seconds. Time passed: 10 hours, 59 minutes, 23 seconds
+[INFO 18:24:05] my_main t_env: 1981841 / 2050000
+[INFO 18:24:05] my_main Estimated time left: 23 minutes, 13 seconds. Time passed: 11 hours, 2 minutes, 48 seconds
+[INFO 18:27:27] my_main t_env: 1991841 / 2050000
+[INFO 18:27:27] my_main Estimated time left: 19 minutes, 33 seconds. Time passed: 11 hours, 6 minutes, 10 seconds
+[INFO 18:30:21] my_main Recent Stats | t_env:    2000201 | Episode:   116249
+Consistency_loss:          0.0002	MSE_per_agent_0:           0.0019	MSE_per_agent_1:           0.0024	MSE_per_agent_2:           0.0020
+MSE_per_agent_3:           0.0019	Meta_loss:                 0.0221	Model_D_loss:              0.0044	Mse_loss:                  0.0020
+Mse_per_state_0:           0.0010	Mse_per_state_1:           0.0012	Mse_per_state_2:           0.0027	Mse_per_state_3:           0.0032
+battle_won_mean:           0.0000	ep_length_mean:           17.2823	epsilon:                   0.0500	grad_norm:                 0.6336
+loss:                      0.0002	q_taken_mean:              0.0064	return_mean:               0.0000	return_std:                0.0000
+target_mean:               0.0062	td_error_abs:              0.0103	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	
+[INFO 18:30:52] my_main t_env: 2001852 / 2050000
+[INFO 18:30:52] my_main Estimated time left: 16 minutes, 26 seconds. Time passed: 11 hours, 9 minutes, 35 seconds
+[INFO 18:34:18] my_main t_env: 2011855 / 2050000
+[INFO 18:34:18] my_main Estimated time left: 13 minutes, 6 seconds. Time passed: 11 hours, 13 minutes, 1 seconds
+[INFO 18:37:39] my_main t_env: 2021871 / 2050000
+[INFO 18:37:39] my_main Estimated time left: 9 minutes, 25 seconds. Time passed: 11 hours, 16 minutes, 22 seconds
+[INFO 18:40:53] my_main t_env: 2031880 / 2050000
+[INFO 18:40:53] my_main Estimated time left: 5 minutes, 51 seconds. Time passed: 11 hours, 19 minutes, 37 seconds
+[INFO 18:44:10] my_main t_env: 2041887 / 2050000
+[INFO 18:44:10] my_main Estimated time left: 2 minutes, 38 seconds. Time passed: 11 hours, 22 minutes, 53 seconds
+[INFO 18:46:55] my_main Finished Training
+[INFO 18:46:55] my_main [DONE] Written: data/done.flag
+Finish RL
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 18:46:56] my_main Finished after 11:25:41.
+[INFO 18:46:56] pymarl Completed after 11:25:41
+[DEBUG 18:46:56] pymarl Stopping Heartbeat

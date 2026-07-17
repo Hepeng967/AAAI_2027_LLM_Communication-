@@ -1,0 +1,14 @@
+Original LMAC policy PASS: hallway_group input=(2, 7, 12) output=(2, 7, 84)
+Starting task=hallway_group seed=1234 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+Started PID=2783 log=log/hallway/hallway_group/output_hallway_group_seed_1234_20260717_072127.log
+Starting task=hallway_group seed=1235 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+Started PID=2789 log=log/hallway/hallway_group/output_hallway_group_seed_1235_20260717_072127.log
+Starting task=hallway_group seed=1236 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+Started PID=2795 log=log/hallway/hallway_group/output_hallway_group_seed_1236_20260717_072127.log
+Starting task=hallway_group seed=1237 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+Started PID=2801 log=log/hallway/hallway_group/output_hallway_group_seed_1237_20260717_072127.log
+Starting task=hallway_group seed=1238 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+Started PID=2807 log=log/hallway/hallway_group/output_hallway_group_seed_1238_20260717_072127.log
+Original LMAC policy PASS: hallway_group input=(2, 7, 12) output=(2, 7, 84)
+Starting task=hallway_group seed=1234 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=1 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=hallway_group with env_args.key=hallway_group seed=1234 t_max=2050000 name=LMAC_ORIGINAL_HALLWAY running_algorithm_name=\(hallway_group\)LMAC_ORIGINAL comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway_group/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\,10\,11\,12\,13\] phase=multi_train use_wandb=False use_tensorboard=True save_model=False 

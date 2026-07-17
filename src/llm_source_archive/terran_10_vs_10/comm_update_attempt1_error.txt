@@ -1,0 +1,80 @@
+Stage: validate_comm_function
+
+Traceback (most recent call last):
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/llm_core.py", line 711, in protocol_phase_0_step2_init_comm
+    message_dim = self.code_utils.validate_communication_function(cur_module, self.test_obs,)
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/code_utils.py", line 87, in validate_communication_function
+    cur_com = module.communication(test_obs)
+  File "/data/hp/LLM_Communication/LMAC-main/src/llm_source_archive/terran_10_vs_10/comm_init.py", line 81, in communication
+    enhanced_o = th.cat([o, received], dim=-1)                # (b, n, 254)
+RuntimeError: Tensors must have same number of dimensions: got 3 and 4
+
+Communication function code:
+def communication(o):
+    """
+    Args:
+        o: observation tensor of shape (2, 10, 188)
+    Returns:
+        Enhanced observation of shape (2, 10, 188 + 66) where the appended message
+        is the aggregated information from all other agents.
+    """
+    device = o.device
+    b, n_agents, _ = o.shape
+
+    # ---- Own information (always available) ----
+    own_health = o[..., 156].unsqueeze(-1)            # (b, n, 1)
+    own_type   = o[..., 157:160]                      # (b, n, 3)  (unit type bits)
+    own_x      = o[..., 160].unsqueeze(-1)              # (b, n, 1)
+    own_y      = o[..., 161].unsqueeze(-1)              # (b, n, 1)
+    own_seg    = th.cat([own_health, own_type, own_x, own_y], dim=-1)  # (b, n, 6)
+
+    # ---- Enemy information (only if observed) ----
+    enemy_segments = []
+    for e in range(10):
+        # Indices for enemy e
+        rel_x_idx = 6 + e * 8
+        rel_y_idx = 7 + e * 8
+        health_idx = 8 + e * 8
+        type_start = 9 + e * 8
+        type_end   = 12 + e * 8
+
+        # Extract
+        rel_x = o[..., rel_x_idx].unsqueeze(-1)      # (b, n, 1)
+        rel_y = o[..., rel_y_idx].unsqueeze(-1)
+        e_health = o[..., health_idx].unsqueeze(-1)
+        e_type   = o[..., type_start:type_end]       # (b, n, 3)
+
+        # Absolute positions
+        abs_x = own_x + rel_x
+        abs_y = own_y + rel_y
+
+        # Mask: enemy is visible/observable iff its health > 0
+        mask = (e_health > 0.0).float()               # (b, n, 1)
+
+        e_health = e_health * mask
+        e_type   = e_type * mask                      # broadcast over 3 bits
+        abs_x    = abs_x * mask
+        abs_y    = abs_y * mask
+
+        enemy_seg = th.cat([e_health, e_type, abs_x, abs_y], dim=-1)  # (b, n, 6)
+        enemy_segments.append(enemy_seg)
+
+    # Full per-agent message: own info + 10 enemy info blocks
+    message = th.cat([own_seg] + enemy_segments, dim=-1)   # (b, n, 66)
+
+    # ---- Aggregate messages from other agents via element-wise max ----
+    # message shape: (b, n_agents, 66)
+    # Expand to (b, n_agents, n_agents, 66) so that dim=2 indexes the sender
+    m_exp = message.unsqueeze(2).expand(-1, -1, n_agents, -1)  # (b, n, n, 66)
+
+    # Mask out the sender itself (do not include own message)
+    eye = th.eye(n_agents, device=device)                     # (n, n)
+    mask = 1.0 - eye                                           # 1 where i != j
+    mask = mask.view(1, 1, n_agents, n_agents)                 # (1, 1, n, n) -> broadcasts to (b, n, n, 1)
+    m_masked = m_exp * mask.unsqueeze(-1) + (-1e9) * (1 - mask.unsqueeze(-1))
+
+    received = th.max(m_masked, dim=2).values                  # (b, n, 66)
+
+    # Append aggregated message to original observation
+    enhanced_o = th.cat([o, received], dim=-1)                # (b, n, 254)
+    return enhanced_o

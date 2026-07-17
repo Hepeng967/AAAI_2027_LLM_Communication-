@@ -1,0 +1,11 @@
+Original LMAC policy PASS: hallway input=(2, 4, 8) output=(2, 4, 32)
+Starting task=hallway seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py
+Started PID=2023 log=log/hallway/hallway/output_hallway_seed_1234_20260717_072113.log
+Starting task=hallway seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py
+Started PID=2029 log=log/hallway/hallway/output_hallway_seed_1235_20260717_072113.log
+Starting task=hallway seed=1236 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py
+Started PID=2035 log=log/hallway/hallway/output_hallway_seed_1236_20260717_072113.log
+Starting task=hallway seed=1237 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py
+Started PID=2041 log=log/hallway/hallway/output_hallway_seed_1237_20260717_072113.log
+Starting task=hallway seed=1238 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/hallway/comm_init.py
+Started PID=2047 log=log/hallway/hallway/output_hallway_seed_1238_20260717_072113.log

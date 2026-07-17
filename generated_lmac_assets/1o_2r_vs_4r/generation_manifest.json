@@ -1,0 +1,105 @@
+{
+  "map": "1o_2r_vs_4r",
+  "model": "deepseek-v4-pro",
+  "prompt_implementation": "LMAC-main/src/LLM",
+  "task_data": "/data/hp/LLM_Communication/LMAC-new/src/llm_source/sc2.xlsx",
+  "important_state_file": "/data/hp/LLM_Communication/LMAC-main/generated_lmac_assets/1o_2r_vs_4r/imp_state_select.py",
+  "communication_file": "/data/hp/LLM_Communication/LMAC-main/generated_lmac_assets/1o_2r_vs_4r/comm_init.py",
+  "important_dims": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    23,
+    24,
+    25,
+    28,
+    29,
+    30,
+    33,
+    34,
+    35
+  ],
+  "input_shape": [
+    2,
+    3,
+    66
+  ],
+  "output_shape": [
+    2,
+    3,
+    112
+  ],
+  "message_dim": 46,
+  "token_usage": {
+    "total_input_tokens": 9196,
+    "total_output_tokens": 12540,
+    "total_tokens": 21736,
+    "total_retries": 1,
+    "retries_by_phase": {
+      "imp_state_selection": 0,
+      "init_comm_generation": 1,
+      "feedback_generation": 0,
+      "comm_update_standard": 0,
+      "comm_update_timestep": 0
+    },
+    "calls": [
+      {
+        "model": "deepseek-v4-pro",
+        "call_type": "imp_state_selection",
+        "attempt": 1,
+        "max_attempts": 10,
+        "is_retry": false,
+        "input_tokens": 1327,
+        "output_tokens": 2640,
+        "total_tokens": 3967,
+        "timestamp": "2026-07-13T17:33:46.561002",
+        "success": true,
+        "error": null
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "call_type": "init_comm_generation",
+        "attempt": 1,
+        "max_attempts": 10,
+        "is_retry": false,
+        "input_tokens": 3496,
+        "output_tokens": 7725,
+        "total_tokens": 11221,
+        "timestamp": "2026-07-13T17:34:30.435785",
+        "success": true,
+        "error": null
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "call_type": "init_comm_generation",
+        "attempt": 2,
+        "max_attempts": 10,
+        "is_retry": true,
+        "input_tokens": 4373,
+        "output_tokens": 2175,
+        "total_tokens": 6548,
+        "timestamp": "2026-07-13T17:36:43.821691",
+        "success": true,
+        "error": null
+      }
+    ]
+  }
+}

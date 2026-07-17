@@ -1,0 +1,264 @@
+{
+  "Consistency_loss": [
+    0.10136424750089645
+  ],
+  "Consistency_loss_T": [
+    3
+  ],
+  "MSE_per_agent_0": [
+    7.950215816497803
+  ],
+  "MSE_per_agent_0_T": [
+    3
+  ],
+  "MSE_per_agent_1": [
+    7.953863143920898
+  ],
+  "MSE_per_agent_1_T": [
+    3
+  ],
+  "MSE_per_agent_2": [
+    7.934275150299072
+  ],
+  "MSE_per_agent_2_T": [
+    3
+  ],
+  "MSE_per_agent_3": [
+    7.939351558685303
+  ],
+  "MSE_per_agent_3_T": [
+    3
+  ],
+  "MSE_per_agent_4": [
+    7.939333915710449
+  ],
+  "MSE_per_agent_4_T": [
+    3
+  ],
+  "MSE_per_agent_5": [
+    7.936794281005859
+  ],
+  "MSE_per_agent_5_T": [
+    3
+  ],
+  "MSE_per_agent_6": [
+    7.927825927734375
+  ],
+  "MSE_per_agent_6_T": [
+    3
+  ],
+  "Meta_loss": [
+    0.6976974606513977
+  ],
+  "Meta_loss_T": [
+    3
+  ],
+  "Model_D_loss": [
+    8.111371040344238
+  ],
+  "Model_D_loss_T": [
+    3
+  ],
+  "Mse_loss": [
+    7.940237045288086
+  ],
+  "Mse_loss_T": [
+    3
+  ],
+  "Mse_per_state_0": [
+    8.585433006286621
+  ],
+  "Mse_per_state_0_T": [
+    3
+  ],
+  "Mse_per_state_1": [
+    1.1761060953140259
+  ],
+  "Mse_per_state_10": [
+    1.6542150974273682
+  ],
+  "Mse_per_state_10_T": [
+    3
+  ],
+  "Mse_per_state_11": [
+    0.8338418006896973
+  ],
+  "Mse_per_state_11_T": [
+    3
+  ],
+  "Mse_per_state_12": [
+    16.197093963623047
+  ],
+  "Mse_per_state_12_T": [
+    3
+  ],
+  "Mse_per_state_13": [
+    0.8117121458053589
+  ],
+  "Mse_per_state_13_T": [
+    3
+  ],
+  "Mse_per_state_1_T": [
+    3
+  ],
+  "Mse_per_state_2": [
+    2.0165090560913086
+  ],
+  "Mse_per_state_2_T": [
+    3
+  ],
+  "Mse_per_state_3": [
+    0.864416778087616
+  ],
+  "Mse_per_state_3_T": [
+    3
+  ],
+  "Mse_per_state_4": [
+    35.86549758911133
+  ],
+  "Mse_per_state_4_T": [
+    3
+  ],
+  "Mse_per_state_5": [
+    0.776014506816864
+  ],
+  "Mse_per_state_5_T": [
+    3
+  ],
+  "Mse_per_state_6": [
+    15.701576232910156
+  ],
+  "Mse_per_state_6_T": [
+    3
+  ],
+  "Mse_per_state_7": [
+    0.5957834124565125
+  ],
+  "Mse_per_state_7_T": [
+    3
+  ],
+  "Mse_per_state_8": [
+    25.474586486816406
+  ],
+  "Mse_per_state_8_T": [
+    3
+  ],
+  "Mse_per_state_9": [
+    0.6105369329452515
+  ],
+  "Mse_per_state_9_T": [
+    3
+  ],
+  "battle_won_mean": [
+    0.0
+  ],
+  "battle_won_mean_T": [
+    3
+  ],
+  "ep_length_mean": [
+    3.0
+  ],
+  "ep_length_mean_T": [
+    3
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    3
+  ],
+  "grad_norm": [
+    733.1181030273438
+  ],
+  "grad_norm_T": [
+    3
+  ],
+  "loss": [
+    95.15718841552734
+  ],
+  "loss_T": [
+    3
+  ],
+  "q_taken_mean": [
+    1.678746645142432
+  ],
+  "q_taken_mean_T": [
+    3
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_mean_T": [
+    3
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    3
+  ],
+  "target_mean": [
+    1.6556681937911883
+  ],
+  "target_mean_T": [
+    3
+  ],
+  "td_error_abs": [
+    9.1359376453218
+  ],
+  "td_error_abs_T": [
+    3
+  ],
+  "test_battle_won_mean": [
+    0.0
+  ],
+  "test_battle_won_mean_T": [
+    3
+  ],
+  "test_ep_length_mean": [
+    20.0
+  ],
+  "test_ep_length_mean_T": [
+    3
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_mean_T": [
+    3
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_std_T": [
+    3
+  ],
+  "test_win_group_mean": [
+    0.0
+  ],
+  "test_win_group_mean_T": [
+    3
+  ],
+  "win_group_mean": [
+    0.0
+  ],
+  "win_group_mean_T": [
+    3
+  ]
+}
