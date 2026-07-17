@@ -1,0 +1,351 @@
+{
+  "argv": [
+    "main.py",
+    "--map",
+    "1o_10b_vs_1r",
+    "--mode",
+    "full"
+  ],
+  "config": {
+    "api_config": "",
+    "api_key": "",
+    "base_url": "",
+    "collect_gpu": "0",
+    "collect_seeds": 1,
+    "collect_t_max": 6000,
+    "deepseek_thinking": false,
+    "dry_run": false,
+    "gate": "llm",
+    "map": "1o_10b_vs_1r",
+    "max_files": 64,
+    "max_iters": 5,
+    "max_transitions": 4096,
+    "mode": "full",
+    "model": "",
+    "no_auto_collect": false,
+    "output_root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs",
+    "patience": 2,
+    "policy": "",
+    "reasoning_effort": "",
+    "repair_attempts": 3,
+    "rollout_root": "/data/hp/LLM_Communication/LMAC-new/data",
+    "run_id": "",
+    "temperature": 0.0
+  },
+  "cwd": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "SC2PATH": "/data/hp/3rdparty/StarCraftII",
+    "api_key_available": false
+  },
+  "executable": "/home/hp/anaconda3/envs/SMAC/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "rollout_files": [
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:01.179061+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0000.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:51.690892+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0001.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:02.203080+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0002.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:03.223098+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0003.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:04.283117+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0004.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:05.307135+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0005.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:06.331154+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0006.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:07.387172+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0007.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:09.407209+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0008.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:11.547247+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0009.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:13.591284+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0010.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:15.707322+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0011.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:52.762911+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0012.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:17.763359+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0013.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:19.855396+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0014.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:22.015435+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0015.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:24.067472+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0016.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:26.179510+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0017.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:28.311548+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0018.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:30.327585+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0019.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:32.455623+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0020.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:34.559661+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0021.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:36.727700+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0022.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:53.838930+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0023.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:38.851738+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0024.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:40.959776+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0025.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:43.027814+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0026.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:45.111851+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0027.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:47.215889+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0028.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:49.303927+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0029.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:51.435966+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0030.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:53.536004+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0031.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:55.668042+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0032.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:57.772080+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0033.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:54.882949+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0034.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:59.892119+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0035.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:02.044158+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0036.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:04.152196+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0037.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:06.232234+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0038.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:08.264270+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0039.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:10.276307+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0040.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:12.328344+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0041.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:14.348381+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0042.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:16.292416+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0043.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:18.300453+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0044.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:55.910967+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0045.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:20.368490+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0046.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:22.428528+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0047.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:24.404564+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0048.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:26.472601+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0049.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:28.524639+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0050.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:30.632677+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0051.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:32.720715+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0052.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:34.780753+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0053.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:36.876791+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0054.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:29:38.964829+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0055.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:56.962986+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0056.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:57.975004+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0057.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:27:59.019023+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0058.pkl"
+    },
+    {
+      "bytes": 239642,
+      "modified_utc": "2026-07-12T12:28:00.071041+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_10b_vs_1r/train_traj_0059.pkl"
+    }
+  ],
+  "torch": {
+    "cuda_available": true,
+    "cuda_version": "11.7",
+    "version": "1.13.1+cu117"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-07-12T11:17:05+00:00",
+  "type": "RuntimeError",
+  "message": "Offline rollout collection failed for seed=1234 with exit code 1. Inspect /data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_111404/collection/seed_1234/collect.log.",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 562, in main\n    ensure_offline_rollouts(args, seed_policy, run_dir)\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 230, in ensure_offline_rollouts\n    raise RuntimeError(\nRuntimeError: Offline rollout collection failed for seed=1234 with exit code 1. Inspect /data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_111404/collection/seed_1234/collect.log.\n"
+}

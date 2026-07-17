@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.log
+.env
+.env.*
+data/
+log/
+results/*
+!results/sacred/
+!results/sacred/**
+!results/tb_logs/
+!results/tb_logs/**

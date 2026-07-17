@@ -1,0 +1,122 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Ball-carrier passing decision: when to pass and which teammate to pass to",
+      "locally_missing_information": [
+        "Teammates' absolute positions on the pitch",
+        "Teammates' local views of opponents (relative positions and directions)",
+        "Confirmation of which agent is the ball carrier (self-known, but others unknown)"
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Receiver movement decision: where to move to receive a pass or create space",
+      "locally_missing_information": [
+        "Which teammate currently controls the ball",
+        "Ball carrier's most recent action (orientation cue for upcoming pass/shoot)"
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Ball-carrier shooting decision: whether to shoot instead of passing",
+      "locally_missing_information": [
+        "Same as D1 – teammates' positions and opponent marking status",
+        "Goalkeeper position relative to each teammate (only observed from self)"
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "Agent with ball_relative_xy norm below a possession threshold (self-identified)",
+      "role_basis": "Observation feature ball_relative_xy (indices 20-21) magnitude indicates proximity to ball; the closest agent is assumed to be the ball carrier. This is locally observable."
+    },
+    {
+      "group_id": "G2",
+      "members": "All controlled agents not in G1 (off-ball receivers)",
+      "role_basis": "Complement of G1 based on the same ball_relative_xy observation; locally each agent can determine if it is not the closest."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Identity of the current ball carrier (which agent ID is in G1)",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        {"name": "ball_relative_xy", "index": [20, 21]},
+        {"name": "agent_id_one_hot", "index": [45, 47]}
+      ],
+      "receiver_need_hypothesis": "Receivers must know who holds the ball to adjust off-ball positioning and runs; they cannot reliably infer from own observation because ball_relative_xy gives only distance, not possession status of others.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Ball proximity threshold for possession is not absolute – brief contact or simultaneous proximity may cause multiple agents to claim carry.",
+        "In some situations the ball may be loose even if one agent is closest."
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Absolute pitch positions of off-ball teammates",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        {"name": "ego_absolute_xy", "index": [0, 1]}
+      ],
+      "receiver_need_hypothesis": "The ball carrier needs to know where teammates are located in absolute coordinates to decide effective passes (e.g., long switches of play, avoiding offside).",
+      "task_decision_ids": ["D1", "D3"],
+      "uncertainties": [
+        "Position information is exact given the simulation; no noise."
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "Positions of opponents (field defender and goalkeeper) relative to each off-ball teammate",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        {"name": "opponent_0_relative_xy", "index": [12, 13]},
+        {"name": "opponent_1_relative_xy", "index": [14, 15]}
+      ],
+      "receiver_need_hypothesis": "The ball carrier must assess which teammate is under pressure or open; opponent positions relative to a teammate are invisible from the ball carrier’s own perspective but critical for safe pass selection.",
+      "task_decision_ids": ["D1", "D3"],
+      "uncertainties": [
+        "Opponent index mapping (0 = field defender, 1 = keeper or vice versa) is consistent per episode but not explicitly labelled; receiver may need to infer roles from context."
+      ]
+    },
+    {
+      "requirement_id": "IR4",
+      "fact": "Direction vectors of opponents relative to each off-ball teammate",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        {"name": "opponent_0_direction_xy", "index": [16, 17]},
+        {"name": "opponent_1_direction_xy", "index": [18, 19]}
+      ],
+      "receiver_need_hypothesis": "Opponent facing direction indicates likely movement and interception threat; this view is not available to the ball carrier except from own observation, missing the defender’s orientation relative to a potential pass receiver.",
+      "task_decision_ids": ["D1", "D3"],
+      "uncertainties": [
+        "Same opponent index ambiguity as IR3."
+      ]
+    },
+    {
+      "requirement_id": "IR5",
+      "fact": "Most recent discrete action taken by the ball carrier",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        {"name": "previous_action_one_hot", "index": [26, 44]}
+      ],
+      "receiver_need_hypothesis": "Receivers do not directly observe the ball carrier’s previous action; knowing it helps infer the carrier’s immediate intention (e.g., just made a short dribble, likely to pass soon) and time their runs.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Previous action is not a perfect predictor of future action; coordination based on it may lag one step.",
+        "The information requires an explicit coordination justification because it is not an environment observation – it is needed to break the partial-observability of teammates' action history."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "A static, pre-defined ball-possession threshold is assumed for G1/G2 distinction; in practice it must be learned or communicated implicitly.",
+    "Opponent slots (opponent_0, opponent_1) are assumed to maintain a stable mapping within an episode; any dynamic reordering would invalidate the semantics."
+  ]
+}

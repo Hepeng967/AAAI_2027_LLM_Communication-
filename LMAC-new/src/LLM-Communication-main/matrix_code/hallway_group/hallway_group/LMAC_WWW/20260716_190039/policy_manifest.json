@@ -1,0 +1,25 @@
+{
+  "map": "hallway_group",
+  "environment": "hallway_group",
+  "run_id": "20260716_190039",
+  "pipeline_run": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039",
+  "selected_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/20260716_190039/iterations/iter_001.py",
+  "latest_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/comm_init.py",
+  "policies": [
+    {
+      "stage": "initial",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/generation/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/20260716_190039/initial/comm_init.py"
+    },
+    {
+      "stage": "iter_000",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039/candidates/iter_000/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/20260716_190039/iterations/iter_000.py"
+    },
+    {
+      "stage": "iter_001",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039/candidates/iter_001/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/20260716_190039/iterations/iter_001.py"
+    }
+  ]
+}

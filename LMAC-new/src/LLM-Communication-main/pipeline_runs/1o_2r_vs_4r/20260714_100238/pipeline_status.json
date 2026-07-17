@@ -1,0 +1,22 @@
+{
+  "run_id": "20260714_100238",
+  "map": "1o_2r_vs_4r",
+  "mode": "full",
+  "overall": "complete",
+  "generation": {
+    "status": "complete",
+    "policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260714_100238/generation/comm_init.py"
+  },
+  "collection": {
+    "status": "complete",
+    "rollout_dir": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r",
+    "train_files": 61
+  },
+  "iteration": {
+    "status": "accepted",
+    "root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260714_100238/iteration/1o_2r_vs_4r/20260714_100238",
+    "frozen_manifest": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260714_100238/iteration/1o_2r_vs_4r/20260714_100238/results/frozen_teacher_manifest.json"
+  },
+  "selected_policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_2r_vs_4r/LMAC_WWW/20260714_100238/iterations/iter_001.py",
+  "failure": null
+}

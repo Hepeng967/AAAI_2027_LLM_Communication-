@@ -1,0 +1,40 @@
+{
+  "map_name": "hallway_group",
+  "environment": "hallway_group",
+  "obs_shape": 2,
+  "n_agents": 7,
+  "n_actions": 3,
+  "obs_feature_names": [
+    "current_position",
+    "active_status"
+  ],
+  "feature_index": {
+    "current_position": [
+      0,
+      1
+    ],
+    "active_status": [
+      1,
+      2
+    ]
+  },
+  "obs_agent_id_map": [
+    "agent_0",
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4",
+    "agent_5",
+    "agent_6"
+  ],
+  "obs_agent_type_map": [
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent"
+  ],
+  "schema_source": "src/envs/hallway/joinn.py"
+}

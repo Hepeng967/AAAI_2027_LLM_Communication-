@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-07-12T10:21:32+00:00",
+  "type": "FileNotFoundError",
+  "message": "No offline rollout files found under /data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r. Collect train_traj_*.pkl first or pass the correct --rollout-root.",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 480, in main\n    iteration_root = run_iteration(args, seed_policy, run_dir)\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 170, in run_iteration\n    raise FileNotFoundError(\nFileNotFoundError: No offline rollout files found under /data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r. Collect train_traj_*.pkl first or pass the correct --rollout-root.\n"
+}

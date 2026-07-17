@@ -1,0 +1,177 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/data/hp/LLM_Communication/LMAC-new/src",
+    "dependencies": [
+      "numpy==1.26.4",
+      "pyyaml==5.4.1",
+      "sacred==0.8.7",
+      "torch==1.13.1"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_5d6ab05c9f32ef74d9b1aa9160fa7a96.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_1d893d2f3b8e31e1c5bf96fc27511b34.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-07-15T08:27:47.213007",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Gold 6354 CPU @ 3.00GHz",
+    "gpus": {
+      "driver_version": "550.54.15",
+      "gpus": [
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        },
+        {
+          "model": "Tesla V100-PCIE-32GB",
+          "persistence_mode": false,
+          "total_memory": 32768
+        }
+      ]
+    },
+    "hostname": "57581b2c9241",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-139-generic-x86_64-with-glibc2.35"
+    ],
+    "python_version": "3.10.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "comm_code_paths": [
+        "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_123013/iteration/1o_2r_vs_4r/20260712_123013/candidates/iter_002/comm_init.py"
+      ],
+      "env_args": {
+        "map_name": "1o_2r_vs_4r"
+      },
+      "important_state": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30,
+        33,
+        34,
+        35
+      ],
+      "name": "LMAC_LLM_WWW",
+      "phase": "multi_train",
+      "running_algorithm_name": "(1o_2r_vs_4r)LMAC_LLM_WWW",
+      "save_model": false,
+      "seed": 1236,
+      "t_max": 2050000,
+      "tmp2": true,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.map_name=1o_2r_vs_4r",
+        "seed=1236",
+        "t_max=2050000",
+        "name=LMAC_LLM_WWW",
+        "running_algorithm_name=(1o_2r_vs_4r)LMAC_LLM_WWW",
+        "comm_code_paths=['/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_123013/iteration/1o_2r_vs_4r/20260712_123013/candidates/iter_002/comm_init.py']",
+        "important_state=[0,1,2,3,6,7,8,9,12,13,14,15,18,19,20,23,24,25,28,29,30,33,34,35]",
+        "phase=multi_train",
+        "tmp2=True",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-13T18:20:31.560255",
+  "status": "COMPLETED",
+  "stop_time": "2026-07-15T08:27:46.976406"
+}

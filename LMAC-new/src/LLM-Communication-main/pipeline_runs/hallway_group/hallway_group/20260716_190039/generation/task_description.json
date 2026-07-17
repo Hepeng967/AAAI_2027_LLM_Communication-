@@ -1,0 +1,35 @@
+{
+  "environment": "hallway_group",
+  "task": "hallway_group",
+  "objective": "Members of each group must reach position 0 simultaneously; groups should finish in separate rounds.",
+  "failure_conditions": [
+    "A group fails when only a subset of its active members reaches position 0.",
+    "If multiple groups finish in the same round, that round is rolled back and penalized."
+  ],
+  "n_agents": 7,
+  "n_groups": 2,
+  "group_ids": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "state_numbers": [
+    3,
+    5,
+    7,
+    4,
+    6,
+    8,
+    10
+  ],
+  "actions": {
+    "0": "stay",
+    "1": "move one step toward 0",
+    "2": "move one step away from 0"
+  },
+  "information_boundary": "Each agent observes only its own position and whether its group remains active."
+}

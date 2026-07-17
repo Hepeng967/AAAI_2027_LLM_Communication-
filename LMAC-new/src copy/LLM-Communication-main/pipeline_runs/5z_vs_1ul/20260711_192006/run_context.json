@@ -1,0 +1,48 @@
+{
+  "argv": [
+    "main.py"
+  ],
+  "config": {
+    "api_config": "",
+    "api_key": "",
+    "base_url": "",
+    "deepseek_thinking": false,
+    "dry_run": false,
+    "gate": "llm",
+    "map": "5z_vs_1ul",
+    "max_files": 64,
+    "max_iters": 5,
+    "max_transitions": 4096,
+    "mode": "iterate",
+    "model": "",
+    "output_root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs",
+    "patience": 2,
+    "policy": "",
+    "reasoning_effort": "",
+    "repair_attempts": 3,
+    "rollout_root": "/data/hp/LLM_Communication/LMAC-new/data",
+    "run_id": "",
+    "temperature": 0.2
+  },
+  "cwd": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "SC2PATH": "/data/hp/3rdparty/StarCraftII",
+    "api_key_available": false
+  },
+  "executable": "/home/hp/anaconda3/envs/SMAC/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "rollout_files": [
+    {
+      "bytes": 178557,
+      "modified_utc": "2026-07-11T18:13:30.386916+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/5z_vs_1ul/train_traj_0000.pkl"
+    }
+  ],
+  "torch": {
+    "cuda_available": true,
+    "cuda_version": "11.7",
+    "version": "1.13.1+cu117"
+  }
+}

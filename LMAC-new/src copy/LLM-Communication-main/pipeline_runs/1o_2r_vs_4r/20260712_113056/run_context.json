@@ -1,0 +1,156 @@
+{
+  "argv": [
+    "main.py",
+    "--map",
+    "1o_2r_vs_4r",
+    "--mode",
+    "full"
+  ],
+  "config": {
+    "api_config": "",
+    "api_key": "",
+    "base_url": "",
+    "collect_gpu": "0",
+    "collect_seeds": 1,
+    "collect_t_max": 6000,
+    "deepseek_thinking": false,
+    "dry_run": false,
+    "gate": "llm",
+    "map": "1o_2r_vs_4r",
+    "max_files": 64,
+    "max_iters": 5,
+    "max_transitions": 4096,
+    "mode": "full",
+    "model": "",
+    "no_auto_collect": false,
+    "output_root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs",
+    "patience": 2,
+    "policy": "",
+    "reasoning_effort": "",
+    "repair_attempts": 3,
+    "rollout_root": "/data/hp/LLM_Communication/LMAC-new/data",
+    "run_id": "",
+    "temperature": 0.0
+  },
+  "cwd": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "SC2PATH": "/data/hp/3rdparty/StarCraftII",
+    "api_key_available": false
+  },
+  "executable": "/home/hp/anaconda3/envs/SMAC/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "rollout_files": [
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:03.141108+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_100_1234_2.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:10.545263+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1086_1234_22.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:11.293278+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1186_1234_24.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:11.977293+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1286_1234_26.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:12.709308+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1386_1234_28.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:13.389322+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1486_1234_30.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:14.093337+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_1586_1234_32.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:03.897124+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_200_1234_4.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:04.633139+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_300_1234_6.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:05.381155+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_394_1234_8.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:06.161171+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_486_1234_10.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:06.881186+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_586_1234_12.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:07.605201+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_686_1234_14.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:08.377217+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_786_1234_16.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:09.129233+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_886_1234_18.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:09.821248+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/episode_986_1234_20.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:10.177255+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/test/episode_1036_1234_21_test.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:12.329300+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/test/episode_1336_1234_27_test.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:03.517116+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/test/episode_150_1234_3_test.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:05.769163+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/test/episode_436_1234_9_test.pkl"
+    },
+    {
+      "bytes": 55830,
+      "modified_utc": "2026-07-12T11:23:07.973209+00:00",
+      "path": "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/test/episode_736_1234_15_test.pkl"
+    }
+  ],
+  "torch": {
+    "cuda_available": true,
+    "cuda_version": "11.7",
+    "version": "1.13.1+cu117"
+  }
+}

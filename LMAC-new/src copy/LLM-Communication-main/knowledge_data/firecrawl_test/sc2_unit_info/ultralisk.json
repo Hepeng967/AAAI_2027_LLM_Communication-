@@ -1,0 +1,54 @@
+{
+    "Type": "Ground Unit",
+    "Description": "The Ultralisk is the Zerg's toughest late-game unit in StarCraft II. It can only be made once a Hive is researched and an Ultralisk Cavern is made. The Ultralisk has been upgraded since Brood War: principally, when attacking units (within a range of 1) its attack deals splash damage within a range of 2 in a 180° arc towards the target, albeit at a low 33% of normal damage. This improvement is paid for by the increase in overall cost, which places it around the same level as the Thor and Colossus.",
+    "Built From": "Larva",
+    "Requirements": "Ultralisk Cavern",
+    "Cost": {
+      "mineral": 275,
+      "vespene": 200,
+      "game_time": 39.0,
+      "supply": 6
+    },
+    "Hotkey": "U",
+    "Attack": {
+      "Targets": "Ground",
+      "Damage": "35 (+3) (Splash 33%)",
+      "DPS": "57.38 (+4.9)",
+      "Cooldown": "0.61",
+      "Bonus": "No bonus found",
+      "Bonus DPS": "No bonus DPS found",
+      "Range": "1"
+    },
+    "Unit stats": {
+      "Defense": "500 2 (+1) (+2 Chitinous Plating)",
+      "Attributes": "Armored, Biological, Massive",
+      "Sight": "9",
+      "Speed": "4.13 (+0.59)",
+      "Cargo size": "8"
+    },
+    "Strong against": [
+      "Marine",
+      "Zergling",
+      "Zealot"
+    ],
+    "Weak against": [
+      "Ghost",
+      "Brood Lord",
+      "Immortal"
+    ],
+    "Ability": "Burrow",
+    "Upgrade": {
+      "Name": "Chitinous Plating, Anabolic Synthesis",
+      "Details": [
+        "Chitinous Plating: 150 minerals, 150 gas, 79 seconds, Hotkey: C",
+        "Anabolic Synthesis: 150 minerals, 150 gas, 42.9 seconds, Hotkey: A"
+      ],
+      "Description": "Chitinous Plating increases the armor of all Ultralisks by 2. Anabolic Synthesis increases the movement speed of Ultralisks off creep."
+    },
+    "Competitive Usage": {
+      "General": "Ultralisks are primarily used as late-game heavy assault units. They excel against light units due to their splash damage and high health pool. Chitinous Plating is usually considered the more important upgrade as it massively decreases the damage that Ultralisks take from units such as Marines, Zealots, and Hydralisks. Once Anabolic Synthesis has been researched, Ultralisks become much more mobile and can be used for harassment and map control.",
+      "Vs. Protoss": "Ultralisks are effective against Gateway units like Zealots and Adepts due to their splash damage and high health. However, they are vulnerable to Immortals and Disruptors. Protoss players often use Colossi and High Templars to counter Ultralisk compositions.",
+      "Vs. Terran": "Against Terran bio, Ultralisks can be devastating if they can get close enough to deal splash damage. However, they are vulnerable to Ghost EMP and Siege Tank focus fire. Terran players often use Liberators and Ghosts to counter Ultralisks.",
+      "Vs. Zerg": "In ZvZ, Ultralisks are often used in late-game compositions alongside Zerglings and Banelings. They are effective against Hydralisks and Roaches but can be countered by Lurkers and Brood Lords. The Ultra-Ling-Bane composition is popular in high-level ZvZ games."
+    }
+  }

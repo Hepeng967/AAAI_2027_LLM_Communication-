@@ -1,0 +1,9 @@
+{
+  "available": false,
+  "reason": "GRF runtime construction launches the football engine; static wrapper schema is used before collection.",
+  "n_agents": 3,
+  "n_enemies": 2,
+  "n_actions": 19,
+  "obs_shape": 26,
+  "episode_limit": 150
+}

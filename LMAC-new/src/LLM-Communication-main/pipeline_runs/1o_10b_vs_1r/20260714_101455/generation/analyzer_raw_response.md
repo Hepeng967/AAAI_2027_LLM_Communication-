@@ -1,0 +1,139 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Baneling decides movement direction to approach the Roach for attack.",
+      "locally_missing_information": [
+        "Roach's relative position (distance, rel_x, rel_y) from the Baneling's perspective."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Baneling decides movement direction when Roach position is unknown, e.g., to search or approach the Overseer.",
+      "locally_missing_information": [
+        "Whether Roach position is known and from which reference agent; also Overseer's relative position if not visible."
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Overseer decides movement to maintain visibility of the Roach while staying within communication/visibility range of Banelings to relay Roach position.",
+      "locally_missing_information": [
+        "Positions of Banelings that are not currently visible, especially clusters that could benefit from the info."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": [
+        10
+      ],
+      "role_basis": "observation/task evidence: Only agent type 'overseer', which can detect the Roach (enemy_0_available=1) as per task description and observation schema; Banelings have enemy_0_available=0."
+    },
+    {
+      "group_id": "G2",
+      "members": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "role_basis": "observation/task evidence: Agents of type 'baneling'; they cannot directly observe the Roach (enemy_0_available=0) and must rely on communication to attack."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Roach's position relative to the Overseer (i.e., the vector from Overseer to Roach).",
+      "possible_sender_groups": [
+        "G1"
+      ],
+      "possible_receiver_groups": [
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "enemy_0_rel_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_rel_y",
+          "index": 7
+        },
+        {
+          "name": "enemy_0_distance",
+          "index": 5
+        }
+      ],
+      "receiver_need_hypothesis": "A Baneling that can see the Overseer can compute the Roach's relative position to itself by adding the observed Overseer relative position to the received vector. This enables direct movement toward the Roach. Without this, Banelings cannot navigate to the Roach.",
+      "task_decision_ids": [
+        "D1"
+      ],
+      "uncertainties": [
+        "Only useful when the Baneling can observe the Overseer (Overseer is within ally visibility range and identifiable via ally_i_type).",
+        "The Roach may move, making the communicated vector outdated quickly; requires frequent or continuous updates.",
+        "Assumes the Baneling has internal memory or receives the message simultaneously with observation to combine with observed Overseer relative position."
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Estimated Roach position relative to a Baneling that has previously received or computed it.",
+      "possible_sender_groups": [
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G2"
+      ],
+      "sender_observable_features": [],
+      "receiver_need_hypothesis": "If a Baneling cannot see the Overseer but can see another Baneling that knows the Roach's position relative to that sender, the receiver can compute Roach position relative to itself by vector addition: sender's relative position plus the received Roach-to-sender vector. This enables propagation of Roach location beyond Overseer's visibility range.",
+      "task_decision_ids": [
+        "D1"
+      ],
+      "uncertainties": [
+        "The sender Baneling's estimate of Roach position is not directly observable in its own observation vector; it must be maintained in memory from prior communications.",
+        "Accuracy may degrade through multi-hop relay due to motion and communication delays.",
+        "Assumes sender Baneling can identify itself to receiver (via ally visibility) and that the communicated vector is in sender's egocentric frame."
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "Positions of Banelings that are not visible to the Overseer, relative to a Baneling that is visible to the Overseer.",
+      "possible_sender_groups": [
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G1"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "ally_i_rel_x (of relayed Baneling)",
+          "index": "variable (e.g., 13, 20, 27, ...)"
+        },
+        {
+          "name": "ally_i_rel_y (of relayed Baneling)",
+          "index": "variable"
+        }
+      ],
+      "receiver_need_hypothesis": "The Overseer can use aggregated friendly positions to decide where to move to maximize the number of Banelings that can receive IR1-type information. If the Overseer knows the relative positions of distant Banelings (via relay), it can plan a path to bring them into visibility.",
+      "task_decision_ids": [
+        "D3"
+      ],
+      "uncertainties": [
+        "Requires a chain of Banelings within sight of each other to relay positions back to the Overseer, assuming coordinate transformations are possible.",
+        "The Overseer needs to identify which Baneling each position refers to; without explicit agent id in relayed messages, association may be ambiguous."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Agents maintain an internal memory of the Roach's position for relay (IR2), as the observation vector does not include a dedicated memory slot for communicated information.",
+    "Coordinate transformations (vector addition) can be performed by agents using relative positions of allies and communicated vectors.",
+    "Agent type identification from ally_i_type_0/1 is reliable to distinguish Overseer from Banelings.",
+    "Communication channel allows scalar or vector transmission of relative positions (not explicitly specified in observation)."
+  ]
+}

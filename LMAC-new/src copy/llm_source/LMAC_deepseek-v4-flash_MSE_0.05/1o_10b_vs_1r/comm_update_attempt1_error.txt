@@ -1,0 +1,125 @@
+Stage: validate_comm_function
+
+Traceback (most recent call last):
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/llm_core.py", line 931, in comm_update
+    message_dim = self.code_utils.validate_communication_function(cur_module, self.test_obs, timestep_wise)
+  File "/data/hp/LLM_Communication/LMAC-main/src/LLM/code_utils.py", line 71, in validate_communication_function
+    cur_com = module.communication(test_obs_tw)
+  File "/data/hp/LLM_Communication/LMAC-main/src/llm_source/LMAC_deepseek-v4-flash_MSE_0.05/1o_10b_vs_1r/comm_update_timestep_wise2.py", line 108, in communication
+    relx_hist = th.gather(relx, dim=1, index=idx_gather)  # (batch,1,10)
+RuntimeError: index 15 is out of bounds for dimension 1 with size 10
+
+Communication function code:
+def communication(o):
+    """
+    Input: o tensor of shape (batch_size, 10, 11, 103)
+           (10 timesteps per batch, 11 agents, 103 observation dims)
+    Output: enhanced observation tensor of shape (batch_size, 11, 103 + 15 + 32)
+            = (batch_size, 11, 150)
+    
+    The message per agent consists of:
+      - Previous message (15 dims): [enemy_rel_x, enemy_rel_y, move_poss(4),
+                                     last_action(7), baneling_rel_x, baneling_rel_y]
+        (from the current timestep only)
+      - New message (32 dims): for each Baneling (10×3): [historical_dx, historical_dy,
+                               validity_flag]; plus Overseer cumulative displacement (2).
+        The Overseer receives zeros for all new fields.
+    """
+    batch_size = o.shape[0]
+    device = o.device
+    overseer_idx = 10
+
+    # -------- Extract current timestep (last in the history) --------
+    o_cur = o[:, -1, :, :]                       # (batch, 11, 103)
+
+    # -------- Build previous message (15 dims) --------
+    # Overseer's enemy relative position (2)
+    enemy_rel = o_cur[:, overseer_idx, 6:8]       # (batch, 2)
+    # Overseer's movement possibilities (4)
+    move_poss = o_cur[:, overseer_idx, 0:4]       # (batch, 4)
+    # Overseer's last action one-hot (7)
+    last_action = o_cur[:, overseer_idx, 85:92]   # (batch, 7)
+    base_msg = th.cat([enemy_rel, move_poss, last_action], dim=1)  # (batch, 13)
+
+    # Per‑Baneling current relative positions from Overseer (2 dims each)
+    # Ally slots: indices 14+8*k, 15+8*k for k=0..9
+    idx_rel = th.cat([th.arange(14 + 8*k, 16 + 8*k, device=device) for k in range(10)])  # (20,)
+    per_baneling_cur = o_cur[:, overseer_idx, idx_rel].reshape(batch_size, 10, 2)  # (batch,10,2)
+
+    # Assemble previous message: (batch, 11, 15)
+    prev_msg = th.zeros(batch_size, 11, 15, device=device)
+    prev_msg[:, :10, :13] = base_msg.unsqueeze(1).expand(-1, 10, -1)   # broadcast base
+    prev_msg[:, :10, 13:15] = per_baneling_cur                         # current per-baneling
+    # Overseer gets zeros (already)
+
+    # -------- Build new message (32 dims) --------
+    # --- 1. Per‑Baneling historical most recent valid (dx, dy) and validity flag ---
+    # Extract the Overseer's view over all 10 steps: (batch, 10, 103)
+    o_ov = o[:, :, overseer_idx, :]               # (batch, 10, 103)
+
+    # Indices for each Baneling's visibility flag (12+8*k) and relative position (14+8*k, 15+8*k)
+    vis_idx = th.tensor([12 + 8*k for k in range(10)], device=device)         # (10,)
+    relx_idx = th.tensor([14 + 8*k for k in range(10)], device=device)        # (10,)
+    rely_idx = th.tensor([15 + 8*k for k in range(10)], device=device)        # (10,)
+
+    # Extract tensors: shape (batch, 10, 10) -> (batch, timestep, baneling)
+    vis = o_ov[:, :, vis_idx]                     # (batch, 10, 10)
+    relx = o_ov[:, :, relx_idx]                   # (batch, 10, 10)
+    rely = o_ov[:, :, rely_idx]                   # (batch, 10, 10)
+
+    # Find last timestep where visibility is 1 (use binary comparison)
+    # timestep indices 0..9
+    timesteps = th.arange(10, device=device).float().reshape(1, 10, 1)  # (1,10,1)
+    # Mask timesteps with visibility
+    masked_t = vis * timesteps                     # (batch,10,10)
+    # Maximum over timesteps gives last visible timestep (or 0 if never visible)
+    last_visible_t = masked_t.max(dim=1).values    # (batch, 10)
+    # Flag whether any visible timestep exists
+    has_any = (vis.sum(dim=1) > 0.5).float()       # (batch, 10)
+
+    # Gather historical relative positions at last_visible_t
+    # Both relx and rely have shape (batch, timestep, baneling) -> gather over dim=1
+    # index shape (batch, 1, baneling)
+    idx_gather = last_visible_t.long().unsqueeze(1)  # (batch,1,10)
+    # Expand to (batch,1,10) for gather, but gather expects index of same ndim
+    # Use gather: relx_hist = th.gather(relx, dim=1, index=idx_gather.expand(-1,-1,1)?)
+    # Actually relx shape (batch,10,10); index (batch,1,10). We need to index each baneling.
+    # gather(dim=1, index) where index shape (batch, N, 10) and N=1.
+    # We'll expand index to (batch,1,10) already.
+    relx_hist = th.gather(relx, dim=1, index=idx_gather)  # (batch,1,10)
+    rely_hist = th.gather(rely, dim=1, index=idx_gather)  # (batch,1,10)
+    # Squeeze to (batch,10)
+    relx_hist = relx_hist.squeeze(1)
+    rely_hist = rely_hist.squeeze(1)
+    # Zero out for banelings that were never visible
+    relx_hist = relx_hist * has_any
+    rely_hist = rely_hist * has_any
+
+    # Assemble per-baneling new fields (3 dims each): (batch, 10, 3)
+    per_baneling_new = th.stack([relx_hist, rely_hist, has_any], dim=2)  # (batch,10,3)
+
+    # --- 2. Overseer cumulative displacement over 10 steps ---
+    # Extract Overseer's last_action one-hots over all 10 timesteps: (batch, 10, 7)
+    ov_actions = o[:, :, overseer_idx, 85:92]      # (batch, 10, 7)
+    # Movement vectors corresponding to one-hot indices 0..6:
+    # 0:No-op (0,0), 1:Stop (0,0), 2:North (0,1), 3:South (0,-1), 4:East (1,0), 5:West (-1,0), 6:Attack (0,0)
+    movements = th.tensor([[0,0],[0,0],[0,1],[0,-1],[1,0],[-1,0],[0,0]], device=device, dtype=o.dtype)  # (7,2)
+    # Compute displacement per timestep: (batch,10,2)
+    disp = ov_actions @ movements                  # (batch,10,2)
+    # Sum over timesteps -> (batch,2), then normalize by 10 to keep in ~[-1,1]
+    cum_disp = disp.sum(dim=1) / 10.0              # (batch,2)
+
+    # Build new message (batch, 11, 32)
+    new_msg = th.zeros(batch_size, 11, 32, device=device)
+    # For Banelings (0..9): per-baneling (3 dims) + overseer displacement (2 dims)
+    new_msg[:, :10, :3] = per_baneling_new         # historical (dx,dy,flag)
+    new_msg[:, :10, 3:5] = cum_disp.unsqueeze(1).expand(-1, 10, -1)  # broadcast displacement
+    # Overseer gets zeros (already)
+
+    # -------- Combine previous and new messages into one (47 dims) --------
+    combined_msg = th.cat([prev_msg, new_msg], dim=2)   # (batch, 11, 47)
+
+    # -------- Append to current observation --------
+    enhanced_o = th.cat([o_cur, combined_msg], dim=2)   # (batch, 11, 103+47=150)
+
+    return enhanced_o

@@ -1,0 +1,726 @@
+{
+  "run_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223",
+  "artifacts": [
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/collect.log",
+      "bytes": 8424,
+      "modified_utc": "2026-07-16T19:08:44.844903+00:00",
+      "sha256": "09b797357142f967b46494fb990cf0919fa169d13c64d11e7f78f1fcac40fe14",
+      "relative_path": "collection/seed_1234/collect.log"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/command.json",
+      "bytes": 1233,
+      "modified_utc": "2026-07-16T19:06:23.712889+00:00",
+      "sha256": "a6bc9c1b45be07114177a99f6118d49d9ecc81e4a299ee2d818c1ee1de8217b5",
+      "relative_path": "collection/seed_1234/command.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/done.flag",
+      "bytes": 5,
+      "modified_utc": "2026-07-16T19:08:43.780881+00:00",
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+      "relative_path": "collection/seed_1234/done.flag"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1036_1234_14.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:53.385930+00:00",
+      "sha256": "bc0225564be5cb050a7a6030db9f06aa778cc923d4d7452227900e282e765c0c",
+      "relative_path": "collection/seed_1234/episodes/episode_1036_1234_14.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1162_1234_16.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:54.489966+00:00",
+      "sha256": "11ff2efaabdb0d372403e124d386c4dbe408203bbbe79ae0be26a77406f2e09f",
+      "relative_path": "collection/seed_1234/episodes/episode_1162_1234_16.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1283_1234_18.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:55.610003+00:00",
+      "sha256": "51c9cb631a18ca54dde1a16eab39fe35d9aa787bb34510cde414e05809c5b245",
+      "relative_path": "collection/seed_1234/episodes/episode_1283_1234_18.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1414_1234_20.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:56.822043+00:00",
+      "sha256": "67362e7a36a05f370f0eb9f0de93e83642c3044485602fd70bbb5af839a8c357",
+      "relative_path": "collection/seed_1234/episodes/episode_1414_1234_20.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1592_1234_22.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:58.390094+00:00",
+      "sha256": "58717a75a19389a7c67d3c7afc0e72784fe4182f02a5eb5d1e3b43409ddae296",
+      "relative_path": "collection/seed_1234/episodes/episode_1592_1234_22.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1694_1234_24.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:59.302124+00:00",
+      "sha256": "52e5775457737432e819ede1212b7db0eb90148858259b6ffac6f58e506be8f9",
+      "relative_path": "collection/seed_1234/episodes/episode_1694_1234_24.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_184_1234_2.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:45.957680+00:00",
+      "sha256": "dde762ab246c878a387d8476292c2971299cf76bb0ce316b2ca80edb6c1409fe",
+      "relative_path": "collection/seed_1234/episodes/episode_184_1234_2.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1877_1234_26.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:00.922176+00:00",
+      "sha256": "16e0714f2ecdc8253d2634d3c4559d15ec3adcf2c5be7185267856687b52dbd0",
+      "relative_path": "collection/seed_1234/episodes/episode_1877_1234_26.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_1972_1234_28.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:01.802205+00:00",
+      "sha256": "c6c85ae6ece63e7257caadd682ac5541ee9c9a2337907b1b5992367c89dddcf8",
+      "relative_path": "collection/seed_1234/episodes/episode_1972_1234_28.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2132_1234_30.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:03.178249+00:00",
+      "sha256": "3746151ca3dee405a8b177252eb3a284b3b6e8a41ebcd84c72551bd1cc5167cf",
+      "relative_path": "collection/seed_1234/episodes/episode_2132_1234_30.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2202_1234_32.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:03.806269+00:00",
+      "sha256": "cc343cfa100bbcc0807c88b0d292057184f3047b83c9823e1c731bb44704573a",
+      "relative_path": "collection/seed_1234/episodes/episode_2202_1234_32.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2330_1234_34.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:07.878398+00:00",
+      "sha256": "2292a6d93a8d2963bf0514b7458138553f3304b827a523c8ec53c6ec2890f616",
+      "relative_path": "collection/seed_1234/episodes/episode_2330_1234_34.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2467_1234_36.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:11.390507+00:00",
+      "sha256": "c9ebcfe3d92448e5b6667095fa3c648cce3c0a2235e63de3417c98d662696137",
+      "relative_path": "collection/seed_1234/episodes/episode_2467_1234_36.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2632_1234_38.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:15.606637+00:00",
+      "sha256": "88d97fc002749081256f71af105999b840647bdd441bf05e7742b958bdfa133d",
+      "relative_path": "collection/seed_1234/episodes/episode_2632_1234_38.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2686_1234_40.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:18.198715+00:00",
+      "sha256": "5835fa20b2464c10f076e1ca04688ef941d9a90241027f256ad0b14ba41399b5",
+      "relative_path": "collection/seed_1234/episodes/episode_2686_1234_40.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2840_1234_42.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:21.966828+00:00",
+      "sha256": "d6d922668d954c82705a5d2e9893c5a5186b20b95624883e2e84714a88adf0b1",
+      "relative_path": "collection/seed_1234/episodes/episode_2840_1234_42.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_285_1234_4.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:46.873711+00:00",
+      "sha256": "4a850fb0e01c956b680849e2c5d72ca79dfce570b9d93ebaace5b453134b718e",
+      "relative_path": "collection/seed_1234/episodes/episode_285_1234_4.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_2960_1234_44.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:25.538933+00:00",
+      "sha256": "ceb09fbe76e4cf9cc9ab6688d0b0c60f7b5d9e134c8963c274ce021e939dca06",
+      "relative_path": "collection/seed_1234/episodes/episode_2960_1234_44.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3131_1234_46.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:29.055036+00:00",
+      "sha256": "22bca59c6444f97c90f17f66c3d022d9fdbb932dadbcac6228e2b6ae809672e6",
+      "relative_path": "collection/seed_1234/episodes/episode_3131_1234_46.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3293_1234_48.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:32.887145+00:00",
+      "sha256": "04efb3a32c7193c2bfc9eb431b5428569c204a84e832af14e27f11121ec0cc4d",
+      "relative_path": "collection/seed_1234/episodes/episode_3293_1234_48.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3435_1234_50.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:36.403244+00:00",
+      "sha256": "1f7f0799037f062ed9203b1393e15377684c24152f3d98008d232035ad9d9678",
+      "relative_path": "collection/seed_1234/episodes/episode_3435_1234_50.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3533_1234_52.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:39.419328+00:00",
+      "sha256": "82216b1740831fac454bb3f8c4a4d470bc58f11e41f9c474870be4975b42eafe",
+      "relative_path": "collection/seed_1234/episodes/episode_3533_1234_52.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3718_1234_54.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:43.587443+00:00",
+      "sha256": "8107afc1262dbf10c277c7f43c4698669a595dd315ace1491c0482f5f059b646",
+      "relative_path": "collection/seed_1234/episodes/episode_3718_1234_54.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3869_1234_56.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:48.151566+00:00",
+      "sha256": "ac04c8c99a49ca5bdb1a6340eb839d9181ae0ca1c66d7531739b79e68ba731a9",
+      "relative_path": "collection/seed_1234/episodes/episode_3869_1234_56.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_3997_1234_58.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:51.647658+00:00",
+      "sha256": "2fde3118cbd9581065e8354b66160c99eaad9f36393541eb69954739591bc91a",
+      "relative_path": "collection/seed_1234/episodes/episode_3997_1234_58.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4123_1234_60.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:54.943744+00:00",
+      "sha256": "f7630a01840c713820eca7d5684512885c96dd64db47213dc1595cb271d12785",
+      "relative_path": "collection/seed_1234/episodes/episode_4123_1234_60.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4275_1234_62.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:58.395833+00:00",
+      "sha256": "5df35c8ac4bde6a577a8ca8dac50ec4b9fa3658db0e2e2f46e74fb2e8dc74f7b",
+      "relative_path": "collection/seed_1234/episodes/episode_4275_1234_62.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4365_1234_64.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:01.307907+00:00",
+      "sha256": "09643f26aaab889077a6da7cfcf8bc4b032a8a713cb250d9bb16d72a3ad7207a",
+      "relative_path": "collection/seed_1234/episodes/episode_4365_1234_64.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4524_1234_66.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:04.651991+00:00",
+      "sha256": "3dcc1d93bebf04dfa9bb2a4420654c1cb2cd29d4fff229234bc45dbf393aff5c",
+      "relative_path": "collection/seed_1234/episodes/episode_4524_1234_66.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4583_1234_68.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:07.212054+00:00",
+      "sha256": "dcacd3e336b3ca581e4d8b024512e314aaba23d00f42a7ac1407f3277ed3adf2",
+      "relative_path": "collection/seed_1234/episodes/episode_4583_1234_68.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4805_1234_70.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:11.320154+00:00",
+      "sha256": "51679c1bc37c52179087756f98634aa4669098f387ad8e54d52b11ca081e72ad",
+      "relative_path": "collection/seed_1234/episodes/episode_4805_1234_70.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_4890_1234_72.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:14.068220+00:00",
+      "sha256": "fb48c26be7c0aa52f104b690ec41c4c7f8e0392863bc6a5fff2cbe81fc07840c",
+      "relative_path": "collection/seed_1234/episodes/episode_4890_1234_72.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5008_1234_74.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:17.176293+00:00",
+      "sha256": "50d836297a44ef8308a28d7732b2e5f05eaa2812c45c5cac57c31bf7ef9ffcbf",
+      "relative_path": "collection/seed_1234/episodes/episode_5008_1234_74.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5072_1234_76.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:20.064361+00:00",
+      "sha256": "858b6f15927d39a9cce173c1c8aef7e90f31f6eae2d10411a74916db5917487a",
+      "relative_path": "collection/seed_1234/episodes/episode_5072_1234_76.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5267_1234_78.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:24.108454+00:00",
+      "sha256": "bee8888e2cd00e9d3e0a0a6d50ee77fecf2209c64caab63e7b9597fd74a45039",
+      "relative_path": "collection/seed_1234/episodes/episode_5267_1234_78.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5413_1234_80.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:28.252547+00:00",
+      "sha256": "e18087859c00788d5eab626698ba2ef0da071a95da3de99b3623084d250ca058",
+      "relative_path": "collection/seed_1234/episodes/episode_5413_1234_80.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_550_1234_6.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:49.133787+00:00",
+      "sha256": "9cb2bc7815992ed4b5e308bc664cad59259b64ba000d14c28e07036ca37aa5a8",
+      "relative_path": "collection/seed_1234/episodes/episode_550_1234_6.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5613_1234_82.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:32.056631+00:00",
+      "sha256": "47bb9878db0000614c11bd95ad313293950a0bcdee4f7c2759e9c7a737fa2a2d",
+      "relative_path": "collection/seed_1234/episodes/episode_5613_1234_82.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5736_1234_84.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:35.796713+00:00",
+      "sha256": "28db177e73c05729f0fa92ea0629492ebb99495ce75d9c2684d8d9fa693270f7",
+      "relative_path": "collection/seed_1234/episodes/episode_5736_1234_84.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_5873_1234_86.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:39.440790+00:00",
+      "sha256": "8c210d9bb6bc1eab40c0a31fe941ec82893d7fdc50e2e04c0120bee2fee2c665",
+      "relative_path": "collection/seed_1234/episodes/episode_5873_1234_86.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_6014_1234_88.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:42.772860+00:00",
+      "sha256": "49dd898fa2e7eb17e0aa4304372c3273cd3902c08a8b4813a21231c215e5a409",
+      "relative_path": "collection/seed_1234/episodes/episode_6014_1234_88.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_656_1234_8.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:50.065819+00:00",
+      "sha256": "ddd0f1f93fc39b2ca3a67c94c1ef58e9dfaad6cace45deab1c5b331560af57df",
+      "relative_path": "collection/seed_1234/episodes/episode_656_1234_8.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_791_1234_10.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:51.261859+00:00",
+      "sha256": "db274ab4c96f52c633ff18a67ba5cc5046dd71dae12b8bcf74fea1286d3b0baf",
+      "relative_path": "collection/seed_1234/episodes/episode_791_1234_10.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/episode_941_1234_12.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:52.521901+00:00",
+      "sha256": "9fcb61e9ff69a688ca3f5863c90c231f1787da9f2a1afd93b8e87419f78786a8",
+      "relative_path": "collection/seed_1234/episodes/episode_941_1234_12.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_1065_1234_15_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:53.649939+00:00",
+      "sha256": "2edc305e0f24488e3af418f794c4ef2f33e5e9f6cb25845f4e7b7eb2c97b7e36",
+      "relative_path": "collection/seed_1234/episodes/test/episode_1065_1234_15_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_1537_1234_21_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:57.862077+00:00",
+      "sha256": "a5736f031dbb58624cffd7b4d3b240f70aa9c92270d07b97c4336b9abc602083",
+      "relative_path": "collection/seed_1234/episodes/test/episode_1537_1234_21_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_1929_1234_27_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:01.402192+00:00",
+      "sha256": "25d4655ecc0207cd180a2ab7a5aea549ffb4ad23e90ba324bb94ea7acb83cb45",
+      "relative_path": "collection/seed_1234/episodes/test/episode_1929_1234_27_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_204_1234_3_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:46.161687+00:00",
+      "sha256": "1ae9701fabc2268b79a91bbab0910503d126cea421cfa924efe74bf47ec3c45e",
+      "relative_path": "collection/seed_1234/episodes/test/episode_204_1234_3_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_2246_1234_33_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:05.838333+00:00",
+      "sha256": "d8e5d2828fbb96edfc775a132ae23976f1ac0edc7f7ce44e88f2b4bdfa689767",
+      "relative_path": "collection/seed_1234/episodes/test/episode_2246_1234_33_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_2657_1234_39_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:16.894676+00:00",
+      "sha256": "75978837c0f908f5302ace13071dbb48460b65ca7dee8cd834d32e6fc23f6aef",
+      "relative_path": "collection/seed_1234/episodes/test/episode_2657_1234_39_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_3079_1234_45_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:27.514991+00:00",
+      "sha256": "fc35b6c15f8be76b7a323ba515da9bf350490ca2f53d6944e071572b12127616",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3079_1234_45_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_3483_1234_51_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:37.923287+00:00",
+      "sha256": "b30991de944a853760c925b3173c6c4a0e80bf0e9295932cfe08b241ac4fe55c",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3483_1234_51_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_3907_1234_57_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:49.711607+00:00",
+      "sha256": "44bc6dcaf66751668fa3803156c798f3dd3056f6f8a6706eb88b0bb4c9867ef8",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3907_1234_57_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_4316_1234_63_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:07:59.843870+00:00",
+      "sha256": "ac0b75cf7fdf99b68336d2d1b9f6a68cfbe3442a1aaaf88b1c42e408def904ac",
+      "relative_path": "collection/seed_1234/episodes/test/episode_4316_1234_63_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_4705_1234_69_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:09.424108+00:00",
+      "sha256": "4fea730baf465ed0d20337bb597e6512136792f0cabf69c9c21a9f824973d68b",
+      "relative_path": "collection/seed_1234/episodes/test/episode_4705_1234_69_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_5045_1234_75_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:18.728330+00:00",
+      "sha256": "bf734c9b60b104358ddab9c8db0499cc0cc1ef3423ee645d4cbd024a5e1d355b",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5045_1234_75_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_5493_1234_81_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:30.004586+00:00",
+      "sha256": "b52eb4111c90654d47244cefe91ef2bb6c2818407fe9b8eca5c60c9e6c2940aa",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5493_1234_81_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_5964_1234_87_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:08:41.272829+00:00",
+      "sha256": "16a44df71969d01371739930dce166f3fcb1bfc892db61987e04b40b315f7336",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5964_1234_87_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/episodes/test/episode_732_1234_9_test.pkl",
+      "bytes": 92061,
+      "modified_utc": "2026-07-16T19:06:50.713840+00:00",
+      "sha256": "3899409e9db18fd7ec4fd0208e975f3211d2dbb083ccf01341c76caccddbcf92",
+      "relative_path": "collection/seed_1234/episodes/test/episode_732_1234_9_test.pkl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/collection/seed_1234/exit_code.txt",
+      "bytes": 2,
+      "modified_utc": "2026-07-16T19:08:45.616919+00:00",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "relative_path": "collection/seed_1234/exit_code.txt"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/__pycache__/comm_init.cpython-38.pyc",
+      "bytes": 2365,
+      "modified_utc": "2026-07-16T19:06:28.329058+00:00",
+      "sha256": "3a07a52eadb0aad43cb2c41f4cfc19a0b523fc74ba92b2112204dcbacb38ebba",
+      "relative_path": "generation/__pycache__/comm_init.cpython-38.pyc"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/analyzer_raw_response.md",
+      "bytes": 3692,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "a475f8c763e509e56993c8b7b9ff9d8d4b5d8db54f9eb36f96bab3aa7a6a8a7f",
+      "relative_path": "generation/analyzer_raw_response.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/analyzer_system_prompt.md",
+      "bytes": 277,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "d852a8405890df7b6ed8172c097f8fc696326cd6dab3f2616bcdd9b537724b4a",
+      "relative_path": "generation/analyzer_system_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/analyzer_user_prompt.md",
+      "bytes": 3281,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "3897a775c328f2fb124f149abff9369e8a8e97a116df1013908fbead6954d995",
+      "relative_path": "generation/analyzer_user_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/coder_generated_attempt.py",
+      "bytes": 3146,
+      "modified_utc": "2026-07-16T19:06:23.688888+00:00",
+      "sha256": "7f325454355fdefe6583fbc5d47f8d3af45a96a283ec14f29b7c3c71d7a25b88",
+      "relative_path": "generation/coder_generated_attempt.py"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/coder_raw_response.md",
+      "bytes": 3160,
+      "modified_utc": "2026-07-16T19:06:23.688888+00:00",
+      "sha256": "aa987cc2628cc3dcf8d4c99cdaa291ed22f016575085db3bdc9aac95efa7ed96",
+      "relative_path": "generation/coder_raw_response.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/coder_system_prompt.md",
+      "bytes": 564,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "73da4115ad398f5d745789812b9b133ce5f34a9e650e798d2e1b31896b9e4032",
+      "relative_path": "generation/coder_system_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/coder_user_prompt.md",
+      "bytes": 6851,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "0206fe461b885d48bc7d594cf81a3406a7ebc2e4f0e911ebd6e24f05a17a782d",
+      "relative_path": "generation/coder_user_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/comm_init.py",
+      "bytes": 3146,
+      "modified_utc": "2026-07-16T19:06:23.712889+00:00",
+      "sha256": "7f325454355fdefe6583fbc5d47f8d3af45a96a283ec14f29b7c3c71d7a25b88",
+      "relative_path": "generation/comm_init.py"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/communication_requirements.json",
+      "bytes": 4353,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "8d341d0b0ab8ac77c035f89acb5ce1d121a204bf1747c83c1419ff2c84b71fb0",
+      "relative_path": "generation/communication_requirements.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/planner_policy.md",
+      "bytes": 4145,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "9a3e1281c696b8401f5d56c22fd44ed37f1e79dea833118f037dbe82bb9c7fa5",
+      "relative_path": "generation/planner_policy.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/planner_raw_response.md",
+      "bytes": 4144,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "62f1eb0149b25ba05fba58462c73221dec64927043628e65217bb7b7fbc7afdb",
+      "relative_path": "generation/planner_raw_response.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/planner_system_prompt.md",
+      "bytes": 376,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "7e81bcd0679f244b62e1af875066237509f2b4836b1439fabc06e4b8e3698cc2",
+      "relative_path": "generation/planner_system_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/planner_user_prompt.md",
+      "bytes": 7954,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "c2369b5310046ea41583d2783ea20e7d4f0330d4c6258ef7c23ac90f38394e43",
+      "relative_path": "generation/planner_user_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/policy_spec.json",
+      "bytes": 4145,
+      "modified_utc": "2026-07-16T19:04:58.427732+00:00",
+      "sha256": "9a3e1281c696b8401f5d56c22fd44ed37f1e79dea833118f037dbe82bb9c7fa5",
+      "relative_path": "generation/policy_spec.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/raw_obs_schema.json",
+      "bytes": 1328,
+      "modified_utc": "2026-07-16T19:02:25.669833+00:00",
+      "sha256": "5c805973b9fe9d6587c9b4910b0ebb660a63658fd6237fefc6aaaf084d6f6a5c",
+      "relative_path": "generation/raw_obs_schema.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/runtime_obs_schema.json",
+      "bytes": 3563,
+      "modified_utc": "2026-07-16T19:02:25.669833+00:00",
+      "sha256": "5834b92886bd6bc4e32e27e6f5c0e812ef796288cd06624df1a8a6450c8fafe0",
+      "relative_path": "generation/runtime_obs_schema.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/runtime_probe.json",
+      "bytes": 241,
+      "modified_utc": "2026-07-16T19:02:25.669833+00:00",
+      "sha256": "c6d4c7d0fdd7a0d1d6697c4ac4a761c264b9492ea1a99b61371c63c0728f006e",
+      "relative_path": "generation/runtime_probe.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/task_description.json",
+      "bytes": 537,
+      "modified_utc": "2026-07-16T19:02:25.669833+00:00",
+      "sha256": "84902037c82e1786193d40a21d347073053289f76a9855a29f9cdfb7ba0f9269",
+      "relative_path": "generation/task_description.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/__pycache__/comm_init.cpython-38.pyc",
+      "bytes": 2439,
+      "modified_utc": "2026-07-16T19:08:48.072969+00:00",
+      "sha256": "7c7d1240394f411286f47828db2d6dae039e5619417bec10a62acb95f8a533f9",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/__pycache__/comm_init.cpython-38.pyc"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/candidate_metadata.json",
+      "bytes": 220,
+      "modified_utc": "2026-07-16T19:08:48.068969+00:00",
+      "sha256": "201c0216e59fcd769f4ef6cdfd23305c3168ce4e1d01b2c892b8140c493a9091",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/candidate_metadata.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py",
+      "bytes": 3146,
+      "modified_utc": "2026-07-16T19:08:48.068969+00:00",
+      "sha256": "7f325454355fdefe6583fbc5d47f8d3af45a96a283ec14f29b7c3c71d7a25b88",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_metadata.json",
+      "bytes": 126,
+      "modified_utc": "2026-07-16T19:09:48.574021+00:00",
+      "sha256": "4eaf3126f98917588d2cd61f25547a4edc931fb26f47e8d8d61a8ad8da998145",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_metadata.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_prompt.md",
+      "bytes": 37771,
+      "modified_utc": "2026-07-16T19:08:48.140971+00:00",
+      "sha256": "6ce77390a9f8c9b1d2dc9bef012d7e7bf99350bb003f43cd0d43604ef7076b89",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_prompt.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_raw_response.md",
+      "bytes": 1963,
+      "modified_utc": "2026-07-16T19:09:48.574021+00:00",
+      "sha256": "08e8da7ec185b7292512050d942cf44ce740392e02ebd5f370ac83d8b8cfd038",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/llm_judge_raw_response.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/rollout_evaluation.json",
+      "bytes": 15561,
+      "modified_utc": "2026-07-16T19:08:48.132971+00:00",
+      "sha256": "939d32764af98522579c2070009e9a729450a05edce46792b912bf4b6ecfa813",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/rollout_evaluation.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/commands.sh",
+      "bytes": 579,
+      "modified_utc": "2026-07-16T19:08:45.732922+00:00",
+      "sha256": "ef030eeb8d7c493d60069a1dda03df618c2e59042bceedbb6f35d31df81e3aa3",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/commands.sh"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/final_report.md",
+      "bytes": 1209,
+      "modified_utc": "2026-07-16T19:09:48.578021+00:00",
+      "sha256": "02dfc732e9185c46a1fc4e7b4a51b0c1aa8802d4a2cd746fd24b6e755c6b5944",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/final_report.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/frozen_teacher_manifest.json",
+      "bytes": 1364,
+      "modified_utc": "2026-07-16T19:09:48.578021+00:00",
+      "sha256": "a467e00bceb6fd8332d71ca54584ad2a776f46f008b556c889161d1f2f81e345",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/frozen_teacher_manifest.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/frozen_teacher_manifest.md",
+      "bytes": 511,
+      "modified_utc": "2026-07-16T19:09:48.578021+00:00",
+      "sha256": "4d2c66853612e92ba4d2f8d47b3cc5e55cd0dd1d95dc138f85b01ccd99c676c8",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/frozen_teacher_manifest.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/judge_outputs/iter_000_llm_judge.json",
+      "bytes": 2352,
+      "modified_utc": "2026-07-16T19:09:48.574021+00:00",
+      "sha256": "d57598d40fd01e3e88fec3f87272e367937ff58cd4a6740ebd70f763de61bbce",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/judge_outputs/iter_000_llm_judge.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/rollout_obs_summary.json",
+      "bytes": 12559,
+      "modified_utc": "2026-07-16T19:08:48.068969+00:00",
+      "sha256": "bcb719771db728a8550633c17abd09698a2e3e3627df535e1dacd4909c36693a",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/rollout_obs_summary.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/summary.csv",
+      "bytes": 1757,
+      "modified_utc": "2026-07-16T19:09:48.578021+00:00",
+      "sha256": "837f06285828bd106ec090d9098883d16160edcdef8e732296e99514f9eefe0d",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/summary.csv"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/trials.jsonl",
+      "bytes": 2779,
+      "modified_utc": "2026-07-16T19:09:48.574021+00:00",
+      "sha256": "e5cae93dc79528aed430d553437ba06fe6a9fc8e78e6ab180bbdbb4205571e65",
+      "relative_path": "iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/results/trials.jsonl"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration_command.json",
+      "bytes": 978,
+      "modified_utc": "2026-07-16T19:08:45.640920+00:00",
+      "sha256": "7db7517fcdc922eea338dc4a9057964a630f6a6741af3e955e8a55158b94f2d3",
+      "relative_path": "iteration_command.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/modification_log.md",
+      "bytes": 2305,
+      "modified_utc": "2026-07-16T19:09:49.122029+00:00",
+      "sha256": "cce1c419baed251d812d22fc0f27b3334f32b8d646cbf0f4ffe088064ab73159",
+      "relative_path": "modification_log.md"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/pipeline.log",
+      "bytes": 15856,
+      "modified_utc": "2026-07-16T19:09:49.130029+00:00",
+      "sha256": "2ec4f94ec695cfc3ad915411ec6ec9bd0d661b1ca8e6f0babab668fb50709256",
+      "relative_path": "pipeline.log"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/pipeline_status.json",
+      "bytes": 1407,
+      "modified_utc": "2026-07-16T19:09:49.130029+00:00",
+      "sha256": "2324c5bfd1e7fa0e92e537f228779b7521e811cc73d5756b3860c7e0fbdebed2",
+      "relative_path": "pipeline_status.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/run_context.json",
+      "bytes": 1489,
+      "modified_utc": "2026-07-16T19:02:25.149533+00:00",
+      "sha256": "e94f283d054aeafe43983dc5530ffe308121be9c7150e0366beac1636dccd1f2",
+      "relative_path": "run_context.json"
+    },
+    {
+      "path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/run_manifest.json",
+      "bytes": 584,
+      "modified_utc": "2026-07-16T19:06:23.712889+00:00",
+      "sha256": "458c1964ad59ec1748353ecc4fd30ccfb1e482ad0a0f835a28641d881815d85e",
+      "relative_path": "run_manifest.json"
+    }
+  ]
+}

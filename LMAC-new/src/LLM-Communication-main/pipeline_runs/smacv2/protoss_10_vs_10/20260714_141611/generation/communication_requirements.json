@@ -1,0 +1,168 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Select an enemy unit to engage (move towards and attack). This requires knowing the full set of enemy units, their types, health, shield, and positions to prioritize high-value targets, avoid overkill, and coordinate focus fire.",
+      "locally_missing_information": [
+        "Existence, type, health, shield, and position of enemy units not currently visible to the agent."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Choose movement direction for formation coordination, positioning, retreat, or support. This requires knowing the positions, types, and health of all allied units to maintain appropriate front/backline, avoid collisions, and react to ally status.",
+      "locally_missing_information": [
+        "Type, health, shield, and position of allied units not currently visible to the agent."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "all agents whose own_unit_type_zealot == 1 (zealot)",
+      "role_basis": "observation/task evidence: zealots are melee units, typical frontline tanks; decision priorities focus on engaging and absorbing damage."
+    },
+    {
+      "group_id": "G2",
+      "members": "all agents whose own_unit_type_stalker == 1 (stalker)",
+      "role_basis": "observation/task evidence: stalkers are ranged, high-damage units; they should stay behind zealots and focus fire on priority targets."
+    },
+    {
+      "group_id": "G3",
+      "members": "all agents whose own_unit_type_colossus == 1 (colossus)",
+      "role_basis": "observation/task evidence: colossi are heavy ranged units with strong area damage; they should position safely behind the frontline and target clusters."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Complete inventory of all 10 enemy units: existence flag, unit type, current health, current shield, and global (absolute) coordinates (x, y).",
+      "possible_sender_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_normalized_x",
+          "index": 177
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 178
+        },
+        {
+          "name": "enemy_k_available",
+          "index": "4+9*k for k=0..9"
+        },
+        {
+          "name": "enemy_k_relative_x",
+          "index": "6+9*k"
+        },
+        {
+          "name": "enemy_k_relative_y",
+          "index": "7+9*k"
+        },
+        {
+          "name": "enemy_k_health",
+          "index": "8+9*k"
+        },
+        {
+          "name": "enemy_k_shield",
+          "index": "9+9*k"
+        },
+        {
+          "name": "enemy_k_unit_type_stalker",
+          "index": "10+9*k"
+        },
+        {
+          "name": "enemy_k_unit_type_zealot",
+          "index": "11+9*k"
+        },
+        {
+          "name": "enemy_k_unit_type_colossus",
+          "index": "12+9*k"
+        }
+      ],
+      "receiver_need_hypothesis": "An agent that cannot see a particular enemy lacks its position, type, and status, leading to suboptimal engagement decisions (e.g., attacking a low-value target, ignoring a high-threat enemy, or moving into an ambush). Providing the full enemy set enables coordinated target selection and efficient movement.",
+      "task_decision_ids": [
+        "D1"
+      ],
+      "uncertainties": [
+        "Enemy positions are relative to the sender; the teacher must transform them to a common global frame using sender's own coordinates — precision may degrade with movement delays.",
+        "Agents may receive information they already possess, causing redundancy; filtering requires teacher-level knowledge of each agent's current observation.",
+        "Receivers' policies may not be trained to incorporate externally communicated enemy data effectively."
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Complete inventory of all 9 other allied units: type, current health, current shield, and global (absolute) coordinates (x, y).",
+      "possible_sender_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_normalized_x",
+          "index": 177
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 178
+        },
+        {
+          "name": "ally_slot_m_visible",
+          "index": "94+9*m for m=0..8"
+        },
+        {
+          "name": "ally_slot_m_relative_x",
+          "index": "96+9*m"
+        },
+        {
+          "name": "ally_slot_m_relative_y",
+          "index": "97+9*m"
+        },
+        {
+          "name": "ally_slot_m_health",
+          "index": "98+9*m"
+        },
+        {
+          "name": "ally_slot_m_shield",
+          "index": "99+9*m"
+        },
+        {
+          "name": "ally_slot_m_unit_type_stalker",
+          "index": "100+9*m"
+        },
+        {
+          "name": "ally_slot_m_unit_type_zealot",
+          "index": "101+9*m"
+        },
+        {
+          "name": "ally_slot_m_unit_type_colossus",
+          "index": "102+9*m"
+        }
+      ],
+      "receiver_need_hypothesis": "Without knowledge of hidden allies, an agent may choose a movement direction that collides with friendlies, breaks formation (e.g., a stalker moving in front of zealots), or fails to support a low-health ally. Full allied status information allows formation-aware movement and improved team coherence.",
+      "task_decision_ids": [
+        "D2"
+      ],
+      "uncertainties": [
+        "Ally slot indices do not consistently correspond to the same physical unit across agents; teacher must disambiguate using transformed global positions.",
+        "Motion and latency can make communicated ally positions stale; time-critical decisions may be affected.",
+        "Receiving agents may not have learned to use ally spatial information for movement planning."
+      ]
+    }
+  ],
+  "unsupported_assumptions": []
+}

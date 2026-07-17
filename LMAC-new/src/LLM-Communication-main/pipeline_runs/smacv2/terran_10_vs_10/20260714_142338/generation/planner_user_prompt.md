@@ -1,0 +1,520 @@
+
+Task and aligned observation description:
+SMACv2 cooperative combat task 'terran_10_vs_10'
+- Objective: Ten allied units cooperate under partial observability to defeat ten enemy units.
+- Agents/enemies: 10/10.
+- Possible allied unit types: ['marine', 'marauder', 'medivac'] with sampling weights [0.45, 0.45, 0.1].
+- Unit composition and the agent-to-unit-type assignment can change every episode.
+- Agent ID is only a tensor-row identity. Never infer a fixed unit role from agent ID.
+- Infer roles from the documented observable unit-type fields.
+- The teacher receives the collection of all allied local observations and may compare them.
+- Do not use global state, future information, hidden environment state, or invented feature semantics.
+- Documented raw observation length: 162.
+- Runtime LMAC input length: 188.
+- Observation feature index map:
+    - 0~0: move_north
+    - 1~1: move_south
+    - 2~2: move_east
+    - 3~3: move_west
+    - 4~4: enemy_0_available
+    - 5~5: enemy_0_distance
+    - 6~6: enemy_0_relative_x
+    - 7~7: enemy_0_relative_y
+    - 8~8: enemy_0_health
+    - 9~9: enemy_0_unit_type_marine
+    - 10~10: enemy_0_unit_type_marauder
+    - 11~11: enemy_0_unit_type_medivac
+    - 12~12: enemy_1_available
+    - 13~13: enemy_1_distance
+    - 14~14: enemy_1_relative_x
+    - 15~15: enemy_1_relative_y
+    - 16~16: enemy_1_health
+    - 17~17: enemy_1_unit_type_marine
+    - 18~18: enemy_1_unit_type_marauder
+    - 19~19: enemy_1_unit_type_medivac
+    - 20~20: enemy_2_available
+    - 21~21: enemy_2_distance
+    - 22~22: enemy_2_relative_x
+    - 23~23: enemy_2_relative_y
+    - 24~24: enemy_2_health
+    - 25~25: enemy_2_unit_type_marine
+    - 26~26: enemy_2_unit_type_marauder
+    - 27~27: enemy_2_unit_type_medivac
+    - 28~28: enemy_3_available
+    - 29~29: enemy_3_distance
+    - 30~30: enemy_3_relative_x
+    - 31~31: enemy_3_relative_y
+    - 32~32: enemy_3_health
+    - 33~33: enemy_3_unit_type_marine
+    - 34~34: enemy_3_unit_type_marauder
+    - 35~35: enemy_3_unit_type_medivac
+    - 36~36: enemy_4_available
+    - 37~37: enemy_4_distance
+    - 38~38: enemy_4_relative_x
+    - 39~39: enemy_4_relative_y
+    - 40~40: enemy_4_health
+    - 41~41: enemy_4_unit_type_marine
+    - 42~42: enemy_4_unit_type_marauder
+    - 43~43: enemy_4_unit_type_medivac
+    - 44~44: enemy_5_available
+    - 45~45: enemy_5_distance
+    - 46~46: enemy_5_relative_x
+    - 47~47: enemy_5_relative_y
+    - 48~48: enemy_5_health
+    - 49~49: enemy_5_unit_type_marine
+    - 50~50: enemy_5_unit_type_marauder
+    - 51~51: enemy_5_unit_type_medivac
+    - 52~52: enemy_6_available
+    - 53~53: enemy_6_distance
+    - 54~54: enemy_6_relative_x
+    - 55~55: enemy_6_relative_y
+    - 56~56: enemy_6_health
+    - 57~57: enemy_6_unit_type_marine
+    - 58~58: enemy_6_unit_type_marauder
+    - 59~59: enemy_6_unit_type_medivac
+    - 60~60: enemy_7_available
+    - 61~61: enemy_7_distance
+    - 62~62: enemy_7_relative_x
+    - 63~63: enemy_7_relative_y
+    - 64~64: enemy_7_health
+    - 65~65: enemy_7_unit_type_marine
+    - 66~66: enemy_7_unit_type_marauder
+    - 67~67: enemy_7_unit_type_medivac
+    - 68~68: enemy_8_available
+    - 69~69: enemy_8_distance
+    - 70~70: enemy_8_relative_x
+    - 71~71: enemy_8_relative_y
+    - 72~72: enemy_8_health
+    - 73~73: enemy_8_unit_type_marine
+    - 74~74: enemy_8_unit_type_marauder
+    - 75~75: enemy_8_unit_type_medivac
+    - 76~76: enemy_9_available
+    - 77~77: enemy_9_distance
+    - 78~78: enemy_9_relative_x
+    - 79~79: enemy_9_relative_y
+    - 80~80: enemy_9_health
+    - 81~81: enemy_9_unit_type_marine
+    - 82~82: enemy_9_unit_type_marauder
+    - 83~83: enemy_9_unit_type_medivac
+    - 84~84: ally_slot_0_visible
+    - 85~85: ally_slot_0_distance
+    - 86~86: ally_slot_0_relative_x
+    - 87~87: ally_slot_0_relative_y
+    - 88~88: ally_slot_0_health
+    - 89~89: ally_slot_0_unit_type_marine
+    - 90~90: ally_slot_0_unit_type_marauder
+    - 91~91: ally_slot_0_unit_type_medivac
+    - 92~92: ally_slot_1_visible
+    - 93~93: ally_slot_1_distance
+    - 94~94: ally_slot_1_relative_x
+    - 95~95: ally_slot_1_relative_y
+    - 96~96: ally_slot_1_health
+    - 97~97: ally_slot_1_unit_type_marine
+    - 98~98: ally_slot_1_unit_type_marauder
+    - 99~99: ally_slot_1_unit_type_medivac
+    - 100~100: ally_slot_2_visible
+    - 101~101: ally_slot_2_distance
+    - 102~102: ally_slot_2_relative_x
+    - 103~103: ally_slot_2_relative_y
+    - 104~104: ally_slot_2_health
+    - 105~105: ally_slot_2_unit_type_marine
+    - 106~106: ally_slot_2_unit_type_marauder
+    - 107~107: ally_slot_2_unit_type_medivac
+    - 108~108: ally_slot_3_visible
+    - 109~109: ally_slot_3_distance
+    - 110~110: ally_slot_3_relative_x
+    - 111~111: ally_slot_3_relative_y
+    - 112~112: ally_slot_3_health
+    - 113~113: ally_slot_3_unit_type_marine
+    - 114~114: ally_slot_3_unit_type_marauder
+    - 115~115: ally_slot_3_unit_type_medivac
+    - 116~116: ally_slot_4_visible
+    - 117~117: ally_slot_4_distance
+    - 118~118: ally_slot_4_relative_x
+    - 119~119: ally_slot_4_relative_y
+    - 120~120: ally_slot_4_health
+    - 121~121: ally_slot_4_unit_type_marine
+    - 122~122: ally_slot_4_unit_type_marauder
+    - 123~123: ally_slot_4_unit_type_medivac
+    - 124~124: ally_slot_5_visible
+    - 125~125: ally_slot_5_distance
+    - 126~126: ally_slot_5_relative_x
+    - 127~127: ally_slot_5_relative_y
+    - 128~128: ally_slot_5_health
+    - 129~129: ally_slot_5_unit_type_marine
+    - 130~130: ally_slot_5_unit_type_marauder
+    - 131~131: ally_slot_5_unit_type_medivac
+    - 132~132: ally_slot_6_visible
+    - 133~133: ally_slot_6_distance
+    - 134~134: ally_slot_6_relative_x
+    - 135~135: ally_slot_6_relative_y
+    - 136~136: ally_slot_6_health
+    - 137~137: ally_slot_6_unit_type_marine
+    - 138~138: ally_slot_6_unit_type_marauder
+    - 139~139: ally_slot_6_unit_type_medivac
+    - 140~140: ally_slot_7_visible
+    - 141~141: ally_slot_7_distance
+    - 142~142: ally_slot_7_relative_x
+    - 143~143: ally_slot_7_relative_y
+    - 144~144: ally_slot_7_health
+    - 145~145: ally_slot_7_unit_type_marine
+    - 146~146: ally_slot_7_unit_type_marauder
+    - 147~147: ally_slot_7_unit_type_medivac
+    - 148~148: ally_slot_8_visible
+    - 149~149: ally_slot_8_distance
+    - 150~150: ally_slot_8_relative_x
+    - 151~151: ally_slot_8_relative_y
+    - 152~152: ally_slot_8_health
+    - 153~153: ally_slot_8_unit_type_marine
+    - 154~154: ally_slot_8_unit_type_marauder
+    - 155~155: ally_slot_8_unit_type_medivac
+    - 156~156: own_health
+    - 157~157: own_normalized_x
+    - 158~158: own_normalized_y
+    - 159~159: own_unit_type_marine
+    - 160~160: own_unit_type_marauder
+    - 161~161: own_unit_type_medivac
+    - 162~162: previous_action_0
+    - 163~163: previous_action_1
+    - 164~164: previous_action_2
+    - 165~165: previous_action_3
+    - 166~166: previous_action_4
+    - 167~167: previous_action_5
+    - 168~168: previous_action_6
+    - 169~169: previous_action_7
+    - 170~170: previous_action_8
+    - 171~171: previous_action_9
+    - 172~172: previous_action_10
+    - 173~173: previous_action_11
+    - 174~174: previous_action_12
+    - 175~175: previous_action_13
+    - 176~176: previous_action_14
+    - 177~177: previous_action_15
+    - 178~178: agent_id_0
+    - 179~179: agent_id_1
+    - 180~180: agent_id_2
+    - 181~181: agent_id_3
+    - 182~182: agent_id_4
+    - 183~183: agent_id_5
+    - 184~184: agent_id_6
+    - 185~185: agent_id_7
+    - 186~186: agent_id_8
+    - 187~187: agent_id_9
+- Runtime alignment: The LMAC policy consumes raw environment observation followed by previous-action one-hot and agent-id one-hot. For this rollout: environment observation indices are [0,161], previous action indices are [162,177], and agent ID indices are [178,187]. WHAT should prioritize environment observations; previous action or agent ID may only be selected with an explicit coordination justification. Undocumented env_extra dimensions must not be assigned invented semantics.
+
+Information-requirement analysis:
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Attack target selection: Choose an enemy unit to attack, considering its health, distance, type, and coordination with allies' targets.",
+      "locally_missing_information": [
+        "Existence, position, health, and type of enemies outside the agent's sight range.",
+        "Which enemies are currently being attacked by other allies, inferred from allies' last actions."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Heal target selection: As a medivac, choose an allied unit to heal based on its health, distance, and type.",
+      "locally_missing_information": [
+        "Position, health, and type of allied units that are not visible.",
+        "Own health and position of allies that need healing but are out of sight."
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Move destination selection: Decide movement direction to engage enemies, avoid threats, approach healers, or maintain formation.",
+      "locally_missing_information": [
+        "Locations and states of enemies/allies beyond sight range.",
+        "Position of medivacs (for injured non-medivacs) or of injured allies (for medivacs).",
+        "Recent movement or attack actions of allies to avoid collisions or coordinate positioning."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "agents with own_unit_type_medivac == 1",
+      "role_basis": "observable own unit type: medivac serves as healer/support, incapable of attacking enemies."
+    },
+    {
+      "group_id": "G2",
+      "members": "agents with own_unit_type_marine == 1 or own_unit_type_marauder == 1",
+      "role_basis": "observable own unit type: marine and marauder are damage dealers that attack enemies and may require healing."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Presence, position, health, and unit type of an enemy unit not currently visible to the receiver.",
+      "possible_sender_groups": [
+        "G1",
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "enemy_0_available",
+          "index": 4
+        },
+        {
+          "name": "enemy_0_distance",
+          "index": 5
+        },
+        {
+          "name": "enemy_0_relative_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_relative_y",
+          "index": 7
+        },
+        {
+          "name": "enemy_0_health",
+          "index": 8
+        },
+        {
+          "name": "enemy_0_unit_type_marine",
+          "index": 9
+        },
+        {
+          "name": "enemy_0_unit_type_marauder",
+          "index": 10
+        },
+        {
+          "name": "enemy_0_unit_type_medivac",
+          "index": 11
+        }
+      ],
+      "receiver_need_hypothesis": "To improve attack targeting (G2) and threat avoidance (G1) by incorporating knowledge of off-screen enemies, preventing surprise flanking and enabling prioritization of low-health targets.",
+      "task_decision_ids": [
+        "D1",
+        "D3"
+      ],
+      "uncertainties": [
+        "receiver misses low-health enemies that could be finished quickly",
+        "receiver is unaware of enemy flanking maneuvers outside its sight",
+        "receiver cannot prioritize targets based on global threat picture"
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Presence, position, health, and unit type of an allied unit not currently visible to the receiver.",
+      "possible_sender_groups": [
+        "G1",
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "ally_slot_0_visible",
+          "index": 84
+        },
+        {
+          "name": "ally_slot_0_distance",
+          "index": 85
+        },
+        {
+          "name": "ally_slot_0_relative_x",
+          "index": 86
+        },
+        {
+          "name": "ally_slot_0_relative_y",
+          "index": 87
+        },
+        {
+          "name": "ally_slot_0_health",
+          "index": 88
+        },
+        {
+          "name": "ally_slot_0_unit_type_marine",
+          "index": 89
+        },
+        {
+          "name": "ally_slot_0_unit_type_marauder",
+          "index": 90
+        },
+        {
+          "name": "ally_slot_0_unit_type_medivac",
+          "index": 91
+        }
+      ],
+      "receiver_need_hypothesis": "To identify healing needs (G1) and to coordinate movements (G2) by knowing which allies require support and where medivacs are located.",
+      "task_decision_ids": [
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "medivac cannot find distant injured allies, causing unnecessary deaths",
+        "dps cannot locate medivac for healing support",
+        "agents may become isolated without knowledge of ally positions"
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "Own current health and unit type of the sending agent.",
+      "possible_sender_groups": [
+        "G1",
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_health",
+          "index": 156
+        },
+        {
+          "name": "own_normalized_x",
+          "index": 157
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 158
+        },
+        {
+          "name": "own_unit_type_marine",
+          "index": 159
+        },
+        {
+          "name": "own_unit_type_marauder",
+          "index": 160
+        },
+        {
+          "name": "own_unit_type_medivac",
+          "index": 161
+        }
+      ],
+      "receiver_need_hypothesis": "Medivacs (G1) require this to decide whom to heal; damage dealers (G2) can use it to protect low-health allies or to know which allies are medivacs available for healing support.",
+      "task_decision_ids": [
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "without own-health broadcasts, medivacs are blind to the health status of allies outside their sight range",
+        "dps cannot reliably find a medivac when injured"
+      ]
+    },
+    {
+      "requirement_id": "IR4",
+      "fact": "Previous discrete action taken by the sending agent.",
+      "possible_sender_groups": [
+        "G1",
+        "G2"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "previous_action_0",
+          "index": 162
+        },
+        {
+          "name": "previous_action_1",
+          "index": 163
+        },
+        {
+          "name": "previous_action_2",
+          "index": 164
+        },
+        {
+          "name": "previous_action_3",
+          "index": 165
+        },
+        {
+          "name": "previous_action_4",
+          "index": 166
+        },
+        {
+          "name": "previous_action_5",
+          "index": 167
+        },
+        {
+          "name": "previous_action_6",
+          "index": 168
+        },
+        {
+          "name": "previous_action_7",
+          "index": 169
+        },
+        {
+          "name": "previous_action_8",
+          "index": 170
+        },
+        {
+          "name": "previous_action_9",
+          "index": 171
+        },
+        {
+          "name": "previous_action_10",
+          "index": 172
+        },
+        {
+          "name": "previous_action_11",
+          "index": 173
+        },
+        {
+          "name": "previous_action_12",
+          "index": 174
+        },
+        {
+          "name": "previous_action_13",
+          "index": 175
+        },
+        {
+          "name": "previous_action_14",
+          "index": 176
+        },
+        {
+          "name": "previous_action_15",
+          "index": 177
+        }
+      ],
+      "receiver_need_hypothesis": "Knowing allies' recent actions helps predict their immediate intentions, enabling better target coordination (avoid overkill/focus fire) and collision avoidance during movement.",
+      "task_decision_ids": [
+        "D1",
+        "D3"
+      ],
+      "uncertainties": [
+        "without action sharing, agents may unknowingly attack the same enemy, wasting damage",
+        "agents may collide or move suboptimally if unaware of allies' last move direction"
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Medivac units can heal allied biological units (marines and marauders) based on standard SMACv2 mechanics.",
+    "The action space includes targeted attacks on specific enemy IDs and a heal action for medivacs, as implied by the unit types and previous_action dimensionality (16).",
+    "Sight range is limited and indicated by the available/visible flags; enemy/ally slots beyond this range have zeros for position/health and a 0 in the available/visible flag."
+  ]
+}
+
+Return this policy schema:
+{
+  "policy_hypothesis":"...",
+  "agent_groups":[...],
+  "rules":[
+    {"rule_id":"R1","requirement_ids":["IR1"],
+      "who":{"sender_group":"G1","receiver_selector":"...","observable_basis":[]},
+      "when":{"feature_names":["..."],"feature_indices":[0],"operator":"...",
+        "threshold":0.0,"threshold_basis":{"type":"binary_semantics|documented_semantics|rollout_distribution|relative_comparison|llm_hypothesis","evidence":"..."}},
+      "what":{"feature_names":["..."],"feature_indices":[0]},
+      "sender_feasibility":"...","receiver_necessity":"...",
+      "expected_rollout_behavior":"...","uncertainties":[]}
+  ],
+  "default_behavior":"no communication",
+  "design_tradeoffs":"..."
+}
+Feature indices must match the supplied aligned schema. Do not invent runtime
+fields. A threshold without a documented or observed basis must be explicitly
+labelled llm_hypothesis. Prefer no communication only as a default, not as a
+hard-coded claim that sparse communication is always superior.

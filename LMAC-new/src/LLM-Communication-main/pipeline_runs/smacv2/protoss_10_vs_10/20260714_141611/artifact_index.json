@@ -1,0 +1,915 @@
+{
+  "run_dir": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611",
+  "artifacts": [
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/collect.log",
+      "bytes": 11965,
+      "modified_utc": "2026-07-14T14:28:28.878073+00:00",
+      "sha256": "7c85e3d1994c0d98d516cd23904bbb84952025c1e1409d6cc3ab602a8afd34a2",
+      "relative_path": "collection/seed_1234/collect.log"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/command.json",
+      "bytes": 1026,
+      "modified_utc": "2026-07-14T14:23:46.900844+00:00",
+      "sha256": "64ac9374b8f47efd5af124b34f8f40e3867884cb3dc70f3a431607c675f1f6e6",
+      "relative_path": "collection/seed_1234/command.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/done.flag",
+      "bytes": 5,
+      "modified_utc": "2026-07-14T14:28:27.018039+00:00",
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2",
+      "relative_path": "collection/seed_1234/done.flag"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1111_1234_18.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:25.742661+00:00",
+      "sha256": "61579b6bdd911b7024a507dd6bbabafa8999fc284010c7a126620c16b66f5bea",
+      "relative_path": "collection/seed_1234/episodes/episode_1111_1234_18.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1218_1234_20.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:28.778717+00:00",
+      "sha256": "7fce6e3cdd568c512b5d3f26a360d7a9175b1026333f00f1edd4d14032cf6798",
+      "relative_path": "collection/seed_1234/episodes/episode_1218_1234_20.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_130_1234_2.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:24:58.806164+00:00",
+      "sha256": "27e6598854772b511b4fa8141485e6abd4c989dacba54e3106277fe530ad7ff9",
+      "relative_path": "collection/seed_1234/episodes/episode_130_1234_2.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1338_1234_22.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:31.986776+00:00",
+      "sha256": "8fc0706acc513ced78e1915fcb1161c4088e924e943cf48a05bc10eb521e9860",
+      "relative_path": "collection/seed_1234/episodes/episode_1338_1234_22.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1464_1234_24.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:35.350839+00:00",
+      "sha256": "a072e9da267342e575b4e957ec24c24afbfc84a054fc6d023e989c2e9855bd1d",
+      "relative_path": "collection/seed_1234/episodes/episode_1464_1234_24.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1585_1234_26.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:38.790902+00:00",
+      "sha256": "20d7c37e40773c422024041239f8de5899548a2291e105dcb40d5b26a286f16f",
+      "relative_path": "collection/seed_1234/episodes/episode_1585_1234_26.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1710_1234_28.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:41.994962+00:00",
+      "sha256": "b2579b5095c27aaff90052ab7e9a3ad419e84395e4dbab5b03902e99261b6079",
+      "relative_path": "collection/seed_1234/episodes/episode_1710_1234_28.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1829_1234_30.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:45.303023+00:00",
+      "sha256": "88f3a209ac984e1b59f66cc55f6b84e87473391370e5a9e01d622b8ede578a07",
+      "relative_path": "collection/seed_1234/episodes/episode_1829_1234_30.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_1957_1234_32.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:48.763087+00:00",
+      "sha256": "598a5b0f6a62462193ff25809f3a08bc8060632d3f770c34217c3a14b100903e",
+      "relative_path": "collection/seed_1234/episodes/episode_1957_1234_32.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2065_1234_34.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:53.463174+00:00",
+      "sha256": "92cdb09396677900d178efb1a670299a2113cea20a664a51de77b7b6b9deddde",
+      "relative_path": "collection/seed_1234/episodes/episode_2065_1234_34.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2201_1234_36.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:58.567269+00:00",
+      "sha256": "a085ba3fe9531226a6d6e1bd31de6c71ce92586208ee48fb112091469abc9409",
+      "relative_path": "collection/seed_1234/episodes/episode_2201_1234_36.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2317_1234_38.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:03.139354+00:00",
+      "sha256": "6265ea41e5408cdfe48a95d45b31c50c350b24581685fd1d59b659b5b49f88c1",
+      "relative_path": "collection/seed_1234/episodes/episode_2317_1234_38.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2431_1234_40.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:07.883441+00:00",
+      "sha256": "ab2172c06572d43708fe966388b00e038c4fda73ce26f73842f05c9b1f34ff14",
+      "relative_path": "collection/seed_1234/episodes/episode_2431_1234_40.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2549_1234_42.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:12.559528+00:00",
+      "sha256": "0cbee08fdfdae9d6fe2a20577a78228d6ff30ddc28bbcb04552de653952fa19e",
+      "relative_path": "collection/seed_1234/episodes/episode_2549_1234_42.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2669_1234_44.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:17.239615+00:00",
+      "sha256": "bbbba750e80b1db9cb6e0a707d13d896f3ca9d592dcb7b53503006f82fed2035",
+      "relative_path": "collection/seed_1234/episodes/episode_2669_1234_44.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_276_1234_4.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:02.462231+00:00",
+      "sha256": "c92392e85bb98ed5235ec580c91d48648b22ab070acecc93525e9c126b795ccd",
+      "relative_path": "collection/seed_1234/episodes/episode_276_1234_4.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2772_1234_46.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:21.471694+00:00",
+      "sha256": "3f1e42db7ef78f019b30af49ca285ee94781b9ab70fdf637ffd4bea6e516dbb2",
+      "relative_path": "collection/seed_1234/episodes/episode_2772_1234_46.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_2884_1234_48.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:26.159781+00:00",
+      "sha256": "b7a439fbf91355281bdacd2667c9ddbc7369da6cb00627b4351aeecdf05940f5",
+      "relative_path": "collection/seed_1234/episodes/episode_2884_1234_48.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3004_1234_50.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:30.931870+00:00",
+      "sha256": "688987a6d27dd297bd4ddccd7fc3a1b1b72e13ba981aa95d2ddbc36b8a78b097",
+      "relative_path": "collection/seed_1234/episodes/episode_3004_1234_50.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3119_1234_52.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:35.475954+00:00",
+      "sha256": "b7b3b24b480c644a894269da1c5cbf3591db98ae338ff0e149b16d6a10045661",
+      "relative_path": "collection/seed_1234/episodes/episode_3119_1234_52.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3232_1234_54.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:39.948037+00:00",
+      "sha256": "49de38b3d54ad7223fc8dacebee085a1c03912fc99bdac7176d289cc0dcd9818",
+      "relative_path": "collection/seed_1234/episodes/episode_3232_1234_54.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3362_1234_56.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:44.632125+00:00",
+      "sha256": "8865b8d7041463d57a8126a7ea0d2cfda09c3f11d6f56f283517fc5acbe49fa2",
+      "relative_path": "collection/seed_1234/episodes/episode_3362_1234_56.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3501_1234_58.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:49.740220+00:00",
+      "sha256": "92c4db3f3f16128b6a4ddcccfe01390e625ec0a4485222b50c8582f46eee8e94",
+      "relative_path": "collection/seed_1234/episodes/episode_3501_1234_58.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3644_1234_60.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:54.784314+00:00",
+      "sha256": "326bd9aa4927f2eeb1d02868b436f90eff2523cabf247aee3eee87cb7019b214",
+      "relative_path": "collection/seed_1234/episodes/episode_3644_1234_60.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3761_1234_62.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:59.316398+00:00",
+      "sha256": "254324fe244125559312de8b85c90525a5b1f9fd72d7642f16d0f9e06d4746fa",
+      "relative_path": "collection/seed_1234/episodes/episode_3761_1234_62.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3876_1234_64.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:04.100487+00:00",
+      "sha256": "b06bef285df96d8567915ae1d52bf27926fa77ffe572695fdd522fd67a9be9db",
+      "relative_path": "collection/seed_1234/episodes/episode_3876_1234_64.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_393_1234_6.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:05.674290+00:00",
+      "sha256": "0594e004b91bae701fe941029c4fc7f52ba5a98dd51747c1b2c9c46c99927ed4",
+      "relative_path": "collection/seed_1234/episodes/episode_393_1234_6.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_3984_1234_66.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:08.404568+00:00",
+      "sha256": "3ca38cf7739203181eede6cd3fee9776bdb2585dfc0a1a0d3cc9282114f60ab5",
+      "relative_path": "collection/seed_1234/episodes/episode_3984_1234_66.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4086_1234_68.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:12.700648+00:00",
+      "sha256": "b418b64b76737b832fa1f7348c446f49082bbffaaee19443d30f8c60048e2a80",
+      "relative_path": "collection/seed_1234/episodes/episode_4086_1234_68.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4215_1234_70.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:17.560739+00:00",
+      "sha256": "fcc57143f2dae28554f8c10e14389bbf6a8360533339fc5f6e77e0fc051b318f",
+      "relative_path": "collection/seed_1234/episodes/episode_4215_1234_70.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4328_1234_72.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:22.032822+00:00",
+      "sha256": "9b228c0faa7d20c87cc17f2064fb5c97a03603474d89fe5b74d74f68ee383a8d",
+      "relative_path": "collection/seed_1234/episodes/episode_4328_1234_72.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4434_1234_74.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:26.452904+00:00",
+      "sha256": "052dd71b62563ed3e80158cd2787d775ccf5335f85d43efcc7c4d99019a21841",
+      "relative_path": "collection/seed_1234/episodes/episode_4434_1234_74.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4544_1234_76.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:31.020990+00:00",
+      "sha256": "8ccf19f008a2c2b2d195f1a9b7eba62da37b53428cc998b3c154f4104efbb345",
+      "relative_path": "collection/seed_1234/episodes/episode_4544_1234_76.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4683_1234_78.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:35.829080+00:00",
+      "sha256": "853065ba8e65e67a9c7c690e7a61239e62f23ea7a1aa0279767dd37df13d3492",
+      "relative_path": "collection/seed_1234/episodes/episode_4683_1234_78.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4806_1234_80.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:40.389165+00:00",
+      "sha256": "fbf29b7c3d7e19cab9fdcf58e7f51389aa66e41dd7f709a09de8e8028cd8e157",
+      "relative_path": "collection/seed_1234/episodes/episode_4806_1234_80.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_4938_1234_82.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:45.349258+00:00",
+      "sha256": "a7b7878844b909711a7596012a3c89766a8e39b27d33d3afb5d658e44a7fdb11",
+      "relative_path": "collection/seed_1234/episodes/episode_4938_1234_82.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5038_1234_84.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:49.373333+00:00",
+      "sha256": "aedaf73ea1211a3cacb9d639b1fb86a585e927216ee9fc162a330ba3a48becd1",
+      "relative_path": "collection/seed_1234/episodes/episode_5038_1234_84.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5156_1234_86.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:53.821416+00:00",
+      "sha256": "845e3660a5691d76ee48a70a05558f3ad4dbabecd2026b0b5809574062ccee36",
+      "relative_path": "collection/seed_1234/episodes/episode_5156_1234_86.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_522_1234_8.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:09.114354+00:00",
+      "sha256": "2fba4d744e49a4799ddb93315d83c55ab05edb097b71bd11650a1d40a5a56797",
+      "relative_path": "collection/seed_1234/episodes/episode_522_1234_8.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5258_1234_88.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:57.949494+00:00",
+      "sha256": "53cd539016db282f69c63e11aa5536bc7116052f86956a8ee1350f0834c1a73e",
+      "relative_path": "collection/seed_1234/episodes/episode_5258_1234_88.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5366_1234_90.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:02.237574+00:00",
+      "sha256": "f15d80f7ba55549037565624ed1a0736767d104555a6beb82f7e1ce1f33243fd",
+      "relative_path": "collection/seed_1234/episodes/episode_5366_1234_90.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5490_1234_92.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:06.737658+00:00",
+      "sha256": "af5a24f83746356f799d21a1765dd234e92b70373c3d9f7c07a656bc066e5383",
+      "relative_path": "collection/seed_1234/episodes/episode_5490_1234_92.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5622_1234_94.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:11.705751+00:00",
+      "sha256": "73d89958b746416e939991541c1db7d49e18f5565e0c053b2e1966582e158c98",
+      "relative_path": "collection/seed_1234/episodes/episode_5622_1234_94.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5735_1234_96.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:16.109834+00:00",
+      "sha256": "b27aa98e97a113361eec0f048acc255dbececf05ef7d1a3f315a613de97cb820",
+      "relative_path": "collection/seed_1234/episodes/episode_5735_1234_96.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_5878_1234_98.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:21.297931+00:00",
+      "sha256": "8a75f40261a85f740331678e423605011daee996f8ce22e61381fadfcb759d5e",
+      "relative_path": "collection/seed_1234/episodes/episode_5878_1234_98.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_6014_1234_100.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:26.242024+00:00",
+      "sha256": "3076a9cb4757a7e6a3ec1630373b736f7378bddfb99282712cd70e41ff222890",
+      "relative_path": "collection/seed_1234/episodes/episode_6014_1234_100.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_629_1234_10.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:12.314413+00:00",
+      "sha256": "9e5868418f852b3d5245f021adf69761c53d262372af1ac4c12ac96cee16a775",
+      "relative_path": "collection/seed_1234/episodes/episode_629_1234_10.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_762_1234_12.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:15.918479+00:00",
+      "sha256": "ad2afb0b2bda671d3d8ad6ab0989b5d122b25cc3d8ccc5600c33a0817cf74f88",
+      "relative_path": "collection/seed_1234/episodes/episode_762_1234_12.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_868_1234_14.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:18.910535+00:00",
+      "sha256": "6f8958c6f770c85d277d0dc564956b887c0ae0de31dd1f4e01d01a20649aa4c8",
+      "relative_path": "collection/seed_1234/episodes/episode_868_1234_14.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/episode_982_1234_16.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:22.330598+00:00",
+      "sha256": "9c7ee6d9442438200082a568b744e5976b39d39183986f7171707f05b0ceab03",
+      "relative_path": "collection/seed_1234/episodes/episode_982_1234_16.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_1281_1234_21_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:30.362746+00:00",
+      "sha256": "fd2f9284b2df06f58855e3b0d3b24b29b3f7c126106be44f1341e94fb26dd56b",
+      "relative_path": "collection/seed_1234/episodes/test/episode_1281_1234_21_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_1653_1234_27_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:40.358931+00:00",
+      "sha256": "f94e76bda02d17990f4b7c2057631fbbba7307d66982587bf0d298720ea4e77e",
+      "relative_path": "collection/seed_1234/episodes/test/episode_1653_1234_27_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_2012_1234_33_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:51.123131+00:00",
+      "sha256": "dcee631706cc72605f5a10704dd4f2fc3cd7db5cd272ec4e3c2887c6eb463e72",
+      "relative_path": "collection/seed_1234/episodes/test/episode_2012_1234_33_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_216_1234_3_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:00.938203+00:00",
+      "sha256": "b96c5661a0fa6d899b8f5936b473016a5923f16b54b1bc5b020c29551533d88c",
+      "relative_path": "collection/seed_1234/episodes/test/episode_216_1234_3_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_2366_1234_39_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:05.467397+00:00",
+      "sha256": "1c81a56253f6cd65c3dd029b1f9b81f2740fbd67c2523a0434fc604cdf85853b",
+      "relative_path": "collection/seed_1234/episodes/test/episode_2366_1234_39_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_2715_1234_45_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:19.251652+00:00",
+      "sha256": "e38f74d6fa0362697056850cab7708b9717f0f1cae48071f1d7218004bc45e51",
+      "relative_path": "collection/seed_1234/episodes/test/episode_2715_1234_45_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_3066_1234_51_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:33.267913+00:00",
+      "sha256": "b982257f00c7694a7318f864042e6e68deaaa8cad6be3f22731cf72abbbfd47c",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3066_1234_51_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_3427_1234_57_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:26:47.172172+00:00",
+      "sha256": "3f93e6067699dad6116dd0e964b6a4709c777c268ab756f284c22edb540db906",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3427_1234_57_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_3816_1234_63_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:01.704443+00:00",
+      "sha256": "5670cd188c16b5dcba258f95411a2499e6b62695ade2e3fe277c57ceecaf498f",
+      "relative_path": "collection/seed_1234/episodes/test/episode_3816_1234_63_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_4150_1234_69_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:15.056692+00:00",
+      "sha256": "6e06faef628e715053285e07f188a3b8a5a829663017e732eecee0c28d086464",
+      "relative_path": "collection/seed_1234/episodes/test/episode_4150_1234_69_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_4488_1234_75_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:28.692946+00:00",
+      "sha256": "5461bfaeeb72e15e2deee7e43fd49468bcb48713076ba9042d7e279bd445bddd",
+      "relative_path": "collection/seed_1234/episodes/test/episode_4488_1234_75_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_4867_1234_81_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:42.805210+00:00",
+      "sha256": "5ea9b2396f4bfd29581a8a78193929e0b1a291b404a14af420c1bdf0cb39e954",
+      "relative_path": "collection/seed_1234/episodes/test/episode_4867_1234_81_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_5195_1234_87_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:27:55.625450+00:00",
+      "sha256": "1364b19c6f5d0e52e6a0d5745e0c58b2ccddedf64352a3ef9883b1be52cd4083",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5195_1234_87_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_5550_1234_93_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:09.225705+00:00",
+      "sha256": "dc8f005be7d0905a0dd532a48956ce6c9d86eaa47f8ffbb8e1601502531a3286",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5550_1234_93_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_580_1234_9_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:10.698383+00:00",
+      "sha256": "b81d1fa44400c0d09b149824784ea1a2d8e0776e860699bc5fd7167c870eee16",
+      "relative_path": "collection/seed_1234/episodes/test/episode_580_1234_9_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_5952_1234_99_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:28:23.857979+00:00",
+      "sha256": "c911d7062d91b6d24d264d9a37cab8c43cb205bae7b78129cc6d14f7b186214c",
+      "relative_path": "collection/seed_1234/episodes/test/episode_5952_1234_99_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/episodes/test/episode_929_1234_15_test.pkl",
+      "bytes": 3959843,
+      "modified_utc": "2026-07-14T14:25:20.682568+00:00",
+      "sha256": "7f24451b8efcb6c4c0907acda9dbde6e9bddbe35d8f2c8f46a4ea67bed28795b",
+      "relative_path": "collection/seed_1234/episodes/test/episode_929_1234_15_test.pkl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/collection/seed_1234/exit_code.txt",
+      "bytes": 2,
+      "modified_utc": "2026-07-14T14:28:29.586087+00:00",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "relative_path": "collection/seed_1234/exit_code.txt"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/__pycache__/comm_init.cpython-310.pyc",
+      "bytes": 3367,
+      "modified_utc": "2026-07-14T14:23:56.857026+00:00",
+      "sha256": "0f4ac42ceb36245397f9169c29e2c2bcd19b11d6e59356cab626e2a19a338801",
+      "relative_path": "generation/__pycache__/comm_init.cpython-310.pyc"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/analyzer_raw_response.md",
+      "bytes": 6033,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "1d09c74fb31b0f2f18749f9da41bf7134d212bed8a50f36acfe99e3d14246dd1",
+      "relative_path": "generation/analyzer_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/analyzer_system_prompt.md",
+      "bytes": 277,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "d852a8405890df7b6ed8172c097f8fc696326cd6dab3f2616bcdd9b537724b4a",
+      "relative_path": "generation/analyzer_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/analyzer_user_prompt.md",
+      "bytes": 9296,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "5ebd321dbd5009856b740b6ba7fee18789e669f273fe7d21417b479634d5206c",
+      "relative_path": "generation/analyzer_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/coder_generated_attempt.py",
+      "bytes": 4992,
+      "modified_utc": "2026-07-14T14:23:46.860843+00:00",
+      "sha256": "4328a1ac4bb4f6be1907229d573fcc00e63fc43bbb28bc096e54fe4c90a36722",
+      "relative_path": "generation/coder_generated_attempt.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/coder_raw_response.md",
+      "bytes": 5006,
+      "modified_utc": "2026-07-14T14:23:46.860843+00:00",
+      "sha256": "ee7777680bc52a58da924fd65000b68b0b823316b96b92da3cec04baeb6a8e84",
+      "relative_path": "generation/coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/coder_system_prompt.md",
+      "bytes": 494,
+      "modified_utc": "2026-07-14T14:21:16.794128+00:00",
+      "sha256": "29f7f96d5b4bb394593e07d09a410eb1c2c157e9e1d33580a4f383240a58462f",
+      "relative_path": "generation/coder_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/coder_user_prompt.md",
+      "bytes": 42647,
+      "modified_utc": "2026-07-14T14:21:16.794128+00:00",
+      "sha256": "781e52bb0169d6f2a69c40274bf1798ddc023a9d2debf3864756696e082532fa",
+      "relative_path": "generation/coder_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/comm_init.py",
+      "bytes": 4992,
+      "modified_utc": "2026-07-14T14:23:46.896844+00:00",
+      "sha256": "4328a1ac4bb4f6be1907229d573fcc00e63fc43bbb28bc096e54fe4c90a36722",
+      "relative_path": "generation/comm_init.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/communication_requirements.json",
+      "bytes": 6194,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "98fd17ba612bcfb605688feb5f103622eafacddf77e4f6653eb6d1e296d73a0a",
+      "relative_path": "generation/communication_requirements.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/planner_policy.md",
+      "bytes": 33828,
+      "modified_utc": "2026-07-14T14:21:16.794128+00:00",
+      "sha256": "87213facd35cc31cc432cbfbbaa19930e01edc1dc74bbe49adc0ffbfc000d632",
+      "relative_path": "generation/planner_policy.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/planner_raw_response.md",
+      "bytes": 25391,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "bf05ed1bdaf0f7bf26ee718739547c6f4e5fb013f762fe8a42d95a42e4323e40",
+      "relative_path": "generation/planner_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/planner_system_prompt.md",
+      "bytes": 376,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "7e81bcd0679f244b62e1af875066237509f2b4836b1439fabc06e4b8e3698cc2",
+      "relative_path": "generation/planner_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/planner_user_prompt.md",
+      "bytes": 15810,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "d0b43e35ccccc74495d4e690b20342367be99455e376e76b5be8a95fd22660d1",
+      "relative_path": "generation/planner_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/policy_spec.json",
+      "bytes": 33828,
+      "modified_utc": "2026-07-14T14:21:16.790128+00:00",
+      "sha256": "87213facd35cc31cc432cbfbbaa19930e01edc1dc74bbe49adc0ffbfc000d632",
+      "relative_path": "generation/policy_spec.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/raw_obs_schema.json",
+      "bytes": 16660,
+      "modified_utc": "2026-07-14T14:16:12.972864+00:00",
+      "sha256": "6a1eb51c692384fee7f9394e0cc0992c36c771319bab4abda138f106bb90a407",
+      "relative_path": "generation/raw_obs_schema.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/runtime_obs_schema.json",
+      "bytes": 19278,
+      "modified_utc": "2026-07-14T14:16:12.972864+00:00",
+      "sha256": "d7927ff3f1aad90e0caf78579341d4cc1683bf1c1bfd8d8096516177ba7d5e7d",
+      "relative_path": "generation/runtime_obs_schema.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/runtime_probe.json",
+      "bytes": 272,
+      "modified_utc": "2026-07-14T14:16:12.972864+00:00",
+      "sha256": "4b5f38d00774f090144d6a28e84f42401ce08b203d0caa7d99358a85c63a8a42",
+      "relative_path": "generation/runtime_probe.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/task_description.json",
+      "bytes": 979,
+      "modified_utc": "2026-07-14T14:16:12.968864+00:00",
+      "sha256": "88e3be7e0bbdd8a6eabeb2d3d81905e25c66f52ac3b9939c68ca480788cde1b6",
+      "relative_path": "generation/task_description.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/__pycache__/comm_init.cpython-310.pyc",
+      "bytes": 4663,
+      "modified_utc": "2026-07-14T14:29:06.442780+00:00",
+      "sha256": "f666320b57700506fb7ce258fed521373f2083402ab850cff831752df767500a",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/__pycache__/comm_init.cpython-310.pyc"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/candidate_metadata.json",
+      "bytes": 188,
+      "modified_utc": "2026-07-14T14:28:31.218117+00:00",
+      "sha256": "867e9b65f6e6e73fa3087f421bacfff9c32a132593dc77a8301108fc0c187e74",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/candidate_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/comm_init.py",
+      "bytes": 6255,
+      "modified_utc": "2026-07-14T14:29:06.438779+00:00",
+      "sha256": "5007c7dae5aa8f57e167a6d219e3adef860b5cedae098893bdc3ad11e6890466",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/comm_init.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_metadata.json",
+      "bytes": 126,
+      "modified_utc": "2026-07-14T14:30:52.748786+00:00",
+      "sha256": "a66344494838add236a4825936d64bd4a3ff3d6dbf443313181770c5b47ff7af",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_prompt.md",
+      "bytes": 108792,
+      "modified_utc": "2026-07-14T14:29:06.546781+00:00",
+      "sha256": "02b3deb59348bcffd4d5936b27365eea3464fff84cc7f2e2421eee21d5d9666c",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_raw_response.md",
+      "bytes": 6697,
+      "modified_utc": "2026-07-14T14:30:52.748786+00:00",
+      "sha256": "48bb79b4847417b32ec78da965f41858e9c4a4715f4776a8c305f3eecc8de53c",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/llm_judge_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_metadata.json",
+      "bytes": 356,
+      "modified_utc": "2026-07-14T14:29:06.438779+00:00",
+      "sha256": "4ea20ac8a192fb76f9b92cf9abaf4399f4ee76bb4f4cf1c76d91b731663aaa62",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_prompt.md",
+      "bytes": 66251,
+      "modified_utc": "2026-07-14T14:28:31.226118+00:00",
+      "sha256": "2a8f2ef5b482b23ec8d4be87d5eb4036d07cf6e2032a24066dc1c68e59bad101",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_raw_response.md",
+      "bytes": 6268,
+      "modified_utc": "2026-07-14T14:29:06.438779+00:00",
+      "sha256": "8968786a49d3e633db24c855f7494ad0a58fac02944849b0047989e6a8fba96c",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/repair_01/repair_coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/rollout_evaluation.json",
+      "bytes": 36473,
+      "modified_utc": "2026-07-14T14:29:06.538781+00:00",
+      "sha256": "1ccfd1e322735b3b045f8beebd212ef4666f2db95ed0f01818068dce79f43d66",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_000/rollout_evaluation.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/__pycache__/comm_init.cpython-310.pyc",
+      "bytes": 6040,
+      "modified_utc": "2026-07-14T14:34:01.436373+00:00",
+      "sha256": "9219a0ea445f3496a0788ed983a7b6630cc87cd3e4b443412046ad6b01cb6c23",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/__pycache__/comm_init.cpython-310.pyc"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/comm_init.py",
+      "bytes": 8055,
+      "modified_utc": "2026-07-14T14:34:01.432373+00:00",
+      "sha256": "902d86a2c7276b5307886c7bd75342ae84c47362958aa0de789b6f33a638aafc",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/comm_init.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_metadata.json",
+      "bytes": 126,
+      "modified_utc": "2026-07-14T14:35:57.122585+00:00",
+      "sha256": "ab591cf13c7cb6337e64ed21ab1d85776d52a69b343af04fb70e20e7e54dfc5e",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_prompt.md",
+      "bytes": 114944,
+      "modified_utc": "2026-07-14T14:34:01.540375+00:00",
+      "sha256": "7e6fdb41a8c74f1ff062af9f85129469e6441fdeb0d89806046147898f8ba054",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_raw_response.md",
+      "bytes": 8113,
+      "modified_utc": "2026-07-14T14:35:57.122585+00:00",
+      "sha256": "8c8e45b0f008f182210a37cd4c34ae6ff256849288ccc4997948baff936b85ef",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/llm_judge_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_metadata.json",
+      "bytes": 356,
+      "modified_utc": "2026-07-14T14:34:01.432373+00:00",
+      "sha256": "e83797d4ca3f8fe6df353becdd13c29c58b05269c3619edc62042504d4251905",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_prompt.md",
+      "bytes": 69445,
+      "modified_utc": "2026-07-14T14:32:32.322675+00:00",
+      "sha256": "98fab82c2ffa918ad41f7f535fb80a199e5119c6527d1476fc4506d35082f301",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_raw_response.md",
+      "bytes": 8068,
+      "modified_utc": "2026-07-14T14:34:01.432373+00:00",
+      "sha256": "ab65fae06bcf615c05dfde336418dc4cca4a57af89c5d76cc965c322e0982341",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/repair_01/repair_coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_metadata.json",
+      "bytes": 356,
+      "modified_utc": "2026-07-14T14:32:32.310675+00:00",
+      "sha256": "2e1c41ff1c429e7f035ee87e11048a2e52e84fa4752500704a130982586be5a6",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_prompt.md",
+      "bytes": 112514,
+      "modified_utc": "2026-07-14T14:31:08.917092+00:00",
+      "sha256": "05d9562f3403eb4882821340cabfce9475576434dd66876bf8d8fc660a95844c",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_raw_response.md",
+      "bytes": 7984,
+      "modified_utc": "2026-07-14T14:32:32.306675+00:00",
+      "sha256": "60999afbf9b231fa1acd51ba0872481a5b8e1260e73475cdaabe03e6b27f6359",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/revision_coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/rollout_evaluation.json",
+      "bytes": 37354,
+      "modified_utc": "2026-07-14T14:34:01.532375+00:00",
+      "sha256": "475714ddb3d5be646c7aeea44926563a44212b3f230cfbbc8ad2d38dbf706fc9",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/rollout_evaluation.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_metadata.json",
+      "bytes": 125,
+      "modified_utc": "2026-07-14T14:31:08.905092+00:00",
+      "sha256": "70bebe96235b2b835c42c849daf60891f0d650a4d0fafb17abe6b6cc550132cd",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_prompt.md",
+      "bytes": 53783,
+      "modified_utc": "2026-07-14T14:30:52.756786+00:00",
+      "sha256": "104201df13f4ffe06a37aee1b751a5fa67bf320364b3f506540a05e5a9ffd6a3",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_raw_response.md",
+      "bytes": 1359,
+      "modified_utc": "2026-07-14T14:31:08.901092+00:00",
+      "sha256": "14d725e585ddc269938f458868552b5fc3000640a92b756f29b1e0001e487cc0",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/candidates/iter_001/summarizer_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/commands.sh",
+      "bytes": 518,
+      "modified_utc": "2026-07-14T14:28:29.762090+00:00",
+      "sha256": "51b12acb7e702efe48fc97ed95da320236d3af1dc676c89dc0ab5ce0b14a0f62",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/commands.sh"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/final_report.md",
+      "bytes": 1765,
+      "modified_utc": "2026-07-14T14:35:57.146586+00:00",
+      "sha256": "30eb0ba94b01507afe7f09e2d6eef8513bed5674c5f02cb3975cfbad861763ef",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/final_report.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/frozen_teacher_manifest.json",
+      "bytes": 1513,
+      "modified_utc": "2026-07-14T14:35:57.126585+00:00",
+      "sha256": "40bc9255b5892d0f37567434983a83353473c6e8a23e9b95a13024a14af06672",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/frozen_teacher_manifest.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/frozen_teacher_manifest.md",
+      "bytes": 435,
+      "modified_utc": "2026-07-14T14:35:57.126585+00:00",
+      "sha256": "ca1ae1b9fee13e36f430b45a853081e3fa7ac917a8594a337d4d9e99c5c8109e",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/frozen_teacher_manifest.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/judge_outputs/iter_000_llm_judge.json",
+      "bytes": 7032,
+      "modified_utc": "2026-07-14T14:30:52.752786+00:00",
+      "sha256": "5a9dc595be8e472b62b2eceda8ae6e8037626fa5ab39398791c08214873fee4e",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/judge_outputs/iter_000_llm_judge.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/judge_outputs/iter_001_llm_judge.json",
+      "bytes": 8672,
+      "modified_utc": "2026-07-14T14:35:57.122585+00:00",
+      "sha256": "208cc78e6fcd26f9b3f66570ac5a797124933bb77d87648bd70d989c8577753d",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/judge_outputs/iter_001_llm_judge.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/rollout_obs_summary.json",
+      "bytes": 59957,
+      "modified_utc": "2026-07-14T14:28:31.214117+00:00",
+      "sha256": "0c444a658d8e6627d06ab805b0531a47ef2c01944325e34d1f609e86b01a0a28",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/rollout_obs_summary.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/summary.csv",
+      "bytes": 3880,
+      "modified_utc": "2026-07-14T14:35:57.126585+00:00",
+      "sha256": "9e095c37d87f09f4daeaa7f84dea9dd38cb7d2bf03dd6710b9f643f0ad35c673",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/summary.csv"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/trials.jsonl",
+      "bytes": 5982,
+      "modified_utc": "2026-07-14T14:35:57.122585+00:00",
+      "sha256": "bdfadb2ef49d47abdf83f6c58b5451fb8b02ac653833a93b0f864f0c7a88a8d1",
+      "relative_path": "iteration/protoss_10_vs_10/20260714_141611/results/trials.jsonl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration_command.json",
+      "bytes": 857,
+      "modified_utc": "2026-07-14T14:28:29.714089+00:00",
+      "sha256": "347e9dfd7607d13a4eef4306000c1472064600d0c8ccf2d7bf50596685a66f73",
+      "relative_path": "iteration_command.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/modification_log.md",
+      "bytes": 4341,
+      "modified_utc": "2026-07-14T14:35:57.530593+00:00",
+      "sha256": "6a8fded140148e42e8d3f18e215f4b7b0d8941e42ce3aa2fee5e9fd051bd1b63",
+      "relative_path": "modification_log.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/pipeline.log",
+      "bytes": 23288,
+      "modified_utc": "2026-07-14T14:35:57.538593+00:00",
+      "sha256": "b2ed904c90aad28330a11dfd13fe6a7c7432bb787001700f6c26c62c5d9ee9b7",
+      "relative_path": "pipeline.log"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/pipeline_status.json",
+      "bytes": 1162,
+      "modified_utc": "2026-07-14T14:35:57.538593+00:00",
+      "sha256": "be3d98e8c4dfa01d99890c314e70a985bc11ea68a8a3d3469ab10f73daec6562",
+      "relative_path": "pipeline_status.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/run_context.json",
+      "bytes": 1395,
+      "modified_utc": "2026-07-14T14:16:12.260852+00:00",
+      "sha256": "0867c3835a81c22b1d3a9c8a7e5c7c57637846f5cbf964168f5008790c7669b6",
+      "relative_path": "run_context.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/run_manifest.json",
+      "bytes": 498,
+      "modified_utc": "2026-07-14T14:23:46.900844+00:00",
+      "sha256": "bcb687ac15c732838a7de2064014c252ae232e64428acb1b396f22442ba13fd4",
+      "relative_path": "run_manifest.json"
+    }
+  ]
+}

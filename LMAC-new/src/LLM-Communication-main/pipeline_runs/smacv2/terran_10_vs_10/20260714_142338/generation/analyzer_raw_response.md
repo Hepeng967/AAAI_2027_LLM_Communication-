@@ -1,0 +1,144 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Attack target selection: Choose an enemy unit to attack, considering its health, distance, type, and coordination with allies' targets.",
+      "locally_missing_information": [
+        "Existence, position, health, and type of enemies outside the agent's sight range.",
+        "Which enemies are currently being attacked by other allies, inferred from allies' last actions."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Heal target selection: As a medivac, choose an allied unit to heal based on its health, distance, and type.",
+      "locally_missing_information": [
+        "Position, health, and type of allied units that are not visible.",
+        "Own health and position of allies that need healing but are out of sight."
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Move destination selection: Decide movement direction to engage enemies, avoid threats, approach healers, or maintain formation.",
+      "locally_missing_information": [
+        "Locations and states of enemies/allies beyond sight range.",
+        "Position of medivacs (for injured non-medivacs) or of injured allies (for medivacs).",
+        "Recent movement or attack actions of allies to avoid collisions or coordinate positioning."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "agents with own_unit_type_medivac == 1",
+      "role_basis": "observable own unit type: medivac serves as healer/support, incapable of attacking enemies."
+    },
+    {
+      "group_id": "G2",
+      "members": "agents with own_unit_type_marine == 1 or own_unit_type_marauder == 1",
+      "role_basis": "observable own unit type: marine and marauder are damage dealers that attack enemies and may require healing."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Presence, position, health, and unit type of an enemy unit not currently visible to the receiver.",
+      "possible_sender_groups": ["G1", "G2"],
+      "possible_receiver_groups": ["G1", "G2"],
+      "sender_observable_features": [
+        {"name": "enemy_0_available", "index": 4},
+        {"name": "enemy_0_distance", "index": 5},
+        {"name": "enemy_0_relative_x", "index": 6},
+        {"name": "enemy_0_relative_y", "index": 7},
+        {"name": "enemy_0_health", "index": 8},
+        {"name": "enemy_0_unit_type_marine", "index": 9},
+        {"name": "enemy_0_unit_type_marauder", "index": 10},
+        {"name": "enemy_0_unit_type_medivac", "index": 11}
+      ],
+      "receiver_need_hypothesis": "To improve attack targeting (G2) and threat avoidance (G1) by incorporating knowledge of off-screen enemies, preventing surprise flanking and enabling prioritization of low-health targets.",
+      "task_decision_ids": ["D1", "D3"],
+      "uncertainties": [
+        "receiver misses low-health enemies that could be finished quickly",
+        "receiver is unaware of enemy flanking maneuvers outside its sight",
+        "receiver cannot prioritize targets based on global threat picture"
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Presence, position, health, and unit type of an allied unit not currently visible to the receiver.",
+      "possible_sender_groups": ["G1", "G2"],
+      "possible_receiver_groups": ["G1", "G2"],
+      "sender_observable_features": [
+        {"name": "ally_slot_0_visible", "index": 84},
+        {"name": "ally_slot_0_distance", "index": 85},
+        {"name": "ally_slot_0_relative_x", "index": 86},
+        {"name": "ally_slot_0_relative_y", "index": 87},
+        {"name": "ally_slot_0_health", "index": 88},
+        {"name": "ally_slot_0_unit_type_marine", "index": 89},
+        {"name": "ally_slot_0_unit_type_marauder", "index": 90},
+        {"name": "ally_slot_0_unit_type_medivac", "index": 91}
+      ],
+      "receiver_need_hypothesis": "To identify healing needs (G1) and to coordinate movements (G2) by knowing which allies require support and where medivacs are located.",
+      "task_decision_ids": ["D2", "D3"],
+      "uncertainties": [
+        "medivac cannot find distant injured allies, causing unnecessary deaths",
+        "dps cannot locate medivac for healing support",
+        "agents may become isolated without knowledge of ally positions"
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "Own current health and unit type of the sending agent.",
+      "possible_sender_groups": ["G1", "G2"],
+      "possible_receiver_groups": ["G1", "G2"],
+      "sender_observable_features": [
+        {"name": "own_health", "index": 156},
+        {"name": "own_normalized_x", "index": 157},
+        {"name": "own_normalized_y", "index": 158},
+        {"name": "own_unit_type_marine", "index": 159},
+        {"name": "own_unit_type_marauder", "index": 160},
+        {"name": "own_unit_type_medivac", "index": 161}
+      ],
+      "receiver_need_hypothesis": "Medivacs (G1) require this to decide whom to heal; damage dealers (G2) can use it to protect low-health allies or to know which allies are medivacs available for healing support.",
+      "task_decision_ids": ["D2", "D3"],
+      "uncertainties": [
+        "without own-health broadcasts, medivacs are blind to the health status of allies outside their sight range",
+        "dps cannot reliably find a medivac when injured"
+      ]
+    },
+    {
+      "requirement_id": "IR4",
+      "fact": "Previous discrete action taken by the sending agent.",
+      "possible_sender_groups": ["G1", "G2"],
+      "possible_receiver_groups": ["G1", "G2"],
+      "sender_observable_features": [
+        {"name": "previous_action_0", "index": 162},
+        {"name": "previous_action_1", "index": 163},
+        {"name": "previous_action_2", "index": 164},
+        {"name": "previous_action_3", "index": 165},
+        {"name": "previous_action_4", "index": 166},
+        {"name": "previous_action_5", "index": 167},
+        {"name": "previous_action_6", "index": 168},
+        {"name": "previous_action_7", "index": 169},
+        {"name": "previous_action_8", "index": 170},
+        {"name": "previous_action_9", "index": 171},
+        {"name": "previous_action_10", "index": 172},
+        {"name": "previous_action_11", "index": 173},
+        {"name": "previous_action_12", "index": 174},
+        {"name": "previous_action_13", "index": 175},
+        {"name": "previous_action_14", "index": 176},
+        {"name": "previous_action_15", "index": 177}
+      ],
+      "receiver_need_hypothesis": "Knowing allies' recent actions helps predict their immediate intentions, enabling better target coordination (avoid overkill/focus fire) and collision avoidance during movement.",
+      "task_decision_ids": ["D1", "D3"],
+      "uncertainties": [
+        "without action sharing, agents may unknowingly attack the same enemy, wasting damage",
+        "agents may collide or move suboptimally if unaware of allies' last move direction"
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Medivac units can heal allied biological units (marines and marauders) based on standard SMACv2 mechanics.",
+    "The action space includes targeted attacks on specific enemy IDs and a heal action for medivacs, as implied by the unit types and previous_action dimensionality (16).",
+    "Sight range is limited and indicated by the available/visible flags; enemy/ally slots beyond this range have zeros for position/health and a 0 in the available/visible flag."
+  ]
+}

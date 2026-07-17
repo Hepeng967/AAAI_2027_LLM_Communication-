@@ -1,0 +1,282 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Select which enemy to attack from visible enemies, considering enemy health, type, distance, and ally focus fire.",
+      "locally_missing_information": [
+        "Health of enemies not currently visible to the agent.",
+        "Types of enemies not visible.",
+        "Positions of enemies not visible.",
+        "Which enemies are currently being targeted by other allies."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Choose movement direction/positioning, such as advancing, retreating, flanking, or grouping with allies.",
+      "locally_missing_information": [
+        "Positions and health of unseen allies.",
+        "Types of unseen allies (to infer formation roles).",
+        "Positions of unseen enemies (flanking threats).",
+        "Overall team health status and whether allies need assistance."
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "For baneling units, decide when to run into enemy group to maximize explosive damage while minimizing ally collateral.",
+      "locally_missing_information": [
+        "Enemy cluster density and positions beyond vision.",
+        "Ally positions relative to potential blast area (including unseen allies).",
+        "Health of enemies that might survive the blast."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "Agents whose own_unit_type_zergling == 1",
+      "role_basis": "Unit type dictates melee flanker role; need to coordinate surround and focus low-health enemies."
+    },
+    {
+      "group_id": "G2",
+      "members": "Agents whose own_unit_type_hydralisk == 1",
+      "role_basis": "Unit type dictates ranged support role; need to maintain distance and focus fire on priority targets."
+    },
+    {
+      "group_id": "G3",
+      "members": "Agents whose own_unit_type_baneling == 1",
+      "role_basis": "Unit type dictates suicide bomber role; need to coordinate timing with ally safety and enemy grouping."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "My own agent status: agent ID, health, unit type, global position (normalized).",
+      "possible_sender_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_health",
+          "index": 156
+        },
+        {
+          "name": "own_normalized_x",
+          "index": 157
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 158
+        },
+        {
+          "name": "own_unit_type_zergling",
+          "index": 159
+        },
+        {
+          "name": "own_unit_type_hydralisk",
+          "index": 160
+        },
+        {
+          "name": "own_unit_type_baneling",
+          "index": 161
+        },
+        {
+          "name": "agent_id_0",
+          "index": 178
+        },
+        {
+          "name": "agent_id_1",
+          "index": 179
+        },
+        {
+          "name": "agent_id_2",
+          "index": 180
+        },
+        {
+          "name": "agent_id_3",
+          "index": 181
+        },
+        {
+          "name": "agent_id_4",
+          "index": 182
+        },
+        {
+          "name": "agent_id_5",
+          "index": 183
+        },
+        {
+          "name": "agent_id_6",
+          "index": 184
+        },
+        {
+          "name": "agent_id_7",
+          "index": 185
+        },
+        {
+          "name": "agent_id_8",
+          "index": 186
+        },
+        {
+          "name": "agent_id_9",
+          "index": 187
+        }
+      ],
+      "receiver_need_hypothesis": "Receivers need to know ally identities, positions, types, and health to coordinate movement (e.g., forming a line, assisting low-health allies) and to interpret future communications about enemy sightings relative to that ally.",
+      "task_decision_ids": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "Agent ID one-hot indices 178-187; the active ID must be extracted. Global normalized coordinates might not be perfectly aligned across agents, but assumed consistent within the map."
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Enemy status: global position (computed as own_position + relative_x/y), health, unit type, for a visible enemy (example enemy slot 0; pattern repeats for slots 1–9).",
+      "possible_sender_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_normalized_x",
+          "index": 157
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 158
+        },
+        {
+          "name": "enemy_0_available",
+          "index": 4
+        },
+        {
+          "name": "enemy_0_distance",
+          "index": 5
+        },
+        {
+          "name": "enemy_0_relative_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_relative_y",
+          "index": 7
+        },
+        {
+          "name": "enemy_0_health",
+          "index": 8
+        },
+        {
+          "name": "enemy_0_unit_type_zergling",
+          "index": 9
+        },
+        {
+          "name": "enemy_0_unit_type_hydralisk",
+          "index": 10
+        },
+        {
+          "name": "enemy_0_unit_type_baneling",
+          "index": 11
+        }
+      ],
+      "receiver_need_hypothesis": "To build a shared enemy map, receivers need to know the health, type and location of enemies they cannot see, enabling better target selection (focus fire, priority threats) and movement decisions (avoiding flanks). Global position allows disambiguation when enemy slot indices differ across agents.",
+      "task_decision_ids": [
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "Enemy slot indices i are agent-specific; the communicated enemy must be identified by its global location, not slot index. Enemies with identical positions may cause confusion.",
+        "The computation of global position assumes that relative_x/y are in a coordinate system aligned with own_normalized_x/y and that scaling is consistent."
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "Ally status: health, unit type, global position of a specific ally (matching to an agent ID, e.g., via previously shared own-status). Example: ally seen in sender's slot 0; pattern repeats for slots 0–8.",
+      "possible_sender_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "possible_receiver_groups": [
+        "G1",
+        "G2",
+        "G3"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_normalized_x",
+          "index": 157
+        },
+        {
+          "name": "own_normalized_y",
+          "index": 158
+        },
+        {
+          "name": "ally_slot_0_visible",
+          "index": 84
+        },
+        {
+          "name": "ally_slot_0_distance",
+          "index": 85
+        },
+        {
+          "name": "ally_slot_0_relative_x",
+          "index": 86
+        },
+        {
+          "name": "ally_slot_0_relative_y",
+          "index": 87
+        },
+        {
+          "name": "ally_slot_0_health",
+          "index": 88
+        },
+        {
+          "name": "ally_slot_0_unit_type_zergling",
+          "index": 89
+        },
+        {
+          "name": "ally_slot_0_unit_type_hydralisk",
+          "index": 90
+        },
+        {
+          "name": "ally_slot_0_unit_type_baneling",
+          "index": 91
+        }
+      ],
+      "receiver_need_hypothesis": "Agents need to know the health and type of allies that are outside their vision to decide whether to assist a low-health ally or to maintain formation. Global position allows matching to known ally slots when visible, and tracking when not.",
+      "task_decision_ids": [
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "Ally slot j is specific to the sender; the receiver cannot directly map slot j to its own slot. The identity of the ally must be included (via agent ID) if the sender can infer it. If the sender does not know the agent ID of the ally in slot j, the information is ambiguous.",
+        "The sender might deduce agent ID from matching observed ally attributes to previously communicated own-status messages (IR1). This assumes a prior round of communication has linked agent IDs to positions."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Global normalized coordinate system (own_normalized_x/y) is common across agents and can be used to spatially relate communicated positions.",
+    "Enemies have distinct positions, allowing disambiguation via global coordinates despite slot alias issues.",
+    "Agents can compute enemy global position by adding relative coordinates to own position, and this is accurate.",
+    "Agent ID one-hot (indices 178-187) is stable and can be included in messages to identify individuals.",
+    "The teacher can compare observations and deduce which ally slot corresponds to which agent ID, enabling communication of ally status with agent ID even if the agent can't directly observe ID (e.g., by matching positions).",
+    "Communication latency is negligible relative to decision timescale.",
+    "Unit types determine role, and agents can self-identify their group based on own_unit_type features.",
+    "Patterns for enemy slots 1–9 and ally slots 1–8 follow the same index offset formulas as the examples given."
+  ]
+}

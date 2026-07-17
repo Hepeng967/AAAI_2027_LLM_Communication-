@@ -1,0 +1,10 @@
+{
+  "environment": "Google Research Football",
+  "task": "academy_run_pass_and_shoot_with_keeper",
+  "objective": "Two controlled attackers execute a run-pass-and-shoot sequence against one field defender and a goalkeeper.",
+  "n_agents": 2,
+  "n_enemies": 2,
+  "episode_limit": 150,
+  "reward": "100 for scoring; a failed terminal episode returns -1; otherwise 0.",
+  "information_boundary": "A teacher may compare controlled players' local observations, but may not use unexposed raw football state, future events, or global state."
+}

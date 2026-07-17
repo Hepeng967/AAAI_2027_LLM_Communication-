@@ -1,0 +1,153 @@
+import torch
+
+def message_design_instruction():
+    return (
+        "WHO: Overseer (agent 0) sends to Roach1 (agent 1) and Roach2 (agent 2). "
+        "Roach1 and Roach2 each optionally send to Overseer. No other edges are active.\n"
+        "WHEN: Overseer->Roach edges are active when Overseer sees any enemy "
+        "(any enemy_available flag in obs[sender, indices 4,11,18,25] is 1). "
+        "Roach->Overseer edges are active when the roach is alive (own_health > 0, index 46).\n"
+        "WHAT: Overseer sends all enemy features (indices 4-31, 28 floats). "
+        "Each Roach sends own_health, own_type_0, own_type_1, and ally_0_visible (4 floats)."
+    )
+
+def communication_who(o):
+    """WHO matrix: (batch, n_agents, n_agents) with [receiver, sender] convention."""
+    bs, n_agents, _ = o.shape
+    who = torch.zeros(bs, n_agents, n_agents, device=o.device, dtype=o.dtype)
+    if n_agents >= 3:
+        who[:, 1, 0] = 1.0
+        who[:, 2, 0] = 1.0
+        who[:, 0, 1] = 1.0
+        who[:, 0, 2] = 1.0
+    return who
+
+def communication_when(o):
+    """WHEN matrix: (batch, n_agents, n_agents) with [receiver, sender] convention."""
+    bs, n_agents, obs_dim = o.shape
+    
+    # Build WHO base directly (no external calls to avoid name resolution issues)
+    when = torch.zeros(bs, n_agents, n_agents, device=o.device, dtype=o.dtype)
+    if n_agents >= 3:
+        when[:, 1, 0] = 1.0
+        when[:, 2, 0] = 1.0
+        when[:, 0, 1] = 1.0
+        when[:, 0, 2] = 1.0
+    
+    if n_agents >= 3:
+        # --- Overseer (sender 0) -> roaches (receivers 1, 2) ---
+        # Trigger: any enemy_available (indices 4, 11, 18, 25) is 1
+        enemy_flags = []
+        for idx in [4, 11, 18, 25]:
+            if idx < obs_dim:
+                enemy_flags.append(o[:, 0, idx:idx+1])
+        
+        if enemy_flags:
+            any_enemy = torch.cat(enemy_flags, dim=-1).any(dim=-1, keepdim=True).float()
+            overseer_active = (any_enemy >= 0.5).float().squeeze(-1)
+        else:
+            overseer_active = torch.zeros(bs, device=o.device, dtype=o.dtype)
+        
+        when[:, 1, 0] = when[:, 1, 0] * overseer_active
+        when[:, 2, 0] = when[:, 2, 0] * overseer_active
+        
+        # --- Roach1 (sender 1) -> overseer (receiver 0) ---
+        if 46 < obs_dim:
+            roach1_alive = (o[:, 1, 46] > 0).float()
+        else:
+            roach1_alive = torch.zeros(bs, device=o.device, dtype=o.dtype)
+        when[:, 0, 1] = when[:, 0, 1] * roach1_alive
+        
+        # --- Roach2 (sender 2) -> overseer (receiver 0) ---
+        if 46 < obs_dim:
+            roach2_alive = (o[:, 2, 46] > 0).float()
+        else:
+            roach2_alive = torch.zeros(bs, device=o.device, dtype=o.dtype)
+        when[:, 0, 2] = when[:, 0, 2] * roach2_alive
+    
+    return when
+
+def communication_what(o):
+    """WHAT: per-sender message content. Output shape (bs, n_agents, message_dim)."""
+    bs, n_agents, obs_dim = o.shape
+    
+    msg_dim = 28
+    messages = torch.zeros(bs, n_agents, msg_dim, device=o.device, dtype=o.dtype)
+    
+    # Agent 0: overseer
+    if n_agents >= 1:
+        lo = 4
+        hi = min(32, obs_dim)
+        if lo < obs_dim:
+            data_len = hi - lo
+            messages[:, 0, :data_len] = o[:, 0, lo:hi]
+    
+    # Agent 1: roach 1
+    if n_agents >= 2:
+        parts = []
+        # own_health (46)
+        if 46 < obs_dim:
+            parts.append(o[:, 1, 46:47])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        # own_type_0 (47)
+        if 47 < obs_dim:
+            parts.append(o[:, 1, 47:48])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        # own_type_1 (48)
+        if 48 < obs_dim:
+            parts.append(o[:, 1, 48:49])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        # ally_0_visible (32)
+        if 32 < obs_dim:
+            parts.append(o[:, 1, 32:33])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        
+        msg_1 = torch.cat(parts, dim=-1)
+        messages[:, 1, :4] = msg_1
+    
+    # Agent 2: roach 2
+    if n_agents >= 3:
+        parts = []
+        if 46 < obs_dim:
+            parts.append(o[:, 2, 46:47])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        if 47 < obs_dim:
+            parts.append(o[:, 2, 47:48])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        if 48 < obs_dim:
+            parts.append(o[:, 2, 48:49])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        if 32 < obs_dim:
+            parts.append(o[:, 2, 32:33])
+        else:
+            parts.append(torch.zeros(bs, 1, device=o.device, dtype=o.dtype))
+        
+        msg_2 = torch.cat(parts, dim=-1)
+        messages[:, 2, :4] = msg_2
+    
+    return messages
+
+def communication_matrix(o):
+    """Return (batch, n_agents, n_agents) matrix = who * when, with diagonal zero."""
+    who = communication_who(o)
+    when = communication_when(o)
+    mat = torch.clamp(who * when, 0.0, 1.0)
+    
+    bs, n_agents, _ = mat.shape
+    if n_agents > 0:
+        idx = torch.arange(n_agents, device=o.device)
+        mat[:, idx, idx] = 0.0
+    
+    return mat
+
+def communication(o):
+    """Concatenate original obs with per-sender messages."""
+    msg = communication_what(o)
+    return torch.cat([o, msg], dim=-1)

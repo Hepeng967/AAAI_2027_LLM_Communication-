@@ -1,0 +1,266 @@
+{
+  "state_shape": 68,
+  "obs_shape": 49,
+  "n_actions": 10,
+  "n_agents": 3,
+  "episode_limit": 50,
+  "feature_index": {
+    "move_north": [
+      0,
+      1
+    ],
+    "move_south": [
+      1,
+      2
+    ],
+    "move_east": [
+      2,
+      3
+    ],
+    "move_west": [
+      3,
+      4
+    ],
+    "enemy_0_available": [
+      4,
+      5
+    ],
+    "enemy_0_distance": [
+      5,
+      6
+    ],
+    "enemy_0_rel_x": [
+      6,
+      7
+    ],
+    "enemy_0_rel_y": [
+      7,
+      8
+    ],
+    "enemy_0_health": [
+      8,
+      9
+    ],
+    "enemy_0_type_0": [
+      9,
+      10
+    ],
+    "enemy_0_type_1": [
+      10,
+      11
+    ],
+    "enemy_1_available": [
+      11,
+      12
+    ],
+    "enemy_1_distance": [
+      12,
+      13
+    ],
+    "enemy_1_rel_x": [
+      13,
+      14
+    ],
+    "enemy_1_rel_y": [
+      14,
+      15
+    ],
+    "enemy_1_health": [
+      15,
+      16
+    ],
+    "enemy_1_type_0": [
+      16,
+      17
+    ],
+    "enemy_1_type_1": [
+      17,
+      18
+    ],
+    "enemy_2_available": [
+      18,
+      19
+    ],
+    "enemy_2_distance": [
+      19,
+      20
+    ],
+    "enemy_2_rel_x": [
+      20,
+      21
+    ],
+    "enemy_2_rel_y": [
+      21,
+      22
+    ],
+    "enemy_2_health": [
+      22,
+      23
+    ],
+    "enemy_2_type_0": [
+      23,
+      24
+    ],
+    "enemy_2_type_1": [
+      24,
+      25
+    ],
+    "enemy_3_available": [
+      25,
+      26
+    ],
+    "enemy_3_distance": [
+      26,
+      27
+    ],
+    "enemy_3_rel_x": [
+      27,
+      28
+    ],
+    "enemy_3_rel_y": [
+      28,
+      29
+    ],
+    "enemy_3_health": [
+      29,
+      30
+    ],
+    "enemy_3_type_0": [
+      30,
+      31
+    ],
+    "enemy_3_type_1": [
+      31,
+      32
+    ],
+    "ally_0_visible": [
+      32,
+      33
+    ],
+    "ally_0_distance": [
+      33,
+      34
+    ],
+    "ally_0_rel_x": [
+      34,
+      35
+    ],
+    "ally_0_rel_y": [
+      35,
+      36
+    ],
+    "ally_0_health": [
+      36,
+      37
+    ],
+    "ally_0_type_0": [
+      37,
+      38
+    ],
+    "ally_0_type_1": [
+      38,
+      39
+    ],
+    "ally_1_visible": [
+      39,
+      40
+    ],
+    "ally_1_distance": [
+      40,
+      41
+    ],
+    "ally_1_rel_x": [
+      41,
+      42
+    ],
+    "ally_1_rel_y": [
+      42,
+      43
+    ],
+    "ally_1_health": [
+      43,
+      44
+    ],
+    "ally_1_type_0": [
+      44,
+      45
+    ],
+    "ally_1_type_1": [
+      45,
+      46
+    ],
+    "own_health": [
+      46,
+      47
+    ],
+    "own_type_0": [
+      47,
+      48
+    ],
+    "own_type_1": [
+      48,
+      49
+    ]
+  },
+  "obs_feature_names": [
+    "move_north",
+    "move_south",
+    "move_east",
+    "move_west",
+    "enemy_0_available",
+    "enemy_0_distance",
+    "enemy_0_rel_x",
+    "enemy_0_rel_y",
+    "enemy_0_health",
+    "enemy_0_type_0",
+    "enemy_0_type_1",
+    "enemy_1_available",
+    "enemy_1_distance",
+    "enemy_1_rel_x",
+    "enemy_1_rel_y",
+    "enemy_1_health",
+    "enemy_1_type_0",
+    "enemy_1_type_1",
+    "enemy_2_available",
+    "enemy_2_distance",
+    "enemy_2_rel_x",
+    "enemy_2_rel_y",
+    "enemy_2_health",
+    "enemy_2_type_0",
+    "enemy_2_type_1",
+    "enemy_3_available",
+    "enemy_3_distance",
+    "enemy_3_rel_x",
+    "enemy_3_rel_y",
+    "enemy_3_health",
+    "enemy_3_type_0",
+    "enemy_3_type_1",
+    "ally_0_visible",
+    "ally_0_distance",
+    "ally_0_rel_x",
+    "ally_0_rel_y",
+    "ally_0_health",
+    "ally_0_type_0",
+    "ally_0_type_1",
+    "ally_1_visible",
+    "ally_1_distance",
+    "ally_1_rel_x",
+    "ally_1_rel_y",
+    "ally_1_health",
+    "ally_1_type_0",
+    "ally_1_type_1",
+    "own_health",
+    "own_type_0",
+    "own_type_1"
+  ],
+  "obs_agent_id_map": [
+    0,
+    1,
+    2
+  ],
+  "obs_agent_type_map": [
+    "overseer",
+    "roach",
+    "roach"
+  ]
+}

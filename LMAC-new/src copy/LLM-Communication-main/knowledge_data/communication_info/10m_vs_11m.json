@@ -1,0 +1,42 @@
+{
+  "map_name": "10m_vs_11m",
+  "n_agents": 10,
+  "n_enemies": 11,
+  "obs_shape": 115,
+  "feature_index": {
+    "move_north": [0, 1],
+    "move_south": [1, 2],
+    "move_east": [2, 3],
+    "move_west": [3, 4],
+    "enemy_0_available": [4, 5], "enemy_0_distance": [5, 6], "enemy_0_rel_x": [6, 7], "enemy_0_rel_y": [7, 8], "enemy_0_health": [8, 9],
+    "enemy_1_available": [9, 10], "enemy_1_distance": [10, 11], "enemy_1_rel_x": [11, 12], "enemy_1_rel_y": [12, 13], "enemy_1_health": [13, 14],
+    "enemy_2_available": [14, 15], "enemy_2_distance": [15, 16], "enemy_2_rel_x": [16, 17], "enemy_2_rel_y": [17, 18], "enemy_2_health": [18, 19],
+    "enemy_3_available": [19, 20], "enemy_3_distance": [20, 21], "enemy_3_rel_x": [21, 22], "enemy_3_rel_y": [22, 23], "enemy_3_health": [23, 24],
+    "enemy_4_available": [24, 25], "enemy_4_distance": [25, 26], "enemy_4_rel_x": [26, 27], "enemy_4_rel_y": [27, 28], "enemy_4_health": [28, 29],
+    "enemy_5_available": [29, 30], "enemy_5_distance": [30, 31], "enemy_5_rel_x": [31, 32], "enemy_5_rel_y": [32, 33], "enemy_5_health": [33, 34],
+    "enemy_6_available": [34, 35], "enemy_6_distance": [35, 36], "enemy_6_rel_x": [36, 37], "enemy_6_rel_y": [37, 38], "enemy_6_health": [38, 39],
+    "enemy_7_available": [39, 40], "enemy_7_distance": [40, 41], "enemy_7_rel_x": [41, 42], "enemy_7_rel_y": [42, 43], "enemy_7_health": [43, 44],
+    "enemy_8_available": [44, 45], "enemy_8_distance": [45, 46], "enemy_8_rel_x": [46, 47], "enemy_8_rel_y": [47, 48], "enemy_8_health": [48, 49],
+    "enemy_9_available": [49, 50], "enemy_9_distance": [50, 51], "enemy_9_rel_x": [51, 52], "enemy_9_rel_y": [52, 53], "enemy_9_health": [53, 54],
+    "enemy_10_available": [54, 55], "enemy_10_distance": [55, 56], "enemy_10_rel_x": [56, 57], "enemy_10_rel_y": [57, 58], "enemy_10_health": [58, 59],
+    "ally_0_visible": [59, 60], "ally_0_distance": [60, 61], "ally_0_rel_x": [61, 62], "ally_0_rel_y": [62, 63], "ally_0_health": [63, 64],
+    "ally_1_visible": [64, 65], "ally_1_distance": [65, 66], "ally_1_rel_x": [66, 67], "ally_1_rel_y": [67, 68], "ally_1_health": [68, 69],
+    "ally_2_visible": [69, 70], "ally_2_distance": [70, 71], "ally_2_rel_x": [71, 72], "ally_2_rel_y": [72, 73], "ally_2_health": [73, 74],
+    "ally_3_visible": [74, 75], "ally_3_distance": [75, 76], "ally_3_rel_x": [76, 77], "ally_3_rel_y": [77, 78], "ally_3_health": [78, 79],
+    "ally_4_visible": [79, 80], "ally_4_distance": [80, 81], "ally_4_rel_x": [81, 82], "ally_4_rel_y": [82, 83], "ally_4_health": [83, 84],
+    "ally_5_visible": [84, 85], "ally_5_distance": [85, 86], "ally_5_rel_x": [86, 87], "ally_5_rel_y": [87, 88], "ally_5_health": [88, 89],
+    "ally_6_visible": [89, 90], "ally_6_distance": [90, 91], "ally_6_rel_x": [91, 92], "ally_6_rel_y": [92, 93], "ally_6_health": [93, 94],
+    "ally_7_visible": [94, 95], "ally_7_distance": [95, 96], "ally_7_rel_x": [96, 97], "ally_7_rel_y": [97, 98], "ally_7_health": [98, 99],
+    "ally_8_visible": [99, 100], "ally_8_distance": [100, 101], "ally_8_rel_x": [101, 102], "ally_8_rel_y": [102, 103], "ally_8_health": [103, 104],
+    "own_health": [104, 105],
+    "agent_id": [105, 115]
+  },
+  "obs_feature_names": [
+    "move_north", "move_south", "move_east", "move_west",
+    "enemy_0_available", "enemy_0_distance", "enemy_0_rel_x", "enemy_0_rel_y", "enemy_0_health",
+    "ally_0_visible", "ally_0_distance", "ally_0_rel_x", "ally_0_rel_y", "ally_0_health",
+    "own_health", "agent_id"
+  ],
+  "obs_agent_id_map": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "obs_agent_type_map": ["Marine", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine"]
+}

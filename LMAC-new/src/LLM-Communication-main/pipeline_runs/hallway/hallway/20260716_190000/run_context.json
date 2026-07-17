@@ -1,0 +1,54 @@
+{
+  "argv": [
+    "main.py",
+    "--mode",
+    "full",
+    "--env",
+    "hallway",
+    "--task",
+    "hallway"
+  ],
+  "config": {
+    "api_config": "",
+    "api_key": "",
+    "base_url": "",
+    "collect_gpu": "0",
+    "collect_seeds": 1,
+    "collect_t_max": 6000,
+    "deepseek_thinking": false,
+    "dry_run": false,
+    "env": "hallway",
+    "gate": "llm",
+    "map": "hallway",
+    "max_files": 64,
+    "max_iters": 5,
+    "max_transitions": 4096,
+    "mode": "full",
+    "model": "",
+    "no_auto_collect": false,
+    "output_root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs",
+    "patience": 2,
+    "policy": "",
+    "reasoning_effort": "",
+    "repair_attempts": 3,
+    "rollout_root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data",
+    "run_id": "",
+    "task": "hallway",
+    "temperature": 0.0
+  },
+  "cwd": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "SC2PATH": "/root/StarCraftII/",
+    "api_key_available": false
+  },
+  "executable": "/root/miniconda3/envs/gfootball/bin/python",
+  "platform": "Linux-5.15.0-112-generic-x86_64-with-glibc2.17",
+  "python": "3.8.20 (default, Oct  3 2024, 15:24:27) \n[GCC 11.2.0]",
+  "rollout_files": [],
+  "torch": {
+    "cuda_available": true,
+    "cuda_version": "12.1",
+    "version": "2.4.1+cu121"
+  }
+}

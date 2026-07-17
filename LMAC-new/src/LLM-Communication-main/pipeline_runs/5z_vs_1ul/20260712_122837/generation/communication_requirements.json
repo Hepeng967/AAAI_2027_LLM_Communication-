@@ -1,0 +1,96 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Retreat/kite when own health < 20%",
+      "locally_missing_information": []
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Protect a wounded ally by engaging the Ultralisk to draw its attention",
+      "locally_missing_information": [
+        "Ally health status when ally is not visible",
+        "Ally location when ally is not visible"
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Avoid clustering with allies to minimize area damage",
+      "locally_missing_information": [
+        "Positions of allies that are not currently visible"
+      ]
+    },
+    {
+      "decision_id": "D4",
+      "decision": "Focus fire on the Ultralisk when engaging",
+      "locally_missing_information": []
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "0,1,2,3,4",
+      "role_basis": "All agents are homogeneous Zealots that must coordinate health management and tactical positioning. Roles dynamically split into 'healthy' (health >= 20%) and 'wounded' (health < 20%) based on the task description."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Agent i has health below 20%",
+      "possible_sender_groups": [
+        "G1"
+      ],
+      "possible_receiver_groups": [
+        "G1"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "own_health",
+          "index": 33
+        }
+      ],
+      "receiver_need_hypothesis": "Agents need to know which ally is wounded to trigger protective engagement and to avoid retreating into that ally's path.",
+      "task_decision_ids": [
+        "D2",
+        "D1"
+      ],
+      "uncertainties": [
+        "Communication delay may cause stale health status",
+        "Visibility of the wounded agent may be restored before the message is fully propagated",
+        "Threshold is predefined (20%) but dynamic changes in health may lead to rapid toggling"
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "Agent i position relative to the Ultralisk",
+      "possible_sender_groups": [
+        "G1"
+      ],
+      "possible_receiver_groups": [
+        "G1"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "enemy_0_rel_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_rel_y",
+          "index": 7
+        }
+      ],
+      "receiver_need_hypothesis": "To move toward the wounded ally to draw aggro or to avoid clustering, agents need the wounded ally's location. The sender can report the enemy's relative position, from which the ally's location can be derived (negative of the vector).",
+      "task_decision_ids": [
+        "D2",
+        "D3"
+      ],
+      "uncertainties": [
+        "Coordinate frame misalignment: the sender's enemy_0_rel_x/y is in the sender's local coordinate frame. A receiver cannot directly map this to its own frame without knowing the sender's position relative to the receiver or having a shared absolute coordinate system. This may render positional information unusable.",
+        "The Ultralisk moves, so the reported relative position becomes stale quickly."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Agents can interpret the communicated relative position of a teammate to their own coordinate frame without additional absolute position information. The observation space does not provide absolute coordinates, and the only common reference (the Ultralisk) is given in each agent's own local frame."
+  ]
+}

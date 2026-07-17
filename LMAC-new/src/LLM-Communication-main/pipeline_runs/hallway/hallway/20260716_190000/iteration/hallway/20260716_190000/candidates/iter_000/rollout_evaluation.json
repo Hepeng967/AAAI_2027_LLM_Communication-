@@ -1,0 +1,1134 @@
+{
+  "active_sender_count": 5120,
+  "active_sender_what_coverage_mean": 0.125,
+  "active_sender_what_coverage_min": 0.125,
+  "comm_code": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway/hallway/20260716_190000/iteration/hallway/20260716_190000/candidates/iter_000/comm_init.py",
+  "evidence_cases": [
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:0",
+      "selected_values_by_sender": [
+        {
+          "0": 3.0
+        },
+        {
+          "0": 6.0
+        },
+        {
+          "0": 1.0
+        },
+        {
+          "0": 2.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:1",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 5.0
+        },
+        {
+          "0": 2.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:3",
+      "selected_values_by_sender": [
+        {
+          "0": 1.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 2.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:5",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 1.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:6",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 2.0
+        },
+        {
+          "0": 4.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:8",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:10",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 6.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:12",
+      "selected_values_by_sender": [
+        {
+          "0": 3.0
+        },
+        {
+          "0": 6.0
+        },
+        {
+          "0": 5.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:13",
+      "selected_values_by_sender": [
+        {
+          "0": 4.0
+        },
+        {
+          "0": 5.0
+        },
+        {
+          "0": 5.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:15",
+      "selected_values_by_sender": [
+        {
+          "0": 4.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 7.0
+        },
+        {
+          "0": 5.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:17",
+      "selected_values_by_sender": [
+        {
+          "0": 3.0
+        },
+        {
+          "0": 4.0
+        },
+        {
+          "0": 8.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "case_id": "train_traj_0000:19",
+      "selected_values_by_sender": [
+        {
+          "0": 2.0
+        },
+        {
+          "0": 5.0
+        },
+        {
+          "0": 8.0
+        },
+        {
+          "0": 3.0
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ]
+    }
+  ],
+  "files": [
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0000.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0001.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0002.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0003.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0004.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0005.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0006.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0007.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0008.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0009.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0010.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0011.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0012.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0013.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0014.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0015.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0016.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0017.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0018.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0019.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0020.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0021.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0022.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0023.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0024.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0025.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0026.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0027.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0028.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0029.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0030.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0031.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0032.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0033.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0034.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0035.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0036.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0037.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0038.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0039.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0040.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0041.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0042.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0043.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0044.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0045.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0046.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0047.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0048.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0049.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0050.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0051.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0052.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0053.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0054.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0055.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0056.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0057.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0058.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0059.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0060.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0061.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0062.pkl",
+    "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway/hallway/train_traj_0063.pkl"
+  ],
+  "map_name": "hallway",
+  "matrix_edge_rate": 1.0,
+  "matrix_max": 1.0,
+  "matrix_min": 0.0,
+  "message_abs_mean": 0.125,
+  "message_dim": 8,
+  "message_nonzero_rate": 0.125,
+  "n_agents": 4,
+  "risk_flags": [
+    "nearly_all_to_all_edges_on_rollout"
+  ],
+  "rollout_obs_dim": 8,
+  "transitions": 1280,
+  "valid": true,
+  "when_edge_rate": 1.0,
+  "who_edge_rate": 1.0
+}

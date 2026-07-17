@@ -1,0 +1,271 @@
+{
+  "run_dir": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843",
+  "artifacts": [
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/analyzer_raw_response.md",
+      "bytes": 4177,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "48d3215adffc160d760a473d042dd12fae922f3eb1d18185896fdad62e0b91f0",
+      "relative_path": "generation/analyzer_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/analyzer_system_prompt.md",
+      "bytes": 277,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "d852a8405890df7b6ed8172c097f8fc696326cd6dab3f2616bcdd9b537724b4a",
+      "relative_path": "generation/analyzer_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/analyzer_user_prompt.md",
+      "bytes": 4026,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "94d704271f8011f4a6e7b79b613df5a10b55add59c74d737602cac81fe207593",
+      "relative_path": "generation/analyzer_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/coder_generated_attempt.py",
+      "bytes": 2918,
+      "modified_utc": "2026-07-12T12:12:00.162395+00:00",
+      "sha256": "e715ac2cb3465970c4456c4953984b5309ca3c1da6de48aabb4ec2a054a5db36",
+      "relative_path": "generation/coder_generated_attempt.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/coder_raw_response.md",
+      "bytes": 2932,
+      "modified_utc": "2026-07-12T12:12:00.162395+00:00",
+      "sha256": "0690c6b3aa50ece7a385c8af991b728a94a9e50f341432a34226016b2c01e271",
+      "relative_path": "generation/coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/coder_system_prompt.md",
+      "bytes": 494,
+      "modified_utc": "2026-07-12T12:10:51.428939+00:00",
+      "sha256": "29f7f96d5b4bb394593e07d09a410eb1c2c157e9e1d33580a4f383240a58462f",
+      "relative_path": "generation/coder_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/coder_user_prompt.md",
+      "bytes": 11092,
+      "modified_utc": "2026-07-12T12:10:51.428939+00:00",
+      "sha256": "fd27b01054b4ba036a5089a984eb83144e821d42b2d13cd8c6e56cbf362b4287",
+      "relative_path": "generation/coder_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/comm_init.py",
+      "bytes": 2918,
+      "modified_utc": "2026-07-12T12:12:00.194395+00:00",
+      "sha256": "e715ac2cb3465970c4456c4953984b5309ca3c1da6de48aabb4ec2a054a5db36",
+      "relative_path": "generation/comm_init.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/communication_requirements.json",
+      "bytes": 4954,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "e53e7925c86c46bef8e02ff8b149cb1bc03d215002d1f99f45edeaae194bf8f9",
+      "relative_path": "generation/communication_requirements.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/planner_policy.md",
+      "bytes": 7613,
+      "modified_utc": "2026-07-12T12:10:51.428939+00:00",
+      "sha256": "5edf8c54b0ffc4cf5a8c4f16eb1ea7ec05314791d8ec683731ca47e1f56781dc",
+      "relative_path": "generation/planner_policy.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/planner_raw_response.md",
+      "bytes": 6788,
+      "modified_utc": "2026-07-12T12:10:51.428939+00:00",
+      "sha256": "69f7c556220804d6cbbc59d260487e918ee0971d6b4a87fe4973aa792140c6b8",
+      "relative_path": "generation/planner_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/planner_system_prompt.md",
+      "bytes": 376,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "7e81bcd0679f244b62e1af875066237509f2b4836b1439fabc06e4b8e3698cc2",
+      "relative_path": "generation/planner_system_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/planner_user_prompt.md",
+      "bytes": 9300,
+      "modified_utc": "2026-07-12T12:10:51.424938+00:00",
+      "sha256": "5a60ed1aacb5527b216517b56dfe5e161ea56a068b9a3447166f65862cb1fc1a",
+      "relative_path": "generation/planner_user_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/generation/policy_spec.json",
+      "bytes": 7613,
+      "modified_utc": "2026-07-12T12:10:51.428939+00:00",
+      "sha256": "5edf8c54b0ffc4cf5a8c4f16eb1ea7ec05314791d8ec683731ca47e1f56781dc",
+      "relative_path": "generation/policy_spec.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/__pycache__/comm_init.cpython-310.pyc",
+      "bytes": 3656,
+      "modified_utc": "2026-07-12T12:12:43.603313+00:00",
+      "sha256": "8f37c453cc17ad5a6e07691499baba1da40aa3e5244a8d20a59276be3d1ea38d",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/__pycache__/comm_init.cpython-310.pyc"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/candidate_metadata.json",
+      "bytes": 176,
+      "modified_utc": "2026-07-12T12:12:01.166416+00:00",
+      "sha256": "50b831fef1906ef46e96afcaa70e2203895d4607b45b92d6269fa92438d699cf",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/candidate_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/comm_init.py",
+      "bytes": 3526,
+      "modified_utc": "2026-07-12T12:12:43.599313+00:00",
+      "sha256": "3a0d6278119e3bbf6086eae196680689c7dfeee735e342adaedb00fc43894081",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/comm_init.py"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_metadata.json",
+      "bytes": 126,
+      "modified_utc": "2026-07-12T12:13:49.788710+00:00",
+      "sha256": "224c349b8d41e120630df7604fa2db9342b227d569c978e678a2b64e61da237c",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_prompt.md",
+      "bytes": 48115,
+      "modified_utc": "2026-07-12T12:12:43.671315+00:00",
+      "sha256": "28bbdf9bb28a7308578f250b8fe8edb2fa0c92746a19b59c14ed283215c69f80",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_raw_response.md",
+      "bytes": 2574,
+      "modified_utc": "2026-07-12T12:13:49.788710+00:00",
+      "sha256": "ed30a40b448c15438058db46a9e621d6e6af7db3f9ee8cd26a1ec9d235194fbf",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/llm_judge_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_metadata.json",
+      "bytes": 339,
+      "modified_utc": "2026-07-12T12:12:43.599313+00:00",
+      "sha256": "4173be75cda2c6063b7d9cbac4338f83009fa2a900c067551606715d21697acd",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_metadata.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_prompt.md",
+      "bytes": 26290,
+      "modified_utc": "2026-07-12T12:12:01.170416+00:00",
+      "sha256": "e54ae401d8ba650312bd1ee1c93e257125104e0ed0879c7c14652cd6f2dac73a",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_prompt.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_raw_response.md",
+      "bytes": 3539,
+      "modified_utc": "2026-07-12T12:12:43.599313+00:00",
+      "sha256": "1c0d960105ba70e8c0be6e2de9ffdebc023bcdcce0ef551d0908d85c344b874b",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/repair_01/repair_coder_raw_response.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/rollout_evaluation.json",
+      "bytes": 16428,
+      "modified_utc": "2026-07-12T12:12:43.667315+00:00",
+      "sha256": "a67b0326a392420274f485b3d383e1f956ca44f801400432f5945fa5f87bd4b3",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/candidates/iter_000/rollout_evaluation.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/commands.sh",
+      "bytes": 506,
+      "modified_utc": "2026-07-12T12:12:00.250396+00:00",
+      "sha256": "bf695d996a182b118de2b8c45bdf5bdcbb2491427d0bbec923468e004a66a4a4",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/commands.sh"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/final_report.md",
+      "bytes": 915,
+      "modified_utc": "2026-07-12T12:13:49.840711+00:00",
+      "sha256": "8fe3b646fa3073c5a684150a7b79f9895fd5b1a894131b7d82e187e80fcace3b",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/final_report.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/frozen_teacher_manifest.json",
+      "bytes": 992,
+      "modified_utc": "2026-07-12T12:13:49.792711+00:00",
+      "sha256": "accd91e350b2a860eefd76d17d44e2ec10757bfb61f2df107b4f87b46f40b7fe",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/frozen_teacher_manifest.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/frozen_teacher_manifest.md",
+      "bytes": 414,
+      "modified_utc": "2026-07-12T12:13:49.792711+00:00",
+      "sha256": "56678bf934d999d7ea9b2e16c7ca626b016de3d9a04ce6fe30286e3673f1cb66",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/frozen_teacher_manifest.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/judge_outputs/iter_000_llm_judge.json",
+      "bytes": 2952,
+      "modified_utc": "2026-07-12T12:13:49.788710+00:00",
+      "sha256": "a34f775f658fd0e7804cf0993d39ccc377d8b8d2e0960f7a179f2f66ed1c5c83",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/judge_outputs/iter_000_llm_judge.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/rollout_obs_summary.json",
+      "bytes": 22355,
+      "modified_utc": "2026-07-12T12:12:01.166416+00:00",
+      "sha256": "2ebc7b739b263f67c60d9a7a070f80b82e35e3107a5fc83099bd1bd58cb022cc",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/rollout_obs_summary.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/summary.csv",
+      "bytes": 1280,
+      "modified_utc": "2026-07-12T12:13:49.820711+00:00",
+      "sha256": "67cebb7aab8b6508288a2b04a52325c099b1b7bef4b6c8f6b5c75c67cc54382d",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/summary.csv"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration/1o_2r_vs_4r/20260712_120843/results/trials.jsonl",
+      "bytes": 2270,
+      "modified_utc": "2026-07-12T12:13:49.788710+00:00",
+      "sha256": "1506953dd158ecadf2ed6687c2ff268398cdf52147e58d5824ad79c1f7690676",
+      "relative_path": "iteration/1o_2r_vs_4r/20260712_120843/results/trials.jsonl"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/iteration_command.json",
+      "bytes": 816,
+      "modified_utc": "2026-07-12T12:12:00.198395+00:00",
+      "sha256": "6af6fcd015d3b2772613bd390105f158d2228e712b400233471b7f4a2b5f5a31",
+      "relative_path": "iteration_command.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/modification_log.md",
+      "bytes": 1659,
+      "modified_utc": "2026-07-12T12:13:50.156718+00:00",
+      "sha256": "ea6c584a6ff4b0917db20ddd4c744689f9d284cf9f675e376772bd762fc9214a",
+      "relative_path": "modification_log.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/pipeline.log",
+      "bytes": 3105,
+      "modified_utc": "2026-07-12T12:13:50.160718+00:00",
+      "sha256": "33edef75136cecc0559e79ac05902f83f6fffa3ece95c2725e5954c211b1faac",
+      "relative_path": "pipeline.log"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/pipeline_status.json",
+      "bytes": 1030,
+      "modified_utc": "2026-07-12T12:13:50.160718+00:00",
+      "sha256": "d43ca577939e46297f2bd2b29d953d8c8634d65ff3ecefcbed1986536506bc7f",
+      "relative_path": "pipeline_status.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/run_context.json",
+      "bytes": 16366,
+      "modified_utc": "2026-07-12T12:08:44.422237+00:00",
+      "sha256": "e8fd879eeeeb02f196f26a7b3db0a6372b933e1c99862d5185f63dbab6ea5284",
+      "relative_path": "run_context.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_120843/run_manifest.json",
+      "bytes": 424,
+      "modified_utc": "2026-07-12T12:12:00.198395+00:00",
+      "sha256": "7b94472c26e43751a38dd61986f1e909f7054db93072ddabee3e57402aa2a470",
+      "relative_path": "run_manifest.json"
+    }
+  ]
+}

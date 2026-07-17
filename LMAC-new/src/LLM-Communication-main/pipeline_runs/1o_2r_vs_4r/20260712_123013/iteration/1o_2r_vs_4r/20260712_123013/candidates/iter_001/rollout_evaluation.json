@@ -1,0 +1,877 @@
+{
+  "active_sender_count": 5525,
+  "active_sender_what_coverage_mean": 0.10432194912595447,
+  "active_sender_what_coverage_min": 0.01515151560306549,
+  "comm_code": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_123013/iteration/1o_2r_vs_4r/20260712_123013/candidates/iter_001/comm_init.py",
+  "evidence_cases": [
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "case_id": "train_traj_0000:0",
+      "selected_values_by_sender": [
+        {
+          "13": 0.076497,
+          "14": 0.0,
+          "15": 0.076497,
+          "20": 1.0,
+          "21": 0.076497,
+          "22": 0.076497,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.0,
+          "6": 0.0,
+          "7": -0.076497,
+          "8": 1.0
+        },
+        {
+          "46": 0.104275
+        },
+        {
+          "46": -0.104275
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:4",
+      "selected_values_by_sender": [
+        {
+          "13": 0.08737,
+          "14": 0.042209,
+          "15": 0.076497,
+          "20": 1.0,
+          "21": 0.118707,
+          "22": 0.118707,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.042209,
+          "6": 0.042209,
+          "7": -0.076497,
+          "8": 1.0
+        },
+        {
+          "46": -0.117242
+        },
+        {
+          "46": 0.117242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:8",
+      "selected_values_by_sender": [
+        {
+          "13": 0.087646,
+          "14": 0.071913,
+          "15": 0.050103,
+          "20": 1.0,
+          "21": 0.150739,
+          "22": 0.14841,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.076604,
+          "6": 0.071913,
+          "7": -0.102892,
+          "8": 1.0
+        },
+        {
+          "46": -0.242242
+        },
+        {
+          "46": 0.242242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:13",
+      "selected_values_by_sender": [
+        {
+          "13": 0.076085,
+          "14": -0.057916,
+          "15": 0.049344,
+          "20": 1.0,
+          "21": 0.032903,
+          "22": 0.018582,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.063965,
+          "6": -0.057916,
+          "7": -0.103651,
+          "8": 1.0
+        },
+        {
+          "46": -0.617242
+        },
+        {
+          "46": 0.617242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "case_id": "train_traj_0000:17",
+      "selected_values_by_sender": [
+        {
+          "13": 0.116328,
+          "14": -0.058295,
+          "15": 0.100667,
+          "20": 1.0,
+          "21": 0.030257,
+          "22": 0.018202,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.063107,
+          "6": -0.058295,
+          "7": -0.052327,
+          "8": 1.0
+        },
+        {
+          "46": 0.007758
+        },
+        {
+          "46": -0.007758
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:22",
+      "selected_values_by_sender": [
+        {
+          "13": 0.06557,
+          "14": -0.058621,
+          "15": -0.029378,
+          "20": 1.0,
+          "21": 0.107374,
+          "22": 0.017877,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.121021,
+          "6": -0.058621,
+          "7": -0.182373,
+          "8": 1.0
+        },
+        {
+          "46": -0.117242
+        },
+        {
+          "46": 0.117242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:26",
+      "selected_values_by_sender": [
+        {
+          "13": 0.06557,
+          "14": -0.058621,
+          "15": -0.029378,
+          "20": 1.0,
+          "21": 0.107374,
+          "22": 0.017877,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.121021,
+          "6": -0.058621,
+          "7": -0.182373,
+          "8": 1.0
+        },
+        {
+          "46": -0.242242
+        },
+        {
+          "46": 0.242242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:31",
+      "selected_values_by_sender": [
+        {
+          "13": 0.040416,
+          "14": 0.00963,
+          "15": -0.039252,
+          "20": 1.0,
+          "21": 0.144277,
+          "22": 0.086127,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.11615,
+          "6": 0.00963,
+          "7": -0.192247,
+          "8": 1.0
+        },
+        {
+          "46": -0.867242
+        },
+        {
+          "46": 0.867242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:35",
+      "selected_values_by_sender": [
+        {
+          "13": 0.060126,
+          "14": 0.045546,
+          "15": -0.039252,
+          "20": 1.0,
+          "21": 0.168204,
+          "22": 0.122043,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.124388,
+          "6": 0.045546,
+          "7": -0.192247,
+          "8": 1.0
+        },
+        {
+          "46": -0.867242
+        },
+        {
+          "46": 0.867242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:40",
+      "selected_values_by_sender": [
+        {
+          "13": 0.053994,
+          "14": 0.045546,
+          "15": 0.028998,
+          "20": 1.0,
+          "21": 0.130961,
+          "22": 0.122043,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.065807,
+          "6": 0.045546,
+          "7": -0.123996,
+          "8": 1.0
+        },
+        {
+          "46": -0.742242
+        },
+        {
+          "46": 0.742242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:44",
+      "selected_values_by_sender": [
+        {
+          "13": 0.140739,
+          "14": 0.045546,
+          "15": 0.133165,
+          "20": 1.0,
+          "21": 0.134558,
+          "22": 0.122043,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.072702,
+          "6": 0.045546,
+          "7": -0.01983,
+          "8": 1.0
+        },
+        {
+          "46": -0.742242
+        },
+        {
+          "46": 0.742242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "case_id": "train_traj_0000:49",
+      "selected_values_by_sender": [
+        {
+          "13": 0.209995,
+          "14": 0.045546,
+          "15": 0.204997,
+          "20": 1.0,
+          "21": 0.177219,
+          "22": 0.122043,
+          "27": 0.0,
+          "28": 1.0,
+          "29": 0.136332,
+          "6": 0.045546,
+          "7": 0.052002,
+          "8": 1.0
+        },
+        {
+          "46": -0.617242
+        },
+        {
+          "46": 0.617242
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [
+          6,
+          7,
+          8,
+          13,
+          14,
+          15,
+          20,
+          21,
+          22,
+          27,
+          28,
+          29
+        ],
+        [
+          46
+        ],
+        [
+          46
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.181818,
+        0.015152,
+        0.015152
+      ]
+    }
+  ],
+  "files": [
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0000.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0001.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0002.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0003.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0004.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0005.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0006.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0007.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0008.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0009.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0010.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0011.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0012.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0013.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0014.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0015.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0016.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0017.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0018.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0019.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0020.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0021.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0022.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0023.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0024.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0025.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0026.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0027.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0028.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0029.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0030.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0031.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0032.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0033.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0034.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0035.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0036.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0037.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0038.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0039.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0040.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0041.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0042.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0043.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0044.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0045.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0046.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0047.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0048.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0049.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0050.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0051.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0052.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0053.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0054.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0055.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0056.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0057.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0058.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0059.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/1o_2r_vs_4r/train_traj_0060.pkl"
+  ],
+  "map_name": "1o_2r_vs_4r",
+  "matrix_edge_rate": 0.46344262295081967,
+  "matrix_max": 1.0,
+  "matrix_min": 0.0,
+  "message_abs_mean": 0.0707070707070707,
+  "message_dim": 66,
+  "message_nonzero_rate": 0.0707070707070707,
+  "n_agents": 3,
+  "risk_flags": [],
+  "rollout_obs_dim": 66,
+  "transitions": 3050,
+  "valid": true,
+  "when_edge_rate": 0.46344262295081967,
+  "who_edge_rate": 0.6666666666666666
+}

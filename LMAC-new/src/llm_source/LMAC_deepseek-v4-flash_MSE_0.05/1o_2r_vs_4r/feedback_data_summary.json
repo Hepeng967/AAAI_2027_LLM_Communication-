@@ -1,0 +1,410 @@
+[
+  {
+    "dimension": "s[..., 0] (Agent 0 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 1] (Agent 0 weapon cooldown ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 2] (Agent 0 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.29,
+        0.29,
+        0.3
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.77,
+        0.16,
+        0.17
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 3] (Agent 0 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.95,
+        0.33,
+        0.33
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.98,
+        0.14,
+        0.15
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 6] (Agent 1 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.93,
+        0.93,
+        0.95
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.9,
+        0.95,
+        0.93
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 7] (Agent 1 weapon cooldown ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.95,
+        0.97
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.94,
+        0.94,
+        0.95
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 8] (Agent 1 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.22,
+        0.25,
+        0.25
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.27,
+        0.28,
+        0.27
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 9] (Agent 1 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.3,
+        0.29,
+        0.31
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.32,
+        0.3,
+        0.29
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 12] (Agent 2 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.96,
+        0.95,
+        0.95
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.96,
+        0.96,
+        0.97
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 13] (Agent 2 weapon cooldown ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.96,
+        0.95,
+        0.96
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.96,
+        0.96,
+        0.96
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 14] (Agent 2 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.26,
+        0.26,
+        0.25
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.27,
+        0.27,
+        0.28
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 15] (Agent 2 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.36,
+        0.34,
+        0.35
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.35,
+        0.32,
+        0.32
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 18] (Enemy 0 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.95,
+        0.93,
+        0.92
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.95,
+        0.94,
+        0.97
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 19] (Enemy 0 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.3,
+        0.35,
+        0.37
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.76,
+        0.15,
+        0.16
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 20] (Enemy 0 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.92,
+        0.34,
+        0.32
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.13,
+        0.16
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 23] (Enemy 1 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.96,
+        0.96
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.95,
+        0.95,
+        0.95
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 24] (Enemy 1 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.32,
+        0.34,
+        0.33
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.75,
+        0.15,
+        0.15
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 25] (Enemy 1 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.93,
+        0.34,
+        0.32
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.96,
+        0.12,
+        0.14
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 28] (Enemy 2 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.94,
+        0.94,
+        0.94
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.93,
+        0.94,
+        0.94
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 29] (Enemy 2 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.43,
+        0.37,
+        0.39
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.77,
+        0.15,
+        0.15
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 30] (Enemy 2 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.94,
+        0.35,
+        0.31
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.12,
+        0.14
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 33] (Enemy 3 health ratio)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.95,
+        0.96,
+        0.96
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.96,
+        0.96
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 34] (Enemy 3 absolute X coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.35,
+        0.32,
+        0.35
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.76,
+        0.16,
+        0.15
+      ]
+    }
+  },
+  {
+    "dimension": "s[..., 35] (Enemy 3 absolute Y coordinate relative to map center)",
+    "with_communication": {
+      "agent_success_rates": [
+        0.92,
+        0.29,
+        0.29
+      ]
+    },
+    "without_communication": {
+      "agent_success_rates": [
+        0.97,
+        0.12,
+        0.14
+      ]
+    }
+  }
+]

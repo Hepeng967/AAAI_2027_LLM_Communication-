@@ -1,0 +1,1194 @@
+[INFO 18:20:31] pymarl Running command 'my_main'
+[INFO 18:20:31] pymarl Started run with ID "5"
+[DEBUG 18:20:31] pymarl Starting Heartbeat
+[DEBUG 18:20:31] my_main Started
+[INFO 18:20:31] my_main Experiment Parameters:
+[INFO 18:20:31] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': 'data/',
+    'buffer_size': 5000,
+    'certified_teacher_certified_edge_weight': 2.0,
+    'certified_teacher_negative_weight': 1.0,
+    'certified_teacher_positive_weight': 1.0,
+    'certified_teacher_weight_mode': 'task_facts',
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_123013/iteration/1o_2r_vs_4r/20260712_123013/candidates/iter_002/comm_init.py'],
+    'comm_selector_hidden_dim': 64,
+    'comm_sparsity_lambda': 0.001,
+    'common_reward': True,
+    'consistency_lambda': 1,
+    'debug_mode': False,
+    'deepseek_base_url': 'https://api.deepseek.com',
+    'deepseek_key': '',
+    'deepseek_reasoning_effort': None,
+    'deepseek_thinking': False,
+    'detach_latent_to_agent': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'enforce_min_what_coverage': True,
+    'env': 'sc2',
+    'env_args': {   'continuing_episode': False,
+                    'debug': False,
+                    'difficulty': '7',
+                    'game_version': None,
+                    'map_name': '1o_2r_vs_4r',
+                    'move_amount': 2,
+                    'obs_all_health': True,
+                    'obs_enemy_health': True,
+                    'obs_instead_of_state': False,
+                    'obs_last_action': False,
+                    'obs_own_health': True,
+                    'obs_pathing_grid': False,
+                    'obs_terrain_height': False,
+                    'obs_timestep_number': False,
+                    'replay_dir': '',
+                    'replay_prefix': '',
+                    'reward_death_value': 10,
+                    'reward_defeat': 0,
+                    'reward_negative_scale': 0.5,
+                    'reward_only_positive': True,
+                    'reward_scale': True,
+                    'reward_scale_rate': 20,
+                    'reward_sparse': False,
+                    'reward_win': 200,
+                    'seed': 1235,
+                    'shoot_range': 6,
+                    'sight_range': 9,
+                    'state_last_action': False,
+                    'state_timestep_number': False,
+                    'step_mul': 8},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'eval_comm_ablation': 'none',
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'idx': 0,
+    'important_state': [   0,
+                           1,
+                           2,
+                           3,
+                           6,
+                           7,
+                           8,
+                           9,
+                           12,
+                           13,
+                           14,
+                           15,
+                           18,
+                           19,
+                           20,
+                           23,
+                           24,
+                           25,
+                           28,
+                           29,
+                           30,
+                           33,
+                           34,
+                           35],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 20000,
+    'llm_message_semantics': 'receiver_packed',
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 20000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'message_selector_hard_train': True,
+    'message_selector_hidden_dim': 64,
+    'message_selector_threshold': 0.5,
+    'meta': 'meta',
+    'meta_lambda': 0.1,
+    'min_what_coverage': 0.6,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LMAC_LLM_WWW',
+    'normalize_certified_teacher_weights': True,
+    'normalize_student_messages': True,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 1.0,
+    'render': False,
+    'repeat_id': 1,
+    'require_teacher_comm_matrix': True,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 20000,
+    'running_algorithm_name': '(1o_2r_vs_4r)LMAC_LLM_WWW',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': 'data/',
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1235,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'student_comm_hard': False,
+    'student_comm_hard_eval': False,
+    'student_comm_threshold': 0.5,
+    'student_comm_topk': 0,
+    'student_comm_topk_eval': False,
+    'student_comm_topk_train': False,
+    't_max': 2050000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'teacher_lambda': 1.0,
+    'teacher_lambda_anneal': True,
+    'teacher_lambda_anneal_time': 500000,
+    'teacher_lambda_finish': 0.1,
+    'teacher_mask_mode': 'object',
+    'test_greedy': True,
+    'test_interval': 50000,
+    'test_nepisode': 100,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'tmp2': True,
+    'use_certified_teacher_weights': True,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_teacher_student_comm': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': '',
+    'what_coverage_lambda': 0.1,
+    'what_teacher_core_weight': 1.0,
+    'what_teacher_lambda': 1.0,
+    'what_teacher_lambda_anneal': True,
+    'what_teacher_lambda_anneal_time': 500000,
+    'what_teacher_lambda_finish': 0.1,
+    'what_teacher_negative_weight': 0.1,
+    'what_teacher_supplement_weight': 0.25}
+
+[INFO 18:20:31] my_main *******************
+[INFO 18:20:31] my_main Tensorboard logging dir:
+[INFO 18:20:31] my_main /data/hp/LLM_Communication/LMAC-new/results/tb_logs/LMAC_LLM_WWW/1o_2r_vs_4r/LMAC_LLM_WWW_seed1235_1o_2r_vs_4r_2026-07-13 18:20:31.655748
+[INFO 18:20:31] my_main *******************
+use_wandb: False LMAC  online
+[teacher] validated map=1o_2r_vs_4r path=/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_123013/iteration/1o_2r_vs_4r/20260712_123013/candidates/iter_002/comm_init.py WHO/WHEN=(32, 3, 3) WHAT=(32, 3, 66)
+[INFO 18:20:33] my_main Beginning training for 2050000 timesteps
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 37739 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-6moxdzqr/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:37739
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:43858 accepted
+ReadyHandler: 127.0.0.1:43858 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 18:20:40] my_main t_env: 50 / 2050000
+[INFO 18:20:40] my_main Estimated time left: 4 minutes, 41 seconds. Time passed: 6 seconds
+[INFO 18:51:52] my_main Recent Stats | t_env:      20001 | Episode:      417
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.2481	MSE_per_agent_0:           0.3855	MSE_per_agent_1:           0.3781
+MSE_per_agent_2:           0.3805	Message_selector_grad_norm:  0.3393	Meta_loss:                 0.6799	Model_D_loss:              0.6974
+Mse_loss:                  0.3814	Mse_per_state_0:           0.9351	Mse_per_state_1:           0.0042	Mse_per_state_12:          1.1438
+Mse_per_state_13:          0.0304	Mse_per_state_14:          0.1745	Mse_per_state_15:          0.1051	Mse_per_state_18:          0.9692
+Mse_per_state_19:          0.2069	Mse_per_state_2:           0.2097	Mse_per_state_20:          0.2060	Mse_per_state_23:          0.7650
+Mse_per_state_24:          0.2015	Mse_per_state_25:          0.2072	Mse_per_state_28:          1.0062	Mse_per_state_29:          0.1908
+Mse_per_state_3:           0.2067	Mse_per_state_30:          0.2014	Mse_per_state_33:          1.0329	Mse_per_state_34:          0.1988
+Mse_per_state_35:          0.2113	Mse_per_state_6:           0.6651	Mse_per_state_7:           0.0409	Mse_per_state_8:           0.1378
+Mse_per_state_9:           0.1023	Student_comm_forward_rate:  0.5209	Student_comm_rate:         0.5209	Student_what_soft_rate:    0.5009
+Teacher_comm_certified_edge_rate:  0.3240	Teacher_comm_lambda:       0.9971	Teacher_comm_loss:         0.6842	Teacher_comm_neg_loss:     0.7330
+Teacher_comm_pos_loss:     0.6491	Teacher_comm_pos_rate:     0.4466	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9971
+Teacher_what_loss:         0.6934	What_coverage_loss:        0.0099	battle_won_mean:           0.0000	ep_length_mean:           50.0000
+epsilon:                   1.0000	grad_norm:                 3.5977	loss:                      1.0360	q_taken_mean:             -0.1636
+return_mean:               0.0000	return_std:                0.0000	target_mean:              -0.1008	td_error_abs:              0.3326
+test_battle_won_mean:      0.0000	test_ep_length_mean:      50.0000	test_return_mean:          1.1273	test_return_std:           2.0098
+
+[INFO 19:23:23] my_main Recent Stats | t_env:      40004 | Episode:      850
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1253	MSE_per_agent_0:           0.2542	MSE_per_agent_1:           0.2508
+MSE_per_agent_2:           0.2509	Message_selector_grad_norm:  0.3217	Meta_loss:                 0.4519	Model_D_loss:              0.4224
+Mse_loss:                  0.2520	Mse_per_state_0:           0.4687	Mse_per_state_1:           0.0022	Mse_per_state_12:          0.6002
+Mse_per_state_13:          0.0312	Mse_per_state_14:          0.1602	Mse_per_state_15:          0.1206	Mse_per_state_18:          0.5079
+Mse_per_state_19:          0.2002	Mse_per_state_2:           0.2006	Mse_per_state_20:          0.2122	Mse_per_state_23:          0.3995
+Mse_per_state_24:          0.2000	Mse_per_state_25:          0.2108	Mse_per_state_28:          0.5316	Mse_per_state_29:          0.1922
+Mse_per_state_3:           0.2017	Mse_per_state_30:          0.2031	Mse_per_state_33:          0.5370	Mse_per_state_34:          0.1993
+Mse_per_state_35:          0.2155	Mse_per_state_6:           0.3585	Mse_per_state_7:           0.0357	Mse_per_state_8:           0.1408
+Mse_per_state_9:           0.1176	Student_comm_forward_rate:  0.4987	Student_comm_rate:         0.4987	Student_what_soft_rate:    0.5667
+Teacher_comm_certified_edge_rate:  0.3264	Teacher_comm_lambda:       0.9791	Teacher_comm_loss:         0.3506	Teacher_comm_neg_loss:     0.3768
+Teacher_comm_pos_loss:     0.3365	Teacher_comm_pos_rate:     0.4616	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9791
+Teacher_what_loss:         0.3588	What_coverage_loss:        0.0049	battle_won_mean:           0.0516	ep_length_mean:           48.9820
+epsilon:                   0.6200	grad_norm:                 3.7557	loss:                      0.8764	q_taken_mean:             -0.0259
+return_mean:               1.4278	return_std:                3.1411	target_mean:              -0.0253	td_error_abs:              0.3643
+test_battle_won_mean:      0.0000	test_ep_length_mean:      50.0000	test_return_mean:          1.1273	test_return_std:           2.0098
+
+[INFO 19:39:11] my_main t_env: 50091 / 2050000
+[INFO 19:39:11] my_main Estimated time left: 2 days, 4 hours, 18 minutes, 12 seconds. Time passed: 1 hours, 18 minutes, 38 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:43858 disconnected
+ResponseThread: No connection, dropping the response.
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 42321 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-owblxecc/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:42321
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:50558 accepted
+ReadyHandler: 127.0.0.1:50558 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 19:57:38] my_main Recent Stats | t_env:      60006 | Episode:     1289
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0841	MSE_per_agent_0:           0.2096	MSE_per_agent_1:           0.2054
+MSE_per_agent_2:           0.2053	Message_selector_grad_norm:  0.2355	Meta_loss:                 0.3768	Model_D_loss:              0.3285
+Mse_loss:                  0.2067	Mse_per_state_0:           0.3134	Mse_per_state_1:           0.0015	Mse_per_state_12:          0.4131
+Mse_per_state_13:          0.0320	Mse_per_state_14:          0.1568	Mse_per_state_15:          0.1176	Mse_per_state_18:          0.3541
+Mse_per_state_19:          0.1987	Mse_per_state_2:           0.2000	Mse_per_state_20:          0.2086	Mse_per_state_23:          0.2796
+Mse_per_state_24:          0.1991	Mse_per_state_25:          0.2068	Mse_per_state_28:          0.3700	Mse_per_state_29:          0.1933
+Mse_per_state_3:           0.2005	Mse_per_state_30:          0.1997	Mse_per_state_33:          0.3723	Mse_per_state_34:          0.1972
+Mse_per_state_35:          0.2088	Mse_per_state_6:           0.2473	Mse_per_state_7:           0.0323	Mse_per_state_8:           0.1449
+Mse_per_state_9:           0.1142	Student_comm_forward_rate:  0.4909	Student_comm_rate:         0.4909	Student_what_soft_rate:    0.5896
+Teacher_comm_certified_edge_rate:  0.3269	Teacher_comm_lambda:       0.9611	Teacher_comm_loss:         0.2390	Teacher_comm_neg_loss:     0.2599
+Teacher_comm_pos_loss:     0.2295	Teacher_comm_pos_rate:     0.4655	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9611
+Teacher_what_loss:         0.2489	What_coverage_loss:        0.0033	battle_won_mean:           0.0921	ep_length_mean:           48.0534
+epsilon:                   0.2399	grad_norm:                 3.2074	loss:                      0.7553	q_taken_mean:              0.0995
+return_mean:               2.3073	return_std:                4.6081	target_mean:               0.0962	td_error_abs:              0.3395
+test_battle_won_mean:      0.1300	test_ep_length_mean:      47.4250	test_return_mean:          3.5772	test_return_std:           5.3081
+
+[INFO 20:29:08] my_main Recent Stats | t_env:      80008 | Episode:     1730
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0643	MSE_per_agent_0:           0.1859	MSE_per_agent_1:           0.1812
+MSE_per_agent_2:           0.1810	Message_selector_grad_norm:  0.2064	Meta_loss:                 0.3324	Model_D_loss:              0.2803
+Mse_loss:                  0.1827	Mse_per_state_0:           0.2363	Mse_per_state_1:           0.0012	Mse_per_state_12:          0.3182
+Mse_per_state_13:          0.0279	Mse_per_state_14:          0.1532	Mse_per_state_15:          0.1145	Mse_per_state_18:          0.2720
+Mse_per_state_19:          0.1978	Mse_per_state_2:           0.1988	Mse_per_state_20:          0.2076	Mse_per_state_23:          0.2166
+Mse_per_state_24:          0.1963	Mse_per_state_25:          0.2047	Mse_per_state_28:          0.2897	Mse_per_state_29:          0.1917
+Mse_per_state_3:           0.1995	Mse_per_state_30:          0.1973	Mse_per_state_33:          0.2864	Mse_per_state_34:          0.1936
+Mse_per_state_35:          0.2051	Mse_per_state_6:           0.1903	Mse_per_state_7:           0.0285	Mse_per_state_8:           0.1451
+Mse_per_state_9:           0.1127	Student_comm_forward_rate:  0.4859	Student_comm_rate:         0.4859	Student_what_soft_rate:    0.5988
+Teacher_comm_certified_edge_rate:  0.3285	Teacher_comm_lambda:       0.9430	Teacher_comm_loss:         0.1817	Teacher_comm_neg_loss:     0.1971
+Teacher_comm_pos_loss:     0.1763	Teacher_comm_pos_rate:     0.4672	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9430
+Teacher_what_loss:         0.1915	What_coverage_loss:        0.0025	battle_won_mean:           0.1220	ep_length_mean:           47.4307
+epsilon:                   0.0500	grad_norm:                 2.8879	loss:                      0.6573	q_taken_mean:              0.1478
+return_mean:               2.9998	return_std:                5.4819	target_mean:               0.1467	td_error_abs:              0.3034
+test_battle_won_mean:      0.1300	test_ep_length_mean:      47.4250	test_return_mean:          3.5772	test_return_std:           5.3081
+
+[INFO 21:00:29] my_main Recent Stats | t_env:     100042 | Episode:     2153
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0521	MSE_per_agent_0:           0.1738	MSE_per_agent_1:           0.1675
+MSE_per_agent_2:           0.1672	Message_selector_grad_norm:  0.3511	Meta_loss:                 0.3147	Model_D_loss:              0.2531
+Mse_loss:                  0.1695	Mse_per_state_0:           0.1898	Mse_per_state_1:           0.0010	Mse_per_state_12:          0.2630
+Mse_per_state_13:          0.0306	Mse_per_state_14:          0.1473	Mse_per_state_15:          0.1250	Mse_per_state_18:          0.2282
+Mse_per_state_19:          0.1953	Mse_per_state_2:           0.1974	Mse_per_state_20:          0.2064	Mse_per_state_23:          0.1820
+Mse_per_state_24:          0.1936	Mse_per_state_25:          0.2031	Mse_per_state_28:          0.2406	Mse_per_state_29:          0.1884
+Mse_per_state_3:           0.1995	Mse_per_state_30:          0.1973	Mse_per_state_33:          0.2395	Mse_per_state_34:          0.1889
+Mse_per_state_35:          0.2020	Mse_per_state_6:           0.1577	Mse_per_state_7:           0.0288	Mse_per_state_8:           0.1423
+Mse_per_state_9:           0.1207	Student_comm_forward_rate:  0.4812	Student_comm_rate:         0.4812	Student_what_soft_rate:    0.6050
+Teacher_comm_certified_edge_rate:  0.3277	Teacher_comm_lambda:       0.9250	Teacher_comm_loss:         0.1477	Teacher_comm_neg_loss:     0.1601
+Teacher_comm_pos_loss:     0.1448	Teacher_comm_pos_rate:     0.4665	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9250
+Teacher_what_loss:         0.1585	What_coverage_loss:        0.0020	battle_won_mean:           0.1484	ep_length_mean:           47.0158
+epsilon:                   0.0500	grad_norm:                 4.8570	loss:                      0.6890	q_taken_mean:              0.2665
+return_mean:               3.6709	return_std:                6.0850	target_mean:               0.2721	td_error_abs:              0.3159
+test_battle_won_mean:      0.1300	test_ep_length_mean:      47.4250	test_return_mean:          3.5772	test_return_std:           5.3081
+
+[INFO 21:00:33] my_main t_env: 100092 / 2050000
+[INFO 21:00:33] my_main Estimated time left: 2 days, 4 hours, 53 minutes, 21 seconds. Time passed: 2 hours, 40 minutes, 0 seconds
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:50558 disconnected
+ResponseThread: No connection, dropping the response.
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 41893 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-cyb789il/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:41893
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:37320 accepted
+ReadyHandler: 127.0.0.1:37320 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 21:34:25] my_main Recent Stats | t_env:     120075 | Episode:     2583
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0028	MSE_per_agent_0:           0.1198	MSE_per_agent_1:           0.1132
+MSE_per_agent_2:           0.1126	Message_selector_grad_norm:  0.3325	Meta_loss:                 0.2137	Model_D_loss:              0.1394
+Mse_loss:                  0.1152	Mse_per_state_0:           0.0032	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0364
+Mse_per_state_13:          0.0268	Mse_per_state_14:          0.1404	Mse_per_state_15:          0.1312	Mse_per_state_18:          0.0361
+Mse_per_state_19:          0.1927	Mse_per_state_2:           0.1943	Mse_per_state_20:          0.2074	Mse_per_state_23:          0.0347
+Mse_per_state_24:          0.1895	Mse_per_state_25:          0.2015	Mse_per_state_28:          0.0466	Mse_per_state_29:          0.1858
+Mse_per_state_3:           0.1987	Mse_per_state_30:          0.1950	Mse_per_state_33:          0.0383	Mse_per_state_34:          0.1860
+Mse_per_state_35:          0.1997	Mse_per_state_6:           0.0279	Mse_per_state_7:           0.0234	Mse_per_state_8:           0.1428
+Mse_per_state_9:           0.1263	Student_comm_forward_rate:  0.4712	Student_comm_rate:         0.4712	Student_what_soft_rate:    0.6295
+Teacher_comm_certified_edge_rate:  0.3296	Teacher_comm_lambda:       0.8889	Teacher_comm_loss:         0.0129	Teacher_comm_neg_loss:     0.0163
+Teacher_comm_pos_loss:     0.0176	Teacher_comm_pos_rate:     0.4711	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.8889
+Teacher_what_loss:         0.0228	What_coverage_loss:        0.0000	battle_won_mean:           0.1877	ep_length_mean:           46.4881
+epsilon:                   0.0500	grad_norm:                 5.0676	loss:                      0.5927	q_taken_mean:              0.3490
+return_mean:               4.8501	return_std:                7.6591	target_mean:               0.3464	td_error_abs:              0.2942
+test_battle_won_mean:      0.1467	test_ep_length_mean:      47.7233	test_return_mean:          4.6151	test_return_std:           6.0617
+
+[INFO 22:06:09] my_main Recent Stats | t_env:     140107 | Episode:     3016
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0028	MSE_per_agent_0:           0.1198	MSE_per_agent_1:           0.1106
+MSE_per_agent_2:           0.1102	Message_selector_grad_norm:  0.3309	Meta_loss:                 0.2146	Model_D_loss:              0.1378
+Mse_loss:                  0.1135	Mse_per_state_0:           0.0032	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0310
+Mse_per_state_13:          0.0258	Mse_per_state_14:          0.1389	Mse_per_state_15:          0.1324	Mse_per_state_18:          0.0323
+Mse_per_state_19:          0.1906	Mse_per_state_2:           0.1934	Mse_per_state_20:          0.2043	Mse_per_state_23:          0.0355
+Mse_per_state_24:          0.1872	Mse_per_state_25:          0.1982	Mse_per_state_28:          0.0439	Mse_per_state_29:          0.1851
+Mse_per_state_3:           0.2002	Mse_per_state_30:          0.1936	Mse_per_state_33:          0.0392	Mse_per_state_34:          0.1822
+Mse_per_state_35:          0.1950	Mse_per_state_6:           0.0242	Mse_per_state_7:           0.0224	Mse_per_state_8:           0.1377
+Mse_per_state_9:           0.1282	Student_comm_forward_rate:  0.4689	Student_comm_rate:         0.4689	Student_what_soft_rate:    0.6290
+Teacher_comm_certified_edge_rate:  0.3303	Teacher_comm_lambda:       0.8529	Teacher_comm_loss:         0.0110	Teacher_comm_neg_loss:     0.0143
+Teacher_comm_pos_loss:     0.0150	Teacher_comm_pos_rate:     0.4687	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.8529
+Teacher_what_loss:         0.0226	What_coverage_loss:        0.0000	battle_won_mean:           0.2177	ep_length_mean:           46.2130
+epsilon:                   0.0500	grad_norm:                 6.0611	loss:                      0.6014	q_taken_mean:              0.5373
+return_mean:               5.6125	return_std:                8.0903	target_mean:               0.5486	td_error_abs:              0.2899
+test_battle_won_mean:      0.1467	test_ep_length_mean:      47.7233	test_return_mean:          4.6151	test_return_std:           6.0617
+
+[INFO 22:22:16] my_main t_env: 150113 / 2050000
+[INFO 22:22:16] my_main Estimated time left: 2 days, 3 hours, 43 minutes, 20 seconds. Time passed: 4 hours, 1 minutes, 43 seconds
+[INFO 22:40:34] my_main Recent Stats | t_env:     160112 | Episode:     3462
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0033	MSE_per_agent_0:           0.1222	MSE_per_agent_1:           0.1103
+MSE_per_agent_2:           0.1099	Message_selector_grad_norm:  0.3933	Meta_loss:                 0.2253	Model_D_loss:              0.1400
+Mse_loss:                  0.1142	Mse_per_state_0:           0.0031	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0325
+Mse_per_state_13:          0.0312	Mse_per_state_14:          0.1402	Mse_per_state_15:          0.1314	Mse_per_state_18:          0.0329
+Mse_per_state_19:          0.1895	Mse_per_state_2:           0.1940	Mse_per_state_20:          0.2050	Mse_per_state_23:          0.0383
+Mse_per_state_24:          0.1848	Mse_per_state_25:          0.1961	Mse_per_state_28:          0.0499	Mse_per_state_29:          0.1804
+Mse_per_state_3:           0.2008	Mse_per_state_30:          0.1913	Mse_per_state_33:          0.0438	Mse_per_state_34:          0.1796
+Mse_per_state_35:          0.1931	Mse_per_state_6:           0.0266	Mse_per_state_7:           0.0287	Mse_per_state_8:           0.1361
+Mse_per_state_9:           0.1300	Student_comm_forward_rate:  0.4670	Student_comm_rate:         0.4670	Student_what_soft_rate:    0.6286
+Teacher_comm_certified_edge_rate:  0.3311	Teacher_comm_lambda:       0.8168	Teacher_comm_loss:         0.0109	Teacher_comm_neg_loss:     0.0129
+Teacher_comm_pos_loss:     0.0162	Teacher_comm_pos_rate:     0.4671	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.8168
+Teacher_what_loss:         0.0227	What_coverage_loss:        0.0000	battle_won_mean:           0.2399	ep_length_mean:           46.2264
+epsilon:                   0.0500	grad_norm:                 7.3849	loss:                      0.7683	q_taken_mean:              0.8448
+return_mean:               6.3271	return_std:                8.2937	target_mean:               0.8530	td_error_abs:              0.3359
+test_battle_won_mean:      0.1925	test_ep_length_mean:      47.3825	test_return_mean:          5.5626	test_return_std:           6.6949
+
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:37320 disconnected
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 42397 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-ftizsmxn/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:42397
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:47482 accepted
+ReadyHandler: 127.0.0.1:47482 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 23:12:30] my_main Recent Stats | t_env:     180124 | Episode:     3897
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0032	MSE_per_agent_0:           0.1242	MSE_per_agent_1:           0.1102
+MSE_per_agent_2:           0.1100	Message_selector_grad_norm:  0.4212	Meta_loss:                 0.2318	Model_D_loss:              0.1412
+Mse_loss:                  0.1148	Mse_per_state_0:           0.0025	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0321
+Mse_per_state_13:          0.0332	Mse_per_state_14:          0.1404	Mse_per_state_15:          0.1340	Mse_per_state_18:          0.0334
+Mse_per_state_19:          0.1875	Mse_per_state_2:           0.1934	Mse_per_state_20:          0.2065	Mse_per_state_23:          0.0417
+Mse_per_state_24:          0.1810	Mse_per_state_25:          0.1975	Mse_per_state_28:          0.0505	Mse_per_state_29:          0.1785
+Mse_per_state_3:           0.2057	Mse_per_state_30:          0.1933	Mse_per_state_33:          0.0465	Mse_per_state_34:          0.1787
+Mse_per_state_35:          0.1959	Mse_per_state_6:           0.0265	Mse_per_state_7:           0.0302	Mse_per_state_8:           0.1335
+Mse_per_state_9:           0.1318	Student_comm_forward_rate:  0.4665	Student_comm_rate:         0.4665	Student_what_soft_rate:    0.6291
+Teacher_comm_certified_edge_rate:  0.3301	Teacher_comm_lambda:       0.7808	Teacher_comm_loss:         0.0130	Teacher_comm_neg_loss:     0.0149
+Teacher_comm_pos_loss:     0.0197	Teacher_comm_pos_rate:     0.4668	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.7808
+Teacher_what_loss:         0.0233	What_coverage_loss:        0.0000	battle_won_mean:           0.2644	ep_length_mean:           46.0847
+epsilon:                   0.0500	grad_norm:                13.1839	loss:                      1.0004	q_taken_mean:              1.0780
+return_mean:               6.9373	return_std:                8.4593	target_mean:               1.0750	td_error_abs:              0.4039
+test_battle_won_mean:      0.1925	test_ep_length_mean:      47.3825	test_return_mean:          5.5626	test_return_std:           6.6949
+
+[INFO 23:43:48] my_main t_env: 200143 / 2050000
+[INFO 23:43:48] my_main Estimated time left: 2 days, 2 hours, 15 minutes, 4 seconds. Time passed: 5 hours, 23 minutes, 15 seconds
+[INFO 23:46:41] my_main Recent Stats | t_env:     200143 | Episode:     4337
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0031	MSE_per_agent_0:           0.1222	MSE_per_agent_1:           0.1092
+MSE_per_agent_2:           0.1093	Message_selector_grad_norm:  0.2548	Meta_loss:                 0.2180	Model_D_loss:              0.1385
+Mse_loss:                  0.1136	Mse_per_state_0:           0.0021	Mse_per_state_1:           0.0001	Mse_per_state_12:          0.0267
+Mse_per_state_13:          0.0300	Mse_per_state_14:          0.1418	Mse_per_state_15:          0.1290	Mse_per_state_18:          0.0258
+Mse_per_state_19:          0.1884	Mse_per_state_2:           0.1913	Mse_per_state_20:          0.2080	Mse_per_state_23:          0.0390
+Mse_per_state_24:          0.1800	Mse_per_state_25:          0.1989	Mse_per_state_28:          0.0457	Mse_per_state_29:          0.1798
+Mse_per_state_3:           0.2071	Mse_per_state_30:          0.1969	Mse_per_state_33:          0.0407	Mse_per_state_34:          0.1811
+Mse_per_state_35:          0.2004	Mse_per_state_6:           0.0245	Mse_per_state_7:           0.0275	Mse_per_state_8:           0.1323
+Mse_per_state_9:           0.1286	Student_comm_forward_rate:  0.4688	Student_comm_rate:         0.4688	Student_what_soft_rate:    0.6281
+Teacher_comm_certified_edge_rate:  0.3312	Teacher_comm_lambda:       0.7447	Teacher_comm_loss:         0.0139	Teacher_comm_neg_loss:     0.0163
+Teacher_comm_pos_loss:     0.0208	Teacher_comm_pos_rate:     0.4686	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.7447
+Teacher_what_loss:         0.0211	What_coverage_loss:        0.0000	battle_won_mean:           0.2741	ep_length_mean:           46.2099
+epsilon:                   0.0500	grad_norm:                12.4138	loss:                      1.0105	q_taken_mean:              1.0658
+return_mean:               7.1537	return_std:                8.5110	target_mean:               1.0617	td_error_abs:              0.4068
+test_battle_won_mean:      0.2060	test_ep_length_mean:      47.3020	test_return_mean:          5.7684	test_return_std:           7.0528
+
+[INFO 00:18:46] my_main Recent Stats | t_env:     220156 | Episode:     4777
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0042	MSE_per_agent_0:           0.1246	MSE_per_agent_1:           0.1095
+MSE_per_agent_2:           0.1096	Message_selector_grad_norm:  0.2773	Meta_loss:                 0.2441	Model_D_loss:              0.1431
+Mse_loss:                  0.1145	Mse_per_state_0:           0.0021	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0335
+Mse_per_state_13:          0.0345	Mse_per_state_14:          0.1374	Mse_per_state_15:          0.1271	Mse_per_state_18:          0.0318
+Mse_per_state_19:          0.1870	Mse_per_state_2:           0.1903	Mse_per_state_20:          0.2043	Mse_per_state_23:          0.0497
+Mse_per_state_24:          0.1780	Mse_per_state_25:          0.1950	Mse_per_state_28:          0.0498	Mse_per_state_29:          0.1802
+Mse_per_state_3:           0.2076	Mse_per_state_30:          0.1966	Mse_per_state_33:          0.0497	Mse_per_state_34:          0.1792
+Mse_per_state_35:          0.1972	Mse_per_state_6:           0.0303	Mse_per_state_7:           0.0323	Mse_per_state_8:           0.1270
+Mse_per_state_9:           0.1284	Student_comm_forward_rate:  0.4708	Student_comm_rate:         0.4708	Student_what_soft_rate:    0.6309
+Teacher_comm_certified_edge_rate:  0.3308	Teacher_comm_lambda:       0.7087	Teacher_comm_loss:         0.0164	Teacher_comm_neg_loss:     0.0214
+Teacher_comm_pos_loss:     0.0222	Teacher_comm_pos_rate:     0.4697	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.7087
+Teacher_what_loss:         0.0244	What_coverage_loss:        0.0000	battle_won_mean:           0.3053	ep_length_mean:           45.8430
+epsilon:                   0.0500	grad_norm:                16.4418	loss:                      1.1841	q_taken_mean:              1.4334
+return_mean:               7.6663	return_std:                8.7337	target_mean:               1.4275	td_error_abs:              0.4829
+test_battle_won_mean:      0.2060	test_ep_length_mean:      47.3020	test_return_mean:          5.7684	test_return_std:           7.0528
+
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:47482 disconnected
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 45573 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-glzbr4fq/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:45573
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:38772 accepted
+ReadyHandler: 127.0.0.1:38772 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 00:50:21] my_main Recent Stats | t_env:     240174 | Episode:     5219
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0046	MSE_per_agent_0:           0.1248	MSE_per_agent_1:           0.1087
+MSE_per_agent_2:           0.1091	Message_selector_grad_norm:  0.2398	Meta_loss:                 0.2526	Model_D_loss:              0.1440
+Mse_loss:                  0.1142	Mse_per_state_0:           0.0020	Mse_per_state_1:           0.0002	Mse_per_state_12:          0.0344
+Mse_per_state_13:          0.0386	Mse_per_state_14:          0.1313	Mse_per_state_15:          0.1250	Mse_per_state_18:          0.0339
+Mse_per_state_19:          0.1883	Mse_per_state_2:           0.1908	Mse_per_state_20:          0.2042	Mse_per_state_23:          0.0525
+Mse_per_state_24:          0.1753	Mse_per_state_25:          0.1917	Mse_per_state_28:          0.0536	Mse_per_state_29:          0.1769
+Mse_per_state_3:           0.2085	Mse_per_state_30:          0.1940	Mse_per_state_33:          0.0534	Mse_per_state_34:          0.1769
+Mse_per_state_35:          0.1948	Mse_per_state_6:           0.0312	Mse_per_state_7:           0.0346	Mse_per_state_8:           0.1215
+Mse_per_state_9:           0.1272	Student_comm_forward_rate:  0.4719	Student_comm_rate:         0.4719	Student_what_soft_rate:    0.6312
+Teacher_comm_certified_edge_rate:  0.3302	Teacher_comm_lambda:       0.6726	Teacher_comm_loss:         0.0181	Teacher_comm_neg_loss:     0.0229
+Teacher_comm_pos_loss:     0.0252	Teacher_comm_pos_rate:     0.4711	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.6726
+Teacher_what_loss:         0.0248	What_coverage_loss:        0.0000	battle_won_mean:           0.3159	ep_length_mean:           45.6115
+epsilon:                   0.0500	grad_norm:                17.7824	loss:                      1.3238	q_taken_mean:              1.5871
+return_mean:               7.9388	return_std:                8.7410	target_mean:               1.5835	td_error_abs:              0.5000
+test_battle_won_mean:      0.2060	test_ep_length_mean:      47.3020	test_return_mean:          5.7684	test_return_std:           7.0528
+
+[INFO 01:06:30] my_main t_env: 250156 / 2050000
+[INFO 01:06:30] my_main Estimated time left: 2 days, 1 hours, 36 minutes, 9 seconds. Time passed: 6 hours, 45 minutes, 57 seconds
+[INFO 01:25:21] my_main Recent Stats | t_env:     260189 | Episode:     5663
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0050	MSE_per_agent_0:           0.1223	MSE_per_agent_1:           0.1093
+MSE_per_agent_2:           0.1101	Message_selector_grad_norm:  0.2279	Meta_loss:                 0.2437	Model_D_loss:              0.1433
+Mse_loss:                  0.1139	Mse_per_state_0:           0.0017	Mse_per_state_1:           0.0003	Mse_per_state_12:          0.0322
+Mse_per_state_13:          0.0330	Mse_per_state_14:          0.1284	Mse_per_state_15:          0.1341	Mse_per_state_18:          0.0318
+Mse_per_state_19:          0.1888	Mse_per_state_2:           0.1885	Mse_per_state_20:          0.2046	Mse_per_state_23:          0.0505
+Mse_per_state_24:          0.1748	Mse_per_state_25:          0.1924	Mse_per_state_28:          0.0452	Mse_per_state_29:          0.1810
+Mse_per_state_3:           0.2102	Mse_per_state_30:          0.1992	Mse_per_state_33:          0.0509	Mse_per_state_34:          0.1783
+Mse_per_state_35:          0.1964	Mse_per_state_6:           0.0280	Mse_per_state_7:           0.0300	Mse_per_state_8:           0.1201
+Mse_per_state_9:           0.1333	Student_comm_forward_rate:  0.4707	Student_comm_rate:         0.4707	Student_what_soft_rate:    0.6301
+Teacher_comm_certified_edge_rate:  0.3293	Teacher_comm_lambda:       0.6366	Teacher_comm_loss:         0.0190	Teacher_comm_neg_loss:     0.0219
+Teacher_comm_pos_loss:     0.0290	Teacher_comm_pos_rate:     0.4709	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.6366
+Teacher_what_loss:         0.0234	What_coverage_loss:        0.0000	battle_won_mean:           0.3174	ep_length_mean:           45.4194
+epsilon:                   0.0500	grad_norm:                19.8495	loss:                      1.3146	q_taken_mean:              1.4422
+return_mean:               7.8871	return_std:                8.7407	target_mean:               1.4546	td_error_abs:              0.5210
+test_battle_won_mean:      0.2680	test_ep_length_mean:      46.4260	test_return_mean:          6.9890	test_return_std:           8.4428
+
+[INFO 01:57:44] my_main Recent Stats | t_env:     280206 | Episode:     6122
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0058	MSE_per_agent_0:           0.1232	MSE_per_agent_1:           0.1102
+MSE_per_agent_2:           0.1111	Message_selector_grad_norm:  0.3743	Meta_loss:                 0.2617	Model_D_loss:              0.1468
+Mse_loss:                  0.1149	Mse_per_state_0:           0.0017	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0357
+Mse_per_state_13:          0.0400	Mse_per_state_14:          0.1311	Mse_per_state_15:          0.1361	Mse_per_state_18:          0.0327
+Mse_per_state_19:          0.1895	Mse_per_state_2:           0.1888	Mse_per_state_20:          0.2002	Mse_per_state_23:          0.0605
+Mse_per_state_24:          0.1745	Mse_per_state_25:          0.1837	Mse_per_state_28:          0.0477	Mse_per_state_29:          0.1790
+Mse_per_state_3:           0.2036	Mse_per_state_30:          0.1941	Mse_per_state_33:          0.0604	Mse_per_state_34:          0.1779
+Mse_per_state_35:          0.1883	Mse_per_state_6:           0.0378	Mse_per_state_7:           0.0334	Mse_per_state_8:           0.1236
+Mse_per_state_9:           0.1359	Student_comm_forward_rate:  0.4668	Student_comm_rate:         0.4668	Student_what_soft_rate:    0.6320
+Teacher_comm_certified_edge_rate:  0.3299	Teacher_comm_lambda:       0.6005	Teacher_comm_loss:         0.0190	Teacher_comm_neg_loss:     0.0204
+Teacher_comm_pos_loss:     0.0309	Teacher_comm_pos_rate:     0.4678	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.6005
+Teacher_what_loss:         0.0254	What_coverage_loss:        0.0000	battle_won_mean:           0.3132	ep_length_mean:           45.4747
+epsilon:                   0.0500	grad_norm:                19.4354	loss:                      1.3007	q_taken_mean:              1.6789
+return_mean:               7.7424	return_std:                8.7375	target_mean:               1.7123	td_error_abs:              0.5578
+test_battle_won_mean:      0.2680	test_ep_length_mean:      46.4260	test_return_mean:          6.9890	test_return_std:           8.4428
+
+Error signal: '11'
+Backtrace:
+/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64[0x65e743]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7fd1a6333520]
+[0x7fd185ef5a00]
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 37341 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-lxi1dnrt/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:37341
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:42320 accepted
+ReadyHandler: 127.0.0.1:42320 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+Error signal: '11'
+Backtrace:
+/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64[0x65e743]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7fd61321a520]
+[0x7fd5f2ef7a00]
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 36795 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-c80xbzch/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:36795
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:54474 accepted
+ReadyHandler: 127.0.0.1:54474 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 02:30:32] my_main t_env: 300159 / 2050000
+[INFO 02:30:32] my_main Estimated time left: 2 days, 1 hours, 18 seconds. Time passed: 8 hours, 9 minutes, 58 seconds
+[INFO 02:33:32] my_main Recent Stats | t_env:     300209 | Episode:     6576
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0068	MSE_per_agent_0:           0.1252	MSE_per_agent_1:           0.1120
+MSE_per_agent_2:           0.1127	Message_selector_grad_norm:  0.4027	Meta_loss:                 0.2863	Model_D_loss:              0.1521
+Mse_loss:                  0.1167	Mse_per_state_0:           0.0018	Mse_per_state_1:           0.0007	Mse_per_state_12:          0.0407
+Mse_per_state_13:          0.0432	Mse_per_state_14:          0.1320	Mse_per_state_15:          0.1382	Mse_per_state_18:          0.0349
+Mse_per_state_19:          0.1934	Mse_per_state_2:           0.1937	Mse_per_state_20:          0.1960	Mse_per_state_23:          0.0684
+Mse_per_state_24:          0.1783	Mse_per_state_25:          0.1776	Mse_per_state_28:          0.0564	Mse_per_state_29:          0.1822
+Mse_per_state_3:           0.2036	Mse_per_state_30:          0.1858	Mse_per_state_33:          0.0672	Mse_per_state_34:          0.1815
+Mse_per_state_35:          0.1829	Mse_per_state_6:           0.0444	Mse_per_state_7:           0.0350	Mse_per_state_8:           0.1246
+Mse_per_state_9:           0.1375	Student_comm_forward_rate:  0.4635	Student_comm_rate:         0.4635	Student_what_soft_rate:    0.6331
+Teacher_comm_certified_edge_rate:  0.3282	Teacher_comm_lambda:       0.5645	Teacher_comm_loss:         0.0242	Teacher_comm_neg_loss:     0.0236
+Teacher_comm_pos_loss:     0.0406	Teacher_comm_pos_rate:     0.4656	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.5645
+Teacher_what_loss:         0.0272	What_coverage_loss:        0.0000	battle_won_mean:           0.3254	ep_length_mean:           44.9934
+epsilon:                   0.0500	grad_norm:                24.0597	loss:                      1.3055	q_taken_mean:              1.9648
+return_mean:               7.9399	return_std:                8.8166	target_mean:               1.9699	td_error_abs:              0.5924
+test_battle_won_mean:      0.2840	test_ep_length_mean:      46.6560	test_return_mean:          7.3382	test_return_std:           8.5629
+
+[INFO 03:05:03] my_main Recent Stats | t_env:     320213 | Episode:     7020
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0069	MSE_per_agent_0:           0.1253	MSE_per_agent_1:           0.1128
+MSE_per_agent_2:           0.1138	Message_selector_grad_norm:  0.4353	Meta_loss:                 0.2934	Model_D_loss:              0.1535
+Mse_loss:                  0.1173	Mse_per_state_0:           0.0016	Mse_per_state_1:           0.0007	Mse_per_state_12:          0.0394
+Mse_per_state_13:          0.0471	Mse_per_state_14:          0.1395	Mse_per_state_15:          0.1444	Mse_per_state_18:          0.0393
+Mse_per_state_19:          0.1907	Mse_per_state_2:           0.1936	Mse_per_state_20:          0.1904	Mse_per_state_23:          0.0686
+Mse_per_state_24:          0.1769	Mse_per_state_25:          0.1719	Mse_per_state_28:          0.0625	Mse_per_state_29:          0.1788
+Mse_per_state_3:           0.2008	Mse_per_state_30:          0.1806	Mse_per_state_33:          0.0704	Mse_per_state_34:          0.1790
+Mse_per_state_35:          0.1765	Mse_per_state_6:           0.0482	Mse_per_state_7:           0.0428	Mse_per_state_8:           0.1296
+Mse_per_state_9:           0.1418	Student_comm_forward_rate:  0.4594	Student_comm_rate:         0.4594	Student_what_soft_rate:    0.6325
+Teacher_comm_certified_edge_rate:  0.3262	Teacher_comm_lambda:       0.5285	Teacher_comm_loss:         0.0243	Teacher_comm_neg_loss:     0.0231
+Teacher_comm_pos_loss:     0.0412	Teacher_comm_pos_rate:     0.4612	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.5285
+Teacher_what_loss:         0.0275	What_coverage_loss:        0.0000	battle_won_mean:           0.3310	ep_length_mean:           44.6954
+epsilon:                   0.0500	grad_norm:                25.5547	loss:                      1.1592	q_taken_mean:              2.1926
+return_mean:               7.9384	return_std:                8.8943	target_mean:               2.2138	td_error_abs:              0.5812
+test_battle_won_mean:      0.2840	test_ep_length_mean:      46.6560	test_return_mean:          7.3382	test_return_std:           8.5629
+
+[INFO 03:37:58] my_main Recent Stats | t_env:     340226 | Episode:     7478
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0071	MSE_per_agent_0:           0.1224	MSE_per_agent_1:           0.1147
+MSE_per_agent_2:           0.1154	Message_selector_grad_norm:  0.4602	Meta_loss:                 0.2879	Model_D_loss:              0.1534
+Mse_loss:                  0.1175	Mse_per_state_0:           0.0015	Mse_per_state_1:           0.0008	Mse_per_state_12:          0.0368
+Mse_per_state_13:          0.0473	Mse_per_state_14:          0.1485	Mse_per_state_15:          0.1486	Mse_per_state_18:          0.0368
+Mse_per_state_19:          0.1898	Mse_per_state_2:           0.1935	Mse_per_state_20:          0.1869	Mse_per_state_23:          0.0672
+Mse_per_state_24:          0.1778	Mse_per_state_25:          0.1708	Mse_per_state_28:          0.0594	Mse_per_state_29:          0.1785
+Mse_per_state_3:           0.1973	Mse_per_state_30:          0.1785	Mse_per_state_33:          0.0663	Mse_per_state_34:          0.1808
+Mse_per_state_35:          0.1745	Mse_per_state_6:           0.0456	Mse_per_state_7:           0.0464	Mse_per_state_8:           0.1412
+Mse_per_state_9:           0.1451	Student_comm_forward_rate:  0.4603	Student_comm_rate:         0.4603	Student_what_soft_rate:    0.6321
+Teacher_comm_certified_edge_rate:  0.3261	Teacher_comm_lambda:       0.4925	Teacher_comm_loss:         0.0251	Teacher_comm_neg_loss:     0.0253
+Teacher_comm_pos_loss:     0.0410	Teacher_comm_pos_rate:     0.4613	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.4925
+Teacher_what_loss:         0.0271	What_coverage_loss:        0.0000	battle_won_mean:           0.3423	ep_length_mean:           44.6241
+epsilon:                   0.0500	grad_norm:                25.7995	loss:                      1.0036	q_taken_mean:              2.2323
+return_mean:               7.9341	return_std:                9.0696	target_mean:               2.2456	td_error_abs:              0.5874
+test_battle_won_mean:      0.2840	test_ep_length_mean:      46.6560	test_return_mean:          7.3382	test_return_std:           8.5629
+
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:54474 disconnected
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 44173 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-s8e5ma7i/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:44173
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:47590 accepted
+ReadyHandler: 127.0.0.1:47590 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 03:53:21] my_main t_env: 350185 / 2050000
+[INFO 03:53:21] my_main Estimated time left: 1 days, 22 hours, 53 minutes, 56 seconds. Time passed: 9 hours, 32 minutes, 47 seconds
+[INFO 04:12:43] my_main Recent Stats | t_env:     360273 | Episode:     7926
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0067	MSE_per_agent_0:           0.1220	MSE_per_agent_1:           0.1144
+MSE_per_agent_2:           0.1148	Message_selector_grad_norm:  0.4697	Meta_loss:                 0.2923	Model_D_loss:              0.1530
+Mse_loss:                  0.1171	Mse_per_state_0:           0.0014	Mse_per_state_1:           0.0008	Mse_per_state_12:          0.0384
+Mse_per_state_13:          0.0532	Mse_per_state_14:          0.1548	Mse_per_state_15:          0.1473	Mse_per_state_18:          0.0374
+Mse_per_state_19:          0.1867	Mse_per_state_2:           0.1929	Mse_per_state_20:          0.1797	Mse_per_state_23:          0.0692
+Mse_per_state_24:          0.1758	Mse_per_state_25:          0.1646	Mse_per_state_28:          0.0624	Mse_per_state_29:          0.1748
+Mse_per_state_3:           0.1943	Mse_per_state_30:          0.1693	Mse_per_state_33:          0.0690	Mse_per_state_34:          0.1774
+Mse_per_state_35:          0.1687	Mse_per_state_6:           0.0456	Mse_per_state_7:           0.0502	Mse_per_state_8:           0.1474
+Mse_per_state_9:           0.1488	Student_comm_forward_rate:  0.4605	Student_comm_rate:         0.4605	Student_what_soft_rate:    0.6323
+Teacher_comm_certified_edge_rate:  0.3247	Teacher_comm_lambda:       0.4564	Teacher_comm_loss:         0.0241	Teacher_comm_neg_loss:     0.0265
+Teacher_comm_pos_loss:     0.0366	Teacher_comm_pos_rate:     0.4599	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.4564
+Teacher_what_loss:         0.0278	What_coverage_loss:        0.0000	battle_won_mean:           0.3685	ep_length_mean:           44.2912
+epsilon:                   0.0500	grad_norm:                26.5629	loss:                      0.8631	q_taken_mean:              2.4397
+return_mean:               8.2664	return_std:                9.2781	target_mean:               2.4541	td_error_abs:              0.5499
+test_battle_won_mean:      0.3140	test_ep_length_mean:      46.0460	test_return_mean:          7.4153	test_return_std:           8.9032
+
+[INFO 04:44:56] my_main Recent Stats | t_env:     380311 | Episode:     8368
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0063	MSE_per_agent_0:           0.1206	MSE_per_agent_1:           0.1142
+MSE_per_agent_2:           0.1146	Message_selector_grad_norm:  0.3194	Meta_loss:                 0.2888	Model_D_loss:              0.1517
+Mse_loss:                  0.1165	Mse_per_state_0:           0.0012	Mse_per_state_1:           0.0007	Mse_per_state_12:          0.0336
+Mse_per_state_13:          0.0490	Mse_per_state_14:          0.1575	Mse_per_state_15:          0.1460	Mse_per_state_18:          0.0393
+Mse_per_state_19:          0.1864	Mse_per_state_2:           0.1933	Mse_per_state_20:          0.1739	Mse_per_state_23:          0.0678
+Mse_per_state_24:          0.1774	Mse_per_state_25:          0.1622	Mse_per_state_28:          0.0639	Mse_per_state_29:          0.1784
+Mse_per_state_3:           0.1929	Mse_per_state_30:          0.1664	Mse_per_state_33:          0.0658	Mse_per_state_34:          0.1778
+Mse_per_state_35:          0.1656	Mse_per_state_6:           0.0462	Mse_per_state_7:           0.0506	Mse_per_state_8:           0.1527
+Mse_per_state_9:           0.1463	Student_comm_forward_rate:  0.4646	Student_comm_rate:         0.4646	Student_what_soft_rate:    0.6311
+Teacher_comm_certified_edge_rate:  0.3235	Teacher_comm_lambda:       0.4204	Teacher_comm_loss:         0.0230	Teacher_comm_neg_loss:     0.0283
+Teacher_comm_pos_loss:     0.0311	Teacher_comm_pos_rate:     0.4621	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.4204
+Teacher_what_loss:         0.0271	What_coverage_loss:        0.0000	battle_won_mean:           0.3763	ep_length_mean:           44.2350
+epsilon:                   0.0500	grad_norm:                24.5069	loss:                      0.7135	q_taken_mean:              2.4694
+return_mean:               8.2829	return_std:                9.3741	target_mean:               2.4603	td_error_abs:              0.5038
+test_battle_won_mean:      0.3140	test_ep_length_mean:      46.0460	test_return_mean:          7.4153	test_return_std:           8.9032
+
+[INFO 05:16:13] my_main t_env: 400224 / 2050000
+[INFO 05:16:13] my_main Estimated time left: 1 days, 21 hours, 32 minutes, 13 seconds. Time passed: 10 hours, 55 minutes, 40 seconds
+[INFO 05:19:28] my_main Recent Stats | t_env:     400359 | Episode:     8807
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0057	MSE_per_agent_0:           0.1156	MSE_per_agent_1:           0.1132
+MSE_per_agent_2:           0.1134	Message_selector_grad_norm:  0.2963	Meta_loss:                 0.2697	Model_D_loss:              0.1467
+Mse_loss:                  0.1141	Mse_per_state_0:           0.0010	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0291
+Mse_per_state_13:          0.0492	Mse_per_state_14:          0.1648	Mse_per_state_15:          0.1420	Mse_per_state_18:          0.0387
+Mse_per_state_19:          0.1828	Mse_per_state_2:           0.1884	Mse_per_state_20:          0.1691	Mse_per_state_23:          0.0597
+Mse_per_state_24:          0.1745	Mse_per_state_25:          0.1605	Mse_per_state_28:          0.0597	Mse_per_state_29:          0.1754
+Mse_per_state_3:           0.1865	Mse_per_state_30:          0.1626	Mse_per_state_33:          0.0592	Mse_per_state_34:          0.1762
+Mse_per_state_35:          0.1616	Mse_per_state_6:           0.0382	Mse_per_state_7:           0.0522	Mse_per_state_8:           0.1619
+Mse_per_state_9:           0.1436	Student_comm_forward_rate:  0.4685	Student_comm_rate:         0.4685	Student_what_soft_rate:    0.6302
+Teacher_comm_certified_edge_rate:  0.3238	Teacher_comm_lambda:       0.3844	Teacher_comm_loss:         0.0200	Teacher_comm_neg_loss:     0.0310
+Teacher_comm_pos_loss:     0.0211	Teacher_comm_pos_rate:     0.4637	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.3844
+Teacher_what_loss:         0.0261	What_coverage_loss:        0.0000	battle_won_mean:           0.3754	ep_length_mean:           44.5869
+epsilon:                   0.0500	grad_norm:                22.2629	loss:                      0.6524	q_taken_mean:              2.3887
+return_mean:               8.1621	return_std:                9.4212	target_mean:               2.3946	td_error_abs:              0.4840
+test_battle_won_mean:      0.3180	test_ep_length_mean:      45.9500	test_return_mean:          7.2357	test_return_std:           9.0624
+
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:47590 disconnected
+ResponseThread: No connection, dropping the response.
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 35603 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-j5844trw/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:35603
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:47316 accepted
+ReadyHandler: 127.0.0.1:47316 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 05:51:32] my_main Recent Stats | t_env:     420376 | Episode:     9253
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0050	MSE_per_agent_0:           0.1101	MSE_per_agent_1:           0.1117
+MSE_per_agent_2:           0.1120	Message_selector_grad_norm:  0.2216	Meta_loss:                 0.2526	Model_D_loss:              0.1415
+Mse_loss:                  0.1113	Mse_per_state_0:           0.0009	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0250
+Mse_per_state_13:          0.0452	Mse_per_state_14:          0.1636	Mse_per_state_15:          0.1309	Mse_per_state_18:          0.0340
+Mse_per_state_19:          0.1835	Mse_per_state_2:           0.1885	Mse_per_state_20:          0.1684	Mse_per_state_23:          0.0526
+Mse_per_state_24:          0.1775	Mse_per_state_25:          0.1615	Mse_per_state_28:          0.0510	Mse_per_state_29:          0.1775
+Mse_per_state_3:           0.1809	Mse_per_state_30:          0.1622	Mse_per_state_33:          0.0495	Mse_per_state_34:          0.1801
+Mse_per_state_35:          0.1638	Mse_per_state_6:           0.0331	Mse_per_state_7:           0.0451	Mse_per_state_8:           0.1643
+Mse_per_state_9:           0.1316	Student_comm_forward_rate:  0.4700	Student_comm_rate:         0.4700	Student_what_soft_rate:    0.6288
+Teacher_comm_certified_edge_rate:  0.3236	Teacher_comm_lambda:       0.3483	Teacher_comm_loss:         0.0193	Teacher_comm_neg_loss:     0.0305
+Teacher_comm_pos_loss:     0.0197	Teacher_comm_pos_rate:     0.4647	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.3483
+Teacher_what_loss:         0.0239	What_coverage_loss:        0.0000	battle_won_mean:           0.3755	ep_length_mean:           44.9084
+epsilon:                   0.0500	grad_norm:                19.2126	loss:                      0.6456	q_taken_mean:              2.0959
+return_mean:               8.1558	return_std:                9.4286	target_mean:               2.0863	td_error_abs:              0.4676
+test_battle_won_mean:      0.3180	test_ep_length_mean:      45.9500	test_return_mean:          7.2357	test_return_std:           9.0624
+
+[INFO 06:24:06] my_main Recent Stats | t_env:     440384 | Episode:     9709
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0047	MSE_per_agent_0:           0.1101	MSE_per_agent_1:           0.1092
+MSE_per_agent_2:           0.1098	Message_selector_grad_norm:  0.3973	Meta_loss:                 0.2612	Model_D_loss:              0.1405
+Mse_loss:                  0.1097	Mse_per_state_0:           0.0008	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0296
+Mse_per_state_13:          0.0442	Mse_per_state_14:          0.1665	Mse_per_state_15:          0.1161	Mse_per_state_18:          0.0381
+Mse_per_state_19:          0.1822	Mse_per_state_2:           0.1871	Mse_per_state_20:          0.1617	Mse_per_state_23:          0.0553
+Mse_per_state_24:          0.1765	Mse_per_state_25:          0.1557	Mse_per_state_28:          0.0553	Mse_per_state_29:          0.1763
+Mse_per_state_3:           0.1764	Mse_per_state_30:          0.1551	Mse_per_state_33:          0.0511	Mse_per_state_34:          0.1818
+Mse_per_state_35:          0.1608	Mse_per_state_6:           0.0337	Mse_per_state_7:           0.0427	Mse_per_state_8:           0.1676
+Mse_per_state_9:           0.1169	Student_comm_forward_rate:  0.4678	Student_comm_rate:         0.4678	Student_what_soft_rate:    0.6289
+Teacher_comm_certified_edge_rate:  0.3192	Teacher_comm_lambda:       0.3123	Teacher_comm_loss:         0.0189	Teacher_comm_neg_loss:     0.0296
+Teacher_comm_pos_loss:     0.0193	Teacher_comm_pos_rate:     0.4624	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.3123
+Teacher_what_loss:         0.0245	What_coverage_loss:        0.0000	battle_won_mean:           0.3657	ep_length_mean:           44.8626
+epsilon:                   0.0500	grad_norm:                17.9434	loss:                      0.5831	q_taken_mean:              2.0840
+return_mean:               7.9864	return_std:                9.3649	target_mean:               2.0730	td_error_abs:              0.4396
+test_battle_won_mean:      0.3180	test_ep_length_mean:      45.9500	test_return_mean:          7.2357	test_return_std:           9.0624
+
+[INFO 06:40:40] my_main t_env: 450262 / 2050000
+[INFO 06:40:40] my_main Estimated time left: 1 days, 20 hours, 59 minutes, 46 seconds. Time passed: 12 hours, 20 minutes, 6 seconds
+[INFO 06:59:58] my_main Recent Stats | t_env:     460419 | Episode:    10182
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0047	MSE_per_agent_0:           0.1067	MSE_per_agent_1:           0.1060
+MSE_per_agent_2:           0.1064	Message_selector_grad_norm:  0.3511	Meta_loss:                 0.2660	Model_D_loss:              0.1377
+Mse_loss:                  0.1064	Mse_per_state_0:           0.0008	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0251
+Mse_per_state_13:          0.0390	Mse_per_state_14:          0.1573	Mse_per_state_15:          0.1059	Mse_per_state_18:          0.0359
+Mse_per_state_19:          0.1828	Mse_per_state_2:           0.1861	Mse_per_state_20:          0.1579	Mse_per_state_23:          0.0518
+Mse_per_state_24:          0.1769	Mse_per_state_25:          0.1535	Mse_per_state_28:          0.0557	Mse_per_state_29:          0.1766
+Mse_per_state_3:           0.1682	Mse_per_state_30:          0.1512	Mse_per_state_33:          0.0464	Mse_per_state_34:          0.1829
+Mse_per_state_35:          0.1570	Mse_per_state_6:           0.0332	Mse_per_state_7:           0.0408	Mse_per_state_8:           0.1611
+Mse_per_state_9:           0.1067	Student_comm_forward_rate:  0.4709	Student_comm_rate:         0.4709	Student_what_soft_rate:    0.6287
+Teacher_comm_certified_edge_rate:  0.3193	Teacher_comm_lambda:       0.2763	Teacher_comm_loss:         0.0200	Teacher_comm_neg_loss:     0.0310
+Teacher_comm_pos_loss:     0.0200	Teacher_comm_pos_rate:     0.4654	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.2763
+Teacher_what_loss:         0.0246	What_coverage_loss:        0.0000	battle_won_mean:           0.3527	ep_length_mean:           44.9174
+epsilon:                   0.0500	grad_norm:                17.7899	loss:                      0.5930	q_taken_mean:              2.1236
+return_mean:               7.7364	return_std:                9.3145	target_mean:               2.1089	td_error_abs:              0.4449
+test_battle_won_mean:      0.3520	test_ep_length_mean:      44.5860	test_return_mean:          7.7233	test_return_std:           9.3030
+
+RequestQuit command received.
+DataHandler: unable to parse websocket frame.
+Closing Application...
+CloseHandler: 127.0.0.1:47316 disconnected
+ResponseThread: No connection, dropping the response.
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 37315 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-nygsgigi/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:37315
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:43802 accepted
+ReadyHandler: 127.0.0.1:43802 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 07:33:14] my_main Recent Stats | t_env:     480444 | Episode:    10651
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0044	MSE_per_agent_0:           0.1039	MSE_per_agent_1:           0.1021
+MSE_per_agent_2:           0.1029	Message_selector_grad_norm:  0.3233	Meta_loss:                 0.2634	Model_D_loss:              0.1337
+Mse_loss:                  0.1030	Mse_per_state_0:           0.0007	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0252
+Mse_per_state_13:          0.0430	Mse_per_state_14:          0.1480	Mse_per_state_15:          0.0990	Mse_per_state_18:          0.0378
+Mse_per_state_19:          0.1804	Mse_per_state_2:           0.1838	Mse_per_state_20:          0.1542	Mse_per_state_23:          0.0441
+Mse_per_state_24:          0.1755	Mse_per_state_25:          0.1505	Mse_per_state_28:          0.0537	Mse_per_state_29:          0.1735
+Mse_per_state_3:           0.1609	Mse_per_state_30:          0.1472	Mse_per_state_33:          0.0400	Mse_per_state_34:          0.1822
+Mse_per_state_35:          0.1544	Mse_per_state_6:           0.0253	Mse_per_state_7:           0.0402	Mse_per_state_8:           0.1495
+Mse_per_state_9:           0.1022	Student_comm_forward_rate:  0.4728	Student_comm_rate:         0.4728	Student_what_soft_rate:    0.6285
+Teacher_comm_certified_edge_rate:  0.3182	Teacher_comm_lambda:       0.2403	Teacher_comm_loss:         0.0198	Teacher_comm_neg_loss:     0.0317
+Teacher_comm_pos_loss:     0.0187	Teacher_comm_pos_rate:     0.4672	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.2403
+Teacher_what_loss:         0.0243	What_coverage_loss:        0.0000	battle_won_mean:           0.3618	ep_length_mean:           44.4172
+epsilon:                   0.0500	grad_norm:                16.6866	loss:                      0.5111	q_taken_mean:              2.0705
+return_mean:               7.9120	return_std:                9.3545	target_mean:               2.0699	td_error_abs:              0.4167
+test_battle_won_mean:      0.3520	test_ep_length_mean:      44.5860	test_return_mean:          7.7233	test_return_std:           9.3030
+
+[INFO 08:05:49] my_main t_env: 500304 / 2050000
+[INFO 08:05:49] my_main Estimated time left: 1 days, 19 hours, 56 minutes, 54 seconds. Time passed: 13 hours, 45 minutes, 15 seconds
+[INFO 08:08:46] my_main Recent Stats | t_env:     500464 | Episode:    11115
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0043	MSE_per_agent_0:           0.1026	MSE_per_agent_1:           0.0987
+MSE_per_agent_2:           0.0998	Message_selector_grad_norm:  0.3243	Meta_loss:                 0.2792	Model_D_loss:              0.1327
+Mse_loss:                  0.1004	Mse_per_state_0:           0.0006	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0261
+Mse_per_state_13:          0.0435	Mse_per_state_14:          0.1383	Mse_per_state_15:          0.0910	Mse_per_state_18:          0.0393
+Mse_per_state_19:          0.1781	Mse_per_state_2:           0.1870	Mse_per_state_20:          0.1474	Mse_per_state_23:          0.0471
+Mse_per_state_24:          0.1729	Mse_per_state_25:          0.1419	Mse_per_state_28:          0.0564	Mse_per_state_29:          0.1713
+Mse_per_state_3:           0.1545	Mse_per_state_30:          0.1413	Mse_per_state_33:          0.0450	Mse_per_state_34:          0.1791
+Mse_per_state_35:          0.1462	Mse_per_state_6:           0.0266	Mse_per_state_7:           0.0410	Mse_per_state_8:           0.1403
+Mse_per_state_9:           0.0940	Student_comm_forward_rate:  0.4725	Student_comm_rate:         0.4725	Student_what_soft_rate:    0.6284
+Teacher_comm_certified_edge_rate:  0.3178	Teacher_comm_lambda:       0.2043	Teacher_comm_loss:         0.0194	Teacher_comm_neg_loss:     0.0293
+Teacher_comm_pos_loss:     0.0203	Teacher_comm_pos_rate:     0.4674	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.2043
+Teacher_what_loss:         0.0252	What_coverage_loss:        0.0000	battle_won_mean:           0.3632	ep_length_mean:           43.8956
+epsilon:                   0.0500	grad_norm:                16.8020	loss:                      0.4599	q_taken_mean:              2.0916
+return_mean:               7.8707	return_std:                9.3844	target_mean:               2.1078	td_error_abs:              0.3955
+test_battle_won_mean:      0.3700	test_ep_length_mean:      44.0440	test_return_mean:          7.8924	test_return_std:           9.4680
+
+[INFO 08:41:44] my_main Recent Stats | t_env:     520501 | Episode:    11577
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0043	MSE_per_agent_0:           0.1004	MSE_per_agent_1:           0.0945
+MSE_per_agent_2:           0.0956	Message_selector_grad_norm:  0.3119	Meta_loss:                 0.2889	Model_D_loss:              0.1301
+Mse_loss:                  0.0968	Mse_per_state_0:           0.0006	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0275
+Mse_per_state_13:          0.0429	Mse_per_state_14:          0.1307	Mse_per_state_15:          0.0879	Mse_per_state_18:          0.0380
+Mse_per_state_19:          0.1785	Mse_per_state_2:           0.1854	Mse_per_state_20:          0.1368	Mse_per_state_23:          0.0463
+Mse_per_state_24:          0.1711	Mse_per_state_25:          0.1304	Mse_per_state_28:          0.0583	Mse_per_state_29:          0.1684
+Mse_per_state_3:           0.1432	Mse_per_state_30:          0.1287	Mse_per_state_33:          0.0446	Mse_per_state_34:          0.1777
+Mse_per_state_35:          0.1343	Mse_per_state_6:           0.0247	Mse_per_state_7:           0.0424	Mse_per_state_8:           0.1319
+Mse_per_state_9:           0.0928	Student_comm_forward_rate:  0.4748	Student_comm_rate:         0.4748	Student_what_soft_rate:    0.6287
+Teacher_comm_certified_edge_rate:  0.3182	Teacher_comm_lambda:       0.1690	Teacher_comm_loss:         0.0200	Teacher_comm_neg_loss:     0.0284
+Teacher_comm_pos_loss:     0.0230	Teacher_comm_pos_rate:     0.4712	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1690
+Teacher_what_loss:         0.0254	What_coverage_loss:        0.0000	battle_won_mean:           0.3625	ep_length_mean:           43.3926
+epsilon:                   0.0500	grad_norm:                15.0727	loss:                      0.3631	q_taken_mean:              1.9717
+return_mean:               7.7694	return_std:                9.4139	target_mean:               1.9808	td_error_abs:              0.3544
+test_battle_won_mean:      0.3700	test_ep_length_mean:      44.0440	test_return_mean:          7.8924	test_return_std:           9.4680
+
+RequestQuit command received.
+Closing Application...
+DataHandler: unable to parse websocket frame.
+CloseHandler: 127.0.0.1:43802 disconnected
+ResponseThread: No connection, dropping the response.
+Map '1o_2r_vs_4r' is loaded from the absolute path: SMAC_Maps/1o_2r_vs_4r.SC2Map
+Version: B75689 (SC2.4.10)
+Build: Aug 12 2019 17:16:57
+Command Line: '"/data/hp/3rdparty/StarCraftII/Versions/Base75689/SC2_x64" -listen 127.0.0.1 -port 34363 -dataDir /data/hp/3rdparty/StarCraftII/ -tempDir /tmp/sc-xmv0lwlx/ -eglpath libEGL.so.1'
+Starting up...
+Startup Phase 1 complete
+Startup Phase 2 complete
+Attempting to initialize EGL from file libEGL.so.1 ...
+Successfully loaded EGL library!
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+libEGL warning: MESA-LOADER: failed to open swrast: /usr/lib/dri/swrast_dri.so: cannot open shared object file: No such file or directory (search paths /usr/lib/x86_64-linux-gnu/dri:\$${ORIGIN}/dri:/usr/lib/dri, suffix _dri)
+
+Failed to create and initialize a valid EGL display! Devices tried: 1
+
+CreateInitializedEGLDisplay Failed.
+Failed to initialize GL framework
+Creating stub renderer...
+Listening on: 127.0.0.1:34363
+Startup Phase 3 complete. Ready for commands.
+ConnectHandler: Request from 127.0.0.1:51690 accepted
+ReadyHandler: 127.0.0.1:51690 ready
+Requesting to join a single player game
+Configuring interface options
+Configure: raw interface enabled
+Configure: feature layer interface disabled
+Configure: score interface disabled
+Configure: render interface disabled
+Launching next game.
+Next launch phase started: 2
+Next launch phase started: 3
+Next launch phase started: 4
+Next launch phase started: 5
+Next launch phase started: 6
+Next launch phase started: 7
+Next launch phase started: 8
+Game has started.
+Using default stable ids, none found at: /data/hp/3rdparty/StarCraftII/stableid.json
+Successfully loaded stable ids: GameData\stableid.json
+Sending ResponseJoinGame
+[INFO 09:14:18] my_main Recent Stats | t_env:     540517 | Episode:    12040
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0043	MSE_per_agent_0:           0.0940	MSE_per_agent_1:           0.0880
+MSE_per_agent_2:           0.0894	Message_selector_grad_norm:  0.1093	Meta_loss:                 0.2990	Model_D_loss:              0.1247
+Mse_loss:                  0.0905	Mse_per_state_0:           0.0005	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0215
+Mse_per_state_13:          0.0398	Mse_per_state_14:          0.1120	Mse_per_state_15:          0.0833	Mse_per_state_18:          0.0348
+Mse_per_state_19:          0.1763	Mse_per_state_2:           0.1835	Mse_per_state_20:          0.1240	Mse_per_state_23:          0.0405
+Mse_per_state_24:          0.1707	Mse_per_state_25:          0.1185	Mse_per_state_28:          0.0532	Mse_per_state_29:          0.1678
+Mse_per_state_3:           0.1279	Mse_per_state_30:          0.1186	Mse_per_state_33:          0.0408	Mse_per_state_34:          0.1727
+Mse_per_state_35:          0.1201	Mse_per_state_6:           0.0228	Mse_per_state_7:           0.0388	Mse_per_state_8:           0.1140
+Mse_per_state_9:           0.0883	Student_comm_forward_rate:  0.4782	Student_comm_rate:         0.4782	Student_what_soft_rate:    0.6276
+Teacher_comm_certified_edge_rate:  0.3213	Teacher_comm_lambda:       0.1409	Teacher_comm_loss:         0.0214	Teacher_comm_neg_loss:     0.0298
+Teacher_comm_pos_loss:     0.0252	Teacher_comm_pos_rate:     0.4754	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1409
+Teacher_what_loss:         0.0251	What_coverage_loss:        0.0000	battle_won_mean:           0.3831	ep_length_mean:           43.0801
+epsilon:                   0.0500	grad_norm:                14.5593	loss:                      0.3369	q_taken_mean:              1.7994
+return_mean:               8.1030	return_std:                9.5395	target_mean:               1.8122	td_error_abs:              0.3313
+test_battle_won_mean:      0.3700	test_ep_length_mean:      44.0440	test_return_mean:          7.8924	test_return_std:           9.4680
+
+[INFO 09:30:12] my_main t_env: 550345 / 2050000
+[INFO 09:30:12] my_main Estimated time left: 1 days, 18 hours, 9 minutes, 16 seconds. Time passed: 15 hours, 9 minutes, 39 seconds
+[INFO 09:49:54] my_main Recent Stats | t_env:     560532 | Episode:    12504
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0045	MSE_per_agent_0:           0.0907	MSE_per_agent_1:           0.0821
+MSE_per_agent_2:           0.0843	Message_selector_grad_norm:  0.1011	Meta_loss:                 0.3131	Model_D_loss:              0.1215
+Mse_loss:                  0.0857	Mse_per_state_0:           0.0005	Mse_per_state_1:           0.0005	Mse_per_state_12:          0.0220
+Mse_per_state_13:          0.0406	Mse_per_state_14:          0.1106	Mse_per_state_15:          0.0763	Mse_per_state_18:          0.0367
+Mse_per_state_19:          0.1708	Mse_per_state_2:           0.1798	Mse_per_state_20:          0.1083	Mse_per_state_23:          0.0393
+Mse_per_state_24:          0.1676	Mse_per_state_25:          0.1039	Mse_per_state_28:          0.0534	Mse_per_state_29:          0.1646
+Mse_per_state_3:           0.1144	Mse_per_state_30:          0.1044	Mse_per_state_33:          0.0413	Mse_per_state_34:          0.1678
+Mse_per_state_35:          0.1048	Mse_per_state_6:           0.0226	Mse_per_state_7:           0.0384	Mse_per_state_8:           0.1106
+Mse_per_state_9:           0.0773	Student_comm_forward_rate:  0.4791	Student_comm_rate:         0.4791	Student_what_soft_rate:    0.6270
+Teacher_comm_certified_edge_rate:  0.3216	Teacher_comm_lambda:       0.1201	Teacher_comm_loss:         0.0208	Teacher_comm_neg_loss:     0.0284
+Teacher_comm_pos_loss:     0.0260	Teacher_comm_pos_rate:     0.4772	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1201
+Teacher_what_loss:         0.0249	What_coverage_loss:        0.0000	battle_won_mean:           0.3870	ep_length_mean:           42.9639
+epsilon:                   0.0500	grad_norm:                12.0737	loss:                      0.2461	q_taken_mean:              1.6446
+return_mean:               8.1382	return_std:                9.5755	target_mean:               1.6447	td_error_abs:              0.2919
+test_battle_won_mean:      0.3940	test_ep_length_mean:      43.2360	test_return_mean:          8.2835	test_return_std:           9.5666
+

@@ -1,0 +1,8 @@
+{
+  "dry_run": false,
+  "usage": {
+    "completion_tokens": 10337,
+    "prompt_tokens": 22640,
+    "total_tokens": 32977
+  }
+}

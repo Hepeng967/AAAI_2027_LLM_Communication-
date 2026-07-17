@@ -1,0 +1,964 @@
+{
+  "map_name": "protoss_10_vs_10",
+  "environment": "smacv2",
+  "obs_shape": 182,
+  "n_agents": 10,
+  "n_enemies": 10,
+  "obs_feature_names": [
+    "move_north",
+    "move_south",
+    "move_east",
+    "move_west",
+    "enemy_0_available",
+    "enemy_0_distance",
+    "enemy_0_relative_x",
+    "enemy_0_relative_y",
+    "enemy_0_health",
+    "enemy_0_shield",
+    "enemy_0_unit_type_stalker",
+    "enemy_0_unit_type_zealot",
+    "enemy_0_unit_type_colossus",
+    "enemy_1_available",
+    "enemy_1_distance",
+    "enemy_1_relative_x",
+    "enemy_1_relative_y",
+    "enemy_1_health",
+    "enemy_1_shield",
+    "enemy_1_unit_type_stalker",
+    "enemy_1_unit_type_zealot",
+    "enemy_1_unit_type_colossus",
+    "enemy_2_available",
+    "enemy_2_distance",
+    "enemy_2_relative_x",
+    "enemy_2_relative_y",
+    "enemy_2_health",
+    "enemy_2_shield",
+    "enemy_2_unit_type_stalker",
+    "enemy_2_unit_type_zealot",
+    "enemy_2_unit_type_colossus",
+    "enemy_3_available",
+    "enemy_3_distance",
+    "enemy_3_relative_x",
+    "enemy_3_relative_y",
+    "enemy_3_health",
+    "enemy_3_shield",
+    "enemy_3_unit_type_stalker",
+    "enemy_3_unit_type_zealot",
+    "enemy_3_unit_type_colossus",
+    "enemy_4_available",
+    "enemy_4_distance",
+    "enemy_4_relative_x",
+    "enemy_4_relative_y",
+    "enemy_4_health",
+    "enemy_4_shield",
+    "enemy_4_unit_type_stalker",
+    "enemy_4_unit_type_zealot",
+    "enemy_4_unit_type_colossus",
+    "enemy_5_available",
+    "enemy_5_distance",
+    "enemy_5_relative_x",
+    "enemy_5_relative_y",
+    "enemy_5_health",
+    "enemy_5_shield",
+    "enemy_5_unit_type_stalker",
+    "enemy_5_unit_type_zealot",
+    "enemy_5_unit_type_colossus",
+    "enemy_6_available",
+    "enemy_6_distance",
+    "enemy_6_relative_x",
+    "enemy_6_relative_y",
+    "enemy_6_health",
+    "enemy_6_shield",
+    "enemy_6_unit_type_stalker",
+    "enemy_6_unit_type_zealot",
+    "enemy_6_unit_type_colossus",
+    "enemy_7_available",
+    "enemy_7_distance",
+    "enemy_7_relative_x",
+    "enemy_7_relative_y",
+    "enemy_7_health",
+    "enemy_7_shield",
+    "enemy_7_unit_type_stalker",
+    "enemy_7_unit_type_zealot",
+    "enemy_7_unit_type_colossus",
+    "enemy_8_available",
+    "enemy_8_distance",
+    "enemy_8_relative_x",
+    "enemy_8_relative_y",
+    "enemy_8_health",
+    "enemy_8_shield",
+    "enemy_8_unit_type_stalker",
+    "enemy_8_unit_type_zealot",
+    "enemy_8_unit_type_colossus",
+    "enemy_9_available",
+    "enemy_9_distance",
+    "enemy_9_relative_x",
+    "enemy_9_relative_y",
+    "enemy_9_health",
+    "enemy_9_shield",
+    "enemy_9_unit_type_stalker",
+    "enemy_9_unit_type_zealot",
+    "enemy_9_unit_type_colossus",
+    "ally_slot_0_visible",
+    "ally_slot_0_distance",
+    "ally_slot_0_relative_x",
+    "ally_slot_0_relative_y",
+    "ally_slot_0_health",
+    "ally_slot_0_shield",
+    "ally_slot_0_unit_type_stalker",
+    "ally_slot_0_unit_type_zealot",
+    "ally_slot_0_unit_type_colossus",
+    "ally_slot_1_visible",
+    "ally_slot_1_distance",
+    "ally_slot_1_relative_x",
+    "ally_slot_1_relative_y",
+    "ally_slot_1_health",
+    "ally_slot_1_shield",
+    "ally_slot_1_unit_type_stalker",
+    "ally_slot_1_unit_type_zealot",
+    "ally_slot_1_unit_type_colossus",
+    "ally_slot_2_visible",
+    "ally_slot_2_distance",
+    "ally_slot_2_relative_x",
+    "ally_slot_2_relative_y",
+    "ally_slot_2_health",
+    "ally_slot_2_shield",
+    "ally_slot_2_unit_type_stalker",
+    "ally_slot_2_unit_type_zealot",
+    "ally_slot_2_unit_type_colossus",
+    "ally_slot_3_visible",
+    "ally_slot_3_distance",
+    "ally_slot_3_relative_x",
+    "ally_slot_3_relative_y",
+    "ally_slot_3_health",
+    "ally_slot_3_shield",
+    "ally_slot_3_unit_type_stalker",
+    "ally_slot_3_unit_type_zealot",
+    "ally_slot_3_unit_type_colossus",
+    "ally_slot_4_visible",
+    "ally_slot_4_distance",
+    "ally_slot_4_relative_x",
+    "ally_slot_4_relative_y",
+    "ally_slot_4_health",
+    "ally_slot_4_shield",
+    "ally_slot_4_unit_type_stalker",
+    "ally_slot_4_unit_type_zealot",
+    "ally_slot_4_unit_type_colossus",
+    "ally_slot_5_visible",
+    "ally_slot_5_distance",
+    "ally_slot_5_relative_x",
+    "ally_slot_5_relative_y",
+    "ally_slot_5_health",
+    "ally_slot_5_shield",
+    "ally_slot_5_unit_type_stalker",
+    "ally_slot_5_unit_type_zealot",
+    "ally_slot_5_unit_type_colossus",
+    "ally_slot_6_visible",
+    "ally_slot_6_distance",
+    "ally_slot_6_relative_x",
+    "ally_slot_6_relative_y",
+    "ally_slot_6_health",
+    "ally_slot_6_shield",
+    "ally_slot_6_unit_type_stalker",
+    "ally_slot_6_unit_type_zealot",
+    "ally_slot_6_unit_type_colossus",
+    "ally_slot_7_visible",
+    "ally_slot_7_distance",
+    "ally_slot_7_relative_x",
+    "ally_slot_7_relative_y",
+    "ally_slot_7_health",
+    "ally_slot_7_shield",
+    "ally_slot_7_unit_type_stalker",
+    "ally_slot_7_unit_type_zealot",
+    "ally_slot_7_unit_type_colossus",
+    "ally_slot_8_visible",
+    "ally_slot_8_distance",
+    "ally_slot_8_relative_x",
+    "ally_slot_8_relative_y",
+    "ally_slot_8_health",
+    "ally_slot_8_shield",
+    "ally_slot_8_unit_type_stalker",
+    "ally_slot_8_unit_type_zealot",
+    "ally_slot_8_unit_type_colossus",
+    "own_health",
+    "own_shield",
+    "own_normalized_x",
+    "own_normalized_y",
+    "own_unit_type_stalker",
+    "own_unit_type_zealot",
+    "own_unit_type_colossus"
+  ],
+  "feature_index": {
+    "move_north": [
+      0,
+      1
+    ],
+    "move_south": [
+      1,
+      2
+    ],
+    "move_east": [
+      2,
+      3
+    ],
+    "move_west": [
+      3,
+      4
+    ],
+    "enemy_0_available": [
+      4,
+      5
+    ],
+    "enemy_0_distance": [
+      5,
+      6
+    ],
+    "enemy_0_relative_x": [
+      6,
+      7
+    ],
+    "enemy_0_relative_y": [
+      7,
+      8
+    ],
+    "enemy_0_health": [
+      8,
+      9
+    ],
+    "enemy_0_shield": [
+      9,
+      10
+    ],
+    "enemy_0_unit_type_stalker": [
+      10,
+      11
+    ],
+    "enemy_0_unit_type_zealot": [
+      11,
+      12
+    ],
+    "enemy_0_unit_type_colossus": [
+      12,
+      13
+    ],
+    "enemy_1_available": [
+      13,
+      14
+    ],
+    "enemy_1_distance": [
+      14,
+      15
+    ],
+    "enemy_1_relative_x": [
+      15,
+      16
+    ],
+    "enemy_1_relative_y": [
+      16,
+      17
+    ],
+    "enemy_1_health": [
+      17,
+      18
+    ],
+    "enemy_1_shield": [
+      18,
+      19
+    ],
+    "enemy_1_unit_type_stalker": [
+      19,
+      20
+    ],
+    "enemy_1_unit_type_zealot": [
+      20,
+      21
+    ],
+    "enemy_1_unit_type_colossus": [
+      21,
+      22
+    ],
+    "enemy_2_available": [
+      22,
+      23
+    ],
+    "enemy_2_distance": [
+      23,
+      24
+    ],
+    "enemy_2_relative_x": [
+      24,
+      25
+    ],
+    "enemy_2_relative_y": [
+      25,
+      26
+    ],
+    "enemy_2_health": [
+      26,
+      27
+    ],
+    "enemy_2_shield": [
+      27,
+      28
+    ],
+    "enemy_2_unit_type_stalker": [
+      28,
+      29
+    ],
+    "enemy_2_unit_type_zealot": [
+      29,
+      30
+    ],
+    "enemy_2_unit_type_colossus": [
+      30,
+      31
+    ],
+    "enemy_3_available": [
+      31,
+      32
+    ],
+    "enemy_3_distance": [
+      32,
+      33
+    ],
+    "enemy_3_relative_x": [
+      33,
+      34
+    ],
+    "enemy_3_relative_y": [
+      34,
+      35
+    ],
+    "enemy_3_health": [
+      35,
+      36
+    ],
+    "enemy_3_shield": [
+      36,
+      37
+    ],
+    "enemy_3_unit_type_stalker": [
+      37,
+      38
+    ],
+    "enemy_3_unit_type_zealot": [
+      38,
+      39
+    ],
+    "enemy_3_unit_type_colossus": [
+      39,
+      40
+    ],
+    "enemy_4_available": [
+      40,
+      41
+    ],
+    "enemy_4_distance": [
+      41,
+      42
+    ],
+    "enemy_4_relative_x": [
+      42,
+      43
+    ],
+    "enemy_4_relative_y": [
+      43,
+      44
+    ],
+    "enemy_4_health": [
+      44,
+      45
+    ],
+    "enemy_4_shield": [
+      45,
+      46
+    ],
+    "enemy_4_unit_type_stalker": [
+      46,
+      47
+    ],
+    "enemy_4_unit_type_zealot": [
+      47,
+      48
+    ],
+    "enemy_4_unit_type_colossus": [
+      48,
+      49
+    ],
+    "enemy_5_available": [
+      49,
+      50
+    ],
+    "enemy_5_distance": [
+      50,
+      51
+    ],
+    "enemy_5_relative_x": [
+      51,
+      52
+    ],
+    "enemy_5_relative_y": [
+      52,
+      53
+    ],
+    "enemy_5_health": [
+      53,
+      54
+    ],
+    "enemy_5_shield": [
+      54,
+      55
+    ],
+    "enemy_5_unit_type_stalker": [
+      55,
+      56
+    ],
+    "enemy_5_unit_type_zealot": [
+      56,
+      57
+    ],
+    "enemy_5_unit_type_colossus": [
+      57,
+      58
+    ],
+    "enemy_6_available": [
+      58,
+      59
+    ],
+    "enemy_6_distance": [
+      59,
+      60
+    ],
+    "enemy_6_relative_x": [
+      60,
+      61
+    ],
+    "enemy_6_relative_y": [
+      61,
+      62
+    ],
+    "enemy_6_health": [
+      62,
+      63
+    ],
+    "enemy_6_shield": [
+      63,
+      64
+    ],
+    "enemy_6_unit_type_stalker": [
+      64,
+      65
+    ],
+    "enemy_6_unit_type_zealot": [
+      65,
+      66
+    ],
+    "enemy_6_unit_type_colossus": [
+      66,
+      67
+    ],
+    "enemy_7_available": [
+      67,
+      68
+    ],
+    "enemy_7_distance": [
+      68,
+      69
+    ],
+    "enemy_7_relative_x": [
+      69,
+      70
+    ],
+    "enemy_7_relative_y": [
+      70,
+      71
+    ],
+    "enemy_7_health": [
+      71,
+      72
+    ],
+    "enemy_7_shield": [
+      72,
+      73
+    ],
+    "enemy_7_unit_type_stalker": [
+      73,
+      74
+    ],
+    "enemy_7_unit_type_zealot": [
+      74,
+      75
+    ],
+    "enemy_7_unit_type_colossus": [
+      75,
+      76
+    ],
+    "enemy_8_available": [
+      76,
+      77
+    ],
+    "enemy_8_distance": [
+      77,
+      78
+    ],
+    "enemy_8_relative_x": [
+      78,
+      79
+    ],
+    "enemy_8_relative_y": [
+      79,
+      80
+    ],
+    "enemy_8_health": [
+      80,
+      81
+    ],
+    "enemy_8_shield": [
+      81,
+      82
+    ],
+    "enemy_8_unit_type_stalker": [
+      82,
+      83
+    ],
+    "enemy_8_unit_type_zealot": [
+      83,
+      84
+    ],
+    "enemy_8_unit_type_colossus": [
+      84,
+      85
+    ],
+    "enemy_9_available": [
+      85,
+      86
+    ],
+    "enemy_9_distance": [
+      86,
+      87
+    ],
+    "enemy_9_relative_x": [
+      87,
+      88
+    ],
+    "enemy_9_relative_y": [
+      88,
+      89
+    ],
+    "enemy_9_health": [
+      89,
+      90
+    ],
+    "enemy_9_shield": [
+      90,
+      91
+    ],
+    "enemy_9_unit_type_stalker": [
+      91,
+      92
+    ],
+    "enemy_9_unit_type_zealot": [
+      92,
+      93
+    ],
+    "enemy_9_unit_type_colossus": [
+      93,
+      94
+    ],
+    "ally_slot_0_visible": [
+      94,
+      95
+    ],
+    "ally_slot_0_distance": [
+      95,
+      96
+    ],
+    "ally_slot_0_relative_x": [
+      96,
+      97
+    ],
+    "ally_slot_0_relative_y": [
+      97,
+      98
+    ],
+    "ally_slot_0_health": [
+      98,
+      99
+    ],
+    "ally_slot_0_shield": [
+      99,
+      100
+    ],
+    "ally_slot_0_unit_type_stalker": [
+      100,
+      101
+    ],
+    "ally_slot_0_unit_type_zealot": [
+      101,
+      102
+    ],
+    "ally_slot_0_unit_type_colossus": [
+      102,
+      103
+    ],
+    "ally_slot_1_visible": [
+      103,
+      104
+    ],
+    "ally_slot_1_distance": [
+      104,
+      105
+    ],
+    "ally_slot_1_relative_x": [
+      105,
+      106
+    ],
+    "ally_slot_1_relative_y": [
+      106,
+      107
+    ],
+    "ally_slot_1_health": [
+      107,
+      108
+    ],
+    "ally_slot_1_shield": [
+      108,
+      109
+    ],
+    "ally_slot_1_unit_type_stalker": [
+      109,
+      110
+    ],
+    "ally_slot_1_unit_type_zealot": [
+      110,
+      111
+    ],
+    "ally_slot_1_unit_type_colossus": [
+      111,
+      112
+    ],
+    "ally_slot_2_visible": [
+      112,
+      113
+    ],
+    "ally_slot_2_distance": [
+      113,
+      114
+    ],
+    "ally_slot_2_relative_x": [
+      114,
+      115
+    ],
+    "ally_slot_2_relative_y": [
+      115,
+      116
+    ],
+    "ally_slot_2_health": [
+      116,
+      117
+    ],
+    "ally_slot_2_shield": [
+      117,
+      118
+    ],
+    "ally_slot_2_unit_type_stalker": [
+      118,
+      119
+    ],
+    "ally_slot_2_unit_type_zealot": [
+      119,
+      120
+    ],
+    "ally_slot_2_unit_type_colossus": [
+      120,
+      121
+    ],
+    "ally_slot_3_visible": [
+      121,
+      122
+    ],
+    "ally_slot_3_distance": [
+      122,
+      123
+    ],
+    "ally_slot_3_relative_x": [
+      123,
+      124
+    ],
+    "ally_slot_3_relative_y": [
+      124,
+      125
+    ],
+    "ally_slot_3_health": [
+      125,
+      126
+    ],
+    "ally_slot_3_shield": [
+      126,
+      127
+    ],
+    "ally_slot_3_unit_type_stalker": [
+      127,
+      128
+    ],
+    "ally_slot_3_unit_type_zealot": [
+      128,
+      129
+    ],
+    "ally_slot_3_unit_type_colossus": [
+      129,
+      130
+    ],
+    "ally_slot_4_visible": [
+      130,
+      131
+    ],
+    "ally_slot_4_distance": [
+      131,
+      132
+    ],
+    "ally_slot_4_relative_x": [
+      132,
+      133
+    ],
+    "ally_slot_4_relative_y": [
+      133,
+      134
+    ],
+    "ally_slot_4_health": [
+      134,
+      135
+    ],
+    "ally_slot_4_shield": [
+      135,
+      136
+    ],
+    "ally_slot_4_unit_type_stalker": [
+      136,
+      137
+    ],
+    "ally_slot_4_unit_type_zealot": [
+      137,
+      138
+    ],
+    "ally_slot_4_unit_type_colossus": [
+      138,
+      139
+    ],
+    "ally_slot_5_visible": [
+      139,
+      140
+    ],
+    "ally_slot_5_distance": [
+      140,
+      141
+    ],
+    "ally_slot_5_relative_x": [
+      141,
+      142
+    ],
+    "ally_slot_5_relative_y": [
+      142,
+      143
+    ],
+    "ally_slot_5_health": [
+      143,
+      144
+    ],
+    "ally_slot_5_shield": [
+      144,
+      145
+    ],
+    "ally_slot_5_unit_type_stalker": [
+      145,
+      146
+    ],
+    "ally_slot_5_unit_type_zealot": [
+      146,
+      147
+    ],
+    "ally_slot_5_unit_type_colossus": [
+      147,
+      148
+    ],
+    "ally_slot_6_visible": [
+      148,
+      149
+    ],
+    "ally_slot_6_distance": [
+      149,
+      150
+    ],
+    "ally_slot_6_relative_x": [
+      150,
+      151
+    ],
+    "ally_slot_6_relative_y": [
+      151,
+      152
+    ],
+    "ally_slot_6_health": [
+      152,
+      153
+    ],
+    "ally_slot_6_shield": [
+      153,
+      154
+    ],
+    "ally_slot_6_unit_type_stalker": [
+      154,
+      155
+    ],
+    "ally_slot_6_unit_type_zealot": [
+      155,
+      156
+    ],
+    "ally_slot_6_unit_type_colossus": [
+      156,
+      157
+    ],
+    "ally_slot_7_visible": [
+      157,
+      158
+    ],
+    "ally_slot_7_distance": [
+      158,
+      159
+    ],
+    "ally_slot_7_relative_x": [
+      159,
+      160
+    ],
+    "ally_slot_7_relative_y": [
+      160,
+      161
+    ],
+    "ally_slot_7_health": [
+      161,
+      162
+    ],
+    "ally_slot_7_shield": [
+      162,
+      163
+    ],
+    "ally_slot_7_unit_type_stalker": [
+      163,
+      164
+    ],
+    "ally_slot_7_unit_type_zealot": [
+      164,
+      165
+    ],
+    "ally_slot_7_unit_type_colossus": [
+      165,
+      166
+    ],
+    "ally_slot_8_visible": [
+      166,
+      167
+    ],
+    "ally_slot_8_distance": [
+      167,
+      168
+    ],
+    "ally_slot_8_relative_x": [
+      168,
+      169
+    ],
+    "ally_slot_8_relative_y": [
+      169,
+      170
+    ],
+    "ally_slot_8_health": [
+      170,
+      171
+    ],
+    "ally_slot_8_shield": [
+      171,
+      172
+    ],
+    "ally_slot_8_unit_type_stalker": [
+      172,
+      173
+    ],
+    "ally_slot_8_unit_type_zealot": [
+      173,
+      174
+    ],
+    "ally_slot_8_unit_type_colossus": [
+      174,
+      175
+    ],
+    "own_health": [
+      175,
+      176
+    ],
+    "own_shield": [
+      176,
+      177
+    ],
+    "own_normalized_x": [
+      177,
+      178
+    ],
+    "own_normalized_y": [
+      178,
+      179
+    ],
+    "own_unit_type_stalker": [
+      179,
+      180
+    ],
+    "own_unit_type_zealot": [
+      180,
+      181
+    ],
+    "own_unit_type_colossus": [
+      181,
+      182
+    ]
+  },
+  "obs_agent_id_map": [
+    "agent_0",
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4",
+    "agent_5",
+    "agent_6",
+    "agent_7",
+    "agent_8",
+    "agent_9"
+  ],
+  "obs_agent_type_map": [
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits"
+  ],
+  "feature_groups": {
+    "movement": [
+      0,
+      4
+    ],
+    "enemies": [
+      4,
+      94
+    ],
+    "allies": [
+      94,
+      175
+    ],
+    "own": [
+      175,
+      182
+    ]
+  },
+  "schema_source": "SMACv2 get_obs_*_feats_size layout plus selected scenario YAML"
+}

@@ -1,0 +1,19 @@
+{
+  "environment": "hallway",
+  "task": "hallway",
+  "objective": "All agents must reach position 0 on the same timestep.",
+  "failure_condition": "The episode terminates unsuccessfully if only a subset reaches position 0.",
+  "n_agents": 4,
+  "state_numbers": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "actions": {
+    "0": "stay",
+    "1": "move one step toward 0",
+    "2": "move one step away from 0"
+  },
+  "information_boundary": "Each agent locally observes only its own current position."
+}

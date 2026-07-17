@@ -1,0 +1,11 @@
+{
+  "available": true,
+  "environment": "hallway_group",
+  "task": "hallway_group",
+  "config_path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/config/envs/hallway_group.yaml",
+  "n_agents": 7,
+  "n_actions": 3,
+  "obs_shape": 2,
+  "state_shape": 14,
+  "episode_limit": 20
+}

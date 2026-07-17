@@ -1,0 +1,88 @@
+{
+  "map_name": "academy_3_vs_1_with_keeper",
+  "environment": "grf",
+  "obs_shape": 26,
+  "n_agents": 3,
+  "n_enemies": 2,
+  "n_actions": 19,
+  "obs_feature_names": [
+    "ego_absolute_xy",
+    "teammate_0_relative_xy",
+    "teammate_1_relative_xy",
+    "ego_direction_xy",
+    "teammate_0_direction_xy",
+    "teammate_1_direction_xy",
+    "opponent_0_relative_xy",
+    "opponent_1_relative_xy",
+    "opponent_0_direction_xy",
+    "opponent_1_direction_xy",
+    "ball_relative_xy",
+    "ball_z",
+    "ball_direction_xyz"
+  ],
+  "feature_index": {
+    "ego_absolute_xy": [
+      0,
+      2
+    ],
+    "teammate_0_relative_xy": [
+      2,
+      4
+    ],
+    "teammate_1_relative_xy": [
+      4,
+      6
+    ],
+    "ego_direction_xy": [
+      6,
+      8
+    ],
+    "teammate_0_direction_xy": [
+      8,
+      10
+    ],
+    "teammate_1_direction_xy": [
+      10,
+      12
+    ],
+    "opponent_0_relative_xy": [
+      12,
+      14
+    ],
+    "opponent_1_relative_xy": [
+      14,
+      16
+    ],
+    "opponent_0_direction_xy": [
+      16,
+      18
+    ],
+    "opponent_1_direction_xy": [
+      18,
+      20
+    ],
+    "ball_relative_xy": [
+      20,
+      22
+    ],
+    "ball_z": [
+      22,
+      23
+    ],
+    "ball_direction_xyz": [
+      23,
+      26
+    ]
+  },
+  "obs_agent_id_map": [
+    "controlled_player_0",
+    "controlled_player_1",
+    "controlled_player_2"
+  ],
+  "obs_agent_type_map": [
+    "football_player",
+    "football_player",
+    "football_player"
+  ],
+  "schema_source": "src/envs/grf_wrapper.py::GRFWrapper.get_simple_obs"
+}

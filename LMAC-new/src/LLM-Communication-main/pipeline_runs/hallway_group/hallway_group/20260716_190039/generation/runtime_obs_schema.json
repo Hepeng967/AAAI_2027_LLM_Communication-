@@ -1,0 +1,97 @@
+{
+  "map_name": "hallway_group",
+  "environment": "hallway_group",
+  "obs_shape": 12,
+  "n_agents": 7,
+  "n_actions": 3,
+  "obs_feature_names": [
+    "current_position",
+    "active_status",
+    "lmac_extra_2",
+    "lmac_extra_3",
+    "lmac_extra_4",
+    "lmac_extra_5",
+    "lmac_extra_6",
+    "lmac_extra_7",
+    "lmac_extra_8",
+    "lmac_extra_9",
+    "lmac_extra_10",
+    "lmac_extra_11"
+  ],
+  "feature_index": {
+    "current_position": [
+      0,
+      1
+    ],
+    "active_status": [
+      1,
+      2
+    ],
+    "previous_action_0": [
+      2,
+      3
+    ],
+    "previous_action_1": [
+      3,
+      4
+    ],
+    "previous_action_2": [
+      4,
+      5
+    ],
+    "agent_id_0": [
+      5,
+      6
+    ],
+    "agent_id_1": [
+      6,
+      7
+    ],
+    "agent_id_2": [
+      7,
+      8
+    ],
+    "agent_id_3": [
+      8,
+      9
+    ],
+    "agent_id_4": [
+      9,
+      10
+    ],
+    "agent_id_5": [
+      10,
+      11
+    ],
+    "agent_id_6": [
+      11,
+      12
+    ]
+  },
+  "obs_agent_id_map": [
+    "agent_0",
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4",
+    "agent_5",
+    "agent_6"
+  ],
+  "obs_agent_type_map": [
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent"
+  ],
+  "schema_source": "src/envs/hallway/joinn.py",
+  "documented_obs_shape": 2,
+  "rollout_root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data",
+  "rollout_files": [],
+  "rollout_available": false,
+  "raw_obs_shape": 2,
+  "action_dim": 3,
+  "alignment_note": "The LMAC policy consumes raw environment observation followed by previous-action one-hot and agent-id one-hot. For this rollout: environment observation indices are [0,1], previous action indices are [2,4], and agent ID indices are [5,11]. WHAT should prioritize environment observations; previous action or agent ID may only be selected with an explicit coordination justification. Undocumented env_extra dimensions must not be assigned invented semantics."
+}

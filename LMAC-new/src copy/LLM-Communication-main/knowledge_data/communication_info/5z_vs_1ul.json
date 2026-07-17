@@ -1,0 +1,201 @@
+{
+  "state_shape": 63,
+  "obs_shape": 35,
+  "n_actions": 7,
+  "n_agents": 5,
+  "episode_limit": 150,
+
+  "feature_index": {
+    "move_north": [
+      0,
+      1
+    ],
+    "move_south": [
+      1,
+      2
+    ],
+    "move_east": [
+      2,
+      3
+    ],
+    "move_west": [
+      3,
+      4
+    ],
+    "enemy_0_available": [
+      4,
+      5
+    ],
+    "enemy_0_distance": [
+      5,
+      6
+    ],
+    "enemy_0_rel_x": [
+      6,
+      7
+    ],
+    "enemy_0_rel_y": [
+      7,
+      8
+    ],
+    "enemy_0_health": [
+      8,
+      9
+    ],
+    "ally_0_visible": [
+      9,
+      10
+    ],
+    "ally_0_distance": [
+      10,
+      11
+    ],
+    "ally_0_rel_x": [
+      11,
+      12
+    ],
+    "ally_0_rel_y": [
+      12,
+      13
+    ],
+    "ally_0_health": [
+      13,
+      14
+    ],
+    "ally_0_shield": [
+      14,
+      15
+    ],
+    "ally_1_visible": [
+      15,
+      16
+    ],
+    "ally_1_distance": [
+      16,
+      17
+    ],
+    "ally_1_rel_x": [
+      17,
+      18
+    ],
+    "ally_1_rel_y": [
+      18,
+      19
+    ],
+    "ally_1_health": [
+      19,
+      20
+    ],
+    "ally_1_shield": [
+      20,
+      21
+    ],
+    "ally_2_visible": [
+      21,
+      22
+    ],
+    "ally_2_distance": [
+      22,
+      23
+    ],
+    "ally_2_rel_x": [
+      23,
+      24
+    ],
+    "ally_2_rel_y": [
+      24,
+      25
+    ],
+    "ally_2_health": [
+      25,
+      26
+    ],
+    "ally_2_shield": [
+      26,
+      27
+    ],
+    "ally_3_visible": [
+      27,
+      28
+    ],
+    "ally_3_distance": [
+      28,
+      29
+    ],
+    "ally_3_rel_x": [
+      29,
+      30
+    ],
+    "ally_3_rel_y": [
+      30,
+      31
+    ],
+    "ally_3_health": [
+      31,
+      32
+    ],
+    "ally_3_shield": [
+      32,
+      33
+    ],
+    "own_health": [
+      33,
+      34
+    ],
+    "own_shield": [
+      34,
+      35
+    ]
+  },
+  "obs_feature_names": [
+    "move_north",
+    "move_south",
+    "move_east",
+    "move_west",
+    "enemy_0_available",
+    "enemy_0_distance",
+    "enemy_0_rel_x",
+    "enemy_0_rel_y",
+    "enemy_0_health",
+    "ally_0_visible",
+    "ally_0_distance",
+    "ally_0_rel_x",
+    "ally_0_rel_y",
+    "ally_0_health",
+    "ally_0_shield",
+    "ally_1_visible",
+    "ally_1_distance",
+    "ally_1_rel_x",
+    "ally_1_rel_y",
+    "ally_1_health",
+    "ally_1_shield",
+    "ally_2_visible",
+    "ally_2_distance",
+    "ally_2_rel_x",
+    "ally_2_rel_y",
+    "ally_2_health",
+    "ally_2_shield",
+    "ally_3_visible",
+    "ally_3_distance",
+    "ally_3_rel_x",
+    "ally_3_rel_y",
+    "ally_3_health",
+    "ally_3_shield",
+    "own_health",
+    "own_shield"
+  ],
+  "obs_agent_id_map": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "obs_agent_type_map": [
+    "zealot",
+    "zealot",
+    "zealot",
+    "zealot",
+    "zealot"
+  ]
+}

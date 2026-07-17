@@ -1,0 +1,19 @@
+{
+  "map": "1o_10b_vs_1r",
+  "run_id": "20260714_101455",
+  "pipeline_run": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_10b_vs_1r/20260714_101455",
+  "selected_policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_10b_vs_1r/LMAC_WWW/20260714_101455/iterations/iter_000.py",
+  "latest_policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_10b_vs_1r/LMAC_WWW/comm_init.py",
+  "policies": [
+    {
+      "stage": "initial",
+      "source": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_10b_vs_1r/20260714_101455/generation/comm_init.py",
+      "archive": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_10b_vs_1r/LMAC_WWW/20260714_101455/initial/comm_init.py"
+    },
+    {
+      "stage": "iter_000",
+      "source": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_10b_vs_1r/20260714_101455/iteration/1o_10b_vs_1r/20260714_101455/candidates/iter_000/comm_init.py",
+      "archive": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_10b_vs_1r/LMAC_WWW/20260714_101455/iterations/iter_000.py"
+    }
+  ]
+}

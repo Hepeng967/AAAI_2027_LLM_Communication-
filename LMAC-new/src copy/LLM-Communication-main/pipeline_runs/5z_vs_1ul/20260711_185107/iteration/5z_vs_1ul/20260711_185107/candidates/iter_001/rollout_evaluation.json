@@ -1,0 +1,20 @@
+{
+  "comm_code": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/5z_vs_1ul/20260711_185107/iteration/5z_vs_1ul/20260711_185107/candidates/iter_001/comm_init.py",
+  "files": [
+    "/data/hp/LLM_Communication/LMAC-new/data/5z_vs_1ul/train_traj_0000.pkl"
+  ],
+  "map_name": "5z_vs_1ul",
+  "matrix_edge_rate": 0.2,
+  "matrix_max": 1.0,
+  "matrix_min": 0.0,
+  "message_abs_mean": 0.013760117733627668,
+  "message_dim": 36,
+  "message_nonzero_rate": 0.013760117733627668,
+  "n_agents": 5,
+  "risk_flags": [],
+  "rollout_obs_dim": 36,
+  "transitions": 151,
+  "valid": true,
+  "when_edge_rate": 0.2,
+  "who_edge_rate": 0.2
+}

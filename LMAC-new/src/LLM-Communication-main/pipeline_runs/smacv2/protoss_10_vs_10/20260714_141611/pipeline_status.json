@@ -1,0 +1,24 @@
+{
+  "run_id": "20260714_141611",
+  "environment": "smacv2",
+  "task": "protoss_10_vs_10",
+  "map": "protoss_10_vs_10",
+  "mode": "full",
+  "overall": "complete",
+  "generation": {
+    "status": "complete",
+    "policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/generation/comm_init.py"
+  },
+  "collection": {
+    "status": "complete",
+    "rollout_dir": "/data/hp/LLM_Communication/LMAC-new/data/smacv2/protoss_10_vs_10",
+    "train_files": 50
+  },
+  "iteration": {
+    "status": "accepted",
+    "root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611",
+    "frozen_manifest": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/protoss_10_vs_10/20260714_141611/iteration/protoss_10_vs_10/20260714_141611/results/frozen_teacher_manifest.json"
+  },
+  "selected_policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/smacv2/protoss_10_vs_10/LMAC_WWW/20260714_141611/iterations/iter_001.py",
+  "failure": null
+}

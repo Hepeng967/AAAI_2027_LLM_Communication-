@@ -1,0 +1,162 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Roaches select a target enemy and navigate to attack it",
+      "locally_missing_information": [
+        "enemy positions (distance, relative x/y)",
+        "enemy health",
+        "enemy type"
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "agent_0",
+      "role_basis": "Overseer is an air unit with unrestricted vision across the dividing pit; task description states it must communicate enemy locations. Observation indices 4-35 contain enemy features."
+    },
+    {
+      "group_id": "G2",
+      "members": "agent_1, agent_2",
+      "role_basis": "Roaches are ground units blocked by the pit; their enemy_available flags are expected to be zero, making enemy features locally unavailable."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Positions, health, and type of up to four Reaper enemies.",
+      "possible_sender_groups": [
+        "G1"
+      ],
+      "possible_receiver_groups": [
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "enemy_0_available",
+          "index": 4
+        },
+        {
+          "name": "enemy_0_distance",
+          "index": 5
+        },
+        {
+          "name": "enemy_0_rel_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_rel_y",
+          "index": 7
+        },
+        {
+          "name": "enemy_0_health",
+          "index": 8
+        },
+        {
+          "name": "enemy_0_type_0",
+          "index": 9
+        },
+        {
+          "name": "enemy_0_type_1",
+          "index": 10
+        },
+        {
+          "name": "enemy_1_available",
+          "index": 12
+        },
+        {
+          "name": "enemy_1_distance",
+          "index": 13
+        },
+        {
+          "name": "enemy_1_rel_x",
+          "index": 14
+        },
+        {
+          "name": "enemy_1_rel_y",
+          "index": 15
+        },
+        {
+          "name": "enemy_1_health",
+          "index": 16
+        },
+        {
+          "name": "enemy_1_type_0",
+          "index": 17
+        },
+        {
+          "name": "enemy_1_type_1",
+          "index": 18
+        },
+        {
+          "name": "enemy_2_available",
+          "index": 20
+        },
+        {
+          "name": "enemy_2_distance",
+          "index": 21
+        },
+        {
+          "name": "enemy_2_rel_x",
+          "index": 22
+        },
+        {
+          "name": "enemy_2_rel_y",
+          "index": 23
+        },
+        {
+          "name": "enemy_2_health",
+          "index": 24
+        },
+        {
+          "name": "enemy_2_type_0",
+          "index": 25
+        },
+        {
+          "name": "enemy_2_type_1",
+          "index": 26
+        },
+        {
+          "name": "enemy_3_available",
+          "index": 28
+        },
+        {
+          "name": "enemy_3_distance",
+          "index": 29
+        },
+        {
+          "name": "enemy_3_rel_x",
+          "index": 30
+        },
+        {
+          "name": "enemy_3_rel_y",
+          "index": 31
+        },
+        {
+          "name": "enemy_3_health",
+          "index": 32
+        },
+        {
+          "name": "enemy_3_type_0",
+          "index": 33
+        },
+        {
+          "name": "enemy_3_type_1",
+          "index": 34
+        }
+      ],
+      "receiver_need_hypothesis": "Roaches cannot see enemies due to the pit blocking movement and vision. They need enemy positions and health to select a target, navigate towards it, and engage in combat.",
+      "task_decision_ids": [
+        "D1"
+      ],
+      "uncertainties": [
+        "Enemy positions are relative to Overseer; Roaches must transform coordinates using their own position and communicated Overseer location.",
+        "Communication delay may cause stale location data if enemies or Overseer move.",
+        "Simultaneous targeting of the same enemy by multiple Roaches could lead to overkill if not coordinated, but coordination requires additional information (ally intent) not handled by this requirement.",
+        "Bandwidth limits may force omission of some enemy details, requiring selective or sequential communication."
+      ]
+    }
+  ],
+  "unsupported_assumptions": []
+}

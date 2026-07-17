@@ -1,0 +1,79 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Move to a position that enables attacking enemies across the pit while remaining safe.",
+      "locally_missing_information": [
+        "Positions of enemy Reapers relative to self (to know direction and distance to approach)."
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Select which enemy Reaper to attack and execute the attack command.",
+      "locally_missing_information": [
+        "Which enemies are alive and available to target.",
+        "Relative positions and health of enemy Reapers to choose optimal target."
+      ]
+    },
+    {
+      "decision_id": "D3",
+      "decision": "Move the Overseer to maintain vision of enemies or avoid danger.",
+      "locally_missing_information": []
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "0",
+      "role_basis": "Agent type 'overseer' (own_type) has global vision across the pit as suggested by scenario; observation includes full enemy availability and positions; likely lacks attack capability."
+    },
+    {
+      "group_id": "G2",
+      "members": "1,2",
+      "role_basis": "Agent type 'roach' has ground unit limitation; pit blocks direct enemy vision, so their local enemy availability flags are likely 0; need external enemy info to engage."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Positions, health, and availability of all 4 enemy Reapers relative to the Overseer.",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        {"name": "enemy_0_available", "index": 4},
+        {"name": "enemy_0_distance", "index": 5},
+        {"name": "enemy_0_rel_x", "index": 6},
+        {"name": "enemy_0_rel_y", "index": 7},
+        {"name": "enemy_0_health", "index": 8},
+        {"name": "enemy_1_available", "index": 11},
+        {"name": "enemy_1_distance", "index": 12},
+        {"name": "enemy_1_rel_x", "index": 13},
+        {"name": "enemy_1_rel_y", "index": 14},
+        {"name": "enemy_1_health", "index": 15},
+        {"name": "enemy_2_available", "index": 18},
+        {"name": "enemy_2_distance", "index": 19},
+        {"name": "enemy_2_rel_x", "index": 20},
+        {"name": "enemy_2_rel_y", "index": 21},
+        {"name": "enemy_2_health", "index": 22},
+        {"name": "enemy_3_available", "index": 25},
+        {"name": "enemy_3_distance", "index": 26},
+        {"name": "enemy_3_rel_x", "index": 27},
+        {"name": "enemy_3_rel_y", "index": 28},
+        {"name": "enemy_3_health", "index": 29}
+      ],
+      "receiver_need_hypothesis": "Roaches (G2) cannot directly observe the Reapers across the pit. To decide where to move (D1) and which enemy to attack (D2), they need enemy presence and spatial data. The Overseer can provide these observations from its side. Roaches can transform the coordinates to their own frame using the Overseer's known relative position (from ally observation).",
+      "task_decision_ids": ["D1", "D2"],
+      "uncertainties": [
+        "Whether Overseer always sees all four Reapers or some may be outside its vision range (assumed full vision per scenario description).",
+        "Whether Reapers move frequently, making communicated positions stale before Roaches can act (timing uncertainty).",
+        "Exact transformation arithmetic required by Roaches to convert Overseer-relative coordinates to self-relative may introduce error if not precise."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "Roaches can always observe the Overseer (ally_visible for one of the ally slots corresponds to the Overseer).",
+    "Overseer has no attack capability and its movement decisions do not rely on communication from Roaches.",
+    "The pit completely blocks vision and movement for ground units, but not for Overseer.",
+    "Enemy Reapers do not have stealth or ability to hide."
+  ]
+}

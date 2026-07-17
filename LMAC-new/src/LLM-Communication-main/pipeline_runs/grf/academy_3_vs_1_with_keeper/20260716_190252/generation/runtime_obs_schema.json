@@ -1,0 +1,205 @@
+{
+  "map_name": "academy_3_vs_1_with_keeper",
+  "environment": "grf",
+  "obs_shape": 48,
+  "n_agents": 3,
+  "n_enemies": 2,
+  "n_actions": 19,
+  "obs_feature_names": [
+    "ego_absolute_xy",
+    "teammate_0_relative_xy",
+    "teammate_1_relative_xy",
+    "ego_direction_xy",
+    "teammate_0_direction_xy",
+    "teammate_1_direction_xy",
+    "opponent_0_relative_xy",
+    "opponent_1_relative_xy",
+    "opponent_0_direction_xy",
+    "opponent_1_direction_xy",
+    "ball_relative_xy",
+    "ball_z",
+    "ball_direction_xyz",
+    "lmac_extra_26",
+    "lmac_extra_27",
+    "lmac_extra_28",
+    "lmac_extra_29",
+    "lmac_extra_30",
+    "lmac_extra_31",
+    "lmac_extra_32",
+    "lmac_extra_33",
+    "lmac_extra_34",
+    "lmac_extra_35",
+    "lmac_extra_36",
+    "lmac_extra_37",
+    "lmac_extra_38",
+    "lmac_extra_39",
+    "lmac_extra_40",
+    "lmac_extra_41",
+    "lmac_extra_42",
+    "lmac_extra_43",
+    "lmac_extra_44",
+    "lmac_extra_45",
+    "lmac_extra_46",
+    "lmac_extra_47"
+  ],
+  "feature_index": {
+    "ego_absolute_xy": [
+      0,
+      2
+    ],
+    "teammate_0_relative_xy": [
+      2,
+      4
+    ],
+    "teammate_1_relative_xy": [
+      4,
+      6
+    ],
+    "ego_direction_xy": [
+      6,
+      8
+    ],
+    "teammate_0_direction_xy": [
+      8,
+      10
+    ],
+    "teammate_1_direction_xy": [
+      10,
+      12
+    ],
+    "opponent_0_relative_xy": [
+      12,
+      14
+    ],
+    "opponent_1_relative_xy": [
+      14,
+      16
+    ],
+    "opponent_0_direction_xy": [
+      16,
+      18
+    ],
+    "opponent_1_direction_xy": [
+      18,
+      20
+    ],
+    "ball_relative_xy": [
+      20,
+      22
+    ],
+    "ball_z": [
+      22,
+      23
+    ],
+    "ball_direction_xyz": [
+      23,
+      26
+    ],
+    "previous_action_0": [
+      26,
+      27
+    ],
+    "previous_action_1": [
+      27,
+      28
+    ],
+    "previous_action_2": [
+      28,
+      29
+    ],
+    "previous_action_3": [
+      29,
+      30
+    ],
+    "previous_action_4": [
+      30,
+      31
+    ],
+    "previous_action_5": [
+      31,
+      32
+    ],
+    "previous_action_6": [
+      32,
+      33
+    ],
+    "previous_action_7": [
+      33,
+      34
+    ],
+    "previous_action_8": [
+      34,
+      35
+    ],
+    "previous_action_9": [
+      35,
+      36
+    ],
+    "previous_action_10": [
+      36,
+      37
+    ],
+    "previous_action_11": [
+      37,
+      38
+    ],
+    "previous_action_12": [
+      38,
+      39
+    ],
+    "previous_action_13": [
+      39,
+      40
+    ],
+    "previous_action_14": [
+      40,
+      41
+    ],
+    "previous_action_15": [
+      41,
+      42
+    ],
+    "previous_action_16": [
+      42,
+      43
+    ],
+    "previous_action_17": [
+      43,
+      44
+    ],
+    "previous_action_18": [
+      44,
+      45
+    ],
+    "agent_id_0": [
+      45,
+      46
+    ],
+    "agent_id_1": [
+      46,
+      47
+    ],
+    "agent_id_2": [
+      47,
+      48
+    ]
+  },
+  "obs_agent_id_map": [
+    "controlled_player_0",
+    "controlled_player_1",
+    "controlled_player_2"
+  ],
+  "obs_agent_type_map": [
+    "football_player",
+    "football_player",
+    "football_player"
+  ],
+  "schema_source": "src/envs/grf_wrapper.py::GRFWrapper.get_simple_obs",
+  "documented_obs_shape": 26,
+  "rollout_root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data",
+  "rollout_files": [],
+  "rollout_available": false,
+  "raw_obs_shape": 26,
+  "action_dim": 19,
+  "alignment_note": "The LMAC policy consumes raw environment observation followed by previous-action one-hot and agent-id one-hot. For this rollout: environment observation indices are [0,25], previous action indices are [26,44], and agent ID indices are [45,47]. WHAT should prioritize environment observations; previous action or agent ID may only be selected with an explicit coordination justification. Undocumented env_extra dimensions must not be assigned invented semantics."
+}

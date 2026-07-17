@@ -1,0 +1,927 @@
+[INFO 06:43:24] pymarl Running command 'my_main'
+[INFO 06:43:24] pymarl Started run with ID "10"
+[DEBUG 06:43:24] pymarl Starting Heartbeat
+[DEBUG 06:43:24] my_main Started
+[INFO 06:43:24] my_main Experiment Parameters:
+[INFO 06:43:24] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': 'data/',
+    'buffer_size': 5000,
+    'certified_teacher_certified_edge_weight': 2.0,
+    'certified_teacher_negative_weight': 1.0,
+    'certified_teacher_positive_weight': 1.0,
+    'certified_teacher_weight_mode': 'task_facts',
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039/candidates/iter_001/comm_init.py'],
+    'comm_selector_hidden_dim': 64,
+    'comm_sparsity_lambda': 0.001,
+    'common_reward': True,
+    'consistency_lambda': 1,
+    'debug_mode': False,
+    'deepseek_base_url': 'https://api.deepseek.com',
+    'deepseek_key': '',
+    'deepseek_reasoning_effort': None,
+    'deepseek_thinking': False,
+    'detach_latent_to_agent': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'enforce_min_what_coverage': True,
+    'env': 'hallway_group',
+    'env_args': {   'group_ids': [   0,
+                                     0,
+                                     0,
+                                     1,
+                                     1,
+                                     1,
+                                     1],
+                    'key': 'default',
+                    'n_agents': 7,
+                    'n_groups': 2,
+                    'obs_last_action': False,
+                    'reward_win': 1,
+                    'seed': 1237,
+                    'state_last_action': False,
+                    'state_numbers': [   3,
+                                         5,
+                                         7,
+                                         4,
+                                         6,
+                                         8,
+                                         10]},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'eval_comm_ablation': 'none',
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'important_state': [   0,
+                           1,
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7,
+                           8,
+                           9,
+                           10,
+                           11,
+                           12,
+                           13],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 100000,
+    'llm_message_semantics': 'receiver_packed',
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 100000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'message_selector_hard_train': True,
+    'message_selector_hidden_dim': 64,
+    'message_selector_threshold': 0.5,
+    'meta': 'meta',
+    'meta_lambda': 0.1,
+    'min_what_coverage': 0.6,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LMAC_LLM_WWW_HALLWAY',
+    'normalize_certified_teacher_weights': True,
+    'normalize_student_messages': True,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 1.0,
+    'render': False,
+    'repeat_id': 1,
+    'require_teacher_comm_matrix': True,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 100000,
+    'running_algorithm_name': '(hallway_group)LMAC_LLM_WWW_HALLWAY',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': 'data/',
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1237,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'student_comm_hard': False,
+    'student_comm_hard_eval': False,
+    'student_comm_threshold': 0.5,
+    'student_comm_topk': 0,
+    'student_comm_topk_eval': False,
+    'student_comm_topk_train': False,
+    't_max': 2050000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'teacher_lambda': 1.0,
+    'teacher_lambda_anneal': True,
+    'teacher_lambda_anneal_time': 500000,
+    'teacher_lambda_finish': 0.1,
+    'teacher_mask_mode': 'object',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 100,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'tmp2': True,
+    'use_certified_teacher_weights': True,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_teacher_student_comm': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': '',
+    'what_coverage_lambda': 0.1,
+    'what_teacher_core_weight': 1.0,
+    'what_teacher_lambda': 1.0,
+    'what_teacher_lambda_anneal': True,
+    'what_teacher_lambda_anneal_time': 500000,
+    'what_teacher_lambda_finish': 0.1,
+    'what_teacher_negative_weight': 0.1,
+    'what_teacher_supplement_weight': 0.25}
+
+[INFO 06:43:24] my_main *******************
+[INFO 06:43:24] my_main Tensorboard logging dir:
+[INFO 06:43:24] my_main /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/tb_logs/LMAC_LLM_WWW_HALLWAY/default/LMAC_LLM_WWW_HALLWAY_seed1237_default_2026-07-17 06:43:24.693340
+[INFO 06:43:24] my_main *******************
+use_wandb: False LMAC  online
+[teacher] validated map=default path=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039/candidates/iter_001/comm_init.py WHO/WHEN=(32, 7, 7) WHAT=(32, 7, 12)
+[INFO 06:43:26] my_main Beginning training for 2050000 timesteps
+[INFO 06:43:26] my_main t_env: 10 / 2050000
+[INFO 06:43:26] my_main Estimated time left: 2 minutes, 0 seconds. Time passed: 0 seconds
+[INFO 06:49:45] my_main t_env: 10013 / 2050000
+[INFO 06:49:45] my_main Estimated time left: 21 hours, 28 minutes, 23 seconds. Time passed: 6 minutes, 19 seconds
+[INFO 06:55:10] my_main t_env: 20026 / 2050000
+[INFO 06:55:10] my_main Estimated time left: 18 hours, 18 minutes, 35 seconds. Time passed: 11 minutes, 44 seconds
+[INFO 07:00:24] my_main t_env: 30031 / 2050000
+[INFO 07:00:24] my_main Estimated time left: 17 hours, 35 minutes, 26 seconds. Time passed: 16 minutes, 58 seconds
+[INFO 07:05:23] my_main t_env: 40047 / 2050000
+[INFO 07:05:23] my_main Estimated time left: 16 hours, 40 minutes, 20 seconds. Time passed: 21 minutes, 57 seconds
+[INFO 07:10:16] my_main t_env: 50049 / 2050000
+[INFO 07:10:16] my_main Estimated time left: 16 hours, 15 minutes, 44 seconds. Time passed: 26 minutes, 50 seconds
+[INFO 07:15:09] my_main t_env: 60067 / 2050000
+[INFO 07:15:09] my_main Estimated time left: 16 hours, 11 minutes, 4 seconds. Time passed: 31 minutes, 43 seconds
+[INFO 07:20:05] my_main t_env: 70085 / 2050000
+[INFO 07:20:05] my_main Estimated time left: 16 hours, 14 minutes, 44 seconds. Time passed: 36 minutes, 39 seconds
+[INFO 07:25:00] my_main t_env: 80097 / 2050000
+[INFO 07:25:00] my_main Estimated time left: 16 hours, 7 minutes, 0 seconds. Time passed: 41 minutes, 34 seconds
+[INFO 07:29:45] my_main t_env: 90100 / 2050000
+[INFO 07:29:45] my_main Estimated time left: 15 hours, 31 minutes, 39 seconds. Time passed: 46 minutes, 19 seconds
+[INFO 07:34:27] my_main Recent Stats | t_env:     100017 | Episode:     6147
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1587	MSE_per_agent_0:           8.9039	MSE_per_agent_1:           8.9085
+MSE_per_agent_2:           8.9137	MSE_per_agent_3:           8.9100	MSE_per_agent_4:           8.9018	MSE_per_agent_5:           8.9130
+MSE_per_agent_6:           8.9053	Message_selector_grad_norm:  0.7681	Meta_loss:                 0.6971	Model_D_loss:              9.1365
+Mse_loss:                  8.9080	Mse_per_state_0:           4.4660	Mse_per_state_1:           0.7636	Mse_per_state_10:         22.7628
+Mse_per_state_11:          0.6264	Mse_per_state_12:         37.7455	Mse_per_state_13:          0.7684	Mse_per_state_2:          11.4900
+Mse_per_state_3:           0.6160	Mse_per_state_4:          20.9370	Mse_per_state_5:           0.6487	Mse_per_state_6:           9.0580
+Mse_per_state_7:           0.6505	Mse_per_state_8:          13.6025	Mse_per_state_9:           0.5769	Student_comm_forward_rate:  0.5437
+Student_comm_rate:         0.5437	Student_what_soft_rate:    0.5307	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9994
+Teacher_comm_loss:         0.6578	Teacher_comm_neg_loss:     0.7842	Teacher_comm_pos_loss:     0.6093	Teacher_comm_pos_rate:     0.7223
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9994	Teacher_what_loss:         0.6515	What_coverage_loss:        0.0050
+battle_won_mean:           0.0000	ep_length_mean:           13.1359	epsilon:                   0.0500	grad_norm:               632.0788
+loss:                     42.9887	q_taken_mean:             -0.2895	return_mean:               0.0002	return_std:                0.0110
+target_mean:               0.5179	td_error_abs:              5.8531	test_battle_won_mean:      0.0000	test_ep_length_mean:      20.0000
+test_return_mean:          0.0000	test_return_std:           0.0000	test_win_group_mean:       0.0000	win_group_mean:            0.0002
+
+[INFO 07:34:29] my_main t_env: 100106 / 2050000
+[INFO 07:34:29] my_main Estimated time left: 15 hours, 22 minutes, 13 seconds. Time passed: 51 minutes, 3 seconds
+[INFO 07:39:06] my_main t_env: 110121 / 2050000
+[INFO 07:39:06] my_main Estimated time left: 14 hours, 52 minutes, 46 seconds. Time passed: 55 minutes, 40 seconds
+[INFO 07:43:42] my_main t_env: 120139 / 2050000
+[INFO 07:43:42] my_main Estimated time left: 14 hours, 45 minutes, 55 seconds. Time passed: 1 hours, 16 seconds
+[INFO 07:48:39] my_main t_env: 130141 / 2050000
+[INFO 07:48:39] my_main Estimated time left: 15 hours, 50 minutes, 17 seconds. Time passed: 1 hours, 5 minutes, 13 seconds
+[INFO 07:53:39] my_main t_env: 140155 / 2050000
+[INFO 07:53:39] my_main Estimated time left: 15 hours, 54 minutes, 22 seconds. Time passed: 1 hours, 10 minutes, 13 seconds
+[INFO 07:58:46] my_main t_env: 150163 / 2050000
+[INFO 07:58:46] my_main Estimated time left: 16 hours, 11 minutes, 33 seconds. Time passed: 1 hours, 15 minutes, 20 seconds
+[INFO 08:03:55] my_main t_env: 160174 / 2050000
+[INFO 08:03:55] my_main Estimated time left: 16 hours, 10 minutes, 28 seconds. Time passed: 1 hours, 20 minutes, 29 seconds
+[INFO 08:08:59] my_main t_env: 170175 / 2050000
+[INFO 08:08:59] my_main Estimated time left: 15 hours, 54 minutes, 32 seconds. Time passed: 1 hours, 25 minutes, 33 seconds
+[INFO 08:14:11] my_main t_env: 180180 / 2050000
+[INFO 08:14:11] my_main Estimated time left: 16 hours, 10 minutes, 26 seconds. Time passed: 1 hours, 30 minutes, 45 seconds
+[INFO 08:19:21] my_main t_env: 190184 / 2050000
+[INFO 08:19:21] my_main Estimated time left: 16 hours, 49 seconds. Time passed: 1 hours, 35 minutes, 55 seconds
+[INFO 08:24:14] my_main Recent Stats | t_env:     200034 | Episode:    11530
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0837	MSE_per_agent_0:           4.8642	MSE_per_agent_1:           4.8564
+MSE_per_agent_2:           4.8259	MSE_per_agent_3:           4.8259	MSE_per_agent_4:           4.8191	MSE_per_agent_5:           4.7994
+MSE_per_agent_6:           4.7746	Message_selector_grad_norm:  0.3840	Meta_loss:                 0.4943	Model_D_loss:              4.9568
+Mse_loss:                  4.8236	Mse_per_state_0:           2.4763	Mse_per_state_1:           0.3911	Mse_per_state_10:         12.4428
+Mse_per_state_11:          0.3158	Mse_per_state_12:         19.8345	Mse_per_state_13:          0.3864	Mse_per_state_2:           6.2645
+Mse_per_state_3:           0.3168	Mse_per_state_4:          11.3625	Mse_per_state_5:           0.3327	Mse_per_state_6:           5.0901
+Mse_per_state_7:           0.3273	Mse_per_state_8:           7.6991	Mse_per_state_9:           0.2908	Student_comm_forward_rate:  0.6509
+Student_comm_rate:         0.6509	Student_what_soft_rate:    0.7654	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9094
+Teacher_comm_loss:         0.3393	Teacher_comm_neg_loss:     0.4174	Teacher_comm_pos_loss:     0.3101	Teacher_comm_pos_rate:     0.7381
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9094	Teacher_what_loss:         0.3257	What_coverage_loss:        0.0025
+battle_won_mean:           0.0000	ep_length_mean:           14.9507	epsilon:                   0.0500	grad_norm:               317.0496
+loss:                     21.5077	q_taken_mean:              0.0946	return_mean:               0.0002	return_std:                0.0119
+target_mean:               0.4997	td_error_abs:              2.9863	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.7980
+test_return_mean:          0.0000	test_return_std:           0.0000	test_win_group_mean:       0.0000	win_group_mean:            0.0002
+
+[INFO 08:24:19] my_main t_env: 200200 / 2050000
+[INFO 08:24:19] my_main Estimated time left: 15 hours, 16 minutes, 48 seconds. Time passed: 1 hours, 40 minutes, 53 seconds
+[INFO 08:29:42] my_main t_env: 210204 / 2050000
+[INFO 08:29:42] my_main Estimated time left: 16 hours, 32 minutes, 9 seconds. Time passed: 1 hours, 46 minutes, 16 seconds
+[INFO 08:35:39] my_main t_env: 220219 / 2050000
+[INFO 08:35:39] my_main Estimated time left: 18 hours, 7 minutes, 1 seconds. Time passed: 1 hours, 52 minutes, 13 seconds
+[INFO 08:40:37] my_main t_env: 230223 / 2050000
+[INFO 08:40:37] my_main Estimated time left: 15 hours, 2 minutes, 32 seconds. Time passed: 1 hours, 57 minutes, 11 seconds
+[INFO 08:45:47] my_main t_env: 240228 / 2050000
+[INFO 08:45:47] my_main Estimated time left: 15 hours, 33 minutes, 2 seconds. Time passed: 2 hours, 2 minutes, 21 seconds
+[INFO 08:51:02] my_main t_env: 250238 / 2050000
+[INFO 08:51:02] my_main Estimated time left: 15 hours, 44 minutes, 54 seconds. Time passed: 2 hours, 7 minutes, 36 seconds
+[INFO 08:56:07] my_main t_env: 260247 / 2050000
+[INFO 08:56:07] my_main Estimated time left: 15 hours, 9 minutes, 42 seconds. Time passed: 2 hours, 12 minutes, 41 seconds
+[INFO 09:01:06] my_main t_env: 270265 / 2050000
+[INFO 09:01:06] my_main Estimated time left: 14 hours, 44 minutes, 45 seconds. Time passed: 2 hours, 17 minutes, 40 seconds
+[INFO 09:06:06] my_main t_env: 280270 / 2050000
+[INFO 09:06:06] my_main Estimated time left: 14 hours, 44 minutes, 45 seconds. Time passed: 2 hours, 22 minutes, 40 seconds
+[INFO 09:11:11] my_main t_env: 290277 / 2050000
+[INFO 09:11:11] my_main Estimated time left: 14 hours, 54 minutes, 46 seconds. Time passed: 2 hours, 27 minutes, 45 seconds
+[INFO 09:16:03] my_main Recent Stats | t_env:     300037 | Episode:    18275
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0572	MSE_per_agent_0:           3.4618	MSE_per_agent_1:           3.4192
+MSE_per_agent_2:           3.4146	MSE_per_agent_3:           3.5288	MSE_per_agent_4:           3.4744	MSE_per_agent_5:           3.4200
+MSE_per_agent_6:           3.3723	Message_selector_grad_norm:  0.2560	Meta_loss:                 0.4172	Model_D_loss:              3.5405
+Mse_loss:                  3.4416	Mse_per_state_0:           1.7706	Mse_per_state_1:           0.2628	Mse_per_state_10:          9.0046
+Mse_per_state_11:          0.2112	Mse_per_state_12:         13.8520	Mse_per_state_13:          0.2582	Mse_per_state_2:           4.5686
+Mse_per_state_3:           0.2131	Mse_per_state_4:           8.1500	Mse_per_state_5:           0.2236	Mse_per_state_6:           3.6951
+Mse_per_state_7:           0.2189	Mse_per_state_8:           5.5589	Mse_per_state_9:           0.1945	Student_comm_forward_rate:  0.6896
+Student_comm_rate:         0.6896	Student_what_soft_rate:    0.8436	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.8194
+Teacher_comm_loss:         0.2403	Teacher_comm_neg_loss:     0.3215	Teacher_comm_pos_loss:     0.2115	Teacher_comm_pos_rate:     0.7443
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.8194	Teacher_what_loss:         0.2172	What_coverage_loss:        0.0017
+battle_won_mean:           0.0000	ep_length_mean:           14.9196	epsilon:                   0.0500	grad_norm:               212.1581
+loss:                     14.3396	q_taken_mean:              0.0653	return_mean:               0.0249	return_std:                0.0836
+target_mean:               0.3336	td_error_abs:              2.0064	test_battle_won_mean:      0.0000	test_ep_length_mean:      19.3240
+test_return_mean:          0.1140	test_return_std:           0.1510	test_win_group_mean:       0.1140	win_group_mean:            0.0249
+
+[INFO 09:16:09] my_main t_env: 300293 / 2050000
+[INFO 09:16:09] my_main Estimated time left: 14 hours, 26 minutes, 13 seconds. Time passed: 2 hours, 32 minutes, 43 seconds
+[INFO 09:20:47] my_main t_env: 310300 / 2050000
+[INFO 09:20:47] my_main Estimated time left: 13 hours, 26 minutes, 44 seconds. Time passed: 2 hours, 37 minutes, 21 seconds
+[INFO 09:25:22] my_main t_env: 320300 / 2050000
+[INFO 09:25:22] my_main Estimated time left: 13 hours, 12 minutes, 45 seconds. Time passed: 2 hours, 41 minutes, 56 seconds
+[INFO 09:30:03] my_main t_env: 330312 / 2050000
+[INFO 09:30:03] my_main Estimated time left: 13 hours, 23 minutes, 6 seconds. Time passed: 2 hours, 46 minutes, 37 seconds
+[INFO 09:34:50] my_main t_env: 340325 / 2050000
+[INFO 09:34:50] my_main Estimated time left: 13 hours, 37 minutes, 18 seconds. Time passed: 2 hours, 51 minutes, 24 seconds
+[INFO 09:39:36] my_main t_env: 350332 / 2050000
+[INFO 09:39:36] my_main Estimated time left: 13 hours, 29 minutes, 2 seconds. Time passed: 2 hours, 56 minutes, 10 seconds
+[INFO 09:44:21] my_main t_env: 360337 / 2050000
+[INFO 09:44:21] my_main Estimated time left: 13 hours, 21 minutes, 14 seconds. Time passed: 3 hours, 55 seconds
+[INFO 09:49:09] my_main t_env: 370353 / 2050000
+[INFO 09:49:09] my_main Estimated time left: 13 hours, 27 minutes, 23 seconds. Time passed: 3 hours, 5 minutes, 43 seconds
+[INFO 09:54:11] my_main t_env: 380359 / 2050000
+[INFO 09:54:11] my_main Estimated time left: 13 hours, 58 minutes, 41 seconds. Time passed: 3 hours, 10 minutes, 45 seconds
+[INFO 09:59:32] my_main t_env: 390376 / 2050000
+[INFO 09:59:32] my_main Estimated time left: 14 hours, 47 minutes, 0 seconds. Time passed: 3 hours, 16 minutes, 6 seconds
+[INFO 10:04:09] my_main Recent Stats | t_env:     400050 | Episode:    24527
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0499	MSE_per_agent_0:           2.8808	MSE_per_agent_1:           2.8775
+MSE_per_agent_2:           2.7861	MSE_per_agent_3:           2.9566	MSE_per_agent_4:           2.8805	MSE_per_agent_5:           2.7803
+MSE_per_agent_6:           2.7555	Message_selector_grad_norm:  0.1920	Meta_loss:                 0.3847	Model_D_loss:              2.9337
+Mse_loss:                  2.8453	Mse_per_state_0:           1.4530	Mse_per_state_1:           0.2039	Mse_per_state_10:          7.7579
+Mse_per_state_11:          0.1602	Mse_per_state_12:         11.0951	Mse_per_state_13:          0.1947	Mse_per_state_2:           3.8169
+Mse_per_state_3:           0.1670	Mse_per_state_4:           7.0221	Mse_per_state_5:           0.1744	Mse_per_state_6:           2.9306
+Mse_per_state_7:           0.1655	Mse_per_state_8:           4.5461	Mse_per_state_9:           0.1471	Student_comm_forward_rate:  0.7238
+Student_comm_rate:         0.7238	Student_what_soft_rate:    0.8827	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.7294
+Teacher_comm_loss:         0.1955	Teacher_comm_neg_loss:     0.3082	Teacher_comm_pos_loss:     0.1605	Teacher_comm_pos_rate:     0.7570
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.7294	Teacher_what_loss:         0.1629	What_coverage_loss:        0.0013
+battle_won_mean:           0.0010	ep_length_mean:           15.1350	epsilon:                   0.0500	grad_norm:               177.8868
+loss:                     11.5134	q_taken_mean:              0.6028	return_mean:               0.1052	return_std:                0.1677
+target_mean:               0.8104	td_error_abs:              1.7381	test_battle_won_mean:      0.0200	test_ep_length_mean:      19.2020
+test_return_mean:          0.7120	test_return_std:           0.2024	test_win_group_mean:       0.7120	win_group_mean:            0.1052
+
+[INFO 10:04:16] my_main t_env: 400376 / 2050000
+[INFO 10:04:16] my_main Estimated time left: 13 hours, 1 minutes, 24 seconds. Time passed: 3 hours, 20 minutes, 50 seconds
+[INFO 10:08:46] my_main t_env: 410383 / 2050000
+[INFO 10:08:46] my_main Estimated time left: 12 hours, 15 minutes, 22 seconds. Time passed: 3 hours, 25 minutes, 20 seconds
+[INFO 10:13:36] my_main t_env: 420399 / 2050000
+[INFO 10:13:36] my_main Estimated time left: 13 hours, 6 minutes, 20 seconds. Time passed: 3 hours, 30 minutes, 10 seconds
+[INFO 10:18:36] my_main t_env: 430415 / 2050000
+[INFO 10:18:36] my_main Estimated time left: 13 hours, 29 minutes, 59 seconds. Time passed: 3 hours, 35 minutes, 10 seconds
+[INFO 10:23:28] my_main t_env: 440425 / 2050000
+[INFO 10:23:28] my_main Estimated time left: 13 hours, 2 minutes, 59 seconds. Time passed: 3 hours, 40 minutes, 2 seconds
+[INFO 10:28:21] my_main t_env: 450427 / 2050000
+[INFO 10:28:21] my_main Estimated time left: 12 hours, 59 minutes, 18 seconds. Time passed: 3 hours, 44 minutes, 55 seconds
+[INFO 10:33:22] my_main t_env: 460437 / 2050000
+[INFO 10:33:22] my_main Estimated time left: 13 hours, 17 minutes, 50 seconds. Time passed: 3 hours, 49 minutes, 56 seconds
+[INFO 10:38:31] my_main t_env: 470442 / 2050000
+[INFO 10:38:31] my_main Estimated time left: 13 hours, 32 minutes, 7 seconds. Time passed: 3 hours, 55 minutes, 5 seconds
+[INFO 10:43:38] my_main t_env: 480452 / 2050000
+[INFO 10:43:38] my_main Estimated time left: 13 hours, 21 minutes, 45 seconds. Time passed: 4 hours, 12 seconds
+[INFO 10:48:48] my_main t_env: 490460 / 2050000
+[INFO 10:48:48] my_main Estimated time left: 13 hours, 24 minutes, 56 seconds. Time passed: 4 hours, 5 minutes, 22 seconds
+[INFO 10:53:34] my_main Recent Stats | t_env:     500062 | Episode:    30741
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0428	MSE_per_agent_0:           2.4126	MSE_per_agent_1:           2.4092
+MSE_per_agent_2:           2.3348	MSE_per_agent_3:           2.4800	MSE_per_agent_4:           2.4062	MSE_per_agent_5:           2.3243
+MSE_per_agent_6:           2.2937	Message_selector_grad_norm:  0.1536	Meta_loss:                 0.3658	Model_D_loss:              2.4595
+Mse_loss:                  2.3801	Mse_per_state_0:           1.2210	Mse_per_state_1:           0.1659	Mse_per_state_10:          6.4446
+Mse_per_state_11:          0.1295	Mse_per_state_12:          9.2078	Mse_per_state_13:          0.1570	Mse_per_state_2:           3.1915
+Mse_per_state_3:           0.1362	Mse_per_state_4:           5.8615	Mse_per_state_5:           0.1421	Mse_per_state_6:           2.5107
+Mse_per_state_7:           0.1337	Mse_per_state_8:           3.9011	Mse_per_state_9:           0.1190	Student_comm_forward_rate:  0.7507
+Student_comm_rate:         0.7507	Student_what_soft_rate:    0.9061	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.6394
+Teacher_comm_loss:         0.1752	Teacher_comm_neg_loss:     0.3337	Teacher_comm_pos_loss:     0.1336	Teacher_comm_pos_rate:     0.7722
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.6394	Teacher_what_loss:         0.1303	What_coverage_loss:        0.0010
+battle_won_mean:           0.0528	ep_length_mean:           16.3540	epsilon:                   0.0500	grad_norm:               146.2461
+loss:                      9.6493	q_taken_mean:              0.7092	return_mean:               0.2793	return_std:                0.3266
+target_mean:               0.8725	td_error_abs:              1.5219	test_battle_won_mean:      0.9440	test_ep_length_mean:      15.6160
+test_return_mean:          1.9440	test_return_std:           0.1325	test_win_group_mean:       1.9440	win_group_mean:            0.2793
+
+[INFO 10:53:45] my_main t_env: 500463 / 2050000
+[INFO 10:53:45] my_main Estimated time left: 12 hours, 46 minutes, 49 seconds. Time passed: 4 hours, 10 minutes, 19 seconds
+[INFO 10:58:52] my_main t_env: 510465 / 2050000
+[INFO 10:58:52] my_main Estimated time left: 13 hours, 7 minutes, 7 seconds. Time passed: 4 hours, 15 minutes, 25 seconds
+[INFO 11:04:00] my_main t_env: 520479 / 2050000
+[INFO 11:04:00] my_main Estimated time left: 13 hours, 6 minutes, 33 seconds. Time passed: 4 hours, 20 minutes, 34 seconds
+[INFO 11:09:10] my_main t_env: 530484 / 2050000
+[INFO 11:09:10] my_main Estimated time left: 13 hours, 3 minutes, 8 seconds. Time passed: 4 hours, 25 minutes, 44 seconds
+[INFO 11:14:14] my_main t_env: 540497 / 2050000
+[INFO 11:14:14] my_main Estimated time left: 12 hours, 45 minutes, 1 seconds. Time passed: 4 hours, 30 minutes, 48 seconds
+[INFO 11:19:19] my_main t_env: 550502 / 2050000
+[INFO 11:19:19] my_main Estimated time left: 12 hours, 42 minutes, 0 seconds. Time passed: 4 hours, 35 minutes, 53 seconds
+[INFO 11:24:24] my_main t_env: 560504 / 2050000
+[INFO 11:24:24] my_main Estimated time left: 12 hours, 35 minutes, 10 seconds. Time passed: 4 hours, 40 minutes, 58 seconds
+[INFO 11:29:34] my_main t_env: 570511 / 2050000
+[INFO 11:29:34] my_main Estimated time left: 12 hours, 45 minutes, 40 seconds. Time passed: 4 hours, 46 minutes, 8 seconds
+[INFO 11:34:54] my_main t_env: 580518 / 2050000
+[INFO 11:34:54] my_main Estimated time left: 13 hours, 1 minutes, 28 seconds. Time passed: 4 hours, 51 minutes, 28 seconds
+[INFO 11:39:49] my_main t_env: 590534 / 2050000
+[INFO 11:39:49] my_main Estimated time left: 11 hours, 56 minutes, 51 seconds. Time passed: 4 hours, 56 minutes, 23 seconds
+[INFO 11:44:41] my_main Recent Stats | t_env:     600064 | Episode:    36747
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0126	MSE_per_agent_0:           0.7320	MSE_per_agent_1:           0.7195
+MSE_per_agent_2:           0.6396	MSE_per_agent_3:           0.7971	MSE_per_agent_4:           0.7154	MSE_per_agent_5:           0.6302
+MSE_per_agent_6:           0.5976	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.2817	Model_D_loss:              0.7310
+Mse_loss:                  0.6902	Mse_per_state_0:           0.3812	Mse_per_state_1:           0.0140	Mse_per_state_10:          2.1806
+Mse_per_state_11:          0.0047	Mse_per_state_12:          1.8743	Mse_per_state_13:          0.0038	Mse_per_state_2:           1.0325
+Mse_per_state_3:           0.0138	Mse_per_state_4:           1.9271	Mse_per_state_5:           0.0131	Mse_per_state_6:           0.8516
+Mse_per_state_7:           0.0040	Mse_per_state_8:           1.3584	Mse_per_state_9:           0.0040	Student_comm_forward_rate:  0.8173
+Student_comm_rate:         0.8173	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.4595
+Teacher_comm_loss:         0.0691	Teacher_comm_neg_loss:     0.2902	Teacher_comm_pos_loss:     0.0199	Teacher_comm_pos_rate:     0.7949
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.4595	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.1356	ep_length_mean:           16.4297	epsilon:                   0.0500	grad_norm:                23.8593
+loss:                      1.1195	q_taken_mean:              1.2672	return_mean:               0.4986	return_std:                0.4922
+target_mean:               1.2654	td_error_abs:              0.4139	test_battle_won_mean:      1.0000	test_ep_length_mean:      17.8180
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            0.4990
+
+[INFO 11:44:54] my_main t_env: 600534 / 2050000
+[INFO 11:44:54] my_main Estimated time left: 12 hours, 17 minutes, 3 seconds. Time passed: 5 hours, 1 minutes, 28 seconds
+[INFO 11:50:04] my_main t_env: 610539 / 2050000
+[INFO 11:50:04] my_main Estimated time left: 12 hours, 23 minutes, 10 seconds. Time passed: 5 hours, 6 minutes, 38 seconds
+[INFO 11:55:17] my_main t_env: 620547 / 2050000
+[INFO 11:55:17] my_main Estimated time left: 12 hours, 24 minutes, 16 seconds. Time passed: 5 hours, 11 minutes, 51 seconds
+[INFO 12:00:26] my_main t_env: 630565 / 2050000
+[INFO 12:00:26] my_main Estimated time left: 12 hours, 10 minutes, 3 seconds. Time passed: 5 hours, 17 minutes, 0 seconds
+[INFO 12:05:40] my_main t_env: 640579 / 2050000
+[INFO 12:05:40] my_main Estimated time left: 12 hours, 16 minutes, 28 seconds. Time passed: 5 hours, 22 minutes, 14 seconds
+[INFO 12:11:00] my_main t_env: 650580 / 2050000
+[INFO 12:11:00] my_main Estimated time left: 12 hours, 28 minutes, 2 seconds. Time passed: 5 hours, 27 minutes, 34 seconds
+[INFO 12:16:11] my_main t_env: 660581 / 2050000
+[INFO 12:16:11] my_main Estimated time left: 11 hours, 59 minutes, 44 seconds. Time passed: 5 hours, 32 minutes, 45 seconds
+[INFO 12:21:17] my_main t_env: 670589 / 2050000
+[INFO 12:21:17] my_main Estimated time left: 11 hours, 42 minutes, 43 seconds. Time passed: 5 hours, 37 minutes, 51 seconds
+[INFO 12:26:33] my_main t_env: 680595 / 2050000
+[INFO 12:26:33] my_main Estimated time left: 11 hours, 59 minutes, 48 seconds. Time passed: 5 hours, 43 minutes, 7 seconds
+[INFO 12:31:56] my_main t_env: 690601 / 2050000
+[INFO 12:31:56] my_main Estimated time left: 12 hours, 13 minutes, 0 seconds. Time passed: 5 hours, 48 minutes, 30 seconds
+[INFO 12:37:03] my_main Recent Stats | t_env:     700072 | Episode:    44829
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0121	MSE_per_agent_0:           0.7281	MSE_per_agent_1:           0.7136
+MSE_per_agent_2:           0.6200	MSE_per_agent_3:           0.7997	MSE_per_agent_4:           0.7108	MSE_per_agent_5:           0.6173
+MSE_per_agent_6:           0.6061	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.2698	Model_D_loss:              0.7242
+Mse_loss:                  0.6851	Mse_per_state_0:           0.3755	Mse_per_state_1:           0.0108	Mse_per_state_10:          2.1602
+Mse_per_state_11:          0.0039	Mse_per_state_12:          1.8115	Mse_per_state_13:          0.0030	Mse_per_state_2:           1.0719
+Mse_per_state_3:           0.0108	Mse_per_state_4:           2.0521	Mse_per_state_5:           0.0102	Mse_per_state_6:           0.7773
+Mse_per_state_7:           0.0033	Mse_per_state_8:           1.2974	Mse_per_state_9:           0.0032	Student_comm_forward_rate:  0.8234
+Student_comm_rate:         0.8234	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.3156
+Teacher_comm_loss:         0.1045	Teacher_comm_neg_loss:     0.3854	Teacher_comm_pos_loss:     0.0353	Teacher_comm_pos_rate:     0.7939
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.3156	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.2234	ep_length_mean:           15.1885	epsilon:                   0.0500	grad_norm:                24.5335
+loss:                      1.1366	q_taken_mean:              1.5264	return_mean:               0.7312	return_std:                0.6554
+target_mean:               1.5231	td_error_abs:              0.4221	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.4620
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            0.7316
+
+[INFO 12:37:19] my_main t_env: 700618 / 2050000
+[INFO 12:37:19] my_main Estimated time left: 12 hours, 3 minutes, 46 seconds. Time passed: 5 hours, 53 minutes, 53 seconds
+[INFO 12:42:40] my_main t_env: 710618 / 2050000
+[INFO 12:42:40] my_main Estimated time left: 11 hours, 57 minutes, 26 seconds. Time passed: 5 hours, 59 minutes, 14 seconds
+[INFO 12:48:12] my_main t_env: 720626 / 2050000
+[INFO 12:48:12] my_main Estimated time left: 12 hours, 14 minutes, 25 seconds. Time passed: 6 hours, 4 minutes, 46 seconds
+[INFO 12:53:30] my_main t_env: 730635 / 2050000
+[INFO 12:53:30] my_main Estimated time left: 11 hours, 38 minutes, 23 seconds. Time passed: 6 hours, 10 minutes, 4 seconds
+[INFO 12:58:52] my_main t_env: 740652 / 2050000
+[INFO 12:58:52] my_main Estimated time left: 11 hours, 40 minutes, 59 seconds. Time passed: 6 hours, 15 minutes, 26 seconds
+[INFO 13:04:23] my_main t_env: 750660 / 2050000
+[INFO 13:04:23] my_main Estimated time left: 11 hours, 56 minutes, 24 seconds. Time passed: 6 hours, 20 minutes, 57 seconds
+[INFO 13:09:42] my_main t_env: 760665 / 2050000
+[INFO 13:09:42] my_main Estimated time left: 11 hours, 25 minutes, 11 seconds. Time passed: 6 hours, 26 minutes, 16 seconds
+[INFO 13:14:55] my_main t_env: 770673 / 2050000
+[INFO 13:14:55] my_main Estimated time left: 11 hours, 6 minutes, 38 seconds. Time passed: 6 hours, 31 minutes, 29 seconds
+[INFO 13:20:02] my_main t_env: 780692 / 2050000
+[INFO 13:20:02] my_main Estimated time left: 10 hours, 48 minutes, 39 seconds. Time passed: 6 hours, 36 minutes, 36 seconds
+[INFO 13:25:18] my_main t_env: 790698 / 2050000
+[INFO 13:25:18] my_main Estimated time left: 11 hours, 2 minutes, 58 seconds. Time passed: 6 hours, 41 minutes, 52 seconds
+[INFO 13:30:16] my_main Recent Stats | t_env:     800076 | Episode:    53385
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0119	MSE_per_agent_0:           0.6601	MSE_per_agent_1:           0.6641
+MSE_per_agent_2:           0.5536	MSE_per_agent_3:           0.6721	MSE_per_agent_4:           0.6071	MSE_per_agent_5:           0.5342
+MSE_per_agent_6:           0.5401	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.2615	Model_D_loss:              0.6425
+Mse_loss:                  0.6045	Mse_per_state_0:           0.3374	Mse_per_state_1:           0.0101	Mse_per_state_10:          1.9097
+Mse_per_state_11:          0.0036	Mse_per_state_12:          1.5568	Mse_per_state_13:          0.0027	Mse_per_state_2:           0.9149
+Mse_per_state_3:           0.0100	Mse_per_state_4:           1.8748	Mse_per_state_5:           0.0095	Mse_per_state_6:           0.6576
+Mse_per_state_7:           0.0030	Mse_per_state_8:           1.1699	Mse_per_state_9:           0.0029	Student_comm_forward_rate:  0.8537
+Student_comm_rate:         0.8537	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.2077
+Teacher_comm_loss:         0.1159	Teacher_comm_neg_loss:     0.4763	Teacher_comm_pos_loss:     0.0431	Teacher_comm_pos_rate:     0.8254
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.2077	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.3258	ep_length_mean:           14.5609	epsilon:                   0.0500	grad_norm:                24.7741
+loss:                      1.1392	q_taken_mean:              1.7133	return_mean:               0.9735	return_std:                0.7529
+target_mean:               1.7108	td_error_abs:              0.4307	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.0980
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            0.9740
+
+[INFO 13:30:35] my_main t_env: 800705 / 2050000
+[INFO 13:30:35] my_main Estimated time left: 10 hours, 58 minutes, 50 seconds. Time passed: 6 hours, 47 minutes, 9 seconds
+[INFO 13:35:55] my_main t_env: 810712 / 2050000
+[INFO 13:35:55] my_main Estimated time left: 11 hours, 26 seconds. Time passed: 6 hours, 52 minutes, 28 seconds
+[INFO 13:41:11] my_main t_env: 820730 / 2050000
+[INFO 13:41:11] my_main Estimated time left: 10 hours, 46 minutes, 52 seconds. Time passed: 6 hours, 57 minutes, 45 seconds
+[INFO 13:46:27] my_main t_env: 830736 / 2050000
+[INFO 13:46:27] my_main Estimated time left: 10 hours, 42 minutes, 31 seconds. Time passed: 7 hours, 3 minutes, 1 seconds
+[INFO 13:51:45] my_main t_env: 840747 / 2050000
+[INFO 13:51:45] my_main Estimated time left: 10 hours, 39 minutes, 39 seconds. Time passed: 7 hours, 8 minutes, 19 seconds
+[INFO 13:56:56] my_main t_env: 850752 / 2050000
+[INFO 13:56:56] my_main Estimated time left: 10 hours, 22 minutes, 18 seconds. Time passed: 7 hours, 13 minutes, 30 seconds
+[INFO 14:02:10] my_main t_env: 860759 / 2050000
+[INFO 14:02:10] my_main Estimated time left: 10 hours, 20 minutes, 13 seconds. Time passed: 7 hours, 18 minutes, 44 seconds
+[INFO 14:07:28] my_main t_env: 870767 / 2050000
+[INFO 14:07:28] my_main Estimated time left: 10 hours, 26 minutes, 12 seconds. Time passed: 7 hours, 24 minutes, 2 seconds
+[INFO 14:12:47] my_main t_env: 880775 / 2050000
+[INFO 14:12:47] my_main Estimated time left: 10 hours, 20 minutes, 18 seconds. Time passed: 7 hours, 29 minutes, 21 seconds
+[INFO 14:18:10] my_main t_env: 890783 / 2050000
+[INFO 14:18:10] my_main Estimated time left: 10 hours, 23 minutes, 41 seconds. Time passed: 7 hours, 34 minutes, 44 seconds
+[INFO 14:23:11] my_main Recent Stats | t_env:     900093 | Episode:    62009
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0068	MSE_per_agent_0:           0.4804	MSE_per_agent_1:           0.4594
+MSE_per_agent_2:           0.4165	MSE_per_agent_3:           0.4743	MSE_per_agent_4:           0.4322	MSE_per_agent_5:           0.4034
+MSE_per_agent_6:           0.4016	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.2399	Model_D_loss:              0.4690
+Mse_loss:                  0.4382	Mse_per_state_0:           0.2770	Mse_per_state_1:           0.0047	Mse_per_state_10:          1.2217
+Mse_per_state_11:          0.0022	Mse_per_state_12:          1.0858	Mse_per_state_13:          0.0019	Mse_per_state_2:           0.6640
+Mse_per_state_3:           0.0044	Mse_per_state_4:           1.2522	Mse_per_state_5:           0.0043	Mse_per_state_6:           0.6109
+Mse_per_state_7:           0.0020	Mse_per_state_8:           1.0021	Mse_per_state_9:           0.0020	Student_comm_forward_rate:  0.8676
+Student_comm_rate:         0.8676	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1359
+Teacher_comm_loss:         0.1204	Teacher_comm_neg_loss:     0.4797	Teacher_comm_pos_loss:     0.0540	Teacher_comm_pos_rate:     0.8473
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1359	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.4309	ep_length_mean:           13.6810	epsilon:                   0.0500	grad_norm:                 9.8994
+loss:                      0.5368	q_taken_mean:              1.4098	return_mean:               1.1614	return_std:                0.8018
+target_mean:               1.4027	td_error_abs:              0.2564	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.2560
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.1618
+
+[INFO 14:23:32] my_main t_env: 900789 / 2050000
+[INFO 14:23:32] my_main Estimated time left: 10 hours, 15 minutes, 30 seconds. Time passed: 7 hours, 40 minutes, 6 seconds
+[INFO 14:28:53] my_main t_env: 910794 / 2050000
+[INFO 14:28:53] my_main Estimated time left: 10 hours, 10 minutes, 30 seconds. Time passed: 7 hours, 45 minutes, 27 seconds
+[INFO 14:34:17] my_main t_env: 920797 / 2050000
+[INFO 14:34:17] my_main Estimated time left: 10 hours, 8 minutes, 8 seconds. Time passed: 7 hours, 50 minutes, 51 seconds
+[INFO 14:39:43] my_main t_env: 930801 / 2050000
+[INFO 14:39:43] my_main Estimated time left: 10 hours, 8 minutes, 50 seconds. Time passed: 7 hours, 56 minutes, 17 seconds
+[INFO 14:45:05] my_main t_env: 940802 / 2050000
+[INFO 14:45:05] my_main Estimated time left: 9 hours, 55 minutes, 40 seconds. Time passed: 8 hours, 1 minutes, 39 seconds
+[INFO 14:50:21] my_main t_env: 950803 / 2050000
+[INFO 14:50:21] my_main Estimated time left: 9 hours, 38 minutes, 37 seconds. Time passed: 8 hours, 6 minutes, 55 seconds
+[INFO 14:55:47] my_main t_env: 960810 / 2050000
+[INFO 14:55:47] my_main Estimated time left: 9 hours, 51 minutes, 6 seconds. Time passed: 8 hours, 12 minutes, 21 seconds
+[INFO 15:01:15] my_main t_env: 970813 / 2050000
+[INFO 15:01:15] my_main Estimated time left: 9 hours, 48 minutes, 59 seconds. Time passed: 8 hours, 17 minutes, 49 seconds
+[INFO 15:06:40] my_main t_env: 980813 / 2050000
+[INFO 15:06:40] my_main Estimated time left: 9 hours, 39 minutes, 55 seconds. Time passed: 8 hours, 23 minutes, 14 seconds
+[INFO 15:11:59] my_main t_env: 990819 / 2050000
+[INFO 15:11:59] my_main Estimated time left: 9 hours, 22 minutes, 39 seconds. Time passed: 8 hours, 28 minutes, 33 seconds
+[INFO 15:17:10] my_main Recent Stats | t_env:    1000096 | Episode:    70701
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0042	MSE_per_agent_0:           0.4246	MSE_per_agent_1:           0.4050
+MSE_per_agent_2:           0.3544	MSE_per_agent_3:           0.4122	MSE_per_agent_4:           0.3781	MSE_per_agent_5:           0.3425
+MSE_per_agent_6:           0.3490	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.2181	Model_D_loss:              0.4068
+Mse_loss:                  0.3808	Mse_per_state_0:           0.2556	Mse_per_state_1:           0.0021	Mse_per_state_10:          1.1301
+Mse_per_state_11:          0.0009	Mse_per_state_12:          0.8726	Mse_per_state_13:          0.0008	Mse_per_state_2:           0.5932
+Mse_per_state_3:           0.0019	Mse_per_state_4:           1.1390	Mse_per_state_5:           0.0018	Mse_per_state_6:           0.4850
+Mse_per_state_7:           0.0008	Mse_per_state_8:           0.8472	Mse_per_state_9:           0.0008	Student_comm_forward_rate:  0.8732
+Student_comm_rate:         0.8732	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1224	Teacher_comm_neg_loss:     0.4653	Teacher_comm_pos_loss:     0.0637	Teacher_comm_pos_rate:     0.8600
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.4806	ep_length_mean:           12.7631	epsilon:                   0.0500	grad_norm:                 6.3866
+loss:                      0.0998	q_taken_mean:              1.3380	return_mean:               1.2521	return_std:                0.7960
+target_mean:               1.3332	td_error_abs:              0.1363	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.1240
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.2526
+
+[INFO 15:17:33] my_main t_env: 1000823 / 2050000
+[INFO 15:17:33] my_main Estimated time left: 9 hours, 43 minutes, 8 seconds. Time passed: 8 hours, 34 minutes, 7 seconds
+[INFO 15:23:11] my_main t_env: 1010830 / 2050000
+[INFO 15:23:11] my_main Estimated time left: 9 hours, 45 minutes, 4 seconds. Time passed: 8 hours, 39 minutes, 45 seconds
+[INFO 15:28:42] my_main t_env: 1020830 / 2050000
+[INFO 15:28:42] my_main Estimated time left: 9 hours, 28 minutes, 7 seconds. Time passed: 8 hours, 45 minutes, 16 seconds
+[INFO 15:34:04] my_main t_env: 1030848 / 2050000
+[INFO 15:34:04] my_main Estimated time left: 9 hours, 5 minutes, 25 seconds. Time passed: 8 hours, 50 minutes, 38 seconds
+[INFO 15:39:36] my_main t_env: 1040850 / 2050000
+[INFO 15:39:36] my_main Estimated time left: 9 hours, 19 minutes, 1 seconds. Time passed: 8 hours, 56 minutes, 10 seconds
+[INFO 15:45:02] my_main t_env: 1050857 / 2050000
+[INFO 15:45:02] my_main Estimated time left: 9 hours, 2 minutes, 50 seconds. Time passed: 9 hours, 1 minutes, 36 seconds
+[INFO 15:50:18] my_main t_env: 1060861 / 2050000
+[INFO 15:50:18] my_main Estimated time left: 8 hours, 39 minutes, 38 seconds. Time passed: 9 hours, 6 minutes, 52 seconds
+[INFO 15:55:40] my_main t_env: 1070862 / 2050000
+[INFO 15:55:40] my_main Estimated time left: 8 hours, 45 minutes, 46 seconds. Time passed: 9 hours, 12 minutes, 14 seconds
+[INFO 16:01:04] my_main t_env: 1080877 / 2050000
+[INFO 16:01:04] my_main Estimated time left: 8 hours, 42 minutes, 41 seconds. Time passed: 9 hours, 17 minutes, 38 seconds
+[INFO 16:06:22] my_main t_env: 1090879 / 2050000
+[INFO 16:06:22] my_main Estimated time left: 8 hours, 27 minutes, 44 seconds. Time passed: 9 hours, 22 minutes, 56 seconds
+[INFO 16:11:24] my_main Recent Stats | t_env:    1100102 | Episode:    79482
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0029	MSE_per_agent_0:           0.3775	MSE_per_agent_1:           0.3659
+MSE_per_agent_2:           0.3111	MSE_per_agent_3:           0.3642	MSE_per_agent_4:           0.3323	MSE_per_agent_5:           0.2954
+MSE_per_agent_6:           0.3077	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1996	Model_D_loss:              0.3591
+Mse_loss:                  0.3363	Mse_per_state_0:           0.2434	Mse_per_state_1:           0.0017	Mse_per_state_10:          0.9649
+Mse_per_state_11:          0.0004	Mse_per_state_12:          0.7474	Mse_per_state_13:          0.0004	Mse_per_state_2:           0.5177
+Mse_per_state_3:           0.0015	Mse_per_state_4:           1.0408	Mse_per_state_5:           0.0015	Mse_per_state_6:           0.3832
+Mse_per_state_7:           0.0005	Mse_per_state_8:           0.8044	Mse_per_state_9:           0.0004	Student_comm_forward_rate:  0.8747
+Student_comm_rate:         0.8747	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1209	Teacher_comm_neg_loss:     0.4206	Teacher_comm_pos_loss:     0.0752	Teacher_comm_pos_rate:     0.8749
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5005	ep_length_mean:           11.7108	epsilon:                   0.0500	grad_norm:                 2.7435
+loss:                      0.0359	q_taken_mean:              0.9602	return_mean:               1.2979	return_std:                0.7803
+target_mean:               0.9590	td_error_abs:              0.0854	test_battle_won_mean:      0.9980	test_ep_length_mean:       8.1680
+test_return_mean:          1.9960	test_return_std:           0.0398	test_win_group_mean:       1.9960	win_group_mean:            1.2980
+
+[INFO 16:11:47] my_main t_env: 1100886 / 2050000
+[INFO 16:11:47] my_main Estimated time left: 8 hours, 33 minutes, 42 seconds. Time passed: 9 hours, 28 minutes, 21 seconds
+[INFO 16:17:12] my_main t_env: 1110897 / 2050000
+[INFO 16:17:12] my_main Estimated time left: 8 hours, 28 minutes, 52 seconds. Time passed: 9 hours, 33 minutes, 46 seconds
+[INFO 16:22:39] my_main t_env: 1120905 / 2050000
+[INFO 16:22:39] my_main Estimated time left: 8 hours, 25 minutes, 35 seconds. Time passed: 9 hours, 39 minutes, 13 seconds
+[INFO 16:28:00] my_main t_env: 1130911 / 2050000
+[INFO 16:28:00] my_main Estimated time left: 8 hours, 12 minutes, 16 seconds. Time passed: 9 hours, 44 minutes, 34 seconds
+[INFO 16:33:28] my_main t_env: 1140924 / 2050000
+[INFO 16:33:28] my_main Estimated time left: 8 hours, 15 minutes, 36 seconds. Time passed: 9 hours, 50 minutes, 2 seconds
+[INFO 16:38:57] my_main t_env: 1150927 / 2050000
+[INFO 16:38:57] my_main Estimated time left: 8 hours, 13 minutes, 7 seconds. Time passed: 9 hours, 55 minutes, 31 seconds
+[INFO 16:44:31] my_main t_env: 1160929 / 2050000
+[INFO 16:44:31] my_main Estimated time left: 8 hours, 15 minutes, 0 seconds. Time passed: 10 hours, 1 minutes, 5 seconds
+[INFO 16:49:49] my_main t_env: 1170935 / 2050000
+[INFO 16:49:49] my_main Estimated time left: 7 hours, 45 minutes, 42 seconds. Time passed: 10 hours, 6 minutes, 23 seconds
+[INFO 16:55:21] my_main t_env: 1180936 / 2050000
+[INFO 16:55:21] my_main Estimated time left: 7 hours, 59 minutes, 47 seconds. Time passed: 10 hours, 11 minutes, 55 seconds
+[INFO 17:00:39] my_main t_env: 1190944 / 2050000
+[INFO 17:00:39] my_main Estimated time left: 7 hours, 34 minutes, 59 seconds. Time passed: 10 hours, 17 minutes, 13 seconds
+[INFO 17:05:24] my_main Recent Stats | t_env:    1200107 | Episode:    88188
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0019	MSE_per_agent_0:           0.2563	MSE_per_agent_1:           0.2539
+MSE_per_agent_2:           0.2189	MSE_per_agent_3:           0.2535	MSE_per_agent_4:           0.2272	MSE_per_agent_5:           0.2024
+MSE_per_agent_6:           0.2004	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1879	Model_D_loss:              0.2510
+Mse_loss:                  0.2304	Mse_per_state_0:           0.1827	Mse_per_state_1:           0.0013	Mse_per_state_10:          0.6755
+Mse_per_state_11:          0.0003	Mse_per_state_12:          0.5006	Mse_per_state_13:          0.0003	Mse_per_state_2:           0.3183
+Mse_per_state_3:           0.0011	Mse_per_state_4:           0.6724	Mse_per_state_5:           0.0011	Mse_per_state_6:           0.2797
+Mse_per_state_7:           0.0003	Mse_per_state_8:           0.5914	Mse_per_state_9:           0.0003	Student_comm_forward_rate:  0.8942
+Student_comm_rate:         0.8942	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1030	Teacher_comm_neg_loss:     0.3864	Teacher_comm_pos_loss:     0.0741	Teacher_comm_pos_rate:     0.9064
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5161	ep_length_mean:           11.5333	epsilon:                   0.0500	grad_norm:                 1.7772
+loss:                      0.0149	q_taken_mean:              0.7168	return_mean:               1.3331	return_std:                0.7666
+target_mean:               0.7165	td_error_abs:              0.0616	test_battle_won_mean:      0.9960	test_ep_length_mean:       8.0700
+test_return_mean:          1.9920	test_return_std:           0.0560	test_win_group_mean:       1.9920	win_group_mean:            1.3331
+
+[INFO 17:05:50] my_main t_env: 1200944 / 2050000
+[INFO 17:05:50] my_main Estimated time left: 7 hours, 21 minutes, 7 seconds. Time passed: 10 hours, 22 minutes, 24 seconds
+[INFO 17:11:25] my_main t_env: 1210949 / 2050000
+[INFO 17:11:25] my_main Estimated time left: 7 hours, 48 minutes, 5 seconds. Time passed: 10 hours, 27 minutes, 59 seconds
+[INFO 17:16:33] my_main t_env: 1220952 / 2050000
+[INFO 17:16:33] my_main Estimated time left: 7 hours, 4 minutes, 54 seconds. Time passed: 10 hours, 33 minutes, 7 seconds
+[INFO 17:21:42] my_main t_env: 1230953 / 2050000
+[INFO 17:21:42] my_main Estimated time left: 7 hours, 2 minutes, 34 seconds. Time passed: 10 hours, 38 minutes, 16 seconds
+[INFO 17:26:53] my_main t_env: 1240957 / 2050000
+[INFO 17:26:53] my_main Estimated time left: 6 hours, 58 minutes, 10 seconds. Time passed: 10 hours, 43 minutes, 27 seconds
+[INFO 17:32:12] my_main t_env: 1250962 / 2050000
+[INFO 17:32:12] my_main Estimated time left: 7 hours, 4 minutes, 51 seconds. Time passed: 10 hours, 48 minutes, 46 seconds
+[INFO 17:37:26] my_main t_env: 1260963 / 2050000
+[INFO 17:37:26] my_main Estimated time left: 6 hours, 53 minutes, 0 seconds. Time passed: 10 hours, 54 minutes, 0 seconds
+[INFO 17:42:31] my_main t_env: 1270966 / 2050000
+[INFO 17:42:31] my_main Estimated time left: 6 hours, 36 minutes, 33 seconds. Time passed: 10 hours, 59 minutes, 5 seconds
+[INFO 17:47:36] my_main t_env: 1280970 / 2050000
+[INFO 17:47:36] my_main Estimated time left: 6 hours, 30 minutes, 21 seconds. Time passed: 11 hours, 4 minutes, 10 seconds
+[INFO 17:52:41] my_main t_env: 1290978 / 2050000
+[INFO 17:52:41] my_main Estimated time left: 6 hours, 25 minutes, 33 seconds. Time passed: 11 hours, 9 minutes, 15 seconds
+[INFO 17:57:26] my_main Recent Stats | t_env:    1300107 | Episode:    97063
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0014	MSE_per_agent_0:           0.2456	MSE_per_agent_1:           0.2458
+MSE_per_agent_2:           0.2108	MSE_per_agent_3:           0.2396	MSE_per_agent_4:           0.2185	MSE_per_agent_5:           0.1924
+MSE_per_agent_6:           0.1892	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1802	Model_D_loss:              0.2397
+Mse_loss:                  0.2203	Mse_per_state_0:           0.1818	Mse_per_state_1:           0.0009	Mse_per_state_10:          0.6242
+Mse_per_state_11:          0.0003	Mse_per_state_12:          0.4603	Mse_per_state_13:          0.0003	Mse_per_state_2:           0.2888
+Mse_per_state_3:           0.0008	Mse_per_state_4:           0.6137	Mse_per_state_5:           0.0008	Mse_per_state_6:           0.3347
+Mse_per_state_7:           0.0003	Mse_per_state_8:           0.5768	Mse_per_state_9:           0.0003	Student_comm_forward_rate:  0.8863
+Student_comm_rate:         0.8863	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1067	Teacher_comm_neg_loss:     0.3351	Teacher_comm_pos_loss:     0.0827	Teacher_comm_pos_rate:     0.9049
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5165	ep_length_mean:           11.4492	epsilon:                   0.0500	grad_norm:                 1.2621
+loss:                      0.0127	q_taken_mean:              0.6342	return_mean:               1.3351	return_std:                0.7650
+target_mean:               0.6344	td_error_abs:              0.0520	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.0040
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3351
+
+[INFO 17:57:53] my_main t_env: 1300988 / 2050000
+[INFO 17:57:53] my_main Estimated time left: 6 hours, 28 minutes, 20 seconds. Time passed: 11 hours, 14 minutes, 27 seconds
+[INFO 18:03:07] my_main t_env: 1310995 / 2050000
+[INFO 18:03:07] my_main Estimated time left: 6 hours, 27 minutes, 10 seconds. Time passed: 11 hours, 19 minutes, 41 seconds
+[INFO 18:08:15] my_main t_env: 1321000 / 2050000
+[INFO 18:08:15] my_main Estimated time left: 6 hours, 14 minutes, 11 seconds. Time passed: 11 hours, 24 minutes, 49 seconds
+[INFO 18:13:29] my_main t_env: 1331011 / 2050000
+[INFO 18:13:29] my_main Estimated time left: 6 hours, 15 minutes, 13 seconds. Time passed: 11 hours, 30 minutes, 3 seconds
+[INFO 18:18:34] my_main t_env: 1341011 / 2050000
+[INFO 18:18:34] my_main Estimated time left: 6 hours, 7 seconds. Time passed: 11 hours, 35 minutes, 7 seconds
+[INFO 18:23:40] my_main t_env: 1351019 / 2050000
+[INFO 18:23:40] my_main Estimated time left: 5 hours, 56 minutes, 36 seconds. Time passed: 11 hours, 40 minutes, 14 seconds
+[INFO 18:28:50] my_main t_env: 1361024 / 2050000
+[INFO 18:28:50] my_main Estimated time left: 5 hours, 55 minutes, 32 seconds. Time passed: 11 hours, 45 minutes, 24 seconds
+[INFO 18:34:00] my_main t_env: 1371030 / 2050000
+[INFO 18:34:00] my_main Estimated time left: 5 hours, 50 minutes, 46 seconds. Time passed: 11 hours, 50 minutes, 34 seconds
+[INFO 18:39:04] my_main t_env: 1381030 / 2050000
+[INFO 18:39:04] my_main Estimated time left: 5 hours, 38 minutes, 49 seconds. Time passed: 11 hours, 55 minutes, 38 seconds
+[INFO 18:44:15] my_main t_env: 1391035 / 2050000
+[INFO 18:44:15] my_main Estimated time left: 5 hours, 42 minutes, 10 seconds. Time passed: 12 hours, 49 seconds
+[INFO 18:49:00] my_main Recent Stats | t_env:    1400112 | Episode:   105834
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0011	MSE_per_agent_0:           0.2493	MSE_per_agent_1:           0.2480
+MSE_per_agent_2:           0.2096	MSE_per_agent_3:           0.2427	MSE_per_agent_4:           0.2230	MSE_per_agent_5:           0.1900
+MSE_per_agent_6:           0.1854	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1755	Model_D_loss:              0.2398
+Mse_loss:                  0.2211	Mse_per_state_0:           0.1684	Mse_per_state_1:           0.0008	Mse_per_state_10:          0.6490
+Mse_per_state_11:          0.0002	Mse_per_state_12:          0.4491	Mse_per_state_13:          0.0002	Mse_per_state_2:           0.3132
+Mse_per_state_3:           0.0007	Mse_per_state_4:           0.6746	Mse_per_state_5:           0.0007	Mse_per_state_6:           0.3094
+Mse_per_state_7:           0.0003	Mse_per_state_8:           0.5289	Mse_per_state_9:           0.0003	Student_comm_forward_rate:  0.8831
+Student_comm_rate:         0.8831	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1133	Teacher_comm_neg_loss:     0.3415	Teacher_comm_pos_loss:     0.0892	Teacher_comm_pos_rate:     0.9047
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5144	ep_length_mean:           11.4101	epsilon:                   0.0500	grad_norm:                 1.5754
+loss:                      0.0089	q_taken_mean:              0.6315	return_mean:               1.3294	return_std:                0.7686
+target_mean:               0.6317	td_error_abs:              0.0477	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.1960
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3294
+
+[INFO 18:49:29] my_main t_env: 1401048 / 2050000
+[INFO 18:49:29] my_main Estimated time left: 5 hours, 39 minutes, 7 seconds. Time passed: 12 hours, 6 minutes, 3 seconds
+[INFO 18:54:42] my_main t_env: 1411050 / 2050000
+[INFO 18:54:42] my_main Estimated time left: 5 hours, 33 minutes, 23 seconds. Time passed: 12 hours, 11 minutes, 16 seconds
+[INFO 18:59:52] my_main t_env: 1421060 / 2050000
+[INFO 18:59:52] my_main Estimated time left: 5 hours, 24 minutes, 28 seconds. Time passed: 12 hours, 16 minutes, 26 seconds
+[INFO 19:05:01] my_main t_env: 1431060 / 2050000
+[INFO 19:05:01] my_main Estimated time left: 5 hours, 18 minutes, 18 seconds. Time passed: 12 hours, 21 minutes, 35 seconds
+[INFO 19:10:07] my_main t_env: 1441062 / 2050000
+[INFO 19:10:07] my_main Estimated time left: 5 hours, 10 minutes, 26 seconds. Time passed: 12 hours, 26 minutes, 41 seconds
+[INFO 19:15:18] my_main t_env: 1451070 / 2050000
+[INFO 19:15:18] my_main Estimated time left: 5 hours, 10 minutes, 39 seconds. Time passed: 12 hours, 31 minutes, 52 seconds
+[INFO 19:20:24] my_main t_env: 1461073 / 2050000
+[INFO 19:20:24] my_main Estimated time left: 4 hours, 59 minutes, 40 seconds. Time passed: 12 hours, 36 minutes, 58 seconds
+[INFO 19:25:27] my_main t_env: 1471075 / 2050000
+[INFO 19:25:27] my_main Estimated time left: 4 hours, 52 minutes, 27 seconds. Time passed: 12 hours, 42 minutes, 1 seconds
+[INFO 19:30:38] my_main t_env: 1481076 / 2050000
+[INFO 19:30:38] my_main Estimated time left: 4 hours, 55 minutes, 13 seconds. Time passed: 12 hours, 47 minutes, 12 seconds
+[INFO 19:35:51] my_main t_env: 1491090 / 2050000
+[INFO 19:35:51] my_main Estimated time left: 4 hours, 51 minutes, 10 seconds. Time passed: 12 hours, 52 minutes, 25 seconds
+[INFO 19:40:28] my_main Recent Stats | t_env:    1500113 | Episode:   114652
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0010	MSE_per_agent_0:           0.2455	MSE_per_agent_1:           0.2426
+MSE_per_agent_2:           0.2056	MSE_per_agent_3:           0.2352	MSE_per_agent_4:           0.2175	MSE_per_agent_5:           0.1917
+MSE_per_agent_6:           0.1886	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1724	Model_D_loss:              0.2363
+Mse_loss:                  0.2181	Mse_per_state_0:           0.1693	Mse_per_state_1:           0.0008	Mse_per_state_10:          0.6168
+Mse_per_state_11:          0.0004	Mse_per_state_12:          0.4153	Mse_per_state_13:          0.0004	Mse_per_state_2:           0.3244
+Mse_per_state_3:           0.0007	Mse_per_state_4:           0.6653	Mse_per_state_5:           0.0007	Mse_per_state_6:           0.3314
+Mse_per_state_7:           0.0005	Mse_per_state_8:           0.5272	Mse_per_state_9:           0.0004	Student_comm_forward_rate:  0.8797
+Student_comm_rate:         0.8797	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1167	Teacher_comm_neg_loss:     0.3243	Teacher_comm_pos_loss:     0.0951	Teacher_comm_pos_rate:     0.9055
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5181	ep_length_mean:           11.3772	epsilon:                   0.0500	grad_norm:                 1.3551
+loss:                      0.0079	q_taken_mean:              0.5819	return_mean:               1.3343	return_std:                0.7682
+target_mean:               0.5827	td_error_abs:              0.0443	test_battle_won_mean:      1.0000	test_ep_length_mean:       7.9340
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3343
+
+[INFO 19:40:57] my_main t_env: 1501095 / 2050000
+[INFO 19:40:57] my_main Estimated time left: 4 hours, 39 minutes, 10 seconds. Time passed: 12 hours, 57 minutes, 31 seconds
+[INFO 19:46:13] my_main t_env: 1511097 / 2050000
+[INFO 19:46:13] my_main Estimated time left: 4 hours, 44 minutes, 27 seconds. Time passed: 13 hours, 2 minutes, 47 seconds
+[INFO 19:51:21] my_main t_env: 1521104 / 2050000
+[INFO 19:51:21] my_main Estimated time left: 4 hours, 31 minutes, 18 seconds. Time passed: 13 hours, 7 minutes, 55 seconds
+[INFO 19:56:36] my_main t_env: 1531121 / 2050000
+[INFO 19:56:36] my_main Estimated time left: 4 hours, 32 minutes, 0 seconds. Time passed: 13 hours, 13 minutes, 10 seconds
+[INFO 20:01:42] my_main t_env: 1541126 / 2050000
+[INFO 20:01:42] my_main Estimated time left: 4 hours, 18 minutes, 50 seconds. Time passed: 13 hours, 18 minutes, 16 seconds
+[INFO 20:06:49] my_main t_env: 1551133 / 2050000
+[INFO 20:06:49] my_main Estimated time left: 4 hours, 15 minutes, 37 seconds. Time passed: 13 hours, 23 minutes, 23 seconds
+[INFO 20:12:01] my_main t_env: 1561144 / 2050000
+[INFO 20:12:01] my_main Estimated time left: 4 hours, 13 minutes, 14 seconds. Time passed: 13 hours, 28 minutes, 35 seconds
+[INFO 20:17:01] my_main t_env: 1571149 / 2050000
+[INFO 20:17:01] my_main Estimated time left: 3 hours, 59 minutes, 57 seconds. Time passed: 13 hours, 33 minutes, 35 seconds
+[INFO 20:22:15] my_main t_env: 1581153 / 2050000
+[INFO 20:22:15] my_main Estimated time left: 4 hours, 4 minutes, 59 seconds. Time passed: 13 hours, 38 minutes, 49 seconds
+[INFO 20:27:20] my_main t_env: 1591163 / 2050000
+[INFO 20:27:20] my_main Estimated time left: 3 hours, 53 minutes, 2 seconds. Time passed: 13 hours, 43 minutes, 54 seconds
+[INFO 20:32:12] my_main Recent Stats | t_env:    1600117 | Episode:   123265
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0009	MSE_per_agent_0:           0.2374	MSE_per_agent_1:           0.2313
+MSE_per_agent_2:           0.1982	MSE_per_agent_3:           0.2265	MSE_per_agent_4:           0.2138	MSE_per_agent_5:           0.1838
+MSE_per_agent_6:           0.1775	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1696	Model_D_loss:              0.2276
+Mse_loss:                  0.2098	Mse_per_state_0:           0.1571	Mse_per_state_1:           0.0004	Mse_per_state_10:          0.6058
+Mse_per_state_11:          0.0004	Mse_per_state_12:          0.3934	Mse_per_state_13:          0.0004	Mse_per_state_2:           0.3373
+Mse_per_state_3:           0.0004	Mse_per_state_4:           0.6398	Mse_per_state_5:           0.0004	Mse_per_state_6:           0.3234
+Mse_per_state_7:           0.0004	Mse_per_state_8:           0.4775	Mse_per_state_9:           0.0004	Student_comm_forward_rate:  0.8788
+Student_comm_rate:         0.8788	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1183	Teacher_comm_neg_loss:     0.3257	Teacher_comm_pos_loss:     0.0967	Teacher_comm_pos_rate:     0.9053
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5187	ep_length_mean:           11.4215	epsilon:                   0.0500	grad_norm:                 1.2622
+loss:                      0.0045	q_taken_mean:              0.5572	return_mean:               1.3357	return_std:                0.7675
+target_mean:               0.5577	td_error_abs:              0.0393	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.1920
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3357
+
+[INFO 20:32:45] my_main t_env: 1601168 / 2050000
+[INFO 20:32:45] my_main Estimated time left: 4 hours, 2 minutes, 37 seconds. Time passed: 13 hours, 49 minutes, 19 seconds
+[INFO 20:38:17] my_main t_env: 1611170 / 2050000
+[INFO 20:38:17] my_main Estimated time left: 4 hours, 2 minutes, 49 seconds. Time passed: 13 hours, 54 minutes, 51 seconds
+[INFO 20:43:52] my_main t_env: 1621171 / 2050000
+[INFO 20:43:52] my_main Estimated time left: 3 hours, 59 minutes, 38 seconds. Time passed: 14 hours, 26 seconds
+[INFO 20:49:26] my_main t_env: 1631176 / 2050000
+[INFO 20:49:26] my_main Estimated time left: 3 hours, 52 minutes, 56 seconds. Time passed: 14 hours, 6 minutes, 0 seconds
+[INFO 20:54:55] my_main t_env: 1641182 / 2050000
+[INFO 20:54:55] my_main Estimated time left: 3 hours, 43 minutes, 58 seconds. Time passed: 14 hours, 11 minutes, 29 seconds
+[INFO 21:00:16] my_main t_env: 1651186 / 2050000
+[INFO 21:00:16] my_main Estimated time left: 3 hours, 33 minutes, 34 seconds. Time passed: 14 hours, 16 minutes, 50 seconds
+[INFO 21:05:37] my_main t_env: 1661189 / 2050000
+[INFO 21:05:37] my_main Estimated time left: 3 hours, 27 minutes, 48 seconds. Time passed: 14 hours, 22 minutes, 11 seconds
+[INFO 21:10:53] my_main t_env: 1671190 / 2050000
+[INFO 21:10:53] my_main Estimated time left: 3 hours, 19 minutes, 29 seconds. Time passed: 14 hours, 27 minutes, 27 seconds
+[INFO 21:16:11] my_main t_env: 1681206 / 2050000
+[INFO 21:16:11] my_main Estimated time left: 3 hours, 15 minutes, 8 seconds. Time passed: 14 hours, 32 minutes, 45 seconds
+[INFO 21:21:25] my_main t_env: 1691210 / 2050000
+[INFO 21:21:25] my_main Estimated time left: 3 hours, 7 minutes, 37 seconds. Time passed: 14 hours, 37 minutes, 59 seconds
+[INFO 21:26:01] my_main Recent Stats | t_env:    1700126 | Episode:   132081
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0008	MSE_per_agent_0:           0.2455	MSE_per_agent_1:           0.2377
+MSE_per_agent_2:           0.2052	MSE_per_agent_3:           0.2395	MSE_per_agent_4:           0.2254	MSE_per_agent_5:           0.1914
+MSE_per_agent_6:           0.1872	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1705	Model_D_loss:              0.2367
+Mse_loss:                  0.2189	Mse_per_state_0:           0.2050	Mse_per_state_1:           0.0005	Mse_per_state_10:          0.6163
+Mse_per_state_11:          0.0005	Mse_per_state_12:          0.4158	Mse_per_state_13:          0.0005	Mse_per_state_2:           0.3515
+Mse_per_state_3:           0.0005	Mse_per_state_4:           0.6532	Mse_per_state_5:           0.0004	Mse_per_state_6:           0.3344
+Mse_per_state_7:           0.0005	Mse_per_state_8:           0.4844	Mse_per_state_9:           0.0005	Student_comm_forward_rate:  0.8742
+Student_comm_rate:         0.8742	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1213	Teacher_comm_neg_loss:     0.3149	Teacher_comm_pos_loss:     0.1002	Teacher_comm_pos_rate:     0.9011
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5205	ep_length_mean:           11.3930	epsilon:                   0.0500	grad_norm:                 1.7002
+loss:                      0.0083	q_taken_mean:              0.5555	return_mean:               1.3372	return_std:                0.7681
+target_mean:               0.5575	td_error_abs:              0.0481	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.1660
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3372
+
+[INFO 21:26:34] my_main t_env: 1701223 / 2050000
+[INFO 21:26:34] my_main Estimated time left: 2 hours, 59 minutes, 33 seconds. Time passed: 14 hours, 43 minutes, 8 seconds
+[INFO 21:31:47] my_main t_env: 1711228 / 2050000
+[INFO 21:31:47] my_main Estimated time left: 2 hours, 56 minutes, 33 seconds. Time passed: 14 hours, 48 minutes, 21 seconds
+[INFO 21:37:04] my_main t_env: 1721235 / 2050000
+[INFO 21:37:04] my_main Estimated time left: 2 hours, 53 minutes, 34 seconds. Time passed: 14 hours, 53 minutes, 38 seconds
+[INFO 21:42:20] my_main t_env: 1731245 / 2050000
+[INFO 21:42:20] my_main Estimated time left: 2 hours, 47 minutes, 47 seconds. Time passed: 14 hours, 58 minutes, 54 seconds
+[INFO 21:47:37] my_main t_env: 1741261 / 2050000
+[INFO 21:47:37] my_main Estimated time left: 2 hours, 42 minutes, 37 seconds. Time passed: 15 hours, 4 minutes, 11 seconds
+[INFO 21:52:50] my_main t_env: 1751261 / 2050000
+[INFO 21:52:50] my_main Estimated time left: 2 hours, 35 minutes, 52 seconds. Time passed: 15 hours, 9 minutes, 24 seconds
+[INFO 21:58:06] my_main t_env: 1761261 / 2050000
+[INFO 21:58:06] my_main Estimated time left: 2 hours, 32 minutes, 16 seconds. Time passed: 15 hours, 14 minutes, 40 seconds
+[INFO 22:03:24] my_main t_env: 1771276 / 2050000
+[INFO 22:03:24] my_main Estimated time left: 2 hours, 27 minutes, 13 seconds. Time passed: 15 hours, 19 minutes, 58 seconds
+[INFO 22:08:36] my_main t_env: 1781276 / 2050000
+[INFO 22:08:36] my_main Estimated time left: 2 hours, 19 minutes, 42 seconds. Time passed: 15 hours, 25 minutes, 9 seconds
+[INFO 22:13:44] my_main t_env: 1791291 / 2050000
+[INFO 22:13:44] my_main Estimated time left: 2 hours, 12 minutes, 51 seconds. Time passed: 15 hours, 30 minutes, 18 seconds
+[INFO 22:18:19] my_main Recent Stats | t_env:    1800134 | Episode:   140892
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0007	MSE_per_agent_0:           0.2365	MSE_per_agent_1:           0.2281
+MSE_per_agent_2:           0.1992	MSE_per_agent_3:           0.2403	MSE_per_agent_4:           0.2205	MSE_per_agent_5:           0.1872
+MSE_per_agent_6:           0.1851	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1665	Model_D_loss:              0.2312
+Mse_loss:                  0.2138	Mse_per_state_0:           0.2073	Mse_per_state_1:           0.0004	Mse_per_state_10:          0.6161
+Mse_per_state_11:          0.0005	Mse_per_state_12:          0.4082	Mse_per_state_13:          0.0004	Mse_per_state_2:           0.3678
+Mse_per_state_3:           0.0004	Mse_per_state_4:           0.6697	Mse_per_state_5:           0.0004	Mse_per_state_6:           0.2593
+Mse_per_state_7:           0.0005	Mse_per_state_8:           0.4622	Mse_per_state_9:           0.0005	Student_comm_forward_rate:  0.8764
+Student_comm_rate:         0.8764	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1211	Teacher_comm_neg_loss:     0.3229	Teacher_comm_pos_loss:     0.0993	Teacher_comm_pos_rate:     0.9018
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5204	ep_length_mean:           11.4095	epsilon:                   0.0500	grad_norm:                 1.6922
+loss:                      0.0075	q_taken_mean:              0.5476	return_mean:               1.3382	return_std:                0.7669
+target_mean:               0.5489	td_error_abs:              0.0456	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.0200
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3382
+
+[INFO 22:18:53] my_main t_env: 1801297 / 2050000
+[INFO 22:18:53] my_main Estimated time left: 2 hours, 8 minutes, 10 seconds. Time passed: 15 hours, 35 minutes, 27 seconds
+[INFO 22:24:10] my_main t_env: 1811303 / 2050000
+[INFO 22:24:10] my_main Estimated time left: 2 hours, 5 minutes, 41 seconds. Time passed: 15 hours, 40 minutes, 44 seconds
+[INFO 22:29:23] my_main t_env: 1821308 / 2050000
+[INFO 22:29:23] my_main Estimated time left: 1 hours, 59 minutes, 25 seconds. Time passed: 15 hours, 45 minutes, 57 seconds
+[INFO 22:34:36] my_main t_env: 1831320 / 2050000
+[INFO 22:34:36] my_main Estimated time left: 1 hours, 54 minutes, 0 seconds. Time passed: 15 hours, 51 minutes, 10 seconds
+[INFO 22:39:48] my_main t_env: 1841322 / 2050000
+[INFO 22:39:48] my_main Estimated time left: 1 hours, 48 minutes, 29 seconds. Time passed: 15 hours, 56 minutes, 22 seconds
+[INFO 22:44:53] my_main t_env: 1851325 / 2050000
+[INFO 22:44:53] my_main Estimated time left: 1 hours, 41 minutes, 0 seconds. Time passed: 16 hours, 1 minutes, 27 seconds
+[INFO 22:50:01] my_main t_env: 1861338 / 2050000
+[INFO 22:50:01] my_main Estimated time left: 1 hours, 36 minutes, 29 seconds. Time passed: 16 hours, 6 minutes, 35 seconds
+[INFO 22:55:21] my_main t_env: 1871338 / 2050000
+[INFO 22:55:21] my_main Estimated time left: 1 hours, 35 minutes, 23 seconds. Time passed: 16 hours, 11 minutes, 55 seconds
+[INFO 23:00:25] my_main t_env: 1881338 / 2050000
+[INFO 23:00:25] my_main Estimated time left: 1 hours, 25 minutes, 24 seconds. Time passed: 16 hours, 16 minutes, 59 seconds
+[INFO 23:05:29] my_main t_env: 1891348 / 2050000
+[INFO 23:05:29] my_main Estimated time left: 1 hours, 20 minutes, 14 seconds. Time passed: 16 hours, 22 minutes, 3 seconds
+[INFO 23:10:02] my_main Recent Stats | t_env:    1900135 | Episode:   149462
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0007	MSE_per_agent_0:           0.2339	MSE_per_agent_1:           0.2300
+MSE_per_agent_2:           0.2018	MSE_per_agent_3:           0.2425	MSE_per_agent_4:           0.2214	MSE_per_agent_5:           0.1851
+MSE_per_agent_6:           0.1845	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1669	Model_D_loss:              0.2315
+Mse_loss:                  0.2142	Mse_per_state_0:           0.2131	Mse_per_state_1:           0.0005	Mse_per_state_10:          0.6704
+Mse_per_state_11:          0.0004	Mse_per_state_12:          0.4062	Mse_per_state_13:          0.0004	Mse_per_state_2:           0.3413
+Mse_per_state_3:           0.0005	Mse_per_state_4:           0.6388	Mse_per_state_5:           0.0005	Mse_per_state_6:           0.2471
+Mse_per_state_7:           0.0005	Mse_per_state_8:           0.4783	Mse_per_state_9:           0.0005	Student_comm_forward_rate:  0.8776
+Student_comm_rate:         0.8776	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1247	Teacher_comm_neg_loss:     0.3536	Teacher_comm_pos_loss:     0.1002	Teacher_comm_pos_rate:     0.9023
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5208	ep_length_mean:           11.4629	epsilon:                   0.0500	grad_norm:                 1.8619
+loss:                      0.0081	q_taken_mean:              0.5070	return_mean:               1.3415	return_std:                0.7638
+target_mean:               0.5088	td_error_abs:              0.0501	test_battle_won_mean:      1.0000	test_ep_length_mean:       8.2140
+test_return_mean:          2.0000	test_return_std:           0.0000	test_win_group_mean:       2.0000	win_group_mean:            1.3415
+
+[INFO 23:10:36] my_main t_env: 1901349 / 2050000
+[INFO 23:10:36] my_main Estimated time left: 1 hours, 16 minutes, 5 seconds. Time passed: 16 hours, 27 minutes, 10 seconds
+[INFO 23:15:45] my_main t_env: 1911354 / 2050000
+[INFO 23:15:45] my_main Estimated time left: 1 hours, 11 minutes, 30 seconds. Time passed: 16 hours, 32 minutes, 19 seconds
+[INFO 23:20:50] my_main t_env: 1921369 / 2050000
+[INFO 23:20:50] my_main Estimated time left: 1 hours, 5 minutes, 6 seconds. Time passed: 16 hours, 37 minutes, 23 seconds
+[INFO 23:25:20] my_main t_env: 1931372 / 2050000
+[INFO 23:25:20] my_main Estimated time left: 53 minutes, 28 seconds. Time passed: 16 hours, 41 minutes, 54 seconds
+[INFO 23:29:57] my_main t_env: 1941383 / 2050000
+[INFO 23:29:57] my_main Estimated time left: 50 minutes, 6 seconds. Time passed: 16 hours, 46 minutes, 31 seconds
+[INFO 23:34:24] my_main t_env: 1951393 / 2050000
+[INFO 23:34:24] my_main Estimated time left: 43 minutes, 51 seconds. Time passed: 16 hours, 50 minutes, 58 seconds
+[INFO 23:38:50] my_main t_env: 1961400 / 2050000
+[INFO 23:38:50] my_main Estimated time left: 39 minutes, 14 seconds. Time passed: 16 hours, 55 minutes, 24 seconds
+[INFO 23:43:19] my_main t_env: 1971409 / 2050000
+[INFO 23:43:19] my_main Estimated time left: 35 minutes, 13 seconds. Time passed: 16 hours, 59 minutes, 53 seconds
+[INFO 23:48:13] my_main t_env: 1981411 / 2050000
+[INFO 23:48:13] my_main Estimated time left: 33 minutes, 32 seconds. Time passed: 17 hours, 4 minutes, 47 seconds
+[INFO 23:53:12] my_main t_env: 1991419 / 2050000
+[INFO 23:53:12] my_main Estimated time left: 29 minutes, 11 seconds. Time passed: 17 hours, 9 minutes, 46 seconds
+[INFO 23:57:24] my_main Recent Stats | t_env:    2000146 | Episode:   158264
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0006	MSE_per_agent_0:           0.2421	MSE_per_agent_1:           0.2361
+MSE_per_agent_2:           0.2092	MSE_per_agent_3:           0.2531	MSE_per_agent_4:           0.2291	MSE_per_agent_5:           0.1815
+MSE_per_agent_6:           0.1864	Message_selector_grad_norm:  0.0000	Meta_loss:                 0.1678	Model_D_loss:              0.2370
+Mse_loss:                  0.2197	Mse_per_state_0:           0.2175	Mse_per_state_1:           0.0005	Mse_per_state_10:          0.7315
+Mse_per_state_11:          0.0002	Mse_per_state_12:          0.4063	Mse_per_state_13:          0.0002	Mse_per_state_2:           0.3329
+Mse_per_state_3:           0.0005	Mse_per_state_4:           0.6645	Mse_per_state_5:           0.0004	Mse_per_state_6:           0.2381
+Mse_per_state_7:           0.0003	Mse_per_state_8:           0.4823	Mse_per_state_9:           0.0002	Student_comm_forward_rate:  0.8754
+Student_comm_rate:         0.8754	Student_what_soft_rate:    1.0000	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.1000
+Teacher_comm_loss:         0.1291	Teacher_comm_neg_loss:     0.3648	Teacher_comm_pos_loss:     0.1031	Teacher_comm_pos_rate:     0.8989
+Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.1000	Teacher_what_loss:         0.0000	What_coverage_loss:        0.0000
+battle_won_mean:           0.5167	ep_length_mean:           11.4672	epsilon:                   0.0500	grad_norm:                 1.9779
+loss:                      0.0100	q_taken_mean:              0.5355	return_mean:               1.3342	return_std:                0.7663
+target_mean:               0.5377	td_error_abs:              0.0524	test_battle_won_mean:      0.9980	test_ep_length_mean:       8.0400
+test_return_mean:          1.9980	test_return_std:           0.0199	test_win_group_mean:       1.9980	win_group_mean:            1.3342
+
+[INFO 23:58:04] my_main t_env: 2001425 / 2050000
+[INFO 23:58:04] my_main Estimated time left: 23 minutes, 34 seconds. Time passed: 17 hours, 14 minutes, 37 seconds
+[INFO 00:02:53] my_main t_env: 2011431 / 2050000
+[INFO 00:02:53] my_main Estimated time left: 18 minutes, 36 seconds. Time passed: 17 hours, 19 minutes, 27 seconds
+[INFO 00:07:43] my_main t_env: 2021435 / 2050000
+[INFO 00:07:43] my_main Estimated time left: 13 minutes, 48 seconds. Time passed: 17 hours, 24 minutes, 17 seconds
+[INFO 00:11:59] my_main t_env: 2031443 / 2050000
+[INFO 00:11:59] my_main Estimated time left: 7 minutes, 53 seconds. Time passed: 17 hours, 28 minutes, 33 seconds
+[INFO 00:16:14] my_main t_env: 2041456 / 2050000
+[INFO 00:16:14] my_main Estimated time left: 3 minutes, 38 seconds. Time passed: 17 hours, 32 minutes, 48 seconds
+[INFO 00:19:48] my_main Finished Training
+[INFO 00:19:48] my_main [DONE] Written: data/done.flag
+Finish RL
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 00:19:49] my_main Finished after 17:36:25.
+[INFO 00:19:49] pymarl Completed after 17:36:25

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-07-12T10:15:35+00:00",
+  "type": "FileNotFoundError",
+  "message": "Existing policy not found: /data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_2r_vs_4r/LMAC_WWW/comm_init.py. Pass --policy /absolute/path/to/comm_init.py.",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 471, in main\n    existing = resolve_existing_policy(args)\n  File \"/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/main.py\", line 159, in resolve_existing_policy\n    raise FileNotFoundError(\nFileNotFoundError: Existing policy not found: /data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/1o_2r_vs_4r/LMAC_WWW/comm_init.py. Pass --policy /absolute/path/to/comm_init.py.\n"
+}

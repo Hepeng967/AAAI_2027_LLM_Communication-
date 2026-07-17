@@ -1,0 +1,118 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Determine movement actions (stay, move toward 0, move away) to synchronize position with other members of the same group so that all reach position 0 simultaneously.",
+      "locally_missing_information": [
+        "Positions of other agents in the same group"
+      ]
+    },
+    {
+      "decision_id": "D2",
+      "decision": "Determine when the entire group should attempt to finish (all members move to 0) to avoid finishing in the same round as the other group.",
+      "locally_missing_information": [
+        "Active status of the other group",
+        "Positions of agents in the other group (to anticipate their finish readiness)"
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": [0, 1, 2],
+      "role_basis": "Fixed group assignment from task configuration; agents in G1 must finish together in the same round, distinct from G2."
+    },
+    {
+      "group_id": "G2",
+      "members": [3, 4, 5, 6],
+      "role_basis": "Fixed group assignment from task configuration; agents in G2 must finish together in the same round, distinct from G1."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "current_position of each agent in group G1",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        { "name": "current_position", "index": 0 }
+      ],
+      "receiver_need_hypothesis": "To know the distances of all G1 members from the target, enabling coordinated movement to reach 0 simultaneously.",
+      "task_decision_ids": ["D1"],
+      "uncertainties": [
+        "Positions may become stale before the receiver acts due to communication delay and asynchronous action execution."
+      ]
+    },
+    {
+      "requirement_id": "IR2",
+      "fact": "current_position of each agent in group G2",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        { "name": "current_position", "index": 0 }
+      ],
+      "receiver_need_hypothesis": "To know the distances of all G2 members from the target, enabling coordinated movement to reach 0 simultaneously.",
+      "task_decision_ids": ["D1"],
+      "uncertainties": [
+        "Positions may become stale before the receiver acts due to communication delay and asynchronous action execution."
+      ]
+    },
+    {
+      "requirement_id": "IR3",
+      "fact": "active_status of group G1",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        { "name": "active_status", "index": 1 }
+      ],
+      "receiver_need_hypothesis": "To know when G1 has finished (active_status becomes 0), so that G2 can safely complete its own finish without causing a same-round conflict.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Active_status=1 indicates G1 is still active, but G1 could decide to finish at the same moment G2 does, leading to a simultaneous finish and penalty; simple status observation does not guarantee mutual exclusion."
+      ]
+    },
+    {
+      "requirement_id": "IR4",
+      "fact": "active_status of group G2",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        { "name": "active_status", "index": 1 }
+      ],
+      "receiver_need_hypothesis": "To know when G2 has finished (active_status becomes 0), so that G1 can safely complete its own finish without causing a same-round conflict.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Active_status=1 indicates G2 is still active, but G2 could decide to finish at the same moment G1 does, leading to a simultaneous finish and penalty; simple status observation does not guarantee mutual exclusion."
+      ]
+    },
+    {
+      "requirement_id": "IR5",
+      "fact": "current_position of each agent in group G1",
+      "possible_sender_groups": ["G1"],
+      "possible_receiver_groups": ["G2"],
+      "sender_observable_features": [
+        { "name": "current_position", "index": 0 }
+      ],
+      "receiver_need_hypothesis": "To estimate the collective distance of the other group from the target and better anticipate when they might attempt to finish, reducing risk of simultaneous finishes.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Exact finish timing depends on future actions; positional proximity does not guarantee immediate finish, especially if agents deliberately delay."
+      ]
+    },
+    {
+      "requirement_id": "IR6",
+      "fact": "current_position of each agent in group G2",
+      "possible_sender_groups": ["G2"],
+      "possible_receiver_groups": ["G1"],
+      "sender_observable_features": [
+        { "name": "current_position", "index": 0 }
+      ],
+      "receiver_need_hypothesis": "To estimate the collective distance of the other group from the target and better anticipate when they might attempt to finish, reducing risk of simultaneous finishes.",
+      "task_decision_ids": ["D2"],
+      "uncertainties": [
+        "Exact finish timing depends on future actions; positional proximity does not guarantee immediate finish, especially if agents deliberately delay."
+      ]
+    }
+  ],
+  "unsupported_assumptions": []
+}

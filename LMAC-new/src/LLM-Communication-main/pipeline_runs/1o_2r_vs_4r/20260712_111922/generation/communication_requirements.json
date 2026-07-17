@@ -1,0 +1,133 @@
+{
+  "task_decisions": [
+    {
+      "decision_id": "D1",
+      "decision": "Roach selects an enemy reaper as target and moves to attack it.",
+      "locally_missing_information": [
+        "Existence and positions (relative x, y) of enemy reapers across the pit.",
+        "Health of each visible reaper to prioritize low-health targets."
+      ]
+    }
+  ],
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "overseer (agent type 'overseer')",
+      "role_basis": "The overseer is a flying unit with unobstructed vision across the central pit, as per map description. Its observation includes enemy_*_available=1 for reapers on the other side."
+    },
+    {
+      "group_id": "G2",
+      "members": "both roaches (agent type 'roach')",
+      "role_basis": "Roaches are ground units whose direct vision is blocked by the pit; their enemy_*_available features are 0 for enemies across the pit. They must rely on communication to locate enemies."
+    }
+  ],
+  "information_requirements": [
+    {
+      "requirement_id": "IR1",
+      "fact": "Positions (relative x, y) and health of enemy reapers located across the pit.",
+      "possible_sender_groups": [
+        "G1"
+      ],
+      "possible_receiver_groups": [
+        "G2"
+      ],
+      "sender_observable_features": [
+        {
+          "name": "enemy_0_available",
+          "index": 4
+        },
+        {
+          "name": "enemy_0_distance",
+          "index": 5
+        },
+        {
+          "name": "enemy_0_rel_x",
+          "index": 6
+        },
+        {
+          "name": "enemy_0_rel_y",
+          "index": 7
+        },
+        {
+          "name": "enemy_0_health",
+          "index": 8
+        },
+        {
+          "name": "enemy_1_available",
+          "index": 11
+        },
+        {
+          "name": "enemy_1_distance",
+          "index": 12
+        },
+        {
+          "name": "enemy_1_rel_x",
+          "index": 13
+        },
+        {
+          "name": "enemy_1_rel_y",
+          "index": 14
+        },
+        {
+          "name": "enemy_1_health",
+          "index": 15
+        },
+        {
+          "name": "enemy_2_available",
+          "index": 18
+        },
+        {
+          "name": "enemy_2_distance",
+          "index": 19
+        },
+        {
+          "name": "enemy_2_rel_x",
+          "index": 20
+        },
+        {
+          "name": "enemy_2_rel_y",
+          "index": 21
+        },
+        {
+          "name": "enemy_2_health",
+          "index": 22
+        },
+        {
+          "name": "enemy_3_available",
+          "index": 25
+        },
+        {
+          "name": "enemy_3_distance",
+          "index": 26
+        },
+        {
+          "name": "enemy_3_rel_x",
+          "index": 27
+        },
+        {
+          "name": "enemy_3_rel_y",
+          "index": 28
+        },
+        {
+          "name": "enemy_3_health",
+          "index": 29
+        }
+      ],
+      "receiver_need_hypothesis": "Roaches need to locate enemies to navigate around the pit and initiate attacks. Health information allows prioritizing wounded enemies to secure kills.",
+      "task_decision_ids": [
+        "D1"
+      ],
+      "uncertainties": [
+        "Whether all four reapers are simultaneously visible to the overseer; some may be out of sight range or behind cover.",
+        "Enemy reapers may move after the overseer's observation, causing communicated positions to become outdated.",
+        "Roaches must integrate enemy positions with their own movement constraints (pit navigation) to successfully engage."
+      ]
+    }
+  ],
+  "unsupported_assumptions": [
+    "The overseer has uninterrupted line-of-sight to all reapers on the opposite side of the pit.",
+    "Communicated coordinates are transmitted without delay or loss.",
+    "Roaches can interpret relative coordinates directly into movement actions without additional path planning information beyond their local move_* indicators.",
+    "Roaches do not require explicit coordination of target assignment (focus fire) beyond enemy position information."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "run_id": "20260714_142338",
+  "environment": "smacv2",
+  "task": "terran_10_vs_10",
+  "map": "terran_10_vs_10",
+  "mode": "full",
+  "overall": "complete",
+  "generation": {
+    "status": "complete",
+    "policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/terran_10_vs_10/20260714_142338/generation/comm_init.py"
+  },
+  "collection": {
+    "status": "complete",
+    "rollout_dir": "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10",
+    "train_files": 63
+  },
+  "iteration": {
+    "status": "accepted",
+    "root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/terran_10_vs_10/20260714_142338/iteration/terran_10_vs_10/20260714_142338",
+    "frozen_manifest": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/terran_10_vs_10/20260714_142338/iteration/terran_10_vs_10/20260714_142338/results/frozen_teacher_manifest.json"
+  },
+  "selected_policy": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/smacv2/terran_10_vs_10/LMAC_WWW/20260714_142338/iterations/iter_002.py",
+  "failure": null
+}

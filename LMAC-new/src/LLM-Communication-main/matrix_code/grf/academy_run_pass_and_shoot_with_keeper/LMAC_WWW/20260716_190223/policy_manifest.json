@@ -1,0 +1,20 @@
+{
+  "map": "academy_run_pass_and_shoot_with_keeper",
+  "environment": "grf",
+  "run_id": "20260716_190223",
+  "pipeline_run": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223",
+  "selected_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/grf/academy_run_pass_and_shoot_with_keeper/LMAC_WWW/20260716_190223/iterations/iter_000.py",
+  "latest_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/grf/academy_run_pass_and_shoot_with_keeper/LMAC_WWW/comm_init.py",
+  "policies": [
+    {
+      "stage": "initial",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/generation/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/grf/academy_run_pass_and_shoot_with_keeper/LMAC_WWW/20260716_190223/initial/comm_init.py"
+    },
+    {
+      "stage": "iter_000",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/grf/academy_run_pass_and_shoot_with_keeper/LMAC_WWW/20260716_190223/iterations/iter_000.py"
+    }
+  ]
+}

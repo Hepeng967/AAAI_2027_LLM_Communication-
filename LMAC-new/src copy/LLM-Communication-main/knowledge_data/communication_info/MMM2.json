@@ -1,0 +1,40 @@
+{
+  "map_name": "MMM2",
+  "n_agents": 8,
+  "n_enemies": 9,
+  "obs_shape": 127,
+  "feature_index": {
+    "move_north": [0, 1],
+    "move_south": [1, 2],
+    "move_east": [2, 3],
+    "move_west": [3, 4],
+    "enemy_0_available": [4, 5], "enemy_0_distance": [5, 6], "enemy_0_rel_x": [6, 7], "enemy_0_rel_y": [7, 8], "enemy_0_health": [8, 9], "enemy_0_type_0": [9, 10], "enemy_0_type_1": [10, 11],
+    "enemy_1_available": [11, 12], "enemy_1_distance": [12, 13], "enemy_1_rel_x": [13, 14], "enemy_1_rel_y": [14, 15], "enemy_1_health": [15, 16], "enemy_1_type_0": [16, 17], "enemy_1_type_1": [17, 18],
+    "enemy_2_available": [18, 19], "enemy_2_distance": [19, 20], "enemy_2_rel_x": [20, 21], "enemy_2_rel_y": [21, 22], "enemy_2_health": [22, 23], "enemy_2_type_0": [23, 24], "enemy_2_type_1": [24, 25],
+    "enemy_3_available": [25, 26], "enemy_3_distance": [26, 27], "enemy_3_rel_x": [27, 28], "enemy_3_rel_y": [28, 29], "enemy_3_health": [29, 30], "enemy_3_type_0": [30, 31], "enemy_3_type_1": [31, 32],
+    "enemy_4_available": [32, 33], "enemy_4_distance": [33, 34], "enemy_4_rel_x": [34, 35], "enemy_4_rel_y": [35, 36], "enemy_4_health": [36, 37], "enemy_4_type_0": [37, 38], "enemy_4_type_1": [38, 39],
+    "enemy_5_available": [39, 40], "enemy_5_distance": [40, 41], "enemy_5_rel_x": [41, 42], "enemy_5_rel_y": [42, 43], "enemy_5_health": [43, 44], "enemy_5_type_0": [44, 45], "enemy_5_type_1": [45, 46],
+    "enemy_6_available": [46, 47], "enemy_6_distance": [47, 48], "enemy_6_rel_x": [48, 49], "enemy_6_rel_y": [49, 50], "enemy_6_health": [50, 51], "enemy_6_type_0": [51, 52], "enemy_6_type_1": [52, 53],
+    "enemy_7_available": [53, 54], "enemy_7_distance": [54, 55], "enemy_7_rel_x": [55, 56], "enemy_7_rel_y": [56, 57], "enemy_7_health": [57, 58], "enemy_7_type_0": [58, 59], "enemy_7_type_1": [59, 60],
+    "enemy_8_available": [60, 61], "enemy_8_distance": [61, 62], "enemy_8_rel_x": [62, 63], "enemy_8_rel_y": [63, 64], "enemy_8_health": [64, 65], "enemy_8_type_0": [65, 66], "enemy_8_type_1": [66, 67],
+    "ally_0_visible": [67, 68], "ally_0_distance": [68, 69], "ally_0_rel_x": [69, 70], "ally_0_rel_y": [70, 71], "ally_0_health": [71, 72], "ally_0_type_0": [72, 73], "ally_0_type_1": [73, 74],
+    "ally_1_visible": [74, 75], "ally_1_distance": [75, 76], "ally_1_rel_x": [76, 77], "ally_1_rel_y": [77, 78], "ally_1_health": [78, 79], "ally_1_type_0": [79, 80], "ally_1_type_1": [80, 81],
+    "ally_2_visible": [81, 82], "ally_2_distance": [82, 83], "ally_2_rel_x": [83, 84], "ally_2_rel_y": [84, 85], "ally_2_health": [85, 86], "ally_2_type_0": [86, 87], "ally_2_type_1": [87, 88],
+    "ally_3_visible": [88, 89], "ally_3_distance": [89, 90], "ally_3_rel_x": [90, 91], "ally_3_rel_y": [91, 92], "ally_3_health": [92, 93], "ally_3_type_0": [93, 94], "ally_3_type_1": [94, 95],
+    "ally_4_visible": [95, 96], "ally_4_distance": [96, 97], "ally_4_rel_x": [97, 98], "ally_4_rel_y": [98, 99], "ally_4_health": [99, 100], "ally_4_type_0": [100, 101], "ally_4_type_1": [101, 102],
+    "ally_5_visible": [102, 103], "ally_5_distance": [103, 104], "ally_5_rel_x": [104, 105], "ally_5_rel_y": [105, 106], "ally_5_health": [106, 107], "ally_5_type_0": [107, 108], "ally_5_type_1": [108, 109],
+    "ally_6_visible": [109, 110], "ally_6_distance": [110, 111], "ally_6_rel_x": [111, 112], "ally_6_rel_y": [112, 113], "ally_6_health": [113, 114], "ally_6_type_0": [114, 115], "ally_6_type_1": [115, 116],
+    "own_health": [116, 117],
+    "own_type_0": [117, 118],
+    "own_type_1": [118, 119],
+    "agent_id": [119, 127]
+  },
+  "obs_feature_names": [
+    "move_north", "move_south", "move_east", "move_west",
+    "enemy_0_available", "enemy_0_distance", "enemy_0_rel_x", "enemy_0_rel_y", "enemy_0_health", "enemy_0_type_0", "enemy_0_type_1",
+    "ally_0_visible", "ally_0_distance", "ally_0_rel_x", "ally_0_rel_y", "ally_0_health", "ally_0_type_0", "ally_0_type_1",
+    "own_health", "own_type_0", "own_type_1", "agent_id"
+  ],
+  "obs_agent_id_map": [0, 1, 2, 3, 4, 5, 6, 7],
+  "obs_agent_type_map": ["Medivac", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine", "Marine"]
+}

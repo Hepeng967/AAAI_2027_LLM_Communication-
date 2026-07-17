@@ -1,0 +1,47 @@
+{
+  "Type": "Air Unit",
+  "Description": "Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use Spawn Changeling and Contaminate. The Overseer is extremely useful for scouting and detecting enemy units/positions. It moves faster than the Overlord and also receives the benefit of the Pneumatized Carapace upgrade. In return, it loses the Overlord's ability to transport units and Generate Creep.",
+  "Built From": "Overlord (morphed)",
+  "Requirements": "Lair",
+  "Cost": {
+    "mineral": 50,
+    "vespene": 50,
+    "game_time": 12,
+    "supply": 0
+  },
+  "Hotkey": "V",
+  "Attack": {
+    "Targets": "Not found",
+    "Damage": "Not found",
+    "DPS": "Not found",
+    "Cooldown": "Not found",
+    "Bonus": "Not found",
+    "Bonus DPS": "Not found",
+    "Range": "Not found"
+  },
+  "Unit stats": {
+    "Defense": "200 1 (+1)",
+    "Attributes": "Armored, Biological, Detector",
+    "Sight": "11 (+2.75)",
+    "Speed": "2.62 (+2.1)",
+    "Cargo size": "Not found"
+  },
+  "Strong against": [
+    "Dark Templar",
+    "Banshee",
+    "Lurker"
+  ],
+  "Weak against": [
+    "Stalker",
+    "Viking",
+    "Mutalisk"
+  ],
+  "Ability": "Oversight, Spawn Changeling, Contaminate",
+  "Upgrade": "Pneumatized Carapace",
+  "Competitive Usage": {
+    "General": "It is a generally a good idea to include Overseers in a mid-end game army to detect any stealth units. The Overseer is extremely useful for scouting and detecting enemy units/positions. It moves faster than the Overlord and also receives the benefit of the Pneumatized Carapace upgrade. In return, it loses the Overlord's ability to transport units and Generate Creep.",
+    "Vs. Protoss": "Overseers are essential for detecting Dark Templar and other cloaked units. They provide crucial vision and detection capabilities against Protoss stealth units.",
+    "Vs. Terran": "Overseers are important for detecting Banshees and other cloaked Terran units. They provide aerial scouting and detection against Terran stealth tactics.",
+    "Vs. Zerg": "Overseers are useful for detecting burrowed units like Lurkers and Infestors. They also provide aerial vision and can spawn Changelings to scout enemy positions."
+  }
+}

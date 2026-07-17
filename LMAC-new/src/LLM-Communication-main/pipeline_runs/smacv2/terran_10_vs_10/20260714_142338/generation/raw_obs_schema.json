@@ -1,0 +1,864 @@
+{
+  "map_name": "terran_10_vs_10",
+  "environment": "smacv2",
+  "obs_shape": 162,
+  "n_agents": 10,
+  "n_enemies": 10,
+  "obs_feature_names": [
+    "move_north",
+    "move_south",
+    "move_east",
+    "move_west",
+    "enemy_0_available",
+    "enemy_0_distance",
+    "enemy_0_relative_x",
+    "enemy_0_relative_y",
+    "enemy_0_health",
+    "enemy_0_unit_type_marine",
+    "enemy_0_unit_type_marauder",
+    "enemy_0_unit_type_medivac",
+    "enemy_1_available",
+    "enemy_1_distance",
+    "enemy_1_relative_x",
+    "enemy_1_relative_y",
+    "enemy_1_health",
+    "enemy_1_unit_type_marine",
+    "enemy_1_unit_type_marauder",
+    "enemy_1_unit_type_medivac",
+    "enemy_2_available",
+    "enemy_2_distance",
+    "enemy_2_relative_x",
+    "enemy_2_relative_y",
+    "enemy_2_health",
+    "enemy_2_unit_type_marine",
+    "enemy_2_unit_type_marauder",
+    "enemy_2_unit_type_medivac",
+    "enemy_3_available",
+    "enemy_3_distance",
+    "enemy_3_relative_x",
+    "enemy_3_relative_y",
+    "enemy_3_health",
+    "enemy_3_unit_type_marine",
+    "enemy_3_unit_type_marauder",
+    "enemy_3_unit_type_medivac",
+    "enemy_4_available",
+    "enemy_4_distance",
+    "enemy_4_relative_x",
+    "enemy_4_relative_y",
+    "enemy_4_health",
+    "enemy_4_unit_type_marine",
+    "enemy_4_unit_type_marauder",
+    "enemy_4_unit_type_medivac",
+    "enemy_5_available",
+    "enemy_5_distance",
+    "enemy_5_relative_x",
+    "enemy_5_relative_y",
+    "enemy_5_health",
+    "enemy_5_unit_type_marine",
+    "enemy_5_unit_type_marauder",
+    "enemy_5_unit_type_medivac",
+    "enemy_6_available",
+    "enemy_6_distance",
+    "enemy_6_relative_x",
+    "enemy_6_relative_y",
+    "enemy_6_health",
+    "enemy_6_unit_type_marine",
+    "enemy_6_unit_type_marauder",
+    "enemy_6_unit_type_medivac",
+    "enemy_7_available",
+    "enemy_7_distance",
+    "enemy_7_relative_x",
+    "enemy_7_relative_y",
+    "enemy_7_health",
+    "enemy_7_unit_type_marine",
+    "enemy_7_unit_type_marauder",
+    "enemy_7_unit_type_medivac",
+    "enemy_8_available",
+    "enemy_8_distance",
+    "enemy_8_relative_x",
+    "enemy_8_relative_y",
+    "enemy_8_health",
+    "enemy_8_unit_type_marine",
+    "enemy_8_unit_type_marauder",
+    "enemy_8_unit_type_medivac",
+    "enemy_9_available",
+    "enemy_9_distance",
+    "enemy_9_relative_x",
+    "enemy_9_relative_y",
+    "enemy_9_health",
+    "enemy_9_unit_type_marine",
+    "enemy_9_unit_type_marauder",
+    "enemy_9_unit_type_medivac",
+    "ally_slot_0_visible",
+    "ally_slot_0_distance",
+    "ally_slot_0_relative_x",
+    "ally_slot_0_relative_y",
+    "ally_slot_0_health",
+    "ally_slot_0_unit_type_marine",
+    "ally_slot_0_unit_type_marauder",
+    "ally_slot_0_unit_type_medivac",
+    "ally_slot_1_visible",
+    "ally_slot_1_distance",
+    "ally_slot_1_relative_x",
+    "ally_slot_1_relative_y",
+    "ally_slot_1_health",
+    "ally_slot_1_unit_type_marine",
+    "ally_slot_1_unit_type_marauder",
+    "ally_slot_1_unit_type_medivac",
+    "ally_slot_2_visible",
+    "ally_slot_2_distance",
+    "ally_slot_2_relative_x",
+    "ally_slot_2_relative_y",
+    "ally_slot_2_health",
+    "ally_slot_2_unit_type_marine",
+    "ally_slot_2_unit_type_marauder",
+    "ally_slot_2_unit_type_medivac",
+    "ally_slot_3_visible",
+    "ally_slot_3_distance",
+    "ally_slot_3_relative_x",
+    "ally_slot_3_relative_y",
+    "ally_slot_3_health",
+    "ally_slot_3_unit_type_marine",
+    "ally_slot_3_unit_type_marauder",
+    "ally_slot_3_unit_type_medivac",
+    "ally_slot_4_visible",
+    "ally_slot_4_distance",
+    "ally_slot_4_relative_x",
+    "ally_slot_4_relative_y",
+    "ally_slot_4_health",
+    "ally_slot_4_unit_type_marine",
+    "ally_slot_4_unit_type_marauder",
+    "ally_slot_4_unit_type_medivac",
+    "ally_slot_5_visible",
+    "ally_slot_5_distance",
+    "ally_slot_5_relative_x",
+    "ally_slot_5_relative_y",
+    "ally_slot_5_health",
+    "ally_slot_5_unit_type_marine",
+    "ally_slot_5_unit_type_marauder",
+    "ally_slot_5_unit_type_medivac",
+    "ally_slot_6_visible",
+    "ally_slot_6_distance",
+    "ally_slot_6_relative_x",
+    "ally_slot_6_relative_y",
+    "ally_slot_6_health",
+    "ally_slot_6_unit_type_marine",
+    "ally_slot_6_unit_type_marauder",
+    "ally_slot_6_unit_type_medivac",
+    "ally_slot_7_visible",
+    "ally_slot_7_distance",
+    "ally_slot_7_relative_x",
+    "ally_slot_7_relative_y",
+    "ally_slot_7_health",
+    "ally_slot_7_unit_type_marine",
+    "ally_slot_7_unit_type_marauder",
+    "ally_slot_7_unit_type_medivac",
+    "ally_slot_8_visible",
+    "ally_slot_8_distance",
+    "ally_slot_8_relative_x",
+    "ally_slot_8_relative_y",
+    "ally_slot_8_health",
+    "ally_slot_8_unit_type_marine",
+    "ally_slot_8_unit_type_marauder",
+    "ally_slot_8_unit_type_medivac",
+    "own_health",
+    "own_normalized_x",
+    "own_normalized_y",
+    "own_unit_type_marine",
+    "own_unit_type_marauder",
+    "own_unit_type_medivac"
+  ],
+  "feature_index": {
+    "move_north": [
+      0,
+      1
+    ],
+    "move_south": [
+      1,
+      2
+    ],
+    "move_east": [
+      2,
+      3
+    ],
+    "move_west": [
+      3,
+      4
+    ],
+    "enemy_0_available": [
+      4,
+      5
+    ],
+    "enemy_0_distance": [
+      5,
+      6
+    ],
+    "enemy_0_relative_x": [
+      6,
+      7
+    ],
+    "enemy_0_relative_y": [
+      7,
+      8
+    ],
+    "enemy_0_health": [
+      8,
+      9
+    ],
+    "enemy_0_unit_type_marine": [
+      9,
+      10
+    ],
+    "enemy_0_unit_type_marauder": [
+      10,
+      11
+    ],
+    "enemy_0_unit_type_medivac": [
+      11,
+      12
+    ],
+    "enemy_1_available": [
+      12,
+      13
+    ],
+    "enemy_1_distance": [
+      13,
+      14
+    ],
+    "enemy_1_relative_x": [
+      14,
+      15
+    ],
+    "enemy_1_relative_y": [
+      15,
+      16
+    ],
+    "enemy_1_health": [
+      16,
+      17
+    ],
+    "enemy_1_unit_type_marine": [
+      17,
+      18
+    ],
+    "enemy_1_unit_type_marauder": [
+      18,
+      19
+    ],
+    "enemy_1_unit_type_medivac": [
+      19,
+      20
+    ],
+    "enemy_2_available": [
+      20,
+      21
+    ],
+    "enemy_2_distance": [
+      21,
+      22
+    ],
+    "enemy_2_relative_x": [
+      22,
+      23
+    ],
+    "enemy_2_relative_y": [
+      23,
+      24
+    ],
+    "enemy_2_health": [
+      24,
+      25
+    ],
+    "enemy_2_unit_type_marine": [
+      25,
+      26
+    ],
+    "enemy_2_unit_type_marauder": [
+      26,
+      27
+    ],
+    "enemy_2_unit_type_medivac": [
+      27,
+      28
+    ],
+    "enemy_3_available": [
+      28,
+      29
+    ],
+    "enemy_3_distance": [
+      29,
+      30
+    ],
+    "enemy_3_relative_x": [
+      30,
+      31
+    ],
+    "enemy_3_relative_y": [
+      31,
+      32
+    ],
+    "enemy_3_health": [
+      32,
+      33
+    ],
+    "enemy_3_unit_type_marine": [
+      33,
+      34
+    ],
+    "enemy_3_unit_type_marauder": [
+      34,
+      35
+    ],
+    "enemy_3_unit_type_medivac": [
+      35,
+      36
+    ],
+    "enemy_4_available": [
+      36,
+      37
+    ],
+    "enemy_4_distance": [
+      37,
+      38
+    ],
+    "enemy_4_relative_x": [
+      38,
+      39
+    ],
+    "enemy_4_relative_y": [
+      39,
+      40
+    ],
+    "enemy_4_health": [
+      40,
+      41
+    ],
+    "enemy_4_unit_type_marine": [
+      41,
+      42
+    ],
+    "enemy_4_unit_type_marauder": [
+      42,
+      43
+    ],
+    "enemy_4_unit_type_medivac": [
+      43,
+      44
+    ],
+    "enemy_5_available": [
+      44,
+      45
+    ],
+    "enemy_5_distance": [
+      45,
+      46
+    ],
+    "enemy_5_relative_x": [
+      46,
+      47
+    ],
+    "enemy_5_relative_y": [
+      47,
+      48
+    ],
+    "enemy_5_health": [
+      48,
+      49
+    ],
+    "enemy_5_unit_type_marine": [
+      49,
+      50
+    ],
+    "enemy_5_unit_type_marauder": [
+      50,
+      51
+    ],
+    "enemy_5_unit_type_medivac": [
+      51,
+      52
+    ],
+    "enemy_6_available": [
+      52,
+      53
+    ],
+    "enemy_6_distance": [
+      53,
+      54
+    ],
+    "enemy_6_relative_x": [
+      54,
+      55
+    ],
+    "enemy_6_relative_y": [
+      55,
+      56
+    ],
+    "enemy_6_health": [
+      56,
+      57
+    ],
+    "enemy_6_unit_type_marine": [
+      57,
+      58
+    ],
+    "enemy_6_unit_type_marauder": [
+      58,
+      59
+    ],
+    "enemy_6_unit_type_medivac": [
+      59,
+      60
+    ],
+    "enemy_7_available": [
+      60,
+      61
+    ],
+    "enemy_7_distance": [
+      61,
+      62
+    ],
+    "enemy_7_relative_x": [
+      62,
+      63
+    ],
+    "enemy_7_relative_y": [
+      63,
+      64
+    ],
+    "enemy_7_health": [
+      64,
+      65
+    ],
+    "enemy_7_unit_type_marine": [
+      65,
+      66
+    ],
+    "enemy_7_unit_type_marauder": [
+      66,
+      67
+    ],
+    "enemy_7_unit_type_medivac": [
+      67,
+      68
+    ],
+    "enemy_8_available": [
+      68,
+      69
+    ],
+    "enemy_8_distance": [
+      69,
+      70
+    ],
+    "enemy_8_relative_x": [
+      70,
+      71
+    ],
+    "enemy_8_relative_y": [
+      71,
+      72
+    ],
+    "enemy_8_health": [
+      72,
+      73
+    ],
+    "enemy_8_unit_type_marine": [
+      73,
+      74
+    ],
+    "enemy_8_unit_type_marauder": [
+      74,
+      75
+    ],
+    "enemy_8_unit_type_medivac": [
+      75,
+      76
+    ],
+    "enemy_9_available": [
+      76,
+      77
+    ],
+    "enemy_9_distance": [
+      77,
+      78
+    ],
+    "enemy_9_relative_x": [
+      78,
+      79
+    ],
+    "enemy_9_relative_y": [
+      79,
+      80
+    ],
+    "enemy_9_health": [
+      80,
+      81
+    ],
+    "enemy_9_unit_type_marine": [
+      81,
+      82
+    ],
+    "enemy_9_unit_type_marauder": [
+      82,
+      83
+    ],
+    "enemy_9_unit_type_medivac": [
+      83,
+      84
+    ],
+    "ally_slot_0_visible": [
+      84,
+      85
+    ],
+    "ally_slot_0_distance": [
+      85,
+      86
+    ],
+    "ally_slot_0_relative_x": [
+      86,
+      87
+    ],
+    "ally_slot_0_relative_y": [
+      87,
+      88
+    ],
+    "ally_slot_0_health": [
+      88,
+      89
+    ],
+    "ally_slot_0_unit_type_marine": [
+      89,
+      90
+    ],
+    "ally_slot_0_unit_type_marauder": [
+      90,
+      91
+    ],
+    "ally_slot_0_unit_type_medivac": [
+      91,
+      92
+    ],
+    "ally_slot_1_visible": [
+      92,
+      93
+    ],
+    "ally_slot_1_distance": [
+      93,
+      94
+    ],
+    "ally_slot_1_relative_x": [
+      94,
+      95
+    ],
+    "ally_slot_1_relative_y": [
+      95,
+      96
+    ],
+    "ally_slot_1_health": [
+      96,
+      97
+    ],
+    "ally_slot_1_unit_type_marine": [
+      97,
+      98
+    ],
+    "ally_slot_1_unit_type_marauder": [
+      98,
+      99
+    ],
+    "ally_slot_1_unit_type_medivac": [
+      99,
+      100
+    ],
+    "ally_slot_2_visible": [
+      100,
+      101
+    ],
+    "ally_slot_2_distance": [
+      101,
+      102
+    ],
+    "ally_slot_2_relative_x": [
+      102,
+      103
+    ],
+    "ally_slot_2_relative_y": [
+      103,
+      104
+    ],
+    "ally_slot_2_health": [
+      104,
+      105
+    ],
+    "ally_slot_2_unit_type_marine": [
+      105,
+      106
+    ],
+    "ally_slot_2_unit_type_marauder": [
+      106,
+      107
+    ],
+    "ally_slot_2_unit_type_medivac": [
+      107,
+      108
+    ],
+    "ally_slot_3_visible": [
+      108,
+      109
+    ],
+    "ally_slot_3_distance": [
+      109,
+      110
+    ],
+    "ally_slot_3_relative_x": [
+      110,
+      111
+    ],
+    "ally_slot_3_relative_y": [
+      111,
+      112
+    ],
+    "ally_slot_3_health": [
+      112,
+      113
+    ],
+    "ally_slot_3_unit_type_marine": [
+      113,
+      114
+    ],
+    "ally_slot_3_unit_type_marauder": [
+      114,
+      115
+    ],
+    "ally_slot_3_unit_type_medivac": [
+      115,
+      116
+    ],
+    "ally_slot_4_visible": [
+      116,
+      117
+    ],
+    "ally_slot_4_distance": [
+      117,
+      118
+    ],
+    "ally_slot_4_relative_x": [
+      118,
+      119
+    ],
+    "ally_slot_4_relative_y": [
+      119,
+      120
+    ],
+    "ally_slot_4_health": [
+      120,
+      121
+    ],
+    "ally_slot_4_unit_type_marine": [
+      121,
+      122
+    ],
+    "ally_slot_4_unit_type_marauder": [
+      122,
+      123
+    ],
+    "ally_slot_4_unit_type_medivac": [
+      123,
+      124
+    ],
+    "ally_slot_5_visible": [
+      124,
+      125
+    ],
+    "ally_slot_5_distance": [
+      125,
+      126
+    ],
+    "ally_slot_5_relative_x": [
+      126,
+      127
+    ],
+    "ally_slot_5_relative_y": [
+      127,
+      128
+    ],
+    "ally_slot_5_health": [
+      128,
+      129
+    ],
+    "ally_slot_5_unit_type_marine": [
+      129,
+      130
+    ],
+    "ally_slot_5_unit_type_marauder": [
+      130,
+      131
+    ],
+    "ally_slot_5_unit_type_medivac": [
+      131,
+      132
+    ],
+    "ally_slot_6_visible": [
+      132,
+      133
+    ],
+    "ally_slot_6_distance": [
+      133,
+      134
+    ],
+    "ally_slot_6_relative_x": [
+      134,
+      135
+    ],
+    "ally_slot_6_relative_y": [
+      135,
+      136
+    ],
+    "ally_slot_6_health": [
+      136,
+      137
+    ],
+    "ally_slot_6_unit_type_marine": [
+      137,
+      138
+    ],
+    "ally_slot_6_unit_type_marauder": [
+      138,
+      139
+    ],
+    "ally_slot_6_unit_type_medivac": [
+      139,
+      140
+    ],
+    "ally_slot_7_visible": [
+      140,
+      141
+    ],
+    "ally_slot_7_distance": [
+      141,
+      142
+    ],
+    "ally_slot_7_relative_x": [
+      142,
+      143
+    ],
+    "ally_slot_7_relative_y": [
+      143,
+      144
+    ],
+    "ally_slot_7_health": [
+      144,
+      145
+    ],
+    "ally_slot_7_unit_type_marine": [
+      145,
+      146
+    ],
+    "ally_slot_7_unit_type_marauder": [
+      146,
+      147
+    ],
+    "ally_slot_7_unit_type_medivac": [
+      147,
+      148
+    ],
+    "ally_slot_8_visible": [
+      148,
+      149
+    ],
+    "ally_slot_8_distance": [
+      149,
+      150
+    ],
+    "ally_slot_8_relative_x": [
+      150,
+      151
+    ],
+    "ally_slot_8_relative_y": [
+      151,
+      152
+    ],
+    "ally_slot_8_health": [
+      152,
+      153
+    ],
+    "ally_slot_8_unit_type_marine": [
+      153,
+      154
+    ],
+    "ally_slot_8_unit_type_marauder": [
+      154,
+      155
+    ],
+    "ally_slot_8_unit_type_medivac": [
+      155,
+      156
+    ],
+    "own_health": [
+      156,
+      157
+    ],
+    "own_normalized_x": [
+      157,
+      158
+    ],
+    "own_normalized_y": [
+      158,
+      159
+    ],
+    "own_unit_type_marine": [
+      159,
+      160
+    ],
+    "own_unit_type_marauder": [
+      160,
+      161
+    ],
+    "own_unit_type_medivac": [
+      161,
+      162
+    ]
+  },
+  "obs_agent_id_map": [
+    "agent_0",
+    "agent_1",
+    "agent_2",
+    "agent_3",
+    "agent_4",
+    "agent_5",
+    "agent_6",
+    "agent_7",
+    "agent_8",
+    "agent_9"
+  ],
+  "obs_agent_type_map": [
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits",
+    "dynamic_from_own_unit_type_bits"
+  ],
+  "feature_groups": {
+    "movement": [
+      0,
+      4
+    ],
+    "enemies": [
+      4,
+      84
+    ],
+    "allies": [
+      84,
+      156
+    ],
+    "own": [
+      156,
+      162
+    ]
+  },
+  "schema_source": "SMACv2 get_obs_*_feats_size layout plus selected scenario YAML"
+}

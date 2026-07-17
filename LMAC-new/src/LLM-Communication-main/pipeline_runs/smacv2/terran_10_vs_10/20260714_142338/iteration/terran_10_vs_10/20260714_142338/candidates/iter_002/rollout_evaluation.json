@@ -1,0 +1,533 @@
+{
+  "active_sender_count": 1931,
+  "active_sender_what_coverage_mean": 0.007228092508943263,
+  "active_sender_what_coverage_min": 0.0,
+  "comm_code": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/terran_10_vs_10/20260714_142338/iteration/terran_10_vs_10/20260714_142338/candidates/iter_002/comm_init.py",
+  "evidence_cases": [
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:0",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:36",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {
+          "156": 0.333333,
+          "157": 0.61573,
+          "158": 0.590927,
+          "159": 1.0,
+          "69": 0.202357,
+          "70": 0.023546,
+          "71": 0.200982,
+          "72": 0.88
+        }
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          69,
+          70,
+          71,
+          72,
+          156,
+          157,
+          158,
+          159
+        ]
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.042553
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:72",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:108",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:145",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:181",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:217",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:253",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:290",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:326",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:362",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "active_edges_receiver_sender": [],
+      "case_id": "train_traj_0000:399",
+      "selected_values_by_sender": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ],
+      "selected_what_indices_by_sender": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "what_coverage_by_sender": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "files": [
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0000.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0001.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0002.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0003.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0004.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0005.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0006.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0007.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0008.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0009.pkl",
+    "/data/hp/LLM_Communication/LMAC-new/data/smacv2/terran_10_vs_10/train_traj_0010.pkl"
+  ],
+  "map_name": "terran_10_vs_10",
+  "matrix_edge_rate": 0.008732096354166666,
+  "matrix_max": 1.0,
+  "matrix_min": 0.0,
+  "message_abs_mean": 0.0005316551695478723,
+  "message_dim": 188,
+  "message_nonzero_rate": 0.0005316551695478723,
+  "n_agents": 10,
+  "risk_flags": [],
+  "rollout_obs_dim": 188,
+  "transitions": 4096,
+  "valid": true,
+  "when_edge_rate": 0.008732096354166666,
+  "who_edge_rate": 0.008732096354166666
+}

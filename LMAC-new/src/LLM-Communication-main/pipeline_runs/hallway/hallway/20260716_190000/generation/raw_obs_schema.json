@@ -1,0 +1,29 @@
+{
+  "map_name": "hallway",
+  "environment": "hallway",
+  "obs_shape": 1,
+  "n_agents": 4,
+  "n_actions": 3,
+  "obs_feature_names": [
+    "current_position"
+  ],
+  "feature_index": {
+    "current_position": [
+      0,
+      1
+    ]
+  },
+  "obs_agent_id_map": [
+    "agent_0",
+    "agent_1",
+    "agent_2",
+    "agent_3"
+  ],
+  "obs_agent_type_map": [
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent",
+    "hallway_agent"
+  ],
+  "schema_source": "src/envs/hallway/join1.py"
+}

@@ -1,0 +1,33 @@
+{
+  "run_dir": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_101534",
+  "artifacts": [
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_101534/failure.json",
+      "bytes": 834,
+      "modified_utc": "2026-07-12T10:15:35.778274+00:00",
+      "sha256": "1962988f0717288ab940ebbe64ec21ba9e66d58f2ffc6bcd67615a63ef4684bb",
+      "relative_path": "failure.json"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_101534/modification_log.md",
+      "bytes": 156,
+      "modified_utc": "2026-07-12T10:15:35.782274+00:00",
+      "sha256": "8a7b0486f65178f6fb98c585a731ca06e52d8bb8412a732b92a777bf23d5347b",
+      "relative_path": "modification_log.md"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_101534/pipeline.log",
+      "bytes": 211,
+      "modified_utc": "2026-07-12T10:15:35.778274+00:00",
+      "sha256": "8c396bc847e1ec914415f02738bb67f7fa4bedaa8334503b64d842a8994b7635",
+      "relative_path": "pipeline.log"
+    },
+    {
+      "path": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260712_101534/run_context.json",
+      "bytes": 1176,
+      "modified_utc": "2026-07-12T10:15:35.778274+00:00",
+      "sha256": "745fb248ee205ffa4cc48280d3b774b7175359a21eb66792e1b0daf6286f809f",
+      "relative_path": "run_context.json"
+    }
+  ]
+}

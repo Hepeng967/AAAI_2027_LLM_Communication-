@@ -1,0 +1,10 @@
+{
+  "environment": "Google Research Football",
+  "task": "academy_3_vs_1_with_keeper",
+  "objective": "Three controlled attackers cooperate against one field defender and a goalkeeper, using positioning and passes to score.",
+  "n_agents": 3,
+  "n_enemies": 2,
+  "episode_limit": 150,
+  "reward": "100 for scoring; a failed terminal episode returns -1; otherwise 0.",
+  "information_boundary": "A teacher may compare controlled players' local observations, but may not use unexposed raw football state, future events, or global state."
+}

@@ -1,0 +1,54 @@
+{
+  "argv": [
+    "main.py",
+    "--env",
+    "smacv2",
+    "--task",
+    "zerg_10_vs_10",
+    "--mode",
+    "full"
+  ],
+  "config": {
+    "api_config": "",
+    "api_key": "",
+    "base_url": "",
+    "collect_gpu": "0",
+    "collect_seeds": 1,
+    "collect_t_max": 6000,
+    "deepseek_thinking": false,
+    "dry_run": false,
+    "env": "smacv2",
+    "gate": "llm",
+    "map": "zerg_10_vs_10",
+    "max_files": 64,
+    "max_iters": 5,
+    "max_transitions": 4096,
+    "mode": "full",
+    "model": "",
+    "no_auto_collect": false,
+    "output_root": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs",
+    "patience": 2,
+    "policy": "",
+    "reasoning_effort": "",
+    "repair_attempts": 3,
+    "rollout_root": "/data/hp/LLM_Communication/LMAC-new/data",
+    "run_id": "",
+    "task": "zerg_10_vs_10",
+    "temperature": 0.0
+  },
+  "cwd": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "SC2PATH": "/data/hp/3rdparty/StarCraftII",
+    "api_key_available": false
+  },
+  "executable": "/home/hp/anaconda3/envs/SMAC/bin/python",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "rollout_files": [],
+  "torch": {
+    "cuda_available": true,
+    "cuda_version": "11.7",
+    "version": "1.13.1+cu117"
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "policy_hypothesis": "Sharing complete enemy and ally inventories across all unit-type groups enables coordinated focus fire and formation-keeping. When any agent has visual contact (proxied via slot 0 availability), it broadcasts all sensed enemy/ally data together with its own position, allowing the teacher to reconstruct global frames. All other groups receive this data to overcome partial observability.",
+  "agent_groups": [
+    {
+      "group_id": "G1",
+      "members": "agents whose own_unit_type_zealot == 1"
+    },
+    {
+      "group_id": "G2",
+      "members": "agents whose own_unit_type_stalker == 1"
+    },
+    {
+      "group_id": "G3",
+      "members": "agents whose own_unit_type_colossus == 1"
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "R1",
+      "requirement_ids": ["IR1"],
+      "who": {
+        "sender_group": "G1",
+        "receiver_selector": "agents in G2 or G3",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["enemy_0_available"],
+        "feature_indices": [4],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "enemy_0_available is a binary flag; threshold 0.5 triggers when the first enemy slot indicates any enemy may be visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "enemy_0_available", "enemy_0_relative_x", "enemy_0_relative_y", "enemy_0_health", "enemy_0_shield", "enemy_0_unit_type_stalker", "enemy_0_unit_type_zealot", "enemy_0_unit_type_colossus",
+          "enemy_1_available", "enemy_1_relative_x", "enemy_1_relative_y", "enemy_1_health", "enemy_1_shield", "enemy_1_unit_type_stalker", "enemy_1_unit_type_zealot", "enemy_1_unit_type_colossus",
+          "enemy_2_available", "enemy_2_relative_x", "enemy_2_relative_y", "enemy_2_health", "enemy_2_shield", "enemy_2_unit_type_stalker", "enemy_2_unit_type_zealot", "enemy_2_unit_type_colossus",
+          "enemy_3_available", "enemy_3_relative_x", "enemy_3_relative_y", "enemy_3_health", "enemy_3_shield", "enemy_3_unit_type_stalker", "enemy_3_unit_type_zealot", "enemy_3_unit_type_colossus",
+          "enemy_4_available", "enemy_4_relative_x", "enemy_4_relative_y", "enemy_4_health", "enemy_4_shield", "enemy_4_unit_type_stalker", "enemy_4_unit_type_zealot", "enemy_4_unit_type_colossus",
+          "enemy_5_available", "enemy_5_relative_x", "enemy_5_relative_y", "enemy_5_health", "enemy_5_shield", "enemy_5_unit_type_stalker", "enemy_5_unit_type_zealot", "enemy_5_unit_type_colossus",
+          "enemy_6_available", "enemy_6_relative_x", "enemy_6_relative_y", "enemy_6_health", "enemy_6_shield", "enemy_6_unit_type_stalker", "enemy_6_unit_type_zealot", "enemy_6_unit_type_colossus",
+          "enemy_7_available", "enemy_7_relative_x", "enemy_7_relative_y", "enemy_7_health", "enemy_7_shield", "enemy_7_unit_type_stalker", "enemy_7_unit_type_zealot", "enemy_7_unit_type_colossus",
+          "enemy_8_available", "enemy_8_relative_x", "enemy_8_relative_y", "enemy_8_health", "enemy_8_shield", "enemy_8_unit_type_stalker", "enemy_8_unit_type_zealot", "enemy_8_unit_type_colossus",
+          "enemy_9_available", "enemy_9_relative_x", "enemy_9_relative_y", "enemy_9_health", "enemy_9_shield", "enemy_9_unit_type_stalker", "enemy_9_unit_type_zealot", "enemy_9_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          4, 6, 7, 8, 9, 10, 11, 12,
+          13, 15, 16, 17, 18, 19, 20, 21,
+          22, 24, 25, 26, 27, 28, 29, 30,
+          31, 33, 34, 35, 36, 37, 38, 39,
+          40, 42, 43, 44, 45, 46, 47, 48,
+          49, 51, 52, 53, 54, 55, 56, 57,
+          58, 60, 61, 62, 63, 64, 65, 66,
+          67, 69, 70, 71, 72, 73, 74, 75,
+          76, 78, 79, 80, 81, 82, 83, 84,
+          85, 87, 88, 89, 90, 91, 92, 93
+        ]
+      },
+      "sender_feasibility": "G1 (zealots) are frontline melee units likely to observe many enemies; they can provide their own global position and all enemy slots.",
+      "receiver_necessity": "Agents in G2 and G3 may lack direct line-of-sight to some enemies; receiving the full enemy set supports coordinated target selection.",
+      "expected_rollout_behavior": "When a zealot sees at least one enemy (slot 0 available), it broadcasts its own position and full enemy inventory to all stalkers and colossi. The teacher transforms relative coordinates to a global frame using sender's own position.",
+      "uncertainties": [
+        "Enemy positions are relative to the sender; globalisation may introduce error due to movement delays.",
+        "Receiving agents may already possess some of the transmitted information, causing redundancy.",
+        "Receivers' policies may not be trained to leverage externally provided enemy data effectively."
+      ]
+    },
+    {
+      "rule_id": "R2",
+      "requirement_ids": ["IR1"],
+      "who": {
+        "sender_group": "G2",
+        "receiver_selector": "agents in G1 or G3",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["enemy_0_available"],
+        "feature_indices": [4],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "enemy_0_available is a binary flag; threshold 0.5 triggers when the first enemy slot indicates any enemy may be visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "enemy_0_available", "enemy_0_relative_x", "enemy_0_relative_y", "enemy_0_health", "enemy_0_shield", "enemy_0_unit_type_stalker", "enemy_0_unit_type_zealot", "enemy_0_unit_type_colossus",
+          "enemy_1_available", "enemy_1_relative_x", "enemy_1_relative_y", "enemy_1_health", "enemy_1_shield", "enemy_1_unit_type_stalker", "enemy_1_unit_type_zealot", "enemy_1_unit_type_colossus",
+          "enemy_2_available", "enemy_2_relative_x", "enemy_2_relative_y", "enemy_2_health", "enemy_2_shield", "enemy_2_unit_type_stalker", "enemy_2_unit_type_zealot", "enemy_2_unit_type_colossus",
+          "enemy_3_available", "enemy_3_relative_x", "enemy_3_relative_y", "enemy_3_health", "enemy_3_shield", "enemy_3_unit_type_stalker", "enemy_3_unit_type_zealot", "enemy_3_unit_type_colossus",
+          "enemy_4_available", "enemy_4_relative_x", "enemy_4_relative_y", "enemy_4_health", "enemy_4_shield", "enemy_4_unit_type_stalker", "enemy_4_unit_type_zealot", "enemy_4_unit_type_colossus",
+          "enemy_5_available", "enemy_5_relative_x", "enemy_5_relative_y", "enemy_5_health", "enemy_5_shield", "enemy_5_unit_type_stalker", "enemy_5_unit_type_zealot", "enemy_5_unit_type_colossus",
+          "enemy_6_available", "enemy_6_relative_x", "enemy_6_relative_y", "enemy_6_health", "enemy_6_shield", "enemy_6_unit_type_stalker", "enemy_6_unit_type_zealot", "enemy_6_unit_type_colossus",
+          "enemy_7_available", "enemy_7_relative_x", "enemy_7_relative_y", "enemy_7_health", "enemy_7_shield", "enemy_7_unit_type_stalker", "enemy_7_unit_type_zealot", "enemy_7_unit_type_colossus",
+          "enemy_8_available", "enemy_8_relative_x", "enemy_8_relative_y", "enemy_8_health", "enemy_8_shield", "enemy_8_unit_type_stalker", "enemy_8_unit_type_zealot", "enemy_8_unit_type_colossus",
+          "enemy_9_available", "enemy_9_relative_x", "enemy_9_relative_y", "enemy_9_health", "enemy_9_shield", "enemy_9_unit_type_stalker", "enemy_9_unit_type_zealot", "enemy_9_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          4, 6, 7, 8, 9, 10, 11, 12,
+          13, 15, 16, 17, 18, 19, 20, 21,
+          22, 24, 25, 26, 27, 28, 29, 30,
+          31, 33, 34, 35, 36, 37, 38, 39,
+          40, 42, 43, 44, 45, 46, 47, 48,
+          49, 51, 52, 53, 54, 55, 56, 57,
+          58, 60, 61, 62, 63, 64, 65, 66,
+          67, 69, 70, 71, 72, 73, 74, 75,
+          76, 78, 79, 80, 81, 82, 83, 84,
+          85, 87, 88, 89, 90, 91, 92, 93
+        ]
+      },
+      "sender_feasibility": "G2 (stalkers) are ranged and can observe enemies from a distance, complementing frontline vision.",
+      "receiver_necessity": "Agents in G1 and G3 benefit from an expanded enemy picture for threat assessment and targeting.",
+      "expected_rollout_behavior": "When a stalker sees at least one enemy (slot 0 available), it broadcasts its own position and full enemy inventory to all zealots and colossi. The teacher transforms relative coordinates to a global frame.",
+      "uncertainties": [
+        "Enemy positions are relative to the sender; globalisation may introduce error due to movement delays.",
+        "Redundant transmission may occur if receivers already see the same enemies.",
+        "Receivers' policies may not integrate external enemy data effectively."
+      ]
+    },
+    {
+      "rule_id": "R3",
+      "requirement_ids": ["IR1"],
+      "who": {
+        "sender_group": "G3",
+        "receiver_selector": "agents in G1 or G2",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["enemy_0_available"],
+        "feature_indices": [4],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "enemy_0_available is a binary flag; threshold 0.5 triggers when the first enemy slot indicates any enemy may be visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "enemy_0_available", "enemy_0_relative_x", "enemy_0_relative_y", "enemy_0_health", "enemy_0_shield", "enemy_0_unit_type_stalker", "enemy_0_unit_type_zealot", "enemy_0_unit_type_colossus",
+          "enemy_1_available", "enemy_1_relative_x", "enemy_1_relative_y", "enemy_1_health", "enemy_1_shield", "enemy_1_unit_type_stalker", "enemy_1_unit_type_zealot", "enemy_1_unit_type_colossus",
+          "enemy_2_available", "enemy_2_relative_x", "enemy_2_relative_y", "enemy_2_health", "enemy_2_shield", "enemy_2_unit_type_stalker", "enemy_2_unit_type_zealot", "enemy_2_unit_type_colossus",
+          "enemy_3_available", "enemy_3_relative_x", "enemy_3_relative_y", "enemy_3_health", "enemy_3_shield", "enemy_3_unit_type_stalker", "enemy_3_unit_type_zealot", "enemy_3_unit_type_colossus",
+          "enemy_4_available", "enemy_4_relative_x", "enemy_4_relative_y", "enemy_4_health", "enemy_4_shield", "enemy_4_unit_type_stalker", "enemy_4_unit_type_zealot", "enemy_4_unit_type_colossus",
+          "enemy_5_available", "enemy_5_relative_x", "enemy_5_relative_y", "enemy_5_health", "enemy_5_shield", "enemy_5_unit_type_stalker", "enemy_5_unit_type_zealot", "enemy_5_unit_type_colossus",
+          "enemy_6_available", "enemy_6_relative_x", "enemy_6_relative_y", "enemy_6_health", "enemy_6_shield", "enemy_6_unit_type_stalker", "enemy_6_unit_type_zealot", "enemy_6_unit_type_colossus",
+          "enemy_7_available", "enemy_7_relative_x", "enemy_7_relative_y", "enemy_7_health", "enemy_7_shield", "enemy_7_unit_type_stalker", "enemy_7_unit_type_zealot", "enemy_7_unit_type_colossus",
+          "enemy_8_available", "enemy_8_relative_x", "enemy_8_relative_y", "enemy_8_health", "enemy_8_shield", "enemy_8_unit_type_stalker", "enemy_8_unit_type_zealot", "enemy_8_unit_type_colossus",
+          "enemy_9_available", "enemy_9_relative_x", "enemy_9_relative_y", "enemy_9_health", "enemy_9_shield", "enemy_9_unit_type_stalker", "enemy_9_unit_type_zealot", "enemy_9_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          4, 6, 7, 8, 9, 10, 11, 12,
+          13, 15, 16, 17, 18, 19, 20, 21,
+          22, 24, 25, 26, 27, 28, 29, 30,
+          31, 33, 34, 35, 36, 37, 38, 39,
+          40, 42, 43, 44, 45, 46, 47, 48,
+          49, 51, 52, 53, 54, 55, 56, 57,
+          58, 60, 61, 62, 63, 64, 65, 66,
+          67, 69, 70, 71, 72, 73, 74, 75,
+          76, 78, 79, 80, 81, 82, 83, 84,
+          85, 87, 88, 89, 90, 91, 92, 93
+        ]
+      },
+      "sender_feasibility": "G3 (colossi) have a high vantage point and can share their observed enemy data with the frontline.",
+      "receiver_necessity": "Agents in G1 and G2 may benefit from the additional enemy sightings to improve target focus.",
+      "expected_rollout_behavior": "When a colossus sees at least one enemy (slot 0 available), it broadcasts its own position and full enemy inventory to all zealots and stalkers. The teacher transforms relative coordinates to a global frame.",
+      "uncertainties": [
+        "Enemy positions are relative to the sender; globalisation may introduce error due to movement delays.",
+        "Redundant communication if receivers already see the same enemies.",
+        "Receivers' policies may not be trained to leverage external enemy data."
+      ]
+    },
+    {
+      "rule_id": "R4",
+      "requirement_ids": ["IR2"],
+      "who": {
+        "sender_group": "G1",
+        "receiver_selector": "agents in G2 or G3",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["ally_slot_0_visible"],
+        "feature_indices": [94],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "ally_slot_0_visible is a binary flag; threshold 0.5 triggers when the first ally slot indicates at least one other ally is visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "ally_slot_0_visible", "ally_slot_0_relative_x", "ally_slot_0_relative_y", "ally_slot_0_health", "ally_slot_0_shield", "ally_slot_0_unit_type_stalker", "ally_slot_0_unit_type_zealot", "ally_slot_0_unit_type_colossus",
+          "ally_slot_1_visible", "ally_slot_1_relative_x", "ally_slot_1_relative_y", "ally_slot_1_health", "ally_slot_1_shield", "ally_slot_1_unit_type_stalker", "ally_slot_1_unit_type_zealot", "ally_slot_1_unit_type_colossus",
+          "ally_slot_2_visible", "ally_slot_2_relative_x", "ally_slot_2_relative_y", "ally_slot_2_health", "ally_slot_2_shield", "ally_slot_2_unit_type_stalker", "ally_slot_2_unit_type_zealot", "ally_slot_2_unit_type_colossus",
+          "ally_slot_3_visible", "ally_slot_3_relative_x", "ally_slot_3_relative_y", "ally_slot_3_health", "ally_slot_3_shield", "ally_slot_3_unit_type_stalker", "ally_slot_3_unit_type_zealot", "ally_slot_3_unit_type_colossus",
+          "ally_slot_4_visible", "ally_slot_4_relative_x", "ally_slot_4_relative_y", "ally_slot_4_health", "ally_slot_4_shield", "ally_slot_4_unit_type_stalker", "ally_slot_4_unit_type_zealot", "ally_slot_4_unit_type_colossus",
+          "ally_slot_5_visible", "ally_slot_5_relative_x", "ally_slot_5_relative_y", "ally_slot_5_health", "ally_slot_5_shield", "ally_slot_5_unit_type_stalker", "ally_slot_5_unit_type_zealot", "ally_slot_5_unit_type_colossus",
+          "ally_slot_6_visible", "ally_slot_6_relative_x", "ally_slot_6_relative_y", "ally_slot_6_health", "ally_slot_6_shield", "ally_slot_6_unit_type_stalker", "ally_slot_6_unit_type_zealot", "ally_slot_6_unit_type_colossus",
+          "ally_slot_7_visible", "ally_slot_7_relative_x", "ally_slot_7_relative_y", "ally_slot_7_health", "ally_slot_7_shield", "ally_slot_7_unit_type_stalker", "ally_slot_7_unit_type_zealot", "ally_slot_7_unit_type_colossus",
+          "ally_slot_8_visible", "ally_slot_8_relative_x", "ally_slot_8_relative_y", "ally_slot_8_health", "ally_slot_8_shield", "ally_slot_8_unit_type_stalker", "ally_slot_8_unit_type_zealot", "ally_slot_8_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          94, 96, 97, 98, 99, 100, 101, 102,
+          103, 105, 106, 107, 108, 109, 110, 111,
+          112, 114, 115, 116, 117, 118, 119, 120,
+          121, 123, 124, 125, 126, 127, 128, 129,
+          130, 132, 133, 134, 135, 136, 137, 138,
+          139, 141, 142, 143, 144, 145, 146, 147,
+          148, 150, 151, 152, 153, 154, 155, 156,
+          157, 159, 160, 161, 162, 163, 164, 165,
+          166, 168, 169, 170, 171, 172, 173, 174
+        ]
+      },
+      "sender_feasibility": "G1 (zealots) in the frontline observe many allies and can transmit their status to the backline.",
+      "receiver_necessity": "Agents in G2 and G3 need ally positions and status for formation control and support decisions.",
+      "expected_rollout_behavior": "When a zealot sees at least one ally (slot 0 visible), it broadcasts its own position and full ally observation to all stalkers and colossi. The teacher transforms relative coordinates to a global frame.",
+      "uncertainties": [
+        "Ally slot indices do not consistently correspond to the same physical unit; teacher must disambiguate using transformed global positions.",
+        "Motion latency can make communicated ally positions stale.",
+        "Receivers' policies may not be trained to use external ally spatial information effectively."
+      ]
+    },
+    {
+      "rule_id": "R5",
+      "requirement_ids": ["IR2"],
+      "who": {
+        "sender_group": "G2",
+        "receiver_selector": "agents in G1 or G3",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["ally_slot_0_visible"],
+        "feature_indices": [94],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "ally_slot_0_visible is a binary flag; threshold 0.5 triggers when the first ally slot indicates at least one other ally is visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "ally_slot_0_visible", "ally_slot_0_relative_x", "ally_slot_0_relative_y", "ally_slot_0_health", "ally_slot_0_shield", "ally_slot_0_unit_type_stalker", "ally_slot_0_unit_type_zealot", "ally_slot_0_unit_type_colossus",
+          "ally_slot_1_visible", "ally_slot_1_relative_x", "ally_slot_1_relative_y", "ally_slot_1_health", "ally_slot_1_shield", "ally_slot_1_unit_type_stalker", "ally_slot_1_unit_type_zealot", "ally_slot_1_unit_type_colossus",
+          "ally_slot_2_visible", "ally_slot_2_relative_x", "ally_slot_2_relative_y", "ally_slot_2_health", "ally_slot_2_shield", "ally_slot_2_unit_type_stalker", "ally_slot_2_unit_type_zealot", "ally_slot_2_unit_type_colossus",
+          "ally_slot_3_visible", "ally_slot_3_relative_x", "ally_slot_3_relative_y", "ally_slot_3_health", "ally_slot_3_shield", "ally_slot_3_unit_type_stalker", "ally_slot_3_unit_type_zealot", "ally_slot_3_unit_type_colossus",
+          "ally_slot_4_visible", "ally_slot_4_relative_x", "ally_slot_4_relative_y", "ally_slot_4_health", "ally_slot_4_shield", "ally_slot_4_unit_type_stalker", "ally_slot_4_unit_type_zealot", "ally_slot_4_unit_type_colossus",
+          "ally_slot_5_visible", "ally_slot_5_relative_x", "ally_slot_5_relative_y", "ally_slot_5_health", "ally_slot_5_shield", "ally_slot_5_unit_type_stalker", "ally_slot_5_unit_type_zealot", "ally_slot_5_unit_type_colossus",
+          "ally_slot_6_visible", "ally_slot_6_relative_x", "ally_slot_6_relative_y", "ally_slot_6_health", "ally_slot_6_shield", "ally_slot_6_unit_type_stalker", "ally_slot_6_unit_type_zealot", "ally_slot_6_unit_type_colossus",
+          "ally_slot_7_visible", "ally_slot_7_relative_x", "ally_slot_7_relative_y", "ally_slot_7_health", "ally_slot_7_shield", "ally_slot_7_unit_type_stalker", "ally_slot_7_unit_type_zealot", "ally_slot_7_unit_type_colossus",
+          "ally_slot_8_visible", "ally_slot_8_relative_x", "ally_slot_8_relative_y", "ally_slot_8_health", "ally_slot_8_shield", "ally_slot_8_unit_type_stalker", "ally_slot_8_unit_type_zealot", "ally_slot_8_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          94, 96, 97, 98, 99, 100, 101, 102,
+          103, 105, 106, 107, 108, 109, 110, 111,
+          112, 114, 115, 116, 117, 118, 119, 120,
+          121, 123, 124, 125, 126, 127, 128, 129,
+          130, 132, 133, 134, 135, 136, 137, 138,
+          139, 141, 142, 143, 144, 145, 146, 147,
+          148, 150, 151, 152, 153, 154, 155, 156,
+          157, 159, 160, 161, 162, 163, 164, 165,
+          166, 168, 169, 170, 171, 172, 173, 174
+        ]
+      },
+      "sender_feasibility": "G2 (stalkers) can observe allies from mid-range and supply formation-critical data.",
+      "receiver_necessity": "Agents in G1 and G3 need ally whereabouts to maintain formation and avoid collisions.",
+      "expected_rollout_behavior": "When a stalker sees at least one ally (slot 0 visible), it broadcasts its own position and full ally observation to all zealots and colossi. The teacher transforms relative coordinates to a global frame.",
+      "uncertainties": [
+        "Ally slot indices may not reliably identify the same unit across agents.",
+        "Staleness due to movement and communication latency.",
+        "Receivers' policies may not be trained to incorporate external ally spatial data."
+      ]
+    },
+    {
+      "rule_id": "R6",
+      "requirement_ids": ["IR2"],
+      "who": {
+        "sender_group": "G3",
+        "receiver_selector": "agents in G1 or G2",
+        "observable_basis": []
+      },
+      "when": {
+        "feature_names": ["ally_slot_0_visible"],
+        "feature_indices": [94],
+        "operator": "greater_than",
+        "threshold": 0.5,
+        "threshold_basis": {
+          "type": "binary_semantics",
+          "evidence": "ally_slot_0_visible is a binary flag; threshold 0.5 triggers when the first ally slot indicates at least one other ally is visible."
+        }
+      },
+      "what": {
+        "feature_names": [
+          "own_normalized_x", "own_normalized_y",
+          "ally_slot_0_visible", "ally_slot_0_relative_x", "ally_slot_0_relative_y", "ally_slot_0_health", "ally_slot_0_shield", "ally_slot_0_unit_type_stalker", "ally_slot_0_unit_type_zealot", "ally_slot_0_unit_type_colossus",
+          "ally_slot_1_visible", "ally_slot_1_relative_x", "ally_slot_1_relative_y", "ally_slot_1_health", "ally_slot_1_shield", "ally_slot_1_unit_type_stalker", "ally_slot_1_unit_type_zealot", "ally_slot_1_unit_type_colossus",
+          "ally_slot_2_visible", "ally_slot_2_relative_x", "ally_slot_2_relative_y", "ally_slot_2_health", "ally_slot_2_shield", "ally_slot_2_unit_type_stalker", "ally_slot_2_unit_type_zealot", "ally_slot_2_unit_type_colossus",
+          "ally_slot_3_visible", "ally_slot_3_relative_x", "ally_slot_3_relative_y", "ally_slot_3_health", "ally_slot_3_shield", "ally_slot_3_unit_type_stalker", "ally_slot_3_unit_type_zealot", "ally_slot_3_unit_type_colossus",
+          "ally_slot_4_visible", "ally_slot_4_relative_x", "ally_slot_4_relative_y", "ally_slot_4_health", "ally_slot_4_shield", "ally_slot_4_unit_type_stalker", "ally_slot_4_unit_type_zealot", "ally_slot_4_unit_type_colossus",
+          "ally_slot_5_visible", "ally_slot_5_relative_x", "ally_slot_5_relative_y", "ally_slot_5_health", "ally_slot_5_shield", "ally_slot_5_unit_type_stalker", "ally_slot_5_unit_type_zealot", "ally_slot_5_unit_type_colossus",
+          "ally_slot_6_visible", "ally_slot_6_relative_x", "ally_slot_6_relative_y", "ally_slot_6_health", "ally_slot_6_shield", "ally_slot_6_unit_type_stalker", "ally_slot_6_unit_type_zealot", "ally_slot_6_unit_type_colossus",
+          "ally_slot_7_visible", "ally_slot_7_relative_x", "ally_slot_7_relative_y", "ally_slot_7_health", "ally_slot_7_shield", "ally_slot_7_unit_type_stalker", "ally_slot_7_unit_type_zealot", "ally_slot_7_unit_type_colossus",
+          "ally_slot_8_visible", "ally_slot_8_relative_x", "ally_slot_8_relative_y", "ally_slot_8_health", "ally_slot_8_shield", "ally_slot_8_unit_type_stalker", "ally_slot_8_unit_type_zealot", "ally_slot_8_unit_type_colossus"
+        ],
+        "feature_indices": [
+          177, 178,
+          94, 96, 97, 98, 99, 100, 101, 102,
+          103, 105, 106, 107, 108, 109, 110, 111,
+          112, 114, 115, 116, 117, 118, 119, 120,
+          121, 123, 124, 125, 126, 127, 128, 129,
+          130, 132, 133, 134, 135, 136, 137, 138,
+          139, 141, 142, 143, 144, 145, 146, 147,
+          148, 150, 151, 152, 153, 154, 155, 156,
+          157, 159, 160, 161, 162, 163, 164, 165,
+          166, 168, 169, 170, 171, 172, 173, 174
+        ]
+      },
+      "sender_feasibility": "G3 (colossi) have broad vision and can share ally positions with frontline allies.",
+      "receiver_necessity": "Agents in G1 and G2 benefit from complete ally information for formation control.",
+      "expected_rollout_behavior": "When a colossus sees at least one ally (slot 0 visible), it broadcasts its own position and full ally observation to all zealots and stalkers. The teacher transforms relative coordinates to a global frame.",
+      "uncertainties": [
+        "Ally slot indices are not globally consistent; teacher must match units via global positions.",
+        "Staleness due to movement and communication latency.",
+        "Receivers' policies may not be trained to use external ally spatial data."
+      ]
+    }
+  ],
+  "default_behavior": "no communication",
+  "design_tradeoffs": "Full-inventory broadcasts maximise global awareness at the cost of high communication bandwidth. Redundant information is likely when multiple agents see the same entities. Future iterations could filter per-receiver needed knowledge, but this baseline guarantees all agents have a complete picture for decision-making."
+}

@@ -1,0 +1,41 @@
+{
+  "environment": "smacv2",
+  "task": "protoss_10_vs_10",
+  "objective": "Ten allied units cooperate under partial observability to defeat ten enemy units.",
+  "n_agents": 10,
+  "n_enemies": 10,
+  "unit_composition": {
+    "dynamic_each_episode": true,
+    "unit_types": [
+      "stalker",
+      "zealot",
+      "colossus"
+    ],
+    "sampling_weights": [
+      0.45,
+      0.45,
+      0.1
+    ],
+    "unit_type_is_observed": true,
+    "exception_unit_types": [
+      "colossus"
+    ]
+  },
+  "start_positions": {
+    "dist_type": "surrounded_and_reflect",
+    "p": 0.5,
+    "n_enemies": 10,
+    "map_x": 32,
+    "map_y": 32
+  },
+  "information_boundary": {
+    "allowed": "the collection of all allied agents' local observations",
+    "forbidden": [
+      "global state",
+      "future information",
+      "environment internals",
+      "hidden unit identity"
+    ]
+  },
+  "agent_id_semantics": "Tensor row identity only; it does not imply a fixed unit type across episodes."
+}

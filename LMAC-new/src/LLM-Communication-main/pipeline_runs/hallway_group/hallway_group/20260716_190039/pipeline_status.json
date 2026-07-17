@@ -1,0 +1,24 @@
+{
+  "run_id": "20260716_190039",
+  "environment": "hallway_group",
+  "task": "hallway_group",
+  "map": "hallway_group",
+  "mode": "full",
+  "overall": "complete",
+  "generation": {
+    "status": "complete",
+    "policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/generation/comm_init.py"
+  },
+  "collection": {
+    "status": "complete",
+    "rollout_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/hallway_group/hallway_group",
+    "train_files": 274
+  },
+  "iteration": {
+    "status": "accepted",
+    "root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039",
+    "frozen_manifest": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/hallway_group/hallway_group/20260716_190039/iteration/hallway_group/20260716_190039/results/frozen_teacher_manifest.json"
+  },
+  "selected_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/hallway_group/hallway_group/LMAC_WWW/20260716_190039/iterations/iter_001.py",
+  "failure": null
+}

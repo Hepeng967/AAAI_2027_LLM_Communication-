@@ -1,0 +1,1612 @@
+{
+  "dimensions": [
+    {
+      "dim": "s[0] - Agent 0 health ratio",
+      "with_communication": {
+        "early": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.981,
+          1.0,
+          0.99
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_late": 0.0
+      }
+    },
+    {
+      "dim": "s[1] - Agent 0 weapon cooldown ratio",
+      "with_communication": {
+        "early": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_late": 0.0
+      }
+    },
+    {
+      "dim": "s[2] - Agent 0 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.472,
+          0.466,
+          0.466
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.794,
+          0.809,
+          0.8
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.872,
+          0.873,
+          0.912
+        ],
+        "variance_in_mid": 0.0003,
+        "mid-late": [
+          0.863,
+          0.899,
+          0.902
+        ],
+        "variance_in_mid-late": 0.0003,
+        "late": [
+          0.869,
+          0.869,
+          0.891
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          0.397,
+          0.163,
+          0.2
+        ],
+        "variance_in_early": 0.0105,
+        "early-mid": [
+          0.766,
+          0.188,
+          0.188
+        ],
+        "variance_in_early-mid": 0.0742,
+        "mid": [
+          0.856,
+          0.188,
+          0.172
+        ],
+        "variance_in_mid": 0.1016,
+        "mid-late": [
+          0.928,
+          0.213,
+          0.209
+        ],
+        "variance_in_mid-late": 0.1142,
+        "late": [
+          0.925,
+          0.219,
+          0.228
+        ],
+        "variance_in_late": 0.1094
+      }
+    },
+    {
+      "dim": "s[3] - Agent 0 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.907,
+          0.942,
+          0.937
+        ],
+        "variance_in_early": 0.0002,
+        "early-mid": [
+          1.0,
+          1.0,
+          0.997
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.978,
+          0.958,
+          0.977
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.938,
+          0.913,
+          0.903
+        ],
+        "variance_in_late": 0.0002
+      },
+      "without_communication": {
+        "early": [
+          0.91,
+          0.134,
+          0.136
+        ],
+        "variance_in_early": 0.1335,
+        "early-mid": [
+          1.0,
+          0.156,
+          0.159
+        ],
+        "variance_in_early-mid": 0.1577,
+        "mid": [
+          1.0,
+          0.166,
+          0.169
+        ],
+        "variance_in_mid": 0.154,
+        "mid-late": [
+          1.0,
+          0.188,
+          0.219
+        ],
+        "variance_in_mid-late": 0.1411,
+        "late": [
+          0.979,
+          0.188,
+          0.228
+        ],
+        "variance_in_late": 0.1324
+      }
+    },
+    {
+      "dim": "s[6] - Agent 1 health ratio",
+      "with_communication": {
+        "early": [
+          0.984,
+          0.981,
+          0.981
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.965,
+          0.944,
+          0.95
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.896,
+          0.899,
+          0.902
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.924,
+          0.911,
+          0.897
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.878,
+          0.875,
+          0.884
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.978,
+          0.988,
+          1.0
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.949,
+          0.948,
+          0.936
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.88,
+          0.906,
+          0.906
+        ],
+        "variance_in_mid": 0.0002,
+        "mid-late": [
+          0.868,
+          0.928,
+          0.893
+        ],
+        "variance_in_mid-late": 0.0006,
+        "late": [
+          0.783,
+          0.899,
+          0.875
+        ],
+        "variance_in_late": 0.0025
+      }
+    },
+    {
+      "dim": "s[7] - Agent 1 weapon cooldown ratio",
+      "with_communication": {
+        "early": [
+          0.975,
+          0.975,
+          0.975
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.935,
+          0.935,
+          0.943
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.943,
+          0.943,
+          0.943
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.951,
+          0.935,
+          0.94
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.957,
+          0.944,
+          0.951
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.971,
+          0.968,
+          0.968
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.928,
+          0.928,
+          0.916
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.924,
+          0.924,
+          0.924
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.918,
+          0.918,
+          0.935
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.915,
+          0.915,
+          0.936
+        ],
+        "variance_in_late": 0.0001
+      }
+    },
+    {
+      "dim": "s[8] - Agent 1 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.295,
+          0.296,
+          0.288
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.297,
+          0.274,
+          0.288
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.241,
+          0.23,
+          0.233
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.278,
+          0.266,
+          0.272
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.314,
+          0.309,
+          0.316
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.243,
+          0.254,
+          0.257
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.238,
+          0.225,
+          0.241
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.267,
+          0.284,
+          0.265
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.281,
+          0.337,
+          0.325
+        ],
+        "variance_in_mid-late": 0.0006,
+        "late": [
+          0.31,
+          0.306,
+          0.316
+        ],
+        "variance_in_late": 0.0
+      }
+    },
+    {
+      "dim": "s[9] - Agent 1 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.281,
+          0.281,
+          0.281
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.377,
+          0.383,
+          0.389
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.377,
+          0.391,
+          0.397
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.378,
+          0.353,
+          0.361
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.3,
+          0.3,
+          0.306
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.271,
+          0.253,
+          0.253
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.314,
+          0.277,
+          0.28
+        ],
+        "variance_in_early-mid": 0.0003,
+        "mid": [
+          0.36,
+          0.347,
+          0.344
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.344,
+          0.316,
+          0.3
+        ],
+        "variance_in_mid-late": 0.0003,
+        "late": [
+          0.342,
+          0.331,
+          0.316
+        ],
+        "variance_in_late": 0.0001
+      }
+    },
+    {
+      "dim": "s[12] - Agent 2 health ratio",
+      "with_communication": {
+        "early": [
+          0.977,
+          0.994,
+          0.994
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.994,
+          0.988,
+          0.994
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.988,
+          0.991,
+          0.975
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.972,
+          0.972,
+          0.956
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.819,
+          0.844,
+          0.819
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          1.0,
+          0.99,
+          1.0
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.994,
+          0.994,
+          0.994
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.93,
+          0.942,
+          0.942
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.85,
+          0.847,
+          0.875
+        ],
+        "variance_in_late": 0.0002
+      }
+    },
+    {
+      "dim": "s[13] - Agent 2 weapon cooldown ratio",
+      "with_communication": {
+        "early": [
+          0.961,
+          0.956,
+          0.956
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.935,
+          0.935,
+          0.939
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.952,
+          0.952,
+          0.952
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.942,
+          0.936,
+          0.933
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.97,
+          0.948,
+          0.948
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          0.965,
+          0.965,
+          0.961
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.936,
+          0.943,
+          0.936
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.937,
+          0.935,
+          0.938
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.942,
+          0.93,
+          0.934
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.92,
+          0.933,
+          0.954
+        ],
+        "variance_in_late": 0.0002
+      }
+    },
+    {
+      "dim": "s[14] - Agent 2 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.231,
+          0.21,
+          0.204
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.25,
+          0.238,
+          0.203
+        ],
+        "variance_in_early-mid": 0.0004,
+        "mid": [
+          0.332,
+          0.304,
+          0.291
+        ],
+        "variance_in_mid": 0.0003,
+        "mid-late": [
+          0.337,
+          0.35,
+          0.359
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.263,
+          0.259,
+          0.259
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.244,
+          0.276,
+          0.301
+        ],
+        "variance_in_early": 0.0005,
+        "early-mid": [
+          0.309,
+          0.313,
+          0.331
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.303,
+          0.303,
+          0.284
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.298,
+          0.263,
+          0.269
+        ],
+        "variance_in_mid-late": 0.0002,
+        "late": [
+          0.269,
+          0.303,
+          0.303
+        ],
+        "variance_in_late": 0.0003
+      }
+    },
+    {
+      "dim": "s[15] - Agent 2 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.317,
+          0.309,
+          0.309
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.369,
+          0.36,
+          0.36
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.459,
+          0.446,
+          0.459
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.506,
+          0.509,
+          0.478
+        ],
+        "variance_in_mid-late": 0.0002,
+        "late": [
+          0.481,
+          0.466,
+          0.459
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          0.267,
+          0.293,
+          0.287
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.28,
+          0.264,
+          0.259
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.359,
+          0.332,
+          0.314
+        ],
+        "variance_in_mid": 0.0003,
+        "mid-late": [
+          0.406,
+          0.309,
+          0.337
+        ],
+        "variance_in_mid-late": 0.0017,
+        "late": [
+          0.444,
+          0.409,
+          0.438
+        ],
+        "variance_in_late": 0.0002
+      }
+    },
+    {
+      "dim": "s[18] - Enemy 0 health ratio",
+      "with_communication": {
+        "early": [
+          0.974,
+          0.974,
+          0.965
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.968,
+          0.967,
+          0.938
+        ],
+        "variance_in_early-mid": 0.0002,
+        "mid": [
+          0.939,
+          0.955,
+          0.947
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.952,
+          0.956,
+          0.956
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.913,
+          0.906,
+          0.894
+        ],
+        "variance_in_late": 0.0001
+      },
+      "without_communication": {
+        "early": [
+          0.955,
+          0.977,
+          0.988
+        ],
+        "variance_in_early": 0.0002,
+        "early-mid": [
+          0.947,
+          0.941,
+          0.979
+        ],
+        "variance_in_early-mid": 0.0003,
+        "mid": [
+          0.981,
+          0.959,
+          0.967
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.925,
+          0.941,
+          0.962
+        ],
+        "variance_in_mid-late": 0.0002,
+        "late": [
+          0.906,
+          0.878,
+          0.925
+        ],
+        "variance_in_late": 0.0004
+      }
+    },
+    {
+      "dim": "s[19] - Enemy 0 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.456,
+          0.45,
+          0.447
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.773,
+          0.796,
+          0.786
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.84,
+          0.869,
+          0.876
+        ],
+        "variance_in_mid": 0.0002,
+        "mid-late": [
+          0.87,
+          0.916,
+          0.925
+        ],
+        "variance_in_mid-late": 0.0006,
+        "late": [
+          0.884,
+          0.9,
+          0.925
+        ],
+        "variance_in_late": 0.0003
+      },
+      "without_communication": {
+        "early": [
+          0.385,
+          0.166,
+          0.209
+        ],
+        "variance_in_early": 0.009,
+        "early-mid": [
+          0.769,
+          0.174,
+          0.177
+        ],
+        "variance_in_early-mid": 0.0783,
+        "mid": [
+          0.829,
+          0.156,
+          0.127
+        ],
+        "variance_in_mid": 0.1052,
+        "mid-late": [
+          0.897,
+          0.181,
+          0.181
+        ],
+        "variance_in_mid-late": 0.1139,
+        "late": [
+          0.92,
+          0.181,
+          0.209
+        ],
+        "variance_in_late": 0.1169
+      }
+    },
+    {
+      "dim": "s[20] - Enemy 0 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.913,
+          0.955,
+          0.942
+        ],
+        "variance_in_early": 0.0003,
+        "early-mid": [
+          0.99,
+          0.997,
+          0.997
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.965,
+          0.964,
+          0.963
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.946,
+          0.938,
+          0.953
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.956,
+          0.944,
+          0.941
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.923,
+          0.141,
+          0.159
+        ],
+        "variance_in_early": 0.1328,
+        "early-mid": [
+          0.993,
+          0.167,
+          0.192
+        ],
+        "variance_in_early-mid": 0.1472,
+        "mid": [
+          0.959,
+          0.138,
+          0.133
+        ],
+        "variance_in_mid": 0.1507,
+        "mid-late": [
+          0.963,
+          0.16,
+          0.206
+        ],
+        "variance_in_mid-late": 0.1356,
+        "late": [
+          0.988,
+          0.175,
+          0.216
+        ],
+        "variance_in_late": 0.1398
+      }
+    },
+    {
+      "dim": "s[23] - Enemy 1 health ratio",
+      "with_communication": {
+        "early": [
+          0.942,
+          0.933,
+          0.94
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.95,
+          0.939,
+          0.945
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.958,
+          0.963,
+          0.947
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.981,
+          0.959,
+          0.981
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.969,
+          0.975,
+          0.975
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.937,
+          0.944,
+          0.957
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.957,
+          0.95,
+          0.946
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.963,
+          0.953,
+          0.957
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.913,
+          0.95,
+          0.927
+        ],
+        "variance_in_mid-late": 0.0002,
+        "late": [
+          0.934,
+          0.906,
+          0.906
+        ],
+        "variance_in_late": 0.0002
+      }
+    },
+    {
+      "dim": "s[24] - Enemy 1 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.453,
+          0.441,
+          0.434
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.775,
+          0.8,
+          0.797
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.839,
+          0.866,
+          0.875
+        ],
+        "variance_in_mid": 0.0002,
+        "mid-late": [
+          0.858,
+          0.906,
+          0.925
+        ],
+        "variance_in_mid-late": 0.0008,
+        "late": [
+          0.897,
+          0.944,
+          0.948
+        ],
+        "variance_in_late": 0.0005
+      },
+      "without_communication": {
+        "early": [
+          0.394,
+          0.169,
+          0.197
+        ],
+        "variance_in_early": 0.01,
+        "early-mid": [
+          0.743,
+          0.188,
+          0.184
+        ],
+        "variance_in_early-mid": 0.0689,
+        "mid": [
+          0.813,
+          0.152,
+          0.157
+        ],
+        "variance_in_mid": 0.0964,
+        "mid-late": [
+          0.887,
+          0.179,
+          0.178
+        ],
+        "variance_in_mid-late": 0.1115,
+        "late": [
+          0.906,
+          0.194,
+          0.188
+        ],
+        "variance_in_late": 0.1136
+      }
+    },
+    {
+      "dim": "s[25] - Enemy 1 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.909,
+          0.948,
+          0.939
+        ],
+        "variance_in_early": 0.0003,
+        "early-mid": [
+          0.986,
+          0.972,
+          0.969
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.967,
+          0.963,
+          0.968
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.955,
+          0.963,
+          0.969
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          1.0,
+          0.988,
+          0.984
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.913,
+          0.111,
+          0.117
+        ],
+        "variance_in_early": 0.1419,
+        "early-mid": [
+          0.984,
+          0.093,
+          0.13
+        ],
+        "variance_in_early-mid": 0.1694,
+        "mid": [
+          0.955,
+          0.13,
+          0.133
+        ],
+        "variance_in_mid": 0.1507,
+        "mid-late": [
+          0.963,
+          0.174,
+          0.198
+        ],
+        "variance_in_mid-late": 0.1343,
+        "late": [
+          0.969,
+          0.216,
+          0.241
+        ],
+        "variance_in_late": 0.122
+      }
+    },
+    {
+      "dim": "s[28] - Enemy 2 health ratio",
+      "with_communication": {
+        "early": [
+          0.969,
+          0.979,
+          0.966
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.941,
+          0.938,
+          0.933
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.906,
+          0.91,
+          0.91
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.929,
+          0.938,
+          0.941
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.903,
+          0.903,
+          0.901
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.963,
+          0.97,
+          0.983
+        ],
+        "variance_in_early": 0.0001,
+        "early-mid": [
+          0.937,
+          0.933,
+          0.965
+        ],
+        "variance_in_early-mid": 0.0002,
+        "mid": [
+          0.928,
+          0.909,
+          0.925
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.913,
+          0.916,
+          0.926
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.864,
+          0.923,
+          0.86
+        ],
+        "variance_in_late": 0.0008
+      }
+    },
+    {
+      "dim": "s[29] - Enemy 2 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.478,
+          0.478,
+          0.481
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.793,
+          0.795,
+          0.809
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.865,
+          0.848,
+          0.889
+        ],
+        "variance_in_mid": 0.0003,
+        "mid-late": [
+          0.825,
+          0.865,
+          0.87
+        ],
+        "variance_in_mid-late": 0.0004,
+        "late": [
+          0.858,
+          0.867,
+          0.895
+        ],
+        "variance_in_late": 0.0002
+      },
+      "without_communication": {
+        "early": [
+          0.435,
+          0.138,
+          0.178
+        ],
+        "variance_in_early": 0.0173,
+        "early-mid": [
+          0.778,
+          0.181,
+          0.163
+        ],
+        "variance_in_early-mid": 0.0817,
+        "mid": [
+          0.864,
+          0.188,
+          0.175
+        ],
+        "variance_in_mid": 0.1035,
+        "mid-late": [
+          0.866,
+          0.184,
+          0.181
+        ],
+        "variance_in_mid-late": 0.1038,
+        "late": [
+          0.914,
+          0.174,
+          0.202
+        ],
+        "variance_in_late": 0.1173
+      }
+    },
+    {
+      "dim": "s[30] - Enemy 2 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.903,
+          0.906,
+          0.911
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.997,
+          0.993,
+          0.979
+        ],
+        "variance_in_early-mid": 0.0001,
+        "mid": [
+          0.947,
+          0.934,
+          0.934
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.909,
+          0.919,
+          0.919
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.951,
+          0.939,
+          0.936
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.935,
+          0.116,
+          0.133
+        ],
+        "variance_in_early": 0.146,
+        "early-mid": [
+          1.0,
+          0.148,
+          0.155
+        ],
+        "variance_in_early-mid": 0.16,
+        "mid": [
+          0.996,
+          0.166,
+          0.169
+        ],
+        "variance_in_mid": 0.1525,
+        "mid-late": [
+          0.93,
+          0.147,
+          0.172
+        ],
+        "variance_in_mid-late": 0.132,
+        "late": [
+          0.951,
+          0.114,
+          0.151
+        ],
+        "variance_in_late": 0.1491
+      }
+    },
+    {
+      "dim": "s[33] - Enemy 3 health ratio",
+      "with_communication": {
+        "early": [
+          1.0,
+          0.993,
+          0.997
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.987,
+          0.963,
+          0.954
+        ],
+        "variance_in_early-mid": 0.0002,
+        "mid": [
+          0.92,
+          0.902,
+          0.903
+        ],
+        "variance_in_mid": 0.0001,
+        "mid-late": [
+          0.933,
+          0.944,
+          0.941
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.906,
+          0.906,
+          0.919
+        ],
+        "variance_in_late": 0.0
+      },
+      "without_communication": {
+        "early": [
+          0.987,
+          0.983,
+          0.983
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.971,
+          0.97,
+          0.979
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.938,
+          0.926,
+          0.941
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.948,
+          0.955,
+          0.95
+        ],
+        "variance_in_mid-late": 0.0,
+        "late": [
+          0.963,
+          0.919,
+          0.939
+        ],
+        "variance_in_late": 0.0003
+      }
+    },
+    {
+      "dim": "s[34] - Enemy 3 absolute X coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.453,
+          0.456,
+          0.444
+        ],
+        "variance_in_early": 0.0,
+        "early-mid": [
+          0.766,
+          0.799,
+          0.797
+        ],
+        "variance_in_early-mid": 0.0002,
+        "mid": [
+          0.86,
+          0.866,
+          0.898
+        ],
+        "variance_in_mid": 0.0003,
+        "mid-late": [
+          0.867,
+          0.912,
+          0.925
+        ],
+        "variance_in_mid-late": 0.0006,
+        "late": [
+          0.887,
+          0.906,
+          0.922
+        ],
+        "variance_in_late": 0.0002
+      },
+      "without_communication": {
+        "early": [
+          0.404,
+          0.159,
+          0.191
+        ],
+        "variance_in_early": 0.0118,
+        "early-mid": [
+          0.769,
+          0.188,
+          0.188
+        ],
+        "variance_in_early-mid": 0.075,
+        "mid": [
+          0.856,
+          0.184,
+          0.168
+        ],
+        "variance_in_mid": 0.1028,
+        "mid-late": [
+          0.88,
+          0.204,
+          0.153
+        ],
+        "variance_in_mid-late": 0.1098,
+        "late": [
+          0.934,
+          0.219,
+          0.219
+        ],
+        "variance_in_late": 0.1136
+      }
+    },
+    {
+      "dim": "s[35] - Enemy 3 absolute Y coordinate relative to map center",
+      "with_communication": {
+        "early": [
+          0.91,
+          0.956,
+          0.942
+        ],
+        "variance_in_early": 0.0004,
+        "early-mid": [
+          0.997,
+          0.997,
+          0.99
+        ],
+        "variance_in_early-mid": 0.0,
+        "mid": [
+          0.965,
+          0.965,
+          0.965
+        ],
+        "variance_in_mid": 0.0,
+        "mid-late": [
+          0.919,
+          0.911,
+          0.93
+        ],
+        "variance_in_mid-late": 0.0001,
+        "late": [
+          0.888,
+          0.847,
+          0.883
+        ],
+        "variance_in_late": 0.0003
+      },
+      "without_communication": {
+        "early": [
+          0.914,
+          0.12,
+          0.136
+        ],
+        "variance_in_early": 0.1373,
+        "early-mid": [
+          1.0,
+          0.152,
+          0.159
+        ],
+        "variance_in_early-mid": 0.1585,
+        "mid": [
+          0.997,
+          0.162,
+          0.162
+        ],
+        "variance_in_mid": 0.1549,
+        "mid-late": [
+          0.953,
+          0.147,
+          0.178
+        ],
+        "variance_in_mid-late": 0.139,
+        "late": [
+          0.969,
+          0.156,
+          0.204
+        ],
+        "variance_in_late": 0.1387
+      }
+    }
+  ]
+}

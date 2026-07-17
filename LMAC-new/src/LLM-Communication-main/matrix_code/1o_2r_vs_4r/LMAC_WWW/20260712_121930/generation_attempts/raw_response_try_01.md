@@ -1,0 +1,78 @@
+```python
+import torch
+
+def communication_who(o):
+    """
+    Returns a [batch, receiver, sender] binary matrix indicating allowed communication edges.
+    RULE R1: Overseer (agent 0) sends to Roaches (agents 1,2).
+    RULE R2: Each Roach sends to the other Roach.
+    """
+    B, N, _ = o.shape
+    who = torch.zeros(B, N, N, dtype=o.dtype, device=o.device)
+    # RULE R1: Overseer -> Roaches
+    who[:, 1, 0] = 1.0
+    who[:, 2, 0] = 1.0
+    # RULE R2: Roach i -> Roach j (i != j)
+    who[:, 2, 1] = 1.0  # agent 1 -> agent 2
+    who[:, 1, 2] = 1.0  # agent 2 -> agent 1
+    return who
+
+
+def communication_when(o):
+    """
+    Returns a [batch, receiver, sender] binary matrix indicating active communication edges.
+    RULE R1: always when Overseer exists (agent_id_0 > -1.0).
+    RULE R2: when Roach has taken an action (previous_action_0 > 0.5).
+    """
+    B, N, D = o.shape
+    when = torch.zeros(B, N, N, dtype=o.dtype, device=o.device)
+
+    # RULE R1: agent_id_0 (index 63) > -1.0 for sender 0
+    cond_R1 = o[:, 0, 63] > -1.0
+    when[:, 1, 0] = cond_R1.to(dtype=o.dtype)
+    when[:, 2, 0] = cond_R1.to(dtype=o.dtype)
+
+    # RULE R2: previous_action_0 (index 53) > 0.5 for senders 1 and 2
+    cond_s1 = o[:, 1, 53] > 0.5
+    cond_s2 = o[:, 2, 53] > 0.5
+    when[:, 2, 1] = cond_s1.to(dtype=o.dtype)
+    when[:, 1, 2] = cond_s2.to(dtype=o.dtype)
+
+    # No self-communication (diagonal remains 0)
+    return when
+
+
+def communication_what(o):
+    """
+    Returns an obs-aligned content mask of the same shape as o.
+    RULE R1: Overseer's enemy features (indices listed).
+    RULE R2: Roaches' previous actions (indices 53..62).
+    """
+    B, N, D = o.shape
+    what = torch.zeros_like(o)
+
+    # Agent identification via one-hot IDs (indices 63, 64, 65)
+    is_agent0 = o[:, :, 63] > 0.5  # [B, N]
+    is_agent1 = o[:, :, 64] > 0.5
+    is_agent2 = o[:, :, 65] > 0.5
+
+    # RULE R1: Enemy information (indices from policy specification)
+    r1_indices = [4, 6, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18,
+                  20, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34]
+    r1_indices = [i for i in r1_indices if i < D]  # safety: skip out-of-range indices
+    if r1_indices:
+        mask_r1 = torch.zeros(D, dtype=o.dtype, device=o.device)
+        mask_r1[r1_indices] = 1.0
+        what += is_agent0.unsqueeze(-1) * mask_r1.unsqueeze(0).unsqueeze(0)
+
+    # RULE R2: Previous actions (indices 53 to 62 inclusive)
+    r2_start, r2_end = 53, 63
+    r2_start = min(r2_start, D)
+    r2_end = min(r2_end, D)
+    if r2_start < r2_end:
+        mask_r2 = torch.zeros(D, dtype=o.dtype, device=o.device)
+        mask_r2[r2_start:r2_end] = 1.0
+        what += (is_agent1.unsqueeze(-1) + is_agent2.unsqueeze(-1)) * mask_r2.unsqueeze(0).unsqueeze(0)
+
+    return what
+```

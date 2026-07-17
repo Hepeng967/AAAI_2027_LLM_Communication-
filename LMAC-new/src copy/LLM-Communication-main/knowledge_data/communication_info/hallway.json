@@ -1,0 +1,18 @@
+{
+  "state_shape": 8,
+  "obs_shape": 2,
+  "n_actions": 3,
+  "n_agents": 4,
+  "episode_limit": 20,
+  "feature_index": {
+    "current_state": [0, 1],
+    "active_status": [1, 2]
+  },
+  "obs_feature_names": [
+    "current_state",
+    "active_status"
+  ],
+  "obs_agent_id_map": ["agent_0", "agent_1", "agent_2", "agent_3"],
+  "obs_agent_type_map": ["standard_agent", "standard_agent", "standard_agent", "standard_agent"],
+  "task_description": "Hallway coordination environment with 4 agents. Each agent has different state range: agent0: 0-4, agent1: 0-6, agent2: 0-8, agent3: 0-10. All agents must reach state 0 simultaneously. Reward is +1 only if all agents reach state 0 at the same time. Each agent observes its own current state and active status. Actions: 0=stay, 1=move left, 2=move right."
+}

@@ -1,0 +1,10 @@
+{
+  "bytes": 3542,
+  "destination": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/1o_2r_vs_4r/20260714_100238/iteration/1o_2r_vs_4r/20260714_100238/candidates/iter_001/comm_init.py",
+  "dry_run": false,
+  "usage": {
+    "completion_tokens": 3459,
+    "prompt_tokens": 20387,
+    "total_tokens": 23846
+  }
+}

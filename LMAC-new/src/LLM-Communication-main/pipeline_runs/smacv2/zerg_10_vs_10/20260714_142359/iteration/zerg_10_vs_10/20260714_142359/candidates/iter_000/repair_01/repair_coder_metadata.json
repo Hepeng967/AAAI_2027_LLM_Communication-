@@ -1,0 +1,10 @@
+{
+  "bytes": 10586,
+  "destination": "/data/hp/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/smacv2/zerg_10_vs_10/20260714_142359/iteration/zerg_10_vs_10/20260714_142359/candidates/iter_000/comm_init.py",
+  "dry_run": false,
+  "usage": {
+    "completion_tokens": 3673,
+    "prompt_tokens": 26825,
+    "total_tokens": 30498
+  }
+}

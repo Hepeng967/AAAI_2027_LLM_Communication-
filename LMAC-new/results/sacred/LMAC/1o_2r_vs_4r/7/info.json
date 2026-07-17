@@ -1,0 +1,340 @@
+{
+  "Comm_sparsity_lambda": [
+    0.001
+  ],
+  "Comm_sparsity_lambda_T": [
+    100
+  ],
+  "Consistency_loss": [
+    0.16467607021331787
+  ],
+  "Consistency_loss_T": [
+    100
+  ],
+  "MSE_per_agent_0": [
+    0.3558778762817383
+  ],
+  "MSE_per_agent_0_T": [
+    100
+  ],
+  "MSE_per_agent_1": [
+    0.3701159358024597
+  ],
+  "MSE_per_agent_1_T": [
+    100
+  ],
+  "MSE_per_agent_2": [
+    0.36486494541168213
+  ],
+  "MSE_per_agent_2_T": [
+    100
+  ],
+  "Message_selector_grad_norm": [
+    0.27271825075149536
+  ],
+  "Message_selector_grad_norm_T": [
+    100
+  ],
+  "Meta_loss": [
+    0.6927634477615356
+  ],
+  "Meta_loss_T": [
+    100
+  ],
+  "Model_D_loss": [
+    0.5975720286369324
+  ],
+  "Model_D_loss_T": [
+    100
+  ],
+  "Mse_loss": [
+    0.3636195957660675
+  ],
+  "Mse_loss_T": [
+    100
+  ],
+  "Mse_per_state_0": [
+    0.8821079730987549
+  ],
+  "Mse_per_state_0_T": [
+    100
+  ],
+  "Mse_per_state_1": [
+    0.015189276076853275
+  ],
+  "Mse_per_state_12": [
+    0.5796825885772705
+  ],
+  "Mse_per_state_12_T": [
+    100
+  ],
+  "Mse_per_state_13": [
+    0.059023283421993256
+  ],
+  "Mse_per_state_13_T": [
+    100
+  ],
+  "Mse_per_state_14": [
+    0.13189199566841125
+  ],
+  "Mse_per_state_14_T": [
+    100
+  ],
+  "Mse_per_state_15": [
+    0.08220856636762619
+  ],
+  "Mse_per_state_15_T": [
+    100
+  ],
+  "Mse_per_state_18": [
+    0.8047733306884766
+  ],
+  "Mse_per_state_18_T": [
+    100
+  ],
+  "Mse_per_state_19": [
+    0.26584041118621826
+  ],
+  "Mse_per_state_19_T": [
+    100
+  ],
+  "Mse_per_state_1_T": [
+    100
+  ],
+  "Mse_per_state_2": [
+    0.16864290833473206
+  ],
+  "Mse_per_state_20": [
+    0.22238098084926605
+  ],
+  "Mse_per_state_20_T": [
+    100
+  ],
+  "Mse_per_state_23": [
+    1.1472601890563965
+  ],
+  "Mse_per_state_23_T": [
+    100
+  ],
+  "Mse_per_state_24": [
+    0.3465133607387543
+  ],
+  "Mse_per_state_24_T": [
+    100
+  ],
+  "Mse_per_state_25": [
+    0.21098406612873077
+  ],
+  "Mse_per_state_25_T": [
+    100
+  ],
+  "Mse_per_state_28": [
+    0.9730686545372009
+  ],
+  "Mse_per_state_28_T": [
+    100
+  ],
+  "Mse_per_state_29": [
+    0.2670566737651825
+  ],
+  "Mse_per_state_29_T": [
+    100
+  ],
+  "Mse_per_state_2_T": [
+    100
+  ],
+  "Mse_per_state_3": [
+    0.174166738986969
+  ],
+  "Mse_per_state_30": [
+    0.1906663477420807
+  ],
+  "Mse_per_state_30_T": [
+    100
+  ],
+  "Mse_per_state_33": [
+    0.6737110614776611
+  ],
+  "Mse_per_state_33_T": [
+    100
+  ],
+  "Mse_per_state_34": [
+    0.27897825837135315
+  ],
+  "Mse_per_state_34_T": [
+    100
+  ],
+  "Mse_per_state_35": [
+    0.20628942549228668
+  ],
+  "Mse_per_state_35_T": [
+    100
+  ],
+  "Mse_per_state_3_T": [
+    100
+  ],
+  "Mse_per_state_6": [
+    0.8357824683189392
+  ],
+  "Mse_per_state_6_T": [
+    100
+  ],
+  "Mse_per_state_7": [
+    0.0031132695730775595
+  ],
+  "Mse_per_state_7_T": [
+    100
+  ],
+  "Mse_per_state_8": [
+    0.08662275224924088
+  ],
+  "Mse_per_state_8_T": [
+    100
+  ],
+  "Mse_per_state_9": [
+    0.12091562896966934
+  ],
+  "Mse_per_state_9_T": [
+    100
+  ],
+  "Student_comm_forward_rate": [
+    0.5119370818138123
+  ],
+  "Student_comm_forward_rate_T": [
+    100
+  ],
+  "Student_comm_rate": [
+    0.5119370818138123
+  ],
+  "Student_comm_rate_T": [
+    100
+  ],
+  "Student_what_soft_rate": [
+    0.5014235377311707
+  ],
+  "Student_what_soft_rate_T": [
+    100
+  ],
+  "Teacher_comm_certified_edge_rate": [
+    0.3333333432674408
+  ],
+  "Teacher_comm_certified_edge_rate_T": [
+    100
+  ],
+  "Teacher_comm_lambda": [
+    0.99982
+  ],
+  "Teacher_comm_lambda_T": [
+    100
+  ],
+  "Teacher_comm_loss": [
+    0.696198046207428
+  ],
+  "Teacher_comm_loss_T": [
+    100
+  ],
+  "Teacher_comm_neg_loss": [
+    0.7235361933708191
+  ],
+  "Teacher_comm_neg_loss_T": [
+    100
+  ],
+  "Teacher_comm_pos_loss": [
+    0.6771519184112549
+  ],
+  "Teacher_comm_pos_loss_T": [
+    100
+  ],
+  "Teacher_comm_pos_rate": [
+    0.4350000023841858
+  ],
+  "Teacher_comm_pos_rate_T": [
+    100
+  ],
+  "Teacher_comm_weight_mean": [
+    1.0
+  ],
+  "Teacher_comm_weight_mean_T": [
+    100
+  ],
+  "Teacher_what_lambda": [
+    0.99982
+  ],
+  "Teacher_what_lambda_T": [
+    100
+  ],
+  "Teacher_what_loss": [
+    0.6928232312202454
+  ],
+  "Teacher_what_loss_T": [
+    100
+  ],
+  "What_coverage_loss": [
+    0.009725617244839668
+  ],
+  "What_coverage_loss_T": [
+    100
+  ],
+  "grad_norm": [
+    3.9818103313446045
+  ],
+  "grad_norm_T": [
+    100
+  ],
+  "loss": [
+    1.0279362201690674
+  ],
+  "loss_T": [
+    100
+  ],
+  "q_taken_mean": [
+    0.13848496331108942
+  ],
+  "q_taken_mean_T": [
+    100
+  ],
+  "target_mean": [
+    0.19029524061414932
+  ],
+  "target_mean_T": [
+    100
+  ],
+  "td_error_abs": [
+    0.44180440266927085
+  ],
+  "td_error_abs_T": [
+    100
+  ],
+  "test_battle_won_mean": [
+    0.0
+  ],
+  "test_battle_won_mean_T": [
+    50
+  ],
+  "test_ep_length_mean": [
+    50.0
+  ],
+  "test_ep_length_mean_T": [
+    50
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_mean_T": [
+    50
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_std_T": [
+    50
+  ]
+}

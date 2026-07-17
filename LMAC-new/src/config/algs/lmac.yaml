@@ -1,0 +1,141 @@
+# --- QMIX specific parameters with New Meta Architecture v2 ---
+
+# use epsilon greedy action selector
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 50000  # 50000
+evaluation_epsilon: 0.0
+
+runner: "episode"
+mac : "lmac_mac"
+buffer_size: 5000
+
+# update the target network every {} episodes
+target_update_interval_or_tau: 200
+target_update_interval: 200
+
+message_dim: 3
+obs_agent_id: True
+obs_last_action: True
+obs_individual_obs: False
+
+# use the Q_Learner to train
+standardise_returns: False
+standardise_rewards: True
+
+optimiser: "adam" 
+
+agent_output_type: "q"
+learner: "lmac_learner"
+double_q: True
+mixer: "qmix"
+use_rnn: True
+mixing_embed_dim: 32
+hypernet_layers: 2
+hypernet_embed: 64
+
+latent_dim: 20
+
+# Teacher-student communication selector.
+# The LLM-generated teacher may define communication_matrix(obs),
+# generate_comm_matrix(obs), or generate_mask(obs[, mode]).
+# The expected matrix shape is [batch, receiver_agent, sender_agent].
+use_teacher_student_comm: True
+require_teacher_comm_matrix: True
+
+# Keep the LLM WHAT mask as the task-important core. During RL execution only,
+# supplement unselected observation dimensions so each transmitted message
+# retains at least 60% of the original features.
+enforce_min_what_coverage: True
+min_what_coverage: 0.60
+comm_selector_hidden_dim: 64
+message_selector_hidden_dim: 64
+message_selector_hard_train: True
+message_selector_threshold: 0.5
+teacher_lambda: 1.0
+teacher_lambda_finish: 0.1
+teacher_lambda_anneal: True
+teacher_lambda_anneal_time: 500000
+# Certified teacher supervision. Positive teacher edges correspond to certified
+# task-decision facts in "positive" mode. In "task_facts" mode, only map-specific
+# required-fact edges receive the stronger certified edge weight.
+use_certified_teacher_weights: True
+certified_teacher_weight_mode: "task_facts"  # task_facts | positive
+certified_teacher_positive_weight: 1.0
+certified_teacher_certified_edge_weight: 2.0
+certified_teacher_negative_weight: 1.0
+normalize_certified_teacher_weights: True
+comm_sparsity_lambda: 0.001
+what_teacher_lambda: 1.0
+what_teacher_lambda_finish: 0.1
+what_teacher_lambda_anneal: True
+what_teacher_lambda_anneal_time: 500000
+what_teacher_core_weight: 1.0
+what_teacher_supplement_weight: 0.25
+what_teacher_negative_weight: 0.1
+what_coverage_lambda: 0.1
+student_comm_hard: False
+student_comm_hard_eval: False
+student_comm_threshold: 0.5
+# Optional hard communication budget. When enabled, each receiver keeps only
+# the top-k sender edges from the student selector. Defaults keep old behavior.
+student_comm_topk: 0
+student_comm_topk_train: False
+student_comm_topk_eval: False
+normalize_student_messages: True
+teacher_mask_mode: "object"
+llm_message_semantics: "receiver_packed"
+# Let TD/RL gradients flow through the meta latent into the student
+# communication selector. This is the second part of the method: the certified
+# teacher anchors communication early, while RL can later adapt the selector
+# beyond pure imitation.
+detach_latent_to_agent: False
+
+# Evaluation-only causal utility checks for certified communication.
+# none: normal student communication.
+# zero: remove all inter-agent communication at evaluation.
+# random_same_rate: replace student edges with random edges that match the
+# current student edge density in each batch.
+# drop_certified_edges: remove only required task-fact edges from the registry.
+# keep_certified_edges: keep only required task-fact edges from the registry.
+eval_comm_ablation: "none"
+
+
+
+# Task-specific loss weights
+recon_lambda: 1.0
+meta_lambda: 0.1
+
+max_retries: 10
+
+name: "LMAC"
+agent: "lmac"
+
+time_seq: 10
+
+meta: meta 
+discriminator: Discriminator_net
+
+consistency_lambda: 1
+timestep_wise: False
+tmp2: True
+
+mse_thres: 0.05
+
+save_dir: "data/"
+buffer_dir: "data/"
+
+dir: "src/llm_source"
+model: "gpt-4.1-mini-2025-04-14"   # "gpt-4.1-mini-2025-04-14", "gpt-4.1-2025-04-14", "gemini-2.5-flash", "claude-opus-4-20250514", "deepseek-v4-flash"
+openai_key: "..."
+gemini_key: "..."
+claude_key: "..."
+deepseek_key: ""
+deepseek_base_url: "https://api.deepseek.com"
+deepseek_reasoning_effort:
+deepseek_thinking: False
+
+dropout: 0.1
+n_epochs: 10
+save_data: False
