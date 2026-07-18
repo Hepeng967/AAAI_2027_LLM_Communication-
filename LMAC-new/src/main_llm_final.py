@@ -159,6 +159,7 @@ if __name__ == "__main__":
     map_name = (
         config_dict.get("env_args", {}).get("map_name")
         or config_dict.get("env_args", {}).get("key")
+        or config_dict.get("env_args", {}).get("task")
         or config_dict.get("env", "unknown_env")
     )
 

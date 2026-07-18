@@ -1,0 +1,15 @@
+{
+  "map": "binary_consensus_10",
+  "environment": "cognac",
+  "run_id": "20260717_222251",
+  "pipeline_run": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260717_222251",
+  "selected_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/cognac/binary_consensus_10/LMAC_WWW/20260717_222251/initial/comm_init.py",
+  "latest_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/cognac/binary_consensus_10/LMAC_WWW/comm_init.py",
+  "policies": [
+    {
+      "stage": "initial",
+      "source": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260717_222251/generation/comm_init.py",
+      "archive": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/cognac/binary_consensus_10/LMAC_WWW/20260717_222251/initial/comm_init.py"
+    }
+  ]
+}

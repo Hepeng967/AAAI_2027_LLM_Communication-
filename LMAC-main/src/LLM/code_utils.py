@@ -23,7 +23,7 @@ class CodeUtils:
             map_name = args.env_args['map_name']
             self.code_dir = os.path.join(os.getcwd(), 'src/llm_source', f'{args.name}', map_name)
         else:
-            key = args.env_args['key']
+            key = args.env_args.get('key', args.env_args.get('task', args.env))
             self.code_dir = os.path.join(os.getcwd(), 'src/llm_source', f'{args.name}', key)
 
     def extract_code_block(self, llm_text):

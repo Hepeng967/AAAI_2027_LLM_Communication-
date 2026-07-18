@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # Hallway/LBF identify a task with ``key`` while SMAC/GRF use
     # ``map_name``.  Establish the Sacred path before processing CLI overrides.
     map_name = config_dict["env_args"].get(
-        "map_name", config_dict["env_args"].get("key", config_dict["env"])
+        "map_name", config_dict["env_args"].get("key", config_dict["env_args"].get("task", config_dict["env"]))
     )
     
     for param in params:

@@ -49,7 +49,7 @@ class LMAC_learner:
         self.last_target_update_step = 0
         self.log_stats_t = -self.args.learner_log_interval - 1
 
-        device = "cuda" if th.cuda.is_available() else "cpu" 
+        device = "cuda" if args.use_cuda and th.cuda.is_available() else "cpu"
         if self.args.standardise_returns:
             self.ret_ms = RunningMeanStd(shape=(self.n_agents,), device=device)
         if self.args.standardise_rewards:

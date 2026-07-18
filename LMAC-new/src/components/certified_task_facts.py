@@ -185,6 +185,27 @@ BASE_MAP_SPECS = {
         "objective": "Two attackers coordinate a run-pass-and-shoot sequence against one field defender and a goalkeeper.",
         "raw_feature_semantics": "ego position/direction, teammate relative position/direction, opponent relative positions/directions, and ball relative position/direction",
     },
+    "sysadmin_10": {
+        "environment": "cognac", "n_agents": 10, "n_actions": 2,
+        "obs_dim": 52, "documented_raw_obs_dim": 40, "time_seq": 10,
+        "objective": "Keep networked machines healthy and completing jobs while failures propagate over the fixed directed graph.",
+        "actions": {0: "do_nothing", 1: "reboot"},
+        "raw_features": {"machine_and_job_state_by_node": [0, 20], "node_visibility_mask": [20, 30], "sender_adjacency_row": [30, 40]},
+    },
+    "binary_consensus_10": {
+        "environment": "cognac", "n_agents": 10, "n_actions": 2,
+        "obs_dim": 42, "documented_raw_obs_dim": 30, "time_seq": 10,
+        "objective": "Reach binary consensus through the fixed directed probabilistic influence graph.",
+        "actions": {0: "binary_value_0", 1: "binary_value_1"},
+        "raw_features": {"binary_state_by_node": [0, 10], "node_visibility_mask": [10, 20], "sender_adjacency_row": [20, 30]},
+    },
+    "firefighting_10": {
+        "environment": "cognac", "n_agents": 10, "n_actions": 2,
+        "obs_dim": 13, "documented_raw_obs_dim": 1, "time_seq": 10,
+        "objective": "Coordinate ten firefighters over eleven houses to extinguish all fires under noisy local flame observations.",
+        "actions": {0: "visit_left_house", 1: "visit_right_house"},
+        "raw_features": {"observed_flame_indicator_at_last_visited_house": [0, 1]},
+    },
 }
 
 

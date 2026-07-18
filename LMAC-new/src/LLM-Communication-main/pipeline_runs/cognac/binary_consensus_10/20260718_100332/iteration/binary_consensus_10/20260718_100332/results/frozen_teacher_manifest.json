@@ -1,0 +1,16 @@
+{
+  "method": "LLM-only-frozen-teacher-selection-v1",
+  "selection_rule": "interface-valid candidates are judged by the LLM on who/when/what; the first accepted candidate with the best LLM score is frozen",
+  "teachers": {
+    "binary_consensus_10": {
+      "evidence_json": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/results/judge_outputs/iter_000_llm_judge.json",
+      "failure_analysis": "No blocking failures. The who matrix is all-to-all, which is permissive but not incorrect for a pure communication strategy. The when and what are conditional and selective, using meaningful thresholds and features. The rollout evidence directly supports both R1 and R2 semantics. No out-of-scale thresholds or missing runtime fields.",
+      "replacement_readiness": "direct_teacher",
+      "score": 0.86,
+      "teacher_path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py",
+      "what_score": 0.9,
+      "when_score": 0.85,
+      "who_score": 0.7
+    }
+  }
+}

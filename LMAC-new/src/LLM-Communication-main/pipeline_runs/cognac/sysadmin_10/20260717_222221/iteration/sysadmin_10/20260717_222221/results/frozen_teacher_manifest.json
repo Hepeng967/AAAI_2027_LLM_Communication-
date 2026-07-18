@@ -1,0 +1,16 @@
+{
+  "method": "LLM-only-frozen-teacher-selection-v1",
+  "selection_rule": "interface-valid candidates are judged by the LLM on who/when/what; the first accepted candidate with the best LLM score is frozen",
+  "teachers": {
+    "sysadmin_10": {
+      "evidence_json": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/results/judge_outputs/iter_000_llm_judge.json",
+      "failure_analysis": "No blocking failures. The who pattern is all-to-all (excluding self), which is slightly broad but plausible given unknown directed graph structure and multi-step propagation. The when condition exactly matches machine_status==0, correctly selecting unhealthy senders; rollout evidence confirms that edges are activated only for those senders (observed when_edge_rate ≈0.5). The what mask selects only the two relevant features per sender, keeping messages sparse and task-relevant.",
+      "replacement_readiness": "direct_teacher",
+      "score": 0.9,
+      "teacher_path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py",
+      "what_score": 0.9,
+      "when_score": 0.9,
+      "who_score": 0.8
+    }
+  }
+}

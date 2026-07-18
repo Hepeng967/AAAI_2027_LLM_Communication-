@@ -19,7 +19,7 @@ class Discriminator:
         self.args.obsmsg_dim = args.obsmsg_dim  
         wandb_project = 'MARL_Discriminator'
         if getattr(args, "use_wandb", False):
-            map_name = args.env_args.get('map_name', args.env_args.get('key', 'unknown'))
+            map_name = args.env_args.get('map_name', args.env_args.get('key', args.env_args.get('task', 'unknown')))
             self.wandb_run = wandb.init(
                 project=wandb_project,
                 name=f"{map_name}_{discriminator_name}_{self.args.mse_thres}_{args.model}",

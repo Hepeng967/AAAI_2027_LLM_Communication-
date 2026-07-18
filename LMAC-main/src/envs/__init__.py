@@ -65,6 +65,20 @@ def register_hallway():
 
 register_hallway()
 
+
+def register_cognac():
+    from .cognac_wrapper import COGNACWrapper
+
+    def cognac_fn(**kwargs) -> MultiAgentEnv:
+        assert kwargs.pop("common_reward"), "COGNAC PyMARL configs require a shared reward"
+        kwargs.pop("reward_scalarisation")
+        return COGNACWrapper(**kwargs)
+
+    REGISTRY["cognac"] = cognac_fn
+
+
+register_cognac()
+
 def register_grf():
     from .grf_wrapper import GRFWrapper
 
