@@ -1,0 +1,13 @@
+# Baseline runtime artifacts
+**/results/
+**/result/
+**/log/
+**/logs/
+**/wandb/
+**/__pycache__/
+**/.idea/
+**/.vscode/
+**/.ipynb_checkpoints/
+**/*.py[cod]
+**/*.swp
+**/nohup.out
