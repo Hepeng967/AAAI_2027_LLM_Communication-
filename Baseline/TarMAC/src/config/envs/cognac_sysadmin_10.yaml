@@ -1,0 +1,12 @@
+env: cognac
+env_args:
+  task: "sysadmin_10"
+  map_name: "sysadmin_10"
+  max_steps: 100
+  graph_path: "src/envs/cognac_assets/basic_directed_network_10.npy"
+  seed: null
+test_nepisode: 32
+test_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 2050000
