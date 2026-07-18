@@ -1,0 +1,16 @@
+{
+  "method": "LLM-only-frozen-teacher-selection-v1",
+  "selection_rule": "interface-valid candidates are judged by the LLM on who/when/what; the first accepted candidate with the best LLM score is frozen",
+  "teachers": {
+    "firefighting_10": {
+      "evidence_json": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/results/judge_outputs/iter_000_llm_judge.json",
+      "failure_analysis": "The policy is well-aligned with task needs. Minor redundancy: flame indicator in message duplicates the trigger condition; however, this duplication does not hinder coordination.",
+      "replacement_readiness": "direct_teacher",
+      "score": 0.9,
+      "teacher_path": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py",
+      "what_score": 0.9,
+      "when_score": 0.9,
+      "who_score": 1.0
+    }
+  }
+}

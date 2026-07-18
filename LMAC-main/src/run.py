@@ -25,7 +25,7 @@ def run(_run, _config, _log):
 
     args = SN(**_config)
     # args.device = "cuda" if args.use_cuda else "cpu"
-    args.device = "cuda" if th.cuda.is_available() else "cpu"
+    args.device = "cuda" if args.use_cuda and th.cuda.is_available() else "cpu"
     assert test_alg_config_supports_reward(
         args
     ), "The specified algorithm does not support the general reward setup. Please choose a different algorithm or set `common_reward=True`."
@@ -56,10 +56,9 @@ def run(_run, _config, _log):
     # configure tensorboard logger
     # unique_token = "{}__{}".format(args.name, datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S"))
 
-    try:
-        map_name = _config["env_args"]["map_name"]
-    except:
-        map_name = _config["env_args"]["key"]
+    map_name = _config["env_args"].get(
+        "map_name", _config["env_args"].get("key", _config["env_args"].get("task", _config["env"]))
+    )
     unique_token = (
         f"{_config['name']}_seed{_config['seed']}_{map_name}_{datetime.datetime.now()}"
     )

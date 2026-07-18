@@ -82,7 +82,7 @@ def parse_args() -> argparse.Namespace:
         help="generate: initial prior only; iterate: revise an existing policy; full: generate then revise.",
     )
     parser.add_argument("--env", dest="env", default=os.environ.get("LLM_COMM_ENV", pipeline.ENVIRONMENT),
-                        help="Environment family: smac, smacv2, hallway, hallway_group, or grf.")
+                        help="Environment family: smac, smacv2, hallway, hallway_group, grf, or cognac.")
     parser.add_argument("--task", default="", help="Task/scenario name. Preferred over the legacy --map alias.")
     parser.add_argument("--map", default=os.environ.get("LLM_SMAC_MAP_NAME", pipeline.MAP_NAME),
                         help="Legacy task-name alias retained for existing SMAC commands.")

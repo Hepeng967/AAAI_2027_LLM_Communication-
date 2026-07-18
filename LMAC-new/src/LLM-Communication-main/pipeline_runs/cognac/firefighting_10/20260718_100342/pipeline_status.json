@@ -1,0 +1,24 @@
+{
+  "run_id": "20260718_100342",
+  "environment": "cognac",
+  "task": "firefighting_10",
+  "map": "firefighting_10",
+  "mode": "full",
+  "overall": "complete",
+  "generation": {
+    "status": "complete",
+    "policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/generation/comm_init.py"
+  },
+  "collection": {
+    "status": "complete",
+    "rollout_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/data/cognac/firefighting_10",
+    "train_files": 31
+  },
+  "iteration": {
+    "status": "accepted",
+    "root": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342",
+    "frozen_manifest": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/results/frozen_teacher_manifest.json"
+  },
+  "selected_policy": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/matrix_code/cognac/firefighting_10/LMAC_WWW/20260718_100342/iterations/iter_000.py",
+  "failure": null
+}

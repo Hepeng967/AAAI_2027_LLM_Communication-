@@ -36,3 +36,4 @@ google-generativeai
 anthropic
 protobuf==3.20.3
 aiohttp==3.9.5
+pettingzoo==1.24.3

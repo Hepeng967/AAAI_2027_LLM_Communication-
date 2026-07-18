@@ -28,8 +28,8 @@ from LLM.code_utils import CodeUtils
 def _env_map_name(args):
     env_args = getattr(args, "env_args", {}) or {}
     if isinstance(env_args, dict):
-        return env_args.get("map_name") or env_args.get("key") or "unknown_map"
-    return getattr(env_args, "map_name", None) or getattr(env_args, "key", None) or "unknown_map"
+        return env_args.get("map_name") or env_args.get("key") or env_args.get("task") or "unknown_map"
+    return getattr(env_args, "map_name", None) or getattr(env_args, "key", None) or getattr(env_args, "task", None) or "unknown_map"
 
 
 def _local_results_dir(args):
@@ -84,10 +84,7 @@ def run(_run, _config, _log):
         )
 
     
-    try:
-        map_name = _config["env_args"]["map_name"]
-    except:
-        map_name = _config["env_args"]["key"]
+    map_name = _config["env_args"].get("map_name", _config["env_args"].get("key", _config["env_args"].get("task", _config["env"])))
     unique_token = (
         f"{_config['name']}_seed{_config['seed']}_{map_name}_{datetime.datetime.now()}"
                     )

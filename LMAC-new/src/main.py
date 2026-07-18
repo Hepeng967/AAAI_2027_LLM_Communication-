@@ -109,10 +109,7 @@ if __name__ == "__main__":
     config_dict = recursive_dict_update(config_dict, env_config)
     config_dict = recursive_dict_update(config_dict, alg_config)
 
-    try:
-        map_name = config_dict["env_args"]["map_name"]
-    except:
-        map_name = config_dict["env_args"]["key"]
+    map_name = config_dict["env_args"].get("map_name", config_dict["env_args"].get("key", config_dict["env_args"].get("task", config_dict["env"])))
 
     # now add all the config to sacred
     ex.add_config(config_dict)

@@ -6,6 +6,7 @@ from .smac import SMACAdapter
 from .smacv2 import SMACv2Adapter
 from .hallway import HallwayAdapter, HallwayGroupAdapter
 from .grf import GRFAdapter
+from .cognac import COGNACAdapter
 
 
 ALIASES = {
@@ -33,6 +34,7 @@ def get_adapter(name: str | None, project_root: Path | None = None):
         "hallway": HallwayAdapter(root),
         "hallway_group": HallwayGroupAdapter(root),
         "grf": GRFAdapter(root),
+        "cognac": COGNACAdapter(root),
     }
     if env not in adapters:
         raise KeyError(f"Environment '{env}' is not implemented. Available: {sorted(adapters)}")
