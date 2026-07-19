@@ -1,0 +1,188 @@
+[INFO 18:08:29] pymarl Running command 'my_main'
+[INFO 18:08:29] pymarl Started run with ID "2"
+[DEBUG 18:08:29] pymarl Starting Heartbeat
+[DEBUG 18:08:29] my_main Started
+[INFO 18:08:29] my_main Experiment Parameters:
+[INFO 18:08:29] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/collection/seed_1234/episodes',
+    'buffer_size': 5000,
+    'certified_teacher_certified_edge_weight': 2.0,
+    'certified_teacher_negative_weight': 1.0,
+    'certified_teacher_positive_weight': 1.0,
+    'certified_teacher_weight_mode': 'task_facts',
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/generation/comm_init.py'],
+    'comm_selector_hidden_dim': 64,
+    'comm_sparsity_lambda': 0.001,
+    'common_reward': True,
+    'consistency_lambda': 0.0,
+    'debug_mode': False,
+    'deepseek_base_url': 'https://api.deepseek.com',
+    'deepseek_key': '',
+    'deepseek_reasoning_effort': None,
+    'deepseek_thinking': False,
+    'detach_latent_to_agent': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'enforce_min_what_coverage': True,
+    'env': 'cognac',
+    'env_args': {   'max_steps': 100,
+                    'seed': 1234,
+                    'task': 'firefighting_10'},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'eval_comm_ablation': 'none',
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'important_state': [   0],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 10000,
+    'llm_message_semantics': 'receiver_packed',
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'message_selector_hard_train': True,
+    'message_selector_hidden_dim': 64,
+    'message_selector_threshold': 0.5,
+    'meta': 'meta',
+    'meta_lambda': 0.0,
+    'min_what_coverage': 0.6,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LLM_comm_collect_firefighting_10_1234',
+    'normalize_certified_teacher_weights': True,
+    'normalize_student_messages': True,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 0.0,
+    'render': False,
+    'repeat_id': 1,
+    'require_teacher_comm_matrix': True,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'running_algorithm_name': '(firefighting_10)LLM_comm_offline_collect',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/collection/seed_1234',
+    'save_model': True,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1234,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'student_comm_hard': False,
+    'student_comm_hard_eval': False,
+    'student_comm_threshold': 0.5,
+    'student_comm_topk': 0,
+    'student_comm_topk_eval': False,
+    'student_comm_topk_train': False,
+    't_max': 6000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'teacher_lambda': 1.0,
+    'teacher_lambda_anneal': True,
+    'teacher_lambda_anneal_time': 500000,
+    'teacher_lambda_finish': 0.1,
+    'teacher_mask_mode': 'object',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'tmp2': False,
+    'use_certified_teacher_weights': True,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_teacher_student_comm': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': '',
+    'what_coverage_lambda': 0.1,
+    'what_teacher_core_weight': 1.0,
+    'what_teacher_lambda': 1.0,
+    'what_teacher_lambda_anneal': True,
+    'what_teacher_lambda_anneal_time': 500000,
+    'what_teacher_lambda_finish': 0.1,
+    'what_teacher_negative_weight': 0.1,
+    'what_teacher_supplement_weight': 0.25}
+
+[INFO 18:08:29] my_main *******************
+[INFO 18:08:29] my_main Tensorboard logging dir:
+[INFO 18:08:29] my_main /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/tb_logs/LLM_comm_collect_firefighting_10_1234/firefighting_10/LLM_comm_collect_firefighting_10_1234_seed1234_firefighting_10_2026-07-18 18:08:29.493639
+[INFO 18:08:29] my_main *******************
+use_wandb: False LMAC  online
+[teacher] validated map=firefighting_10 path=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/generation/comm_init.py WHO/WHEN=(32, 10, 10) WHAT=(32, 10, 13)
+[INFO 18:08:30] my_main Beginning training for 6000 timesteps
+[INFO 18:08:31] my_main t_env: 100 / 6000
+[INFO 18:08:31] my_main Estimated time left: 0 seconds. Time passed: 0 seconds
+[INFO 18:08:48] my_main Saving models to /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/models/LLM_comm_collect_firefighting_10_1234/firefighting_10/LLM_comm_collect_firefighting_10_1234_seed1234_firefighting_10_2026-07-18 18:08:29.493639/100
+[INFO 18:08:59] my_main Recent Stats | t_env:       2051 | Episode:       21
+all_fires_out_mean:        0.0000	ep_length_mean:          100.0000	episode_limit_mean:        1.0000	epsilon:                   1.0000
+mean_fire_level_mean:      2.5455	return_mean:             -3041.0000	return_std:                0.0000	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 14.8295	test_return_mean:        -24456.1562
+test_return_std:         5476.5588	
+[INFO 18:09:16] my_main Recent Stats | t_env:       4051 | Episode:       41
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1749	MSE_per_agent_0:           0.3642	MSE_per_agent_1:           0.3811
+MSE_per_agent_2:           0.3813	MSE_per_agent_3:           0.3451	MSE_per_agent_4:           0.3613	MSE_per_agent_5:           0.3693
+MSE_per_agent_6:           0.3685	MSE_per_agent_7:           0.3688	MSE_per_agent_8:           0.3655	MSE_per_agent_9:           0.3600
+Message_selector_grad_norm:  0.7459	Meta_loss:                 0.6860	Model_D_loss:              0.0000	Mse_loss:                  0.3665
+Mse_per_state_0:           0.3665	Student_comm_forward_rate:  0.4654	Student_comm_rate:         0.4654	Student_what_soft_rate:    0.4917
+Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9943	Teacher_comm_loss:         0.6338	Teacher_comm_neg_loss:     0.6266
+Teacher_comm_pos_loss:     0.7713	Teacher_comm_pos_rate:     0.0497	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9943
+Teacher_what_loss:         0.7003	What_coverage_loss:        0.0127	all_fires_out_mean:        0.0000	ep_length_mean:          100.0000
+episode_limit_mean:        1.0000	epsilon:                   1.0000	grad_norm:                 1.4125	loss:                      0.9899
+mean_fire_level_mean:      2.5455	q_taken_mean:             -0.0023	return_mean:             -3041.0000	return_std:                0.0000
+target_mean:               0.0061	td_error_abs:              0.7307	test_all_fires_out_mean:   0.0000	test_ep_length_mean:     100.0000
+test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 14.8295	test_return_mean:        -24456.1562	test_return_std:         5476.5588
+
+[INFO 18:09:39] my_main Finished Training
+[INFO 18:09:39] my_main [DONE] Written: /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/collection/seed_1234/done.flag
+Finish RL
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 18:09:40] my_main Finished after 0:01:11.
+[INFO 18:09:40] pymarl Completed after 0:01:11

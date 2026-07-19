@@ -1,0 +1,145 @@
+{
+  "all_fires_out_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452397"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452419"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452407"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452429"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "mean_fire_level_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452413"
+    ],
+    "values": [
+      6.363636363636363
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452165"
+    ],
+    "values": [
+      -4734.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:06:51.452381"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_all_fires_out_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.202011"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.202033"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "test_episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.202023"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "test_mean_fire_level_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.202028"
+    ],
+    "values": [
+      14.360795454545455
+    ]
+  },
+  "test_return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.201858"
+    ],
+    "values": [
+      -23608.09375
+    ]
+  },
+  "test_return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T10:07:09.202001"
+    ],
+    "values": [
+      6694.647434515199
+    ]
+  }
+}

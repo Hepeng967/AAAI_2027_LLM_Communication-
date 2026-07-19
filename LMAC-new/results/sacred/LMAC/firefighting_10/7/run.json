@@ -1,0 +1,141 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_468d9fdfa176a5399be44fb6cabfaa42.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_a7e7a81dff123d4acb09a2fd61646258.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/root/miniconda3/envs/gfootball/lib/python3.8/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/main_llm_final.py\", line 52, in my_main\n    run(_run, config, _log)\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/run_llm_final.py\", line 105, in run\n    run_sequential(args=args, logger=logger,\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/run_llm_final.py\", line 292, in run_sequential\n    episode_batch = runner.run(test_mode=False)\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/runners/episode_runner.py\", line 101, in run\n    _, reward, terminated, truncated, env_info = self.env.step(actions[0])\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/envs/cognac_wrapper.py\", line 63, in step\n    truncated = all(bool(truncs[a]) for a in self.env.possible_agents)\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/envs/cognac_wrapper.py\", line 63, in <genexpr>\n    truncated = all(bool(truncs[a]) for a in self.env.possible_agents)\n",
+    "KeyError: 0\n"
+  ],
+  "heartbeat": "2026-07-18T10:43:31.852430",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Platinum 8481C",
+    "gpus": {
+      "driver_version": "570.124.04",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        }
+      ]
+    },
+    "hostname": "autodl-container-ab4341a2e0-c3676623",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-94-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "comm_code_paths": [
+        "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py"
+      ],
+      "important_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": "LMAC_LLM_WWW_COGNAC",
+      "phase": "multi_train",
+      "running_algorithm_name": "(firefighting_10)LMAC_LLM_WWW_COGNAC",
+      "save_model": false,
+      "seed": 1234,
+      "t_max": 2050000,
+      "tmp2": true,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "seed=1234",
+        "t_max=2050000",
+        "name=LMAC_LLM_WWW_COGNAC",
+        "running_algorithm_name=(firefighting_10)LMAC_LLM_WWW_COGNAC",
+        "comm_code_paths=['/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py']",
+        "important_state=[0,1,2,3,4,5,6,7,8,9,10]",
+        "phase=multi_train",
+        "tmp2=True",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-18T10:41:18.358184",
+  "status": "FAILED",
+  "stop_time": "2026-07-18T10:43:31.866931"
+}

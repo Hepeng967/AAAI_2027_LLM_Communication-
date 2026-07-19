@@ -1,0 +1,13 @@
+Teacher preflight PASS: firefighting_10 n_agents=10 obs_dim=13 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py)
+Resolved COGNAC env config: firefighting_10 -> cognac_firefighting_10
+Resolved accepted frozen teacher: firefighting_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Starting task=firefighting_10 seed=1234 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Started PID=148155 log=log/cognac/firefighting_10/output_firefighting_10_seed_1234_20260718_184114.log
+Starting task=firefighting_10 seed=1235 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Started PID=148161 log=log/cognac/firefighting_10/output_firefighting_10_seed_1235_20260718_184114.log
+Starting task=firefighting_10 seed=1236 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Started PID=148167 log=log/cognac/firefighting_10/output_firefighting_10_seed_1236_20260718_184114.log
+Starting task=firefighting_10 seed=1237 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Started PID=148173 log=log/cognac/firefighting_10/output_firefighting_10_seed_1237_20260718_184114.log
+Starting task=firefighting_10 seed=1238 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/firefighting_10/20260718_100342/iteration/firefighting_10/20260718_100342/candidates/iter_000/comm_init.py
+Started PID=148179 log=log/cognac/firefighting_10/output_firefighting_10_seed_1238_20260718_184114.log

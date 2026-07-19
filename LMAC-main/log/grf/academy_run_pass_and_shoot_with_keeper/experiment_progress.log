@@ -1,0 +1,11 @@
+Original LMAC policy PASS: academy_run_pass_and_shoot_with_keeper input=(2, 2, 43) output=(2, 2, 79)
+Starting task=academy_run_pass_and_shoot_with_keeper seed=1234 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_run_pass_and_shoot_with_keeper/comm_init.py
+Started PID=3110 log=log/grf/academy_run_pass_and_shoot_with_keeper/output_academy_run_pass_and_shoot_with_keeper_seed_1234_20260717_070153.log
+Starting task=academy_run_pass_and_shoot_with_keeper seed=1235 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_run_pass_and_shoot_with_keeper/comm_init.py
+Started PID=3116 log=log/grf/academy_run_pass_and_shoot_with_keeper/output_academy_run_pass_and_shoot_with_keeper_seed_1235_20260717_070153.log
+Starting task=academy_run_pass_and_shoot_with_keeper seed=1236 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_run_pass_and_shoot_with_keeper/comm_init.py
+Started PID=3122 log=log/grf/academy_run_pass_and_shoot_with_keeper/output_academy_run_pass_and_shoot_with_keeper_seed_1236_20260717_070153.log
+Starting task=academy_run_pass_and_shoot_with_keeper seed=1237 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_run_pass_and_shoot_with_keeper/comm_init.py
+Started PID=3129 log=log/grf/academy_run_pass_and_shoot_with_keeper/output_academy_run_pass_and_shoot_with_keeper_seed_1237_20260717_070153.log
+Starting task=academy_run_pass_and_shoot_with_keeper seed=1238 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_run_pass_and_shoot_with_keeper/comm_init.py
+Started PID=3138 log=log/grf/academy_run_pass_and_shoot_with_keeper/output_academy_run_pass_and_shoot_with_keeper_seed_1238_20260717_070153.log

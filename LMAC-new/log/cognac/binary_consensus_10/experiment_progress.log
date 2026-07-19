@@ -1,0 +1,13 @@
+Teacher preflight PASS: binary_consensus_10 n_agents=10 obs_dim=42 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py)
+Resolved COGNAC env config: binary_consensus_10 -> cognac_binary_consensus_10
+Resolved accepted frozen teacher: binary_consensus_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Starting task=binary_consensus_10 seed=1234 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Started PID=150464 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1234_20260718_184734.log
+Starting task=binary_consensus_10 seed=1235 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Started PID=150470 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1235_20260718_184734.log
+Starting task=binary_consensus_10 seed=1236 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Started PID=150476 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1236_20260718_184734.log
+Starting task=binary_consensus_10 seed=1237 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Started PID=150482 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1237_20260718_184734.log
+Starting task=binary_consensus_10 seed=1238 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/binary_consensus_10/20260718_100332/iteration/binary_consensus_10/20260718_100332/candidates/iter_000/comm_init.py
+Started PID=150488 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1238_20260718_184734.log

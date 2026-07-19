@@ -1,0 +1,200 @@
+[INFO 06:26:57] pymarl Running command 'my_main'
+[INFO 06:26:57] pymarl Started run with ID "1"
+[DEBUG 06:26:57] pymarl Starting Heartbeat
+[DEBUG 06:26:57] my_main Started
+[INFO 06:26:57] my_main Experiment Parameters:
+[INFO 06:26:57] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/collection/seed_1234/episodes',
+    'buffer_size': 5000,
+    'certified_teacher_certified_edge_weight': 2.0,
+    'certified_teacher_negative_weight': 1.0,
+    'certified_teacher_positive_weight': 1.0,
+    'certified_teacher_weight_mode': 'task_facts',
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/generation/comm_init.py'],
+    'comm_selector_hidden_dim': 64,
+    'comm_sparsity_lambda': 0.001,
+    'common_reward': True,
+    'consistency_lambda': 0.0,
+    'debug_mode': False,
+    'deepseek_base_url': 'https://api.deepseek.com',
+    'deepseek_key': '',
+    'deepseek_reasoning_effort': None,
+    'deepseek_thinking': False,
+    'detach_latent_to_agent': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'enforce_min_what_coverage': True,
+    'env': 'cognac',
+    'env_args': {   'graph_path': 'src/envs/cognac_assets/basic_directed_network_10.npy',
+                    'max_steps': 100,
+                    'seed': 1234,
+                    'task': 'sysadmin_10'},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'eval_comm_ablation': 'none',
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'important_state': [   0],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 10000,
+    'llm_message_semantics': 'receiver_packed',
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'message_selector_hard_train': True,
+    'message_selector_hidden_dim': 64,
+    'message_selector_threshold': 0.5,
+    'meta': 'meta',
+    'meta_lambda': 0.0,
+    'min_what_coverage': 0.6,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LLM_comm_collect_sysadmin_10_1234',
+    'normalize_certified_teacher_weights': True,
+    'normalize_student_messages': True,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 0.0,
+    'render': False,
+    'repeat_id': 1,
+    'require_teacher_comm_matrix': True,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'running_algorithm_name': '(sysadmin_10)LLM_comm_offline_collect',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/collection/seed_1234',
+    'save_model': True,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1234,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'student_comm_hard': False,
+    'student_comm_hard_eval': False,
+    'student_comm_threshold': 0.5,
+    'student_comm_topk': 0,
+    'student_comm_topk_eval': False,
+    'student_comm_topk_train': False,
+    't_max': 6000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'teacher_lambda': 1.0,
+    'teacher_lambda_anneal': True,
+    'teacher_lambda_anneal_time': 500000,
+    'teacher_lambda_finish': 0.1,
+    'teacher_mask_mode': 'object',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'tmp2': False,
+    'use_certified_teacher_weights': True,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_teacher_student_comm': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': '',
+    'what_coverage_lambda': 0.1,
+    'what_teacher_core_weight': 1.0,
+    'what_teacher_lambda': 1.0,
+    'what_teacher_lambda_anneal': True,
+    'what_teacher_lambda_anneal_time': 500000,
+    'what_teacher_lambda_finish': 0.1,
+    'what_teacher_negative_weight': 0.1,
+    'what_teacher_supplement_weight': 0.25}
+
+[INFO 06:26:57] my_main *******************
+[INFO 06:26:57] my_main Tensorboard logging dir:
+[INFO 06:26:57] my_main /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/tb_logs/LLM_comm_collect_sysadmin_10_1234/sysadmin_10/LLM_comm_collect_sysadmin_10_1234_seed1234_sysadmin_10_2026-07-18 06:26:57.199862
+[INFO 06:26:57] my_main *******************
+use_wandb: False LMAC  online
+[teacher] validated map=sysadmin_10 path=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/generation/comm_init.py WHO/WHEN=(32, 10, 10) WHAT=(32, 10, 52)
+[INFO 06:26:58] my_main Beginning training for 6000 timesteps
+[INFO 06:27:00] my_main t_env: 100 / 6000
+[INFO 06:27:00] my_main Estimated time left: 0 seconds. Time passed: 1 seconds
+[INFO 06:27:26] my_main Saving models to /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/models/LLM_comm_collect_sysadmin_10_1234/sysadmin_10/LLM_comm_collect_sysadmin_10_1234_seed1234_sysadmin_10_2026-07-18 06:26:57.199862/100
+[INFO 06:27:41] my_main Recent Stats | t_env:       2000 | Episode:       20
+ep_length_mean:          100.0000	episode_limit_mean:        1.0000	epsilon:                   1.0000	healthy_machine_fraction_mean:  0.9000
+return_mean:               1.0000	return_std:                0.0000	test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000
+test_healthy_machine_fraction_mean:  0.0156	test_return_mean:          7.5312	test_return_std:           2.2218	
+[INFO 06:28:03] my_main Recent Stats | t_env:       4000 | Episode:       40
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1417	MSE_per_agent_0:           0.1538	MSE_per_agent_1:           0.1619
+MSE_per_agent_2:           0.1596	MSE_per_agent_3:           0.1666	MSE_per_agent_4:           0.1658	MSE_per_agent_5:           0.1714
+MSE_per_agent_6:           0.1728	MSE_per_agent_7:           0.1731	MSE_per_agent_8:           0.1768	MSE_per_agent_9:           0.1745
+Message_selector_grad_norm:  0.2409	Meta_loss:                 0.6944	Model_D_loss:              0.0000	Mse_loss:                  0.1676
+Mse_per_state_0:           0.1676	Student_comm_forward_rate:  0.4964	Student_comm_rate:         0.4964	Student_what_soft_rate:    0.4965
+Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9942	Teacher_comm_loss:         0.6939	Teacher_comm_neg_loss:     0.6864
+Teacher_comm_pos_loss:     0.7007	Teacher_comm_pos_rate:     0.5257	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9942
+Teacher_what_loss:         0.7140	What_coverage_loss:        0.0107	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:                 1.9895	healthy_machine_fraction_mean:  0.9000	loss:                      1.0395
+q_taken_mean:             -0.0185	return_mean:               1.0000	return_std:                0.0000	target_mean:              -0.0002
+td_error_abs:              0.2735	test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_healthy_machine_fraction_mean:  0.0156
+test_return_mean:          7.5312	test_return_std:           2.2218	
+[INFO 06:28:29] my_main Recent Stats | t_env:       6000 | Episode:       60
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1417	MSE_per_agent_0:           0.1538	MSE_per_agent_1:           0.1619
+MSE_per_agent_2:           0.1596	MSE_per_agent_3:           0.1666	MSE_per_agent_4:           0.1658	MSE_per_agent_5:           0.1714
+MSE_per_agent_6:           0.1728	MSE_per_agent_7:           0.1731	MSE_per_agent_8:           0.1768	MSE_per_agent_9:           0.1745
+Message_selector_grad_norm:  0.2409	Meta_loss:                 0.6944	Model_D_loss:              0.0000	Mse_loss:                  0.1676
+Mse_per_state_0:           0.1676	Student_comm_forward_rate:  0.4964	Student_comm_rate:         0.4964	Student_what_soft_rate:    0.4965
+Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9942	Teacher_comm_loss:         0.6939	Teacher_comm_neg_loss:     0.6864
+Teacher_comm_pos_loss:     0.7007	Teacher_comm_pos_rate:     0.5257	Teacher_comm_weight_mean:  1.0000	Teacher_what_lambda:       0.9942
+Teacher_what_loss:         0.7140	What_coverage_loss:        0.0107	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:                 1.9895	healthy_machine_fraction_mean:  0.9000	loss:                      1.0395
+q_taken_mean:             -0.0185	return_mean:               1.0000	return_std:                0.0000	target_mean:              -0.0002
+td_error_abs:              0.2735	test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_healthy_machine_fraction_mean:  0.0156
+test_return_mean:          7.5312	test_return_std:           2.2218	
+[INFO 06:28:30] my_main Finished Training
+[INFO 06:28:30] my_main [DONE] Written: /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/collection/seed_1234/done.flag
+Finish RL
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 06:28:31] my_main Finished after 0:01:34.
+[INFO 06:28:31] pymarl Completed after 0:01:34

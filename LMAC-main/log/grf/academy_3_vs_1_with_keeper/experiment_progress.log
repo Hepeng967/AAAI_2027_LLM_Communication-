@@ -1,0 +1,11 @@
+Original LMAC policy PASS: academy_3_vs_1_with_keeper input=(2, 3, 48) output=(2, 3, 94)
+Starting task=academy_3_vs_1_with_keeper seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_3_vs_1_with_keeper/comm_init.py
+Started PID=2152 log=log/grf/academy_3_vs_1_with_keeper/output_academy_3_vs_1_with_keeper_seed_1234_20260717_070118.log
+Starting task=academy_3_vs_1_with_keeper seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_3_vs_1_with_keeper/comm_init.py
+Started PID=2158 log=log/grf/academy_3_vs_1_with_keeper/output_academy_3_vs_1_with_keeper_seed_1235_20260717_070118.log
+Starting task=academy_3_vs_1_with_keeper seed=1236 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_3_vs_1_with_keeper/comm_init.py
+Started PID=2164 log=log/grf/academy_3_vs_1_with_keeper/output_academy_3_vs_1_with_keeper_seed_1236_20260717_070118.log
+Starting task=academy_3_vs_1_with_keeper seed=1237 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_3_vs_1_with_keeper/comm_init.py
+Started PID=2170 log=log/grf/academy_3_vs_1_with_keeper/output_academy_3_vs_1_with_keeper_seed_1237_20260717_070118.log
+Starting task=academy_3_vs_1_with_keeper seed=1238 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/academy_3_vs_1_with_keeper/comm_init.py
+Started PID=2176 log=log/grf/academy_3_vs_1_with_keeper/output_academy_3_vs_1_with_keeper_seed_1238_20260717_070118.log

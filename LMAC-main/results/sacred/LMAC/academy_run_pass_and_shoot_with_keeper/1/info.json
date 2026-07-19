@@ -1,0 +1,270 @@
+{
+  "Consistency_loss": [
+    16.806194305419922
+  ],
+  "Consistency_loss_T": [
+    150
+  ],
+  "MSE_per_agent_0": [
+    0.3249201774597168
+  ],
+  "MSE_per_agent_0_T": [
+    150
+  ],
+  "MSE_per_agent_1": [
+    0.36847174167633057
+  ],
+  "MSE_per_agent_1_T": [
+    150
+  ],
+  "Meta_loss": [
+    0.7172651886940002
+  ],
+  "Meta_loss_T": [
+    150
+  ],
+  "Model_D_loss": [
+    17.22461700439453
+  ],
+  "Model_D_loss_T": [
+    150
+  ],
+  "Mse_loss": [
+    0.3466959595680237
+  ],
+  "Mse_loss_T": [
+    150
+  ],
+  "Mse_per_state_0": [
+    0.28087326884269714
+  ],
+  "Mse_per_state_0_T": [
+    150
+  ],
+  "Mse_per_state_1": [
+    0.46308842301368713
+  ],
+  "Mse_per_state_10": [
+    0.28329741954803467
+  ],
+  "Mse_per_state_10_T": [
+    150
+  ],
+  "Mse_per_state_11": [
+    0.28860926628112793
+  ],
+  "Mse_per_state_11_T": [
+    150
+  ],
+  "Mse_per_state_12": [
+    0.0981641486287117
+  ],
+  "Mse_per_state_12_T": [
+    150
+  ],
+  "Mse_per_state_13": [
+    0.14183728396892548
+  ],
+  "Mse_per_state_13_T": [
+    150
+  ],
+  "Mse_per_state_14": [
+    0.2124989777803421
+  ],
+  "Mse_per_state_14_T": [
+    150
+  ],
+  "Mse_per_state_15": [
+    0.04681626334786415
+  ],
+  "Mse_per_state_15_T": [
+    150
+  ],
+  "Mse_per_state_16": [
+    0.47161203622817993
+  ],
+  "Mse_per_state_16_T": [
+    150
+  ],
+  "Mse_per_state_17": [
+    0.11710482090711594
+  ],
+  "Mse_per_state_17_T": [
+    150
+  ],
+  "Mse_per_state_18": [
+    2.218789577484131
+  ],
+  "Mse_per_state_18_T": [
+    150
+  ],
+  "Mse_per_state_19": [
+    0.19725723564624786
+  ],
+  "Mse_per_state_19_T": [
+    150
+  ],
+  "Mse_per_state_1_T": [
+    150
+  ],
+  "Mse_per_state_2": [
+    0.9362156987190247
+  ],
+  "Mse_per_state_20": [
+    0.08816487342119217
+  ],
+  "Mse_per_state_20_T": [
+    150
+  ],
+  "Mse_per_state_21": [
+    0.08138267695903778
+  ],
+  "Mse_per_state_21_T": [
+    150
+  ],
+  "Mse_per_state_2_T": [
+    150
+  ],
+  "Mse_per_state_3": [
+    0.2874005138874054
+  ],
+  "Mse_per_state_3_T": [
+    150
+  ],
+  "Mse_per_state_4": [
+    0.07153214514255524
+  ],
+  "Mse_per_state_4_T": [
+    150
+  ],
+  "Mse_per_state_5": [
+    0.3913726806640625
+  ],
+  "Mse_per_state_5_T": [
+    150
+  ],
+  "Mse_per_state_6": [
+    0.1634914129972458
+  ],
+  "Mse_per_state_6_T": [
+    150
+  ],
+  "Mse_per_state_7": [
+    0.09038961678743362
+  ],
+  "Mse_per_state_7_T": [
+    150
+  ],
+  "Mse_per_state_8": [
+    0.5455974340438843
+  ],
+  "Mse_per_state_8_T": [
+    150
+  ],
+  "Mse_per_state_9": [
+    0.15181541442871094
+  ],
+  "Mse_per_state_9_T": [
+    150
+  ],
+  "ep_length_mean": [
+    150.0
+  ],
+  "ep_length_mean_T": [
+    150
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    150
+  ],
+  "grad_norm": [
+    1559.906982421875
+  ],
+  "grad_norm_T": [
+    150
+  ],
+  "loss": [
+    0.13857202231884003
+  ],
+  "loss_T": [
+    150
+  ],
+  "q_taken_mean": [
+    0.07680518468221029
+  ],
+  "q_taken_mean_T": [
+    150
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_mean_T": [
+    150
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    150
+  ],
+  "score_reward_mean": [
+    0.0
+  ],
+  "score_reward_mean_T": [
+    150
+  ],
+  "target_mean": [
+    0.2215514119466146
+  ],
+  "target_mean_T": [
+    150
+  ],
+  "td_error_abs": [
+    0.2904237620035807
+  ],
+  "td_error_abs_T": [
+    150
+  ],
+  "test_ep_length_mean": [
+    150.0
+  ],
+  "test_ep_length_mean_T": [
+    150
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_mean_T": [
+    150
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_std_T": [
+    150
+  ],
+  "test_score_reward_mean": [
+    0.0
+  ],
+  "test_score_reward_mean_T": [
+    150
+  ]
+}

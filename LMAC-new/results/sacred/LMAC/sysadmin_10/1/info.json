@@ -1,0 +1,304 @@
+{
+  "Comm_sparsity_lambda": [
+    0.001
+  ],
+  "Comm_sparsity_lambda_T": [
+    3200
+  ],
+  "Consistency_loss": [
+    0.14165768027305603
+  ],
+  "Consistency_loss_T": [
+    3200
+  ],
+  "MSE_per_agent_0": [
+    0.1537550985813141
+  ],
+  "MSE_per_agent_0_T": [
+    3200
+  ],
+  "MSE_per_agent_1": [
+    0.161860391497612
+  ],
+  "MSE_per_agent_1_T": [
+    3200
+  ],
+  "MSE_per_agent_2": [
+    0.15955618023872375
+  ],
+  "MSE_per_agent_2_T": [
+    3200
+  ],
+  "MSE_per_agent_3": [
+    0.16657809913158417
+  ],
+  "MSE_per_agent_3_T": [
+    3200
+  ],
+  "MSE_per_agent_4": [
+    0.16580452024936676
+  ],
+  "MSE_per_agent_4_T": [
+    3200
+  ],
+  "MSE_per_agent_5": [
+    0.1713944673538208
+  ],
+  "MSE_per_agent_5_T": [
+    3200
+  ],
+  "MSE_per_agent_6": [
+    0.17284230887889862
+  ],
+  "MSE_per_agent_6_T": [
+    3200
+  ],
+  "MSE_per_agent_7": [
+    0.17314569652080536
+  ],
+  "MSE_per_agent_7_T": [
+    3200
+  ],
+  "MSE_per_agent_8": [
+    0.17675112187862396
+  ],
+  "MSE_per_agent_8_T": [
+    3200
+  ],
+  "MSE_per_agent_9": [
+    0.17454925179481506
+  ],
+  "MSE_per_agent_9_T": [
+    3200
+  ],
+  "Message_selector_grad_norm": [
+    0.24087601900100708
+  ],
+  "Message_selector_grad_norm_T": [
+    3200
+  ],
+  "Meta_loss": [
+    0.6943549513816833
+  ],
+  "Meta_loss_T": [
+    3200
+  ],
+  "Model_D_loss": [
+    0.0
+  ],
+  "Model_D_loss_T": [
+    3200
+  ],
+  "Mse_loss": [
+    0.16762371361255646
+  ],
+  "Mse_loss_T": [
+    3200
+  ],
+  "Mse_per_state_0": [
+    0.16762371361255646
+  ],
+  "Mse_per_state_0_T": [
+    3200
+  ],
+  "Student_comm_forward_rate": [
+    0.49641117453575134
+  ],
+  "Student_comm_forward_rate_T": [
+    3200
+  ],
+  "Student_comm_rate": [
+    0.49641117453575134
+  ],
+  "Student_comm_rate_T": [
+    3200
+  ],
+  "Student_what_soft_rate": [
+    0.4965410530567169
+  ],
+  "Student_what_soft_rate_T": [
+    3200
+  ],
+  "Teacher_comm_certified_edge_rate": [
+    0.0
+  ],
+  "Teacher_comm_certified_edge_rate_T": [
+    3200
+  ],
+  "Teacher_comm_lambda": [
+    0.99424
+  ],
+  "Teacher_comm_lambda_T": [
+    3200
+  ],
+  "Teacher_comm_loss": [
+    0.6939444541931152
+  ],
+  "Teacher_comm_loss_T": [
+    3200
+  ],
+  "Teacher_comm_neg_loss": [
+    0.6864068508148193
+  ],
+  "Teacher_comm_neg_loss_T": [
+    3200
+  ],
+  "Teacher_comm_pos_loss": [
+    0.7007445096969604
+  ],
+  "Teacher_comm_pos_loss_T": [
+    3200
+  ],
+  "Teacher_comm_pos_rate": [
+    0.5257187485694885
+  ],
+  "Teacher_comm_pos_rate_T": [
+    3200
+  ],
+  "Teacher_comm_weight_mean": [
+    1.0
+  ],
+  "Teacher_comm_weight_mean_T": [
+    3200
+  ],
+  "Teacher_what_lambda": [
+    0.99424
+  ],
+  "Teacher_what_lambda_T": [
+    3200
+  ],
+  "Teacher_what_loss": [
+    0.7140328288078308
+  ],
+  "Teacher_what_loss_T": [
+    3200
+  ],
+  "What_coverage_loss": [
+    0.010747360065579414
+  ],
+  "What_coverage_loss_T": [
+    3200
+  ],
+  "ep_length_mean": [
+    100.0
+  ],
+  "ep_length_mean_T": [
+    100
+  ],
+  "episode": [
+    20,
+    40,
+    60
+  ],
+  "episode_T": [
+    2000,
+    4000,
+    6000
+  ],
+  "episode_limit_mean": [
+    1.0
+  ],
+  "episode_limit_mean_T": [
+    100
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    100
+  ],
+  "grad_norm": [
+    1.989504098892212
+  ],
+  "grad_norm_T": [
+    3200
+  ],
+  "healthy_machine_fraction_mean": [
+    0.9
+  ],
+  "healthy_machine_fraction_mean_T": [
+    100
+  ],
+  "loss": [
+    1.0394846200942993
+  ],
+  "loss_T": [
+    3200
+  ],
+  "q_taken_mean": [
+    -0.018532675170898436
+  ],
+  "q_taken_mean_T": [
+    3200
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 1.0
+    }
+  ],
+  "return_mean_T": [
+    100
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    100
+  ],
+  "target_mean": [
+    -0.00021050658226013183
+  ],
+  "target_mean_T": [
+    3200
+  ],
+  "td_error_abs": [
+    0.2735246887207031
+  ],
+  "td_error_abs_T": [
+    3200
+  ],
+  "test_ep_length_mean": [
+    100.0
+  ],
+  "test_ep_length_mean_T": [
+    100
+  ],
+  "test_episode_limit_mean": [
+    1.0
+  ],
+  "test_episode_limit_mean_T": [
+    100
+  ],
+  "test_healthy_machine_fraction_mean": [
+    0.015625
+  ],
+  "test_healthy_machine_fraction_mean_T": [
+    100
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 7.53125
+    }
+  ],
+  "test_return_mean_T": [
+    100
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 2.22182884973168
+    }
+  ],
+  "test_return_std_T": [
+    100
+  ]
+}

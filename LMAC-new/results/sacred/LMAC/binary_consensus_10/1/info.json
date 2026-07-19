@@ -1,0 +1,314 @@
+{
+  "Comm_sparsity_lambda": [
+    0.001
+  ],
+  "Comm_sparsity_lambda_T": [
+    2903
+  ],
+  "Consistency_loss": [
+    0.329681932926178
+  ],
+  "Consistency_loss_T": [
+    2903
+  ],
+  "MSE_per_agent_0": [
+    0.5318213701248169
+  ],
+  "MSE_per_agent_0_T": [
+    2903
+  ],
+  "MSE_per_agent_1": [
+    0.5142841935157776
+  ],
+  "MSE_per_agent_1_T": [
+    2903
+  ],
+  "MSE_per_agent_2": [
+    0.5219733119010925
+  ],
+  "MSE_per_agent_2_T": [
+    2903
+  ],
+  "MSE_per_agent_3": [
+    0.5149796009063721
+  ],
+  "MSE_per_agent_3_T": [
+    2903
+  ],
+  "MSE_per_agent_4": [
+    0.5112162232398987
+  ],
+  "MSE_per_agent_4_T": [
+    2903
+  ],
+  "MSE_per_agent_5": [
+    0.5223252773284912
+  ],
+  "MSE_per_agent_5_T": [
+    2903
+  ],
+  "MSE_per_agent_6": [
+    0.5298492312431335
+  ],
+  "MSE_per_agent_6_T": [
+    2903
+  ],
+  "MSE_per_agent_7": [
+    0.5297998785972595
+  ],
+  "MSE_per_agent_7_T": [
+    2903
+  ],
+  "MSE_per_agent_8": [
+    0.5312800407409668
+  ],
+  "MSE_per_agent_8_T": [
+    2903
+  ],
+  "MSE_per_agent_9": [
+    0.5369333624839783
+  ],
+  "MSE_per_agent_9_T": [
+    2903
+  ],
+  "Message_selector_grad_norm": [
+    0.3221122622489929
+  ],
+  "Message_selector_grad_norm_T": [
+    2903
+  ],
+  "Meta_loss": [
+    0.6931921243667603
+  ],
+  "Meta_loss_T": [
+    2903
+  ],
+  "Model_D_loss": [
+    0.0
+  ],
+  "Model_D_loss_T": [
+    2903
+  ],
+  "Mse_loss": [
+    0.5244462490081787
+  ],
+  "Mse_loss_T": [
+    2903
+  ],
+  "Mse_per_state_0": [
+    0.5244462490081787
+  ],
+  "Mse_per_state_0_T": [
+    2903
+  ],
+  "Student_comm_forward_rate": [
+    0.4719278812408447
+  ],
+  "Student_comm_forward_rate_T": [
+    2903
+  ],
+  "Student_comm_rate": [
+    0.4719278812408447
+  ],
+  "Student_comm_rate_T": [
+    2903
+  ],
+  "Student_what_soft_rate": [
+    0.49929481744766235
+  ],
+  "Student_what_soft_rate_T": [
+    2903
+  ],
+  "Teacher_comm_certified_edge_rate": [
+    0.0
+  ],
+  "Teacher_comm_certified_edge_rate_T": [
+    2903
+  ],
+  "Teacher_comm_lambda": [
+    0.9947746
+  ],
+  "Teacher_comm_lambda_T": [
+    2903
+  ],
+  "Teacher_comm_loss": [
+    0.7509998083114624
+  ],
+  "Teacher_comm_loss_T": [
+    2903
+  ],
+  "Teacher_comm_neg_loss": [
+    0.0
+  ],
+  "Teacher_comm_neg_loss_T": [
+    2903
+  ],
+  "Teacher_comm_pos_loss": [
+    0.7509998083114624
+  ],
+  "Teacher_comm_pos_loss_T": [
+    2903
+  ],
+  "Teacher_comm_pos_rate": [
+    1.0
+  ],
+  "Teacher_comm_pos_rate_T": [
+    2903
+  ],
+  "Teacher_comm_weight_mean": [
+    1.0
+  ],
+  "Teacher_comm_weight_mean_T": [
+    2903
+  ],
+  "Teacher_what_lambda": [
+    0.9947746
+  ],
+  "Teacher_what_lambda_T": [
+    2903
+  ],
+  "Teacher_what_loss": [
+    0.6906871795654297
+  ],
+  "Teacher_what_loss_T": [
+    2903
+  ],
+  "What_coverage_loss": [
+    0.01017666608095169
+  ],
+  "What_coverage_loss_T": [
+    2903
+  ],
+  "consensus_fraction_mean": [
+    0.7
+  ],
+  "consensus_fraction_mean_T": [
+    100
+  ],
+  "ep_length_mean": [
+    100.0
+  ],
+  "ep_length_mean_T": [
+    100
+  ],
+  "episode": [
+    23,
+    45
+  ],
+  "episode_T": [
+    2083,
+    4121
+  ],
+  "episode_limit_mean": [
+    1.0
+  ],
+  "episode_limit_mean_T": [
+    100
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    100
+  ],
+  "grad_norm": [
+    5.779604911804199
+  ],
+  "grad_norm_T": [
+    2903
+  ],
+  "loss": [
+    1.404374122619629
+  ],
+  "loss_T": [
+    2903
+  ],
+  "q_taken_mean": [
+    0.012561414444647779
+  ],
+  "q_taken_mean_T": [
+    2903
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -522.0
+    }
+  ],
+  "return_mean_T": [
+    100
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    100
+  ],
+  "success_mean": [
+    0.0
+  ],
+  "success_mean_T": [
+    100
+  ],
+  "target_mean": [
+    0.0463048059119876
+  ],
+  "target_mean_T": [
+    2903
+  ],
+  "td_error_abs": [
+    0.786685312069411
+  ],
+  "td_error_abs_T": [
+    2903
+  ],
+  "test_consensus_fraction_mean": [
+    0.6874999999999997
+  ],
+  "test_consensus_fraction_mean_T": [
+    100
+  ],
+  "test_ep_length_mean": [
+    100.0
+  ],
+  "test_ep_length_mean_T": [
+    100
+  ],
+  "test_episode_limit_mean": [
+    1.0
+  ],
+  "test_episode_limit_mean_T": [
+    100
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -388.5
+    }
+  ],
+  "test_return_mean_T": [
+    100
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 231.67973584239084
+    }
+  ],
+  "test_return_std_T": [
+    100
+  ],
+  "test_success_mean": [
+    0.0
+  ],
+  "test_success_mean_T": [
+    100
+  ]
+}

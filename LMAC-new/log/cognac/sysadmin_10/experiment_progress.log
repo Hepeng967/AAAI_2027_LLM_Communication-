@@ -1,0 +1,16 @@
+Teacher preflight PASS: sysadmin_10 n_agents=10 obs_dim=52 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py)
+Resolved COGNAC env config: sysadmin_10 -> cognac_sysadmin_10
+Resolved accepted frozen teacher: sysadmin_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Starting task=sysadmin_10 seed=1234 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Started PID=151459 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1234_20260718_184844.log
+Starting task=sysadmin_10 seed=1235 gpu=0 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Started PID=151465 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1235_20260718_184844.log
+Teacher preflight PASS: sysadmin_10 n_agents=10 obs_dim=52 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py)
+Resolved COGNAC env config: sysadmin_10 -> cognac_sysadmin_10
+Resolved accepted frozen teacher: sysadmin_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Starting task=sysadmin_10 seed=1234 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Started PID=151996 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1234_20260718_184906.log
+Starting task=sysadmin_10 seed=1235 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Started PID=152002 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1235_20260718_184906.log
+Starting task=sysadmin_10 seed=1236 gpu=1 teacher=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/cognac/sysadmin_10/20260717_222221/iteration/sysadmin_10/20260717_222221/candidates/iter_000/comm_init.py
+Started PID=152008 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1236_20260718_184906.log
