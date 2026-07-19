@@ -1,0 +1,262 @@
+[INFO 05:40:01] pymarl Running command 'my_main'
+[INFO 05:40:01] pymarl Started run with ID "6"
+[DEBUG 05:40:01] pymarl Starting Heartbeat
+[DEBUG 05:40:01] my_main Started
+[INFO 05:40:01] my_main Experiment Parameters:
+[INFO 05:40:01] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'lmac',
+    'agent_output_type': 'q',
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_dir': 'data/',
+    'buffer_size': 5000,
+    'certified_teacher_certified_edge_weight': 2.0,
+    'certified_teacher_negative_weight': 1.0,
+    'certified_teacher_positive_weight': 1.0,
+    'certified_teacher_weight_mode': 'task_facts',
+    'checkpoint_path': '',
+    'claude_key': '...',
+    'comm_code_paths': [   '/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py'],
+    'comm_selector_hidden_dim': 64,
+    'comm_sparsity_lambda': 0.001,
+    'common_reward': True,
+    'consistency_lambda': 1,
+    'debug_mode': False,
+    'deepseek_base_url': 'https://api.deepseek.com',
+    'deepseek_key': '',
+    'deepseek_reasoning_effort': None,
+    'deepseek_thinking': False,
+    'detach_latent_to_agent': False,
+    'dir': 'src/llm_source',
+    'discriminator': 'Discriminator_net',
+    'double_q': True,
+    'dropout': 0.1,
+    'enforce_min_what_coverage': True,
+    'env': 'grf',
+    'env_args': {   'dense_reward': False,
+                    'dump_freq': 1000,
+                    'logdir': 'football_dumps',
+                    'map_name': 'academy_run_pass_and_shoot_with_keeper',
+                    'number_of_right_players_agent_controls': 0,
+                    'render': False,
+                    'representation': 'simple115',
+                    'rewards': 'scoring',
+                    'seed': 1235,
+                    'stacked': False,
+                    'time_step': 0,
+                    'write_full_episode_dumps': False,
+                    'write_goal_dumps': False,
+                    'write_video': False},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'eval_comm_ablation': 'none',
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'full_obs': False,
+    'gamma': 0.99,
+    'gemini_key': '...',
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'important_state': [   0,
+                           1,
+                           2,
+                           3,
+                           4,
+                           5,
+                           6,
+                           7,
+                           8,
+                           9,
+                           10,
+                           11,
+                           12,
+                           13,
+                           14,
+                           15,
+                           16,
+                           17,
+                           18,
+                           19,
+                           20,
+                           21],
+    'label': 'default_label',
+    'latent_dim': 20,
+    'learner': 'lmac_learner',
+    'learner_log_interval': 10000,
+    'llm_message_semantics': 'receiver_packed',
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'lmac_mac',
+    'max_retries': 10,
+    'message_dim': 3,
+    'message_selector_hard_train': True,
+    'message_selector_hidden_dim': 64,
+    'message_selector_threshold': 0.5,
+    'meta': 'meta',
+    'meta_lambda': 0.1,
+    'min_what_coverage': 0.6,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model': 'gpt-4.1-mini-2025-04-14',
+    'mse_thres': 0.05,
+    'n_epochs': 10,
+    'name': 'LMAC_LLM_WWW_GRF',
+    'normalize_certified_teacher_weights': True,
+    'normalize_student_messages': True,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': True,
+    'openai_key': '...',
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimiser': 'adam',
+    'phase': 'multi_train',
+    'recon_lambda': 1.0,
+    'render': False,
+    'repeat_id': 1,
+    'require_teacher_comm_matrix': True,
+    'reward_scalarisation': 'sum',
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'running_algorithm_name': '(academy_run_pass_and_shoot_with_keeper)LMAC_LLM_WWW_GRF',
+    'save_batch': False,
+    'save_data': False,
+    'save_dir': 'data/',
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1235,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'student_comm_hard': False,
+    'student_comm_hard_eval': False,
+    'student_comm_threshold': 0.5,
+    'student_comm_topk': 0,
+    'student_comm_topk_eval': False,
+    'student_comm_topk_train': False,
+    't_max': 5050000,
+    'target_update_interval': 200,
+    'target_update_interval_or_tau': 200,
+    'teacher_lambda': 1.0,
+    'teacher_lambda_anneal': True,
+    'teacher_lambda_anneal_time': 500000,
+    'teacher_lambda_finish': 0.1,
+    'teacher_mask_mode': 'object',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 16,
+    'time_seq': 10,
+    'timestep_wise': False,
+    'tmp2': True,
+    'use_certified_teacher_weights': True,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_teacher_student_comm': True,
+    'use_tensorboard': True,
+    'use_wandb': False,
+    'wandb_key': '',
+    'wandb_mode': 'online',
+    'wandb_project': 'LMAC',
+    'wandb_save_model': False,
+    'wandb_team': '',
+    'what_coverage_lambda': 0.1,
+    'what_teacher_core_weight': 1.0,
+    'what_teacher_lambda': 1.0,
+    'what_teacher_lambda_anneal': True,
+    'what_teacher_lambda_anneal_time': 500000,
+    'what_teacher_lambda_finish': 0.1,
+    'what_teacher_negative_weight': 0.1,
+    'what_teacher_supplement_weight': 0.25}
+
+[INFO 05:40:01] my_main *******************
+[INFO 05:40:01] my_main Tensorboard logging dir:
+[INFO 05:40:01] my_main /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/results/tb_logs/LMAC_LLM_WWW_GRF/academy_run_pass_and_shoot_with_keeper/LMAC_LLM_WWW_GRF_seed1235_academy_run_pass_and_shoot_with_keeper_2026-07-17 05:40:01.211898
+[INFO 05:40:01] my_main *******************
+use_wandb: False LMAC  online
+[teacher] validated map=academy_run_pass_and_shoot_with_keeper path=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py WHO/WHEN=(32, 2, 2) WHAT=(32, 2, 43)
+[INFO 05:40:03] my_main Beginning training for 5050000 timesteps
+[INFO 05:40:04] my_main t_env: 84 / 5050000
+[INFO 05:40:04] my_main Estimated time left: 12 minutes, 13 seconds. Time passed: 1 seconds
+[INFO 05:45:08] my_main Recent Stats | t_env:      10055 | Episode:      150
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.1171	MSE_per_agent_0:           0.2312	MSE_per_agent_1:           0.2309
+Message_selector_grad_norm:  0.3723	Meta_loss:                 0.7017	Model_D_loss:              0.4183	Mse_loss:                  0.2310
+Mse_per_state_0:           0.4215	Mse_per_state_1:           0.0111	Mse_per_state_10:          0.5944	Mse_per_state_11:          0.0293
+Mse_per_state_12:          0.0254	Mse_per_state_13:          0.0255	Mse_per_state_14:          0.0041	Mse_per_state_15:          0.0109
+Mse_per_state_16:          0.3902	Mse_per_state_17:          0.0279	Mse_per_state_18:          1.7449	Mse_per_state_19:          0.0040
+Mse_per_state_2:           0.6362	Mse_per_state_20:          0.0013	Mse_per_state_21:          0.0417	Mse_per_state_3:           0.0945
+Mse_per_state_4:           0.0049	Mse_per_state_5:           0.0023	Mse_per_state_6:           0.0001	Mse_per_state_7:           0.0003
+Mse_per_state_8:           0.9984	Mse_per_state_9:           0.0131	Student_comm_forward_rate:  0.5057	Student_comm_rate:         0.5057
+Student_what_soft_rate:    0.5072	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9964	Teacher_comm_loss:         0.6973
+Teacher_comm_neg_loss:     0.7041	Teacher_comm_pos_loss:     0.6806	Teacher_comm_pos_rate:     0.2896	Teacher_comm_weight_mean:  1.0000
+Teacher_what_lambda:       0.9964	Teacher_what_loss:         0.6684	What_coverage_loss:        0.0087	ep_length_mean:           84.0000
+epsilon:                   1.0000	grad_norm:                 1.7031	loss:                      2.3714	q_taken_mean:             -0.0791
+return_mean:              -1.0000	return_std:                0.0000	score_reward_mean:         0.0000	target_mean:              -0.0809
+td_error_abs:              0.3801	test_ep_length_mean:     119.4375	test_return_mean:         -1.0000	test_return_std:           0.0000
+test_score_reward_mean:    0.0000	
+[INFO 05:45:11] my_main t_env: 10205 / 5050000
+[INFO 05:45:11] my_main Estimated time left: 1 days, 18 hours, 27 minutes, 16 seconds. Time passed: 5 minutes, 8 seconds
+[INFO 05:50:41] my_main Recent Stats | t_env:      20127 | Episode:      295
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0586	MSE_per_agent_0:           0.1414	MSE_per_agent_1:           0.1412
+Message_selector_grad_norm:  0.1934	Meta_loss:                 0.5769	Model_D_loss:              0.2576	Mse_loss:                  0.1413
+Mse_per_state_0:           0.2183	Mse_per_state_1:           0.0090	Mse_per_state_10:          0.3087	Mse_per_state_11:          0.0192
+Mse_per_state_12:          0.0128	Mse_per_state_13:          0.0128	Mse_per_state_14:          0.0021	Mse_per_state_15:          0.0056
+Mse_per_state_16:          0.2121	Mse_per_state_17:          0.0267	Mse_per_state_18:          1.3550	Mse_per_state_19:          0.0021
+Mse_per_state_2:           0.3214	Mse_per_state_20:          0.0008	Mse_per_state_21:          0.0412	Mse_per_state_3:           0.0480
+Mse_per_state_4:           0.0025	Mse_per_state_5:           0.0012	Mse_per_state_6:           0.0001	Mse_per_state_7:           0.0002
+Mse_per_state_8:           0.5023	Mse_per_state_9:           0.0070	Student_comm_forward_rate:  0.4448	Student_comm_rate:         0.4448
+Student_what_soft_rate:    0.5823	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9874	Teacher_comm_loss:         0.4335
+Teacher_comm_neg_loss:     0.4364	Teacher_comm_pos_loss:     0.4262	Teacher_comm_pos_rate:     0.3290	Teacher_comm_weight_mean:  1.0000
+Teacher_what_lambda:       0.9874	Teacher_what_loss:         0.3510	What_coverage_loss:        0.0043	ep_length_mean:           75.7367
+epsilon:                   0.8090	grad_norm:                 1.7390	loss:                      2.2535	q_taken_mean:             -0.1099
+return_mean:              -0.9833	return_std:                0.0898	score_reward_mean:         0.0000	target_mean:              -0.1113
+td_error_abs:              0.3792	test_ep_length_mean:      77.0000	test_return_mean:         -1.0000	test_return_std:           0.0000
+test_score_reward_mean:    0.0000	
+[INFO 05:50:44] my_main t_env: 20231 / 5050000
+[INFO 05:50:44] my_main Estimated time left: 1 days, 22 hours, 19 minutes, 40 seconds. Time passed: 10 minutes, 40 seconds
+[INFO 05:56:44] my_main Recent Stats | t_env:      30144 | Episode:      468
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0396	MSE_per_agent_0:           0.1169	MSE_per_agent_1:           0.1123
+Message_selector_grad_norm:  0.1319	Meta_loss:                 0.4465	Model_D_loss:              0.1989	Mse_loss:                  0.1146
+Mse_per_state_0:           0.1557	Mse_per_state_1:           0.0084	Mse_per_state_10:          0.2133	Mse_per_state_11:          0.0165
+Mse_per_state_12:          0.0086	Mse_per_state_13:          0.0086	Mse_per_state_14:          0.0014	Mse_per_state_15:          0.0039
+Mse_per_state_16:          0.1567	Mse_per_state_17:          0.0277	Mse_per_state_18:          1.2776	Mse_per_state_19:          0.0015
+Mse_per_state_2:           0.2190	Mse_per_state_20:          0.0006	Mse_per_state_21:          0.0433	Mse_per_state_3:           0.0329
+Mse_per_state_4:           0.0017	Mse_per_state_5:           0.0009	Mse_per_state_6:           0.0002	Mse_per_state_7:           0.0002
+Mse_per_state_8:           0.3373	Mse_per_state_9:           0.0050	Student_comm_forward_rate:  0.3928	Student_comm_rate:         0.3928
+Student_what_soft_rate:    0.6082	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9784	Teacher_comm_loss:         0.3129
+Teacher_comm_neg_loss:     0.3076	Teacher_comm_pos_loss:     0.3253	Teacher_comm_pos_rate:     0.3174	Teacher_comm_weight_mean:  1.0000
+Teacher_what_lambda:       0.9784	Teacher_what_loss:         0.2434	What_coverage_loss:        0.0029	ep_length_mean:           73.5394
+epsilon:                   0.6176	grad_norm:                 1.9150	loss:                      2.1861	q_taken_mean:             -0.1038
+return_mean:              -0.9774	return_std:                0.1207	score_reward_mean:         0.0000	target_mean:              -0.1157
+td_error_abs:              0.3885	test_ep_length_mean:      81.2083	test_return_mean:         -0.9792	test_return_std:           0.0807
+test_score_reward_mean:    0.0000	
+[INFO 05:56:47] my_main t_env: 30240 / 5050000
+[INFO 05:56:47] my_main Estimated time left: 2 days, 2 hours, 33 minutes, 58 seconds. Time passed: 16 minutes, 43 seconds
+[INFO 06:02:31] my_main Recent Stats | t_env:      40154 | Episode:      622
+Comm_sparsity_lambda:      0.0010	Consistency_loss:          0.0299	MSE_per_agent_0:           0.0908	MSE_per_agent_1:           0.0874
+Message_selector_grad_norm:  0.1037	Meta_loss:                 0.3755	Model_D_loss:              0.1566	Mse_loss:                  0.0891
+Mse_per_state_0:           0.1201	Mse_per_state_1:           0.0081	Mse_per_state_10:          0.1656	Mse_per_state_11:          0.0144
+Mse_per_state_12:          0.0065	Mse_per_state_13:          0.0065	Mse_per_state_14:          0.0011	Mse_per_state_15:          0.0030
+Mse_per_state_16:          0.1262	Mse_per_state_17:          0.0263	Mse_per_state_18:          0.9828	Mse_per_state_19:          0.0012
+Mse_per_state_2:           0.1687	Mse_per_state_20:          0.0005	Mse_per_state_21:          0.0422	Mse_per_state_3:           0.0258
+Mse_per_state_4:           0.0013	Mse_per_state_5:           0.0008	Mse_per_state_6:           0.0002	Mse_per_state_7:           0.0002
+Mse_per_state_8:           0.2546	Mse_per_state_9:           0.0041	Student_comm_forward_rate:  0.3786	Student_comm_rate:         0.3786
+Student_what_soft_rate:    0.6212	Teacher_comm_certified_edge_rate:  0.0000	Teacher_comm_lambda:       0.9694	Teacher_comm_loss:         0.2417
+Teacher_comm_neg_loss:     0.2354	Teacher_comm_pos_loss:     0.2554	Teacher_comm_pos_rate:     0.3229	Teacher_comm_weight_mean:  1.0000
+Teacher_what_lambda:       0.9694	Teacher_what_loss:         0.1908	What_coverage_loss:        0.0022	ep_length_mean:           69.6184
+epsilon:                   0.4273	grad_norm:                 1.7841	loss:                      1.7099	q_taken_mean:             -0.0618
+return_mean:              -0.8313	return_std:                2.0046	score_reward_mean:         0.0014	target_mean:              -0.0723
+td_error_abs:              0.3550	test_ep_length_mean:      81.6094	test_return_mean:         -0.8906	test_return_std:           0.1815
+test_score_reward_mean:    0.0000	
+[INFO 06:02:36] my_main t_env: 40258 / 5050000
+[INFO 06:02:36] my_main Estimated time left: 2 days, 30 minutes, 53 seconds. Time passed: 22 minutes, 33 seconds

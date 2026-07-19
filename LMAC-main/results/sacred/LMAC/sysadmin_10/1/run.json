@@ -1,0 +1,149 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_326db52828ea58fee1759289582106d9.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_10fa92f95ba515143cb4cd4466a33b0c.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/root/miniconda3/envs/gfootball/lib/python3.8/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/main_llm_final.py\", line 49, in my_main\n    run(_run, config, _log)\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/run_llm_final.py\", line 83, in run\n    run_sequential(args=args, logger=logger,\n",
+    "  File \"/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/run_llm_final.py\", line 286, in run_sequential\n    with open(done_flag_path, \"w\") as f:\n",
+    "FileNotFoundError: [Errno 2] No such file or directory: 'data/done.flag'\n"
+  ],
+  "heartbeat": "2026-07-18T17:10:18.624972",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Platinum 8481C",
+    "gpus": {
+      "driver_version": "580.105.08",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        }
+      ]
+    },
+    "hostname": "autodl-container-3f7446bd49-776ef890",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-94-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "batch_size": 1,
+      "comm_code_paths": [
+        "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py"
+      ],
+      "important_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "name": "LMAC_ORIGINAL_COGNAC",
+      "phase": "multi_train",
+      "running_algorithm_name": "(sysadmin_10)LMAC_ORIGINAL_COGNAC",
+      "save_model": false,
+      "seed": 1234,
+      "t_max": 1,
+      "test_nepisode": 1,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "seed=1234",
+        "t_max=1",
+        "name=LMAC_ORIGINAL_COGNAC",
+        "running_algorithm_name=(sysadmin_10)LMAC_ORIGINAL_COGNAC",
+        "comm_code_paths=['/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py']",
+        "important_state=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]",
+        "phase=multi_train",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False",
+        "batch_size=1",
+        "test_nepisode=1"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-18T17:10:14.953519",
+  "status": "FAILED",
+  "stop_time": "2026-07-18T17:10:18.633439"
+}

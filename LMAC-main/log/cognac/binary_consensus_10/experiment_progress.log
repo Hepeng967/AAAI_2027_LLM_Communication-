@@ -1,0 +1,34 @@
+COGNAC/LMAC preflight PASS: binary_consensus_10 raw_obs=30 input=42 state=10 output=312 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py)
+Resolved COGNAC env config: binary_consensus_10 -> cognac_binary_consensus_10
+Resolved original LMAC policy: binary_consensus_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9]
+Starting task=binary_consensus_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=0 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=cognac_binary_consensus_10 with seed=1234 t_max=2050000 name=LMAC_ORIGINAL_COGNAC running_algorithm_name=\(binary_consensus_10\)LMAC_ORIGINAL_COGNAC comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\] phase=multi_train use_wandb=False use_tensorboard=True save_model=False 
+COGNAC/LMAC preflight PASS: binary_consensus_10 raw_obs=30 input=42 state=10 output=312 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py)
+Resolved COGNAC env config: binary_consensus_10 -> cognac_binary_consensus_10
+Resolved original LMAC policy: binary_consensus_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9]
+Starting task=binary_consensus_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=299892 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1234_20260719_011502.log
+Starting task=binary_consensus_10 seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=299898 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1235_20260719_011502.log
+Starting task=binary_consensus_10 seed=1236 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=299904 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1236_20260719_011502.log
+Starting task=binary_consensus_10 seed=1237 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=299910 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1237_20260719_011502.log
+Starting task=binary_consensus_10 seed=1238 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=299916 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1238_20260719_011502.log
+COGNAC/LMAC preflight PASS: binary_consensus_10 raw_obs=30 input=42 state=10 output=312 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py)
+Resolved COGNAC env config: binary_consensus_10 -> cognac_binary_consensus_10
+Resolved original LMAC policy: binary_consensus_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9]
+Starting task=binary_consensus_10 seed=1234 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=300911 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1234_20260719_011547.log
+Starting task=binary_consensus_10 seed=1235 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=300917 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1235_20260719_011547.log
+Starting task=binary_consensus_10 seed=1236 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=300923 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1236_20260719_011547.log
+Starting task=binary_consensus_10 seed=1237 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=300929 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1237_20260719_011547.log
+Starting task=binary_consensus_10 seed=1238 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py
+Started PID=300935 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1238_20260719_011547.log

@@ -1,0 +1,52 @@
+{
+  "consensus_fraction_mean": [
+    1.0
+  ],
+  "consensus_fraction_mean_T": [
+    66
+  ],
+  "ep_length_mean": [
+    66.0
+  ],
+  "ep_length_mean_T": [
+    66
+  ],
+  "episode_limit_mean": [
+    0.0
+  ],
+  "episode_limit_mean_T": [
+    66
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    66
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -271.0
+    }
+  ],
+  "return_mean_T": [
+    66
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    66
+  ],
+  "success_mean": [
+    1.0
+  ],
+  "success_mean_T": [
+    66
+  ]
+}

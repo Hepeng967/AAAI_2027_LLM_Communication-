@@ -1,0 +1,15 @@
+GRF experiments started: 2026-07-17 04:23:08
+Teacher preflight PASS: academy_3_vs_1_with_keeper n_agents=3 obs_dim=48 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_3_vs_1_with_keeper/20260716_190252/iteration/academy_3_vs_1_with_keeper/20260716_190252/candidates/iter_000/comm_init.py)
+Resolved latest accepted teacher: academy_3_vs_1_with_keeper -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_3_vs_1_with_keeper/20260716_190252/iteration/academy_3_vs_1_with_keeper/20260716_190252/candidates/iter_000/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=0 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=grf with env_args.map_name=academy_3_vs_1_with_keeper seed=1234 t_max=5050000 name=LMAC_LLM_WWW_GRF running_algorithm_name=\(academy_3_vs_1_with_keeper\)LMAC_LLM_WWW_GRF comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_3_vs_1_with_keeper/20260716_190252/iteration/academy_3_vs_1_with_keeper/20260716_190252/candidates/iter_000/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\,10\,11\,12\,13\,14\,15\,16\,17\,18\,19\,20\,21\,22\,23\,24\,25\] phase=multi_train tmp2=True use_wandb=False use_tensorboard=True save_model=False 
+Teacher preflight PASS: academy_run_pass_and_shoot_with_keeper n_agents=2 obs_dim=43 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py)
+Resolved latest accepted teacher: academy_run_pass_and_shoot_with_keeper -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=0 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=grf with env_args.map_name=academy_run_pass_and_shoot_with_keeper seed=1234 t_max=5050000 name=LMAC_LLM_WWW_GRF running_algorithm_name=\(academy_run_pass_and_shoot_with_keeper\)LMAC_LLM_WWW_GRF comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_run_pass_and_shoot_with_keeper/20260716_190223/iteration/academy_run_pass_and_shoot_with_keeper/20260716_190223/candidates/iter_000/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\,10\,11\,12\,13\,14\,15\,16\,17\,18\,19\,20\,21\] phase=multi_train tmp2=True use_wandb=False use_tensorboard=True save_model=False 
+All GRF experiments finished: 2026-07-17 04:23:13
+GRF experiments started: 2026-07-17 05:35:58
+1 GRF run(s) failed.
+GRF experiments started: 2026-07-17 05:39:31
+GRF experiments started: 2026-07-17 05:39:54
+GRF experiments started: 2026-07-17 06:45:24
+GRF experiments started: 2026-07-17 06:46:02
+All GRF experiments finished: 2026-07-18 22:56:04

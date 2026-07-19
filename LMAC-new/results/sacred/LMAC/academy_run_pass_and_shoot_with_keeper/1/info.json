@@ -1,0 +1,234 @@
+{
+  "Comm_sparsity_lambda": [
+    0.001
+  ],
+  "Comm_sparsity_lambda_T": [
+    2202
+  ],
+  "Consistency_loss": [
+    0.10672596096992493
+  ],
+  "Consistency_loss_T": [
+    2202
+  ],
+  "MSE_per_agent_0": [
+    0.26335397362709045
+  ],
+  "MSE_per_agent_0_T": [
+    2202
+  ],
+  "MSE_per_agent_1": [
+    0.26155927777290344
+  ],
+  "MSE_per_agent_1_T": [
+    2202
+  ],
+  "Message_selector_grad_norm": [
+    0.4459768831729889
+  ],
+  "Message_selector_grad_norm_T": [
+    2202
+  ],
+  "Meta_loss": [
+    0.6807234883308411
+  ],
+  "Meta_loss_T": [
+    2202
+  ],
+  "Model_D_loss": [
+    0.0
+  ],
+  "Model_D_loss_T": [
+    2202
+  ],
+  "Mse_loss": [
+    0.26245662569999695
+  ],
+  "Mse_loss_T": [
+    2202
+  ],
+  "Mse_per_state_0": [
+    0.26245662569999695
+  ],
+  "Mse_per_state_0_T": [
+    2202
+  ],
+  "Student_comm_forward_rate": [
+    0.5284432172775269
+  ],
+  "Student_comm_forward_rate_T": [
+    2202
+  ],
+  "Student_comm_rate": [
+    0.5284432172775269
+  ],
+  "Student_comm_rate_T": [
+    2202
+  ],
+  "Student_what_soft_rate": [
+    0.4970233142375946
+  ],
+  "Student_what_soft_rate_T": [
+    2202
+  ],
+  "Teacher_comm_certified_edge_rate": [
+    0.0
+  ],
+  "Teacher_comm_certified_edge_rate_T": [
+    2202
+  ],
+  "Teacher_comm_lambda": [
+    0.9960364
+  ],
+  "Teacher_comm_lambda_T": [
+    2202
+  ],
+  "Teacher_comm_loss": [
+    0.7181363701820374
+  ],
+  "Teacher_comm_loss_T": [
+    2202
+  ],
+  "Teacher_comm_neg_loss": [
+    0.7505246996879578
+  ],
+  "Teacher_comm_neg_loss_T": [
+    2202
+  ],
+  "Teacher_comm_pos_loss": [
+    0.634934663772583
+  ],
+  "Teacher_comm_pos_loss_T": [
+    2202
+  ],
+  "Teacher_comm_pos_rate": [
+    0.2801998257637024
+  ],
+  "Teacher_comm_pos_rate_T": [
+    2202
+  ],
+  "Teacher_comm_weight_mean": [
+    1.0
+  ],
+  "Teacher_comm_weight_mean_T": [
+    2202
+  ],
+  "Teacher_what_lambda": [
+    0.9960364
+  ],
+  "Teacher_what_lambda_T": [
+    2202
+  ],
+  "Teacher_what_loss": [
+    0.7381238341331482
+  ],
+  "Teacher_what_loss_T": [
+    2202
+  ],
+  "What_coverage_loss": [
+    0.010671036317944527
+  ],
+  "What_coverage_loss_T": [
+    2202
+  ],
+  "ep_length_mean": [
+    150.0
+  ],
+  "ep_length_mean_T": [
+    150
+  ],
+  "epsilon": [
+    1.0
+  ],
+  "epsilon_T": [
+    150
+  ],
+  "grad_norm": [
+    1.117601990699768
+  ],
+  "grad_norm_T": [
+    2202
+  ],
+  "loss": [
+    2.3689825534820557
+  ],
+  "loss_T": [
+    2202
+  ],
+  "q_taken_mean": [
+    0.05182388887743209
+  ],
+  "q_taken_mean_T": [
+    2202
+  ],
+  "return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_mean_T": [
+    150
+  ],
+  "return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "return_std_T": [
+    150
+  ],
+  "score_reward_mean": [
+    0.0
+  ],
+  "score_reward_mean_T": [
+    150
+  ],
+  "target_mean": [
+    0.05204157954882103
+  ],
+  "target_mean_T": [
+    2202
+  ],
+  "td_error_abs": [
+    0.36167972852272084
+  ],
+  "td_error_abs_T": [
+    2202
+  ],
+  "test_ep_length_mean": [
+    89.875
+  ],
+  "test_ep_length_mean_T": [
+    150
+  ],
+  "test_return_mean": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -1.0
+    }
+  ],
+  "test_return_mean_T": [
+    150
+  ],
+  "test_return_std": [
+    {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0
+    }
+  ],
+  "test_return_std_T": [
+    150
+  ],
+  "test_score_reward_mean": [
+    0.0
+  ],
+  "test_score_reward_mean_T": [
+    150
+  ]
+}

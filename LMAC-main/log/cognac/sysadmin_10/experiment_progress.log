@@ -1,0 +1,33 @@
+Resolved COGNAC env config: sysadmin_10 -> cognac_sysadmin_10
+Resolved original LMAC policy: sysadmin_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+Starting task=sysadmin_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=296310 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1234_20260719_010621.log
+Starting task=sysadmin_10 seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=296316 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1235_20260719_010621.log
+Starting task=sysadmin_10 seed=1236 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=296322 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1236_20260719_010621.log
+Starting task=sysadmin_10 seed=1237 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=296328 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1237_20260719_010621.log
+Starting task=sysadmin_10 seed=1238 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=296334 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1238_20260719_010621.log
+COGNAC/LMAC preflight PASS: sysadmin_10 raw_obs=40 input=52 state=20 output=412 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py)
+Resolved COGNAC env config: sysadmin_10 -> cognac_sysadmin_10
+Resolved original LMAC policy: sysadmin_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+Starting task=sysadmin_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=0 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=cognac_sysadmin_10 with seed=1234 t_max=2050000 name=LMAC_ORIGINAL_COGNAC running_algorithm_name=\(sysadmin_10\)LMAC_ORIGINAL_COGNAC comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\,10\,11\,12\,13\,14\,15\,16\,17\,18\,19\] phase=multi_train use_wandb=False use_tensorboard=True save_model=False 
+COGNAC/LMAC preflight PASS: sysadmin_10 raw_obs=40 input=52 state=20 output=412 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py)
+Resolved COGNAC env config: sysadmin_10 -> cognac_sysadmin_10
+Resolved original LMAC policy: sysadmin_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+Starting task=sysadmin_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=299014 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1234_20260719_011450.log
+Starting task=sysadmin_10 seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=299020 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1235_20260719_011450.log
+Starting task=sysadmin_10 seed=1236 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=299026 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1236_20260719_011450.log
+Starting task=sysadmin_10 seed=1237 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=299032 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1237_20260719_011450.log
+Starting task=sysadmin_10 seed=1238 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/sysadmin_10/comm_init.py
+Started PID=299038 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1238_20260719_011450.log

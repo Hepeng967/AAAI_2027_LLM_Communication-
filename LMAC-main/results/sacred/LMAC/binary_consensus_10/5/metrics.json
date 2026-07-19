@@ -1,0 +1,79 @@
+{
+  "consensus_fraction_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422840"
+    ],
+    "values": [
+      0.7
+    ]
+  },
+  "ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422953"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422600"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.423080"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422121"
+    ],
+    "values": [
+      -522.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422463"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "success_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T17:15:10.422719"
+    ],
+    "values": [
+      0.0
+    ]
+  }
+}

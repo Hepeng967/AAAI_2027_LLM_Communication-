@@ -1,0 +1,127 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_326db52828ea58fee1759289582106d9.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_1fce947987bc243598aed6a04499e8ae.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-07-19T12:24:47.261663",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Platinum 8481C",
+    "gpus": {
+      "driver_version": "580.105.08",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 24564
+        }
+      ]
+    },
+    "hostname": "autodl-container-3f7446bd49-776ef890",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-94-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "comm_code_paths": [
+        "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py"
+      ],
+      "important_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "LMAC_ORIGINAL_COGNAC",
+      "phase": "multi_train",
+      "running_algorithm_name": "(binary_consensus_10)LMAC_ORIGINAL_COGNAC",
+      "save_model": false,
+      "seed": 1238,
+      "t_max": 2050000,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "seed=1238",
+        "t_max=2050000",
+        "name=LMAC_ORIGINAL_COGNAC",
+        "running_algorithm_name=(binary_consensus_10)LMAC_ORIGINAL_COGNAC",
+        "comm_code_paths=['/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/binary_consensus_10/comm_init.py']",
+        "important_state=[0,1,2,3,4,5,6,7,8,9]",
+        "phase=multi_train",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-18T17:15:51.640603",
+  "status": "COMPLETED",
+  "stop_time": "2026-07-19T12:24:46.960162"
+}

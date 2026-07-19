@@ -1,0 +1,148 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main_llm_final.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main_llm_final.py",
+        "_sources/main_llm_final_3131045844794faf9ee952bcc588f2b3.py"
+      ],
+      [
+        "run_llm_final.py",
+        "_sources/run_llm_final_1d893d2f3b8e31e1c5bf96fc27511b34.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_e48215f419cb2bf80af0411b05e64d3d.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-07-16T22:04:41.678251",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Platinum 8352V CPU @ 2.10GHz",
+    "gpus": {
+      "driver_version": "550.78",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3080",
+          "persistence_mode": true,
+          "total_memory": 20480
+        },
+        {
+          "model": "NVIDIA GeForce RTX 3080",
+          "persistence_mode": true,
+          "total_memory": 20480
+        }
+      ]
+    },
+    "hostname": "autodl-container-e2324cb616-ac6981e1",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-112-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "comm_code_paths": [
+        "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_3_vs_1_with_keeper/20260716_190252/iteration/academy_3_vs_1_with_keeper/20260716_190252/candidates/iter_000/comm_init.py"
+      ],
+      "env_args": {
+        "map_name": "academy_3_vs_1_with_keeper"
+      },
+      "important_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "name": "LMAC_LLM_WWW_GRF",
+      "phase": "multi_train",
+      "running_algorithm_name": "(academy_3_vs_1_with_keeper)LMAC_LLM_WWW_GRF",
+      "save_model": false,
+      "seed": 1236,
+      "t_max": 5050000,
+      "tmp2": true,
+      "use_tensorboard": true,
+      "use_wandb": false
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.map_name=academy_3_vs_1_with_keeper",
+        "seed=1236",
+        "t_max=5050000",
+        "name=LMAC_LLM_WWW_GRF",
+        "running_algorithm_name=(academy_3_vs_1_with_keeper)LMAC_LLM_WWW_GRF",
+        "comm_code_paths=['/root/autodl-tmp/AAAI/LLM_Communication/LMAC-new/src/LLM-Communication-main/pipeline_runs/grf/academy_3_vs_1_with_keeper/20260716_190252/iteration/academy_3_vs_1_with_keeper/20260716_190252/candidates/iter_000/comm_init.py']",
+        "important_state=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]",
+        "phase=multi_train",
+        "tmp2=True",
+        "use_wandb=False",
+        "use_tensorboard=True",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-16T21:39:37.453610",
+  "status": "RUNNING"
+}

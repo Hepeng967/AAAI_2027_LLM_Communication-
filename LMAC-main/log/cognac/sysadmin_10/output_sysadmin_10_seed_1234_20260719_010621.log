@@ -1,0 +1,24 @@
+src/main_llm_final.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  from collections import Mapping
+Traceback (most recent call last):
+  File "src/main_llm_final.py", line 22, in <module>
+    from run_llm_final import run
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/run_llm_final.py", line 19, in <module>
+    from runners import REGISTRY as r_REGISTRY
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/runners/__init__.py", line 3, in <module>
+    from .episode_runner import EpisodeRunner
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/runners/episode_runner.py", line 6, in <module>
+    from envs import REGISTRY as env_REGISTRY
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/__init__.py", line 80, in <module>
+    register_cognac()
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/__init__.py", line 70, in register_cognac
+    from .cognac_wrapper import COGNACWrapper
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/cognac_wrapper.py", line 8, in <module>
+    from .cognac_vendor.env import (
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/cognac_vendor/env/__init__.py", line 2, in <module>
+    from .BinaryConsensus import BinaryConsensusNetworkEnvironment  # noqa: F401
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/cognac_vendor/env/BinaryConsensus/__init__.py", line 16, in <module>
+    from .env import BinaryConsensusNetworkEnvironment  # noqa: F401
+  File "/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/envs/cognac_vendor/env/BinaryConsensus/env.py", line 23, in <module>
+    from pettingzoo import ParallelEnv
+ModuleNotFoundError: No module named 'pettingzoo'

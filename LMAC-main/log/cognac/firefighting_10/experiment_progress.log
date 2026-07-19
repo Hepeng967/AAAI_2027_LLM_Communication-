@@ -1,0 +1,24 @@
+COGNAC/LMAC preflight PASS: firefighting_10 raw_obs=1 input=13 state=11 output=40 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py)
+Resolved COGNAC env config: firefighting_10 -> cognac_firefighting_10
+Resolved original LMAC policy: firefighting_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10]
+Starting task=firefighting_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+DRY RUN CUDA_VISIBLE_DEVICES=0 /root/miniconda3/envs/gfootball/bin/python -u src/main_llm_final.py --config=lmac --env-config=cognac_firefighting_10 with seed=1234 t_max=2050000 name=LMAC_ORIGINAL_COGNAC running_algorithm_name=\(firefighting_10\)LMAC_ORIGINAL_COGNAC comm_code_paths=\[\'/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py\'\] important_state=\[0\,1\,2\,3\,4\,5\,6\,7\,8\,9\,10\] phase=multi_train use_wandb=False use_tensorboard=True save_model=False 
+COGNAC/LMAC preflight PASS: firefighting_10 raw_obs=1 input=13 state=11 output=40 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py)
+Resolved COGNAC env config: firefighting_10 -> cognac_firefighting_10
+Resolved original LMAC policy: firefighting_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10]
+Starting task=firefighting_10 seed=1234 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Started PID=301852 log=log/cognac/firefighting_10/output_firefighting_10_seed_1234_20260719_011607.log
+Starting task=firefighting_10 seed=1235 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Started PID=301858 log=log/cognac/firefighting_10/output_firefighting_10_seed_1235_20260719_011607.log
+Starting task=firefighting_10 seed=1236 gpu=1 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Started PID=301864 log=log/cognac/firefighting_10/output_firefighting_10_seed_1236_20260719_011607.log
+COGNAC/LMAC preflight PASS: firefighting_10 raw_obs=1 input=13 state=11 output=40 (/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py)
+Resolved COGNAC env config: firefighting_10 -> cognac_firefighting_10
+Resolved original LMAC policy: firefighting_10 -> /root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Resolved complete centralized state selection: [0,1,2,3,4,5,6,7,8,9,10]
+Starting task=firefighting_10 seed=1234 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Started PID=302449 log=log/cognac/firefighting_10/output_firefighting_10_seed_1234_20260719_011617.log
+Starting task=firefighting_10 seed=1235 gpu=0 policy=/root/autodl-tmp/AAAI/LLM_Communication/LMAC-main/src/llm_source_archive/firefighting_10/comm_init.py
+Started PID=302455 log=log/cognac/firefighting_10/output_firefighting_10_seed_1235_20260719_011617.log
