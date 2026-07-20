@@ -91,9 +91,9 @@ if __name__ == '__main__':
     ex.add_config(config_dict)
 
     # Save to disk by default for sacred
-    task_name = config_dict.get("env_args", {}).get("task", config_dict.get("env", "default"))
-    logger.info("Saving to FileStorageObserver in results/sacred/%s.", task_name)
-    file_obs_path = os.path.join(results_path, "sacred", task_name)
+    logger.info("Saving to FileStorageObserver in results/sacred.")
+    file_obs_path = os.path.join(results_path, "sacred")
     ex.observers.append(FileStorageObserver.create(file_obs_path))
 
     ex.run_commandline(params)
+
