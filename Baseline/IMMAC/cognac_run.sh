@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -u
+set -uo pipefail
 
 export TZ="Asia/Shanghai"
 
@@ -13,7 +13,9 @@ RUNS_PER_TASK="${RUNS_PER_TASK:-5}"
 MAX_PARALLEL="${MAX_PARALLEL:-$RUNS_PER_TASK}"
 T_MAX="${T_MAX:-2050000}"
 DRY_RUN="${DRY_RUN:-0}"
-IFS=',' read -r -a GPU_IDS <<< "${GPU_IDS:-0}"
+TEST_NEPISODE="${TEST_NEPISODE:-32}"
+BATCH_SIZE_OVERRIDE="${BATCH_SIZE_OVERRIDE:-}"
+IFS=',' read -r -a GPU_IDS <<< "${GPU_IDS:-2}"
 
 if (( $# > 0 )); then
   TASKS=("$@")
@@ -104,8 +106,9 @@ for task in "${TASKS[@]}"; do
       "--config=$CONFIG" "--env-config=$env_config" with
       "seed=$seed" "t_max=$T_MAX"
       "name=${METHOD_NAME}_COGNAC"
-      "test_nepisode=32" "save_model=False"
+      "test_nepisode=$TEST_NEPISODE" "save_model=False"
     )
+    [[ -z "$BATCH_SIZE_OVERRIDE" ]] || command+=("batch_size=$BATCH_SIZE_OVERRIDE")
 
     if [[ "$DRY_RUN" == "1" ]]; then
       printf 'DRY RUN CUDA_VISIBLE_DEVICES=%q ' "$gpu" | tee -a "$task_log"
