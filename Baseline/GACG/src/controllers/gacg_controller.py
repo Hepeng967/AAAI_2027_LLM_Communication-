@@ -34,7 +34,10 @@ class GroupMessageMAC(BasicMAC):
         # original input shape: obs + actions + agents : 10m vs 11m :105+17+10=132
         org_input_shape = self._get_input_shape(scheme) 
 
-        self.gcn_message_dim = int( args.gcn_message_dim * scheme["obs"]["vshape"])
+        # Small-observation environments such as COGNAC firefighting have an
+        # observation width of one. Keep the GCN branch non-empty instead of
+        # truncating 0.3 * 1 to a zero-width layer.
+        self.gcn_message_dim = max(1, int(args.gcn_message_dim * scheme["obs"]["vshape"]))
         print("gcn_message_dim",self.gcn_message_dim)
 
         self.concate_mlp_dim = args.concate_mlp_dim 
@@ -267,4 +270,3 @@ class GroupMessageMAC(BasicMAC):
 
         layers.append(nn.Linear(dim, output))
         return (nn.Sequential)(*layers)
-    
