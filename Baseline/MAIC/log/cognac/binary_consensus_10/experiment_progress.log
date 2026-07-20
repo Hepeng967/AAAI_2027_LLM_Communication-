@@ -1,0 +1,10 @@
+Starting method=MAIC task=binary_consensus_10 seed=1234 gpu=1
+Started PID=2691 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1234_20260719_020419.log
+Starting method=MAIC task=binary_consensus_10 seed=1235 gpu=1
+Started PID=2697 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1235_20260719_020419.log
+Starting method=MAIC task=binary_consensus_10 seed=1236 gpu=1
+Started PID=2703 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1236_20260719_020419.log
+Starting method=MAIC task=binary_consensus_10 seed=1237 gpu=1
+Started PID=2709 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1237_20260719_020419.log
+Starting method=MAIC task=binary_consensus_10 seed=1238 gpu=1
+Started PID=2715 log=log/cognac/binary_consensus_10/output_binary_consensus_10_seed_1238_20260719_020419.log

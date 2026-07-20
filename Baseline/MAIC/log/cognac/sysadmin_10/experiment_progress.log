@@ -1,0 +1,10 @@
+Starting method=MAIC task=sysadmin_10 seed=1234 gpu=0
+Started PID=1940 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1234_20260719_020405.log
+Starting method=MAIC task=sysadmin_10 seed=1235 gpu=0
+Started PID=1946 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1235_20260719_020405.log
+Starting method=MAIC task=sysadmin_10 seed=1236 gpu=0
+Started PID=1952 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1236_20260719_020405.log
+Starting method=MAIC task=sysadmin_10 seed=1237 gpu=0
+Started PID=1958 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1237_20260719_020405.log
+Starting method=MAIC task=sysadmin_10 seed=1238 gpu=0
+Started PID=1964 log=log/cognac/sysadmin_10/output_sysadmin_10_seed_1238_20260719_020405.log

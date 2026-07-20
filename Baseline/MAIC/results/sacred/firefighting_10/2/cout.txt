@@ -1,0 +1,150 @@
+[INFO 02:04:33] pymarl Running command 'my_main'
+[INFO 02:04:33] pymarl Started run with ID "13"
+[DEBUG 02:04:33] pymarl Starting Heartbeat
+[DEBUG 02:04:33] my_main Started
+[INFO 02:04:33] my_main Experiment Parameters:
+[INFO 02:04:33] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'agent': 'maic',
+    'agent_output_type': 'q',
+    'attention_dim': 32,
+    'batch_size': 32,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'burn_in_period': 32,
+    'checkpoint_path': '',
+    'comment': '',
+    'critic_lr': 0.0005,
+    'double_q': True,
+    'entropy_loss_weight': 0.01,
+    'env': 'cognac',
+    'env_args': {   'map_name': 'firefighting_10',
+                    'max_steps': 100,
+                    'seed': 1235,
+                    'task': 'firefighting_10'},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'is_batch_rl': False,
+    'is_from_start': True,
+    'is_save_buffer': False,
+    'label': 'default_label',
+    'latent_dim': 8,
+    'learner': 'maic_learner',
+    'learner_log_interval': 10000,
+    'load_buffer_id': 0,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'log_weights': True,
+    'lr': 0.0005,
+    'mac': 'maic_mac',
+    'mi_loss_weight': 0.001,
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'msg_l1_reg_loss_weight': 0,
+    'name': 'MAIC_COGNAC',
+    'nn_hidden_size': 64,
+    'num_circle': 1,
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_buffer_id': 0,
+    'save_buffer_interval': 1000,
+    'save_buffer_size': 10000,
+    'save_model': False,
+    'save_model_interval': 1000000,
+    'save_replay': False,
+    'seed': 1235,
+    't_max': 2050000,
+    'target_update_interval': 200,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'use_cuda': True,
+    'use_tensorboard': True,
+    'var_floor': 0.002}
+
+<class 'envs.cognac_wrapper.COGNACWrapper'>
+[INFO 02:04:34] my_main Beginning training for 2050000 timesteps
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/MAIC/src/components/episode_buffer.py:104: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/MAIC/src/components/episode_buffer.py:104: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 02:04:35] my_main t_env: 100 / 2050000
+[INFO 02:04:35] my_main Estimated time left: 2 minutes, 25 seconds. Time passed: 0 seconds
+[INFO 02:04:58] my_main Recent Stats | t_env:       2029 | Episode:       21
+all_fires_out_mean:        0.0000	ep_length_mean:          100.0000	episode_limit_mean:        1.0000	epsilon:                   1.0000
+mean_fire_level_mean:      8.6364	return_mean:             -7473.0000	return_median:           -7473.0000	return_std:                0.0000
+test_all_fires_out_mean:   0.0000	test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 15.2358
+test_return_mean:        -25612.3438	test_return_median:      -26061.5000	test_return_std:         7335.8142	
+[INFO 02:05:19] my_main Recent Stats | t_env:       4043 | Episode:       42
+all_fires_out_mean:        0.0000	entropy_loss:              0.0327	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:               613.4525	loss:                    5681.1426	mean_fire_level_mean:      8.6364
+mi_loss:                   0.0024	q_taken_mean:              0.0301	return_mean:             -7473.0000	return_median:           -7473.0000
+return_std:                0.0000	target_mean:              -4.8603	td_error_abs:             49.1233	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 15.2358	test_return_mean:        -25612.3438
+test_return_median:      -26061.5000	test_return_std:         7335.8142	
+[INFO 02:05:49] my_main Recent Stats | t_env:       6043 | Episode:       62
+all_fires_out_mean:        0.0000	entropy_loss:              0.0327	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:               613.4525	loss:                    5681.1426	mean_fire_level_mean:      8.6364
+mi_loss:                   0.0024	q_taken_mean:              0.0301	return_mean:             -7473.0000	return_median:           -7473.0000
+return_std:                0.0000	target_mean:              -4.8603	td_error_abs:             49.1233	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 15.2358	test_return_mean:        -25612.3438
+test_return_median:      -26061.5000	test_return_std:         7335.8142	
+[INFO 02:06:20] my_main Recent Stats | t_env:       8044 | Episode:       83
+all_fires_out_mean:        0.0000	entropy_loss:              0.0327	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:               613.4525	loss:                    5681.1426	mean_fire_level_mean:      8.6364
+mi_loss:                   0.0024	q_taken_mean:              0.0301	return_mean:             -7473.0000	return_median:           -7473.0000
+return_std:                0.0000	target_mean:              -4.8603	td_error_abs:             49.1233	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 15.2358	test_return_mean:        -25612.3438
+test_return_median:      -26061.5000	test_return_std:         7335.8142	
+[INFO 02:06:51] my_main Recent Stats | t_env:      10090 | Episode:      104
+all_fires_out_mean:        0.0000	entropy_loss:              0.0327	ep_length_mean:          100.0000	episode_limit_mean:        1.0000
+epsilon:                   1.0000	grad_norm:               613.4525	loss:                    5681.1426	mean_fire_level_mean:      8.6364
+mi_loss:                   0.0024	q_taken_mean:              0.0301	return_mean:             -7473.0000	return_median:           -7473.0000
+return_std:                0.0000	target_mean:              -4.8603	td_error_abs:             49.1233	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 15.2358	test_return_mean:        -25612.3438
+test_return_median:      -26061.5000	test_return_std:         7335.8142	
+[INFO 02:06:52] my_main t_env: 10190 / 2050000
+[INFO 02:06:52] my_main Estimated time left: 7 hours, 43 minutes, 40 seconds. Time passed: 2 minutes, 18 seconds
+[INFO 02:07:37] my_main Recent Stats | t_env:      12150 | Episode:      125
+all_fires_out_mean:        0.0385	entropy_loss:              0.0327	ep_length_mean:           98.5096	episode_limit_mean:        0.9615
+epsilon:                   0.8083	grad_norm:               613.4525	loss:                    5681.1426	mean_fire_level_mean:      6.9956
+mi_loss:                   0.0024	q_taken_mean:              0.0301	return_mean:             -6033.5865	return_median:           -6006.5000
+return_std:              983.9502	target_mean:              -4.8603	td_error_abs:             49.1233	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 18.2926	test_return_mean:        -21762.5000
+test_return_median:      -21545.5000	test_return_std:         7342.4809	
+[INFO 02:08:07] my_main Recent Stats | t_env:      14150 | Episode:      145
+all_fires_out_mean:        0.0385	entropy_loss:              0.0186	ep_length_mean:           98.5096	episode_limit_mean:        0.9615
+epsilon:                   0.8083	grad_norm:               467.7208	loss:                    3632.4077	mean_fire_level_mean:      6.9956
+mi_loss:                   0.0023	q_taken_mean:             -2.3836	return_mean:             -6033.5865	return_median:           -6006.5000
+return_std:              983.9502	target_mean:              -4.7852	td_error_abs:             40.4290	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 18.2926	test_return_mean:        -21762.5000
+test_return_median:      -21545.5000	test_return_std:         7342.4809	
+[INFO 02:08:50] my_main Recent Stats | t_env:      16150 | Episode:      165
+all_fires_out_mean:        0.0385	entropy_loss:              0.0186	ep_length_mean:           98.5096	episode_limit_mean:        0.9615
+epsilon:                   0.8083	grad_norm:               467.7208	loss:                    3632.4077	mean_fire_level_mean:      6.9956
+mi_loss:                   0.0023	q_taken_mean:             -2.3836	return_mean:             -6033.5865	return_median:           -6006.5000
+return_std:              983.9502	target_mean:              -4.7852	td_error_abs:             40.4290	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 18.2926	test_return_mean:        -21762.5000
+test_return_median:      -21545.5000	test_return_std:         7342.4809	
+[INFO 02:09:33] my_main Recent Stats | t_env:      18150 | Episode:      185
+all_fires_out_mean:        0.0385	entropy_loss:              0.0186	ep_length_mean:           98.5096	episode_limit_mean:        0.9615
+epsilon:                   0.8083	grad_norm:               467.7208	loss:                    3632.4077	mean_fire_level_mean:      6.9956
+mi_loss:                   0.0023	q_taken_mean:             -2.3836	return_mean:             -6033.5865	return_median:           -6006.5000
+return_std:              983.9502	target_mean:              -4.7852	td_error_abs:             40.4290	test_all_fires_out_mean:   0.0000
+test_ep_length_mean:     100.0000	test_episode_limit_mean:   1.0000	test_mean_fire_level_mean: 18.2926	test_return_mean:        -21762.5000
+test_return_median:      -21545.5000	test_return_std:         7342.4809	

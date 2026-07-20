@@ -1,0 +1,10 @@
+Starting method=MAIC task=firefighting_10 seed=1234 gpu=2
+Started PID=3458 log=log/cognac/firefighting_10/output_firefighting_10_seed_1234_20260719_020430.log
+Starting method=MAIC task=firefighting_10 seed=1235 gpu=2
+Started PID=3464 log=log/cognac/firefighting_10/output_firefighting_10_seed_1235_20260719_020430.log
+Starting method=MAIC task=firefighting_10 seed=1236 gpu=2
+Started PID=3470 log=log/cognac/firefighting_10/output_firefighting_10_seed_1236_20260719_020430.log
+Starting method=MAIC task=firefighting_10 seed=1237 gpu=2
+Started PID=3476 log=log/cognac/firefighting_10/output_firefighting_10_seed_1237_20260719_020430.log
+Starting method=MAIC task=firefighting_10 seed=1238 gpu=2
+Started PID=3482 log=log/cognac/firefighting_10/output_firefighting_10_seed_1238_20260719_020430.log

@@ -1,0 +1,10 @@
+Starting method=SMS task=firefighting_10 seed=1234 gpu=2
+Started PID=6306 log=log/cognac/firefighting_10/output_firefighting_10_seed_1234_20260719_020805.log
+Starting method=SMS task=firefighting_10 seed=1235 gpu=2
+Started PID=6312 log=log/cognac/firefighting_10/output_firefighting_10_seed_1235_20260719_020805.log
+Starting method=SMS task=firefighting_10 seed=1236 gpu=2
+Started PID=6318 log=log/cognac/firefighting_10/output_firefighting_10_seed_1236_20260719_020805.log
+Starting method=SMS task=firefighting_10 seed=1237 gpu=2
+Started PID=6324 log=log/cognac/firefighting_10/output_firefighting_10_seed_1237_20260719_020805.log
+Starting method=SMS task=firefighting_10 seed=1238 gpu=2
+Started PID=6330 log=log/cognac/firefighting_10/output_firefighting_10_seed_1238_20260719_020805.log
