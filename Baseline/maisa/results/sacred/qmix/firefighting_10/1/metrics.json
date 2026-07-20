@@ -1,0 +1,200 @@
+{
+  "all_fires_out_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596442"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596465"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596389"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596491"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "grad_norm": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.809819"
+    ],
+    "values": [
+      0.9213823676109314
+    ]
+  },
+  "loss": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.809738"
+    ],
+    "values": [
+      0.9766432046890259
+    ]
+  },
+  "mean_fire_level_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596417"
+    ],
+    "values": [
+      2.8181818181818183
+    ]
+  },
+  "q_taken_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.810035"
+    ],
+    "values": [
+      0.0009417462348937988
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596177"
+    ],
+    "values": [
+      -3687.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.596353"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "target_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.810085"
+    ],
+    "values": [
+      0.008555467605590821
+    ]
+  },
+  "td_error_abs": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.809965"
+    ],
+    "values": [
+      0.5982693099975586
+    ]
+  },
+  "test_all_fires_out_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943380"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "test_ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943408"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "test_episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943326"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "test_mean_fire_level_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943354"
+    ],
+    "values": [
+      15.818181818181818
+    ]
+  },
+  "test_return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943148"
+    ],
+    "values": [
+      -29379.0
+    ]
+  },
+  "test_return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:34.943290"
+    ],
+    "values": [
+      0.0
+    ]
+  }
+}

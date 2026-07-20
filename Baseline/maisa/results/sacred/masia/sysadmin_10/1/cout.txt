@@ -1,0 +1,109 @@
+[INFO 02:19:40] pymarl Running command 'my_main'
+[INFO 02:19:40] pymarl Started run with ID "1"
+[DEBUG 02:19:40] pymarl Starting Heartbeat
+[DEBUG 02:19:40] my_main Started
+[INFO 02:19:40] my_main Experiment Parameters:
+[INFO 02:19:40] my_main 
+
+{   'action_embed_dim': 8,
+    'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'ae_dec_hidden_dims': [   ],
+    'ae_enc_hidden_dims': [   ],
+    'agent': 'masia',
+    'agent_output_type': 'q',
+    'attn_embed_dim': 16,
+    'batch_size': 1,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'concat_obs': True,
+    'double_q': True,
+    'encoder_hidden_dim': 32,
+    'encoder_use_rnn': True,
+    'env': 'cognac',
+    'env_args': {   'graph_path': 'src/envs/cognac_assets/basic_directed_network_10.npy',
+                    'map_name': 'sysadmin_10',
+                    'max_steps': 100,
+                    'seed': 1234,
+                    'task': 'sysadmin_10'},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'latent_model': 'mlp',
+    'learner': 'masia_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'masia_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'model_hidden_dim': 64,
+    'momentum_tau': 1,
+    'name': 'MASIA_COGNAC',
+    'noise_env': False,
+    'noise_type': 0,
+    'ob_embed_dim': 32,
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'pred_len': 2,
+    'repeat_id': 1,
+    'repr_coef': 1,
+    'rew_pred_coef': 1,
+    'rl_signal': True,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1234,
+    'spr_coef': 1,
+    'spr_dim': 32,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    'state_encoder': 'ob_attn_ae',
+    'state_repre_dim': 8,
+    't_max': 101,
+    'target_update_interval_or_tau': 200,
+    'test_encoder': False,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_latent_model': True,
+    'use_momentum_encoder': True,
+    'use_residual': True,
+    'use_rew_pred': True,
+    'use_rnn': True,
+    'use_tensorboard': True}
+
+[INFO 02:19:41] my_main Beginning training for 101 timesteps
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/maisa/src/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/maisa/src/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 02:19:42] my_main t_env: 100 / 101
+[INFO 02:19:42] my_main Estimated time left: 0 seconds. Time passed: 0 seconds
+[INFO 02:19:43] my_main Finished Training
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 02:19:44] my_main Finished after 0:00:04.
+[INFO 02:19:44] pymarl Completed after 0:00:04

@@ -1,0 +1,178 @@
+{
+  "ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.980036"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.979980"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "epsilon": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.980063"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "grad_norm": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.188444"
+    ],
+    "values": [
+      1.7985962629318237
+    ]
+  },
+  "healthy_machine_fraction_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.980011"
+    ],
+    "values": [
+      0.6
+    ]
+  },
+  "loss": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.188377"
+    ],
+    "values": [
+      1.1082584857940674
+    ]
+  },
+  "q_taken_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.188639"
+    ],
+    "values": [
+      0.02194076156616211
+    ]
+  },
+  "return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.979767"
+    ],
+    "values": [
+      3.0
+    ]
+  },
+  "return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:22.979943"
+    ],
+    "values": [
+      0.0
+    ]
+  },
+  "target_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.188691"
+    ],
+    "values": [
+      0.04123455810546875
+    ]
+  },
+  "td_error_abs": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.188573"
+    ],
+    "values": [
+      0.34581497192382815
+    ]
+  },
+  "test_ep_length_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.353218"
+    ],
+    "values": [
+      100.0
+    ]
+  },
+  "test_episode_limit_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.353161"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "test_healthy_machine_fraction_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.353191"
+    ],
+    "values": [
+      0.6
+    ]
+  },
+  "test_return_mean": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.352988"
+    ],
+    "values": [
+      1.0
+    ]
+  },
+  "test_return_std": {
+    "steps": [
+      100
+    ],
+    "timestamps": [
+      "2026-07-18T18:24:23.353124"
+    ],
+    "values": [
+      0.0
+    ]
+  }
+}

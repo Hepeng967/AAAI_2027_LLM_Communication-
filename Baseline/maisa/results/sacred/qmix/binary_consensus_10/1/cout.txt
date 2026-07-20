@@ -1,0 +1,83 @@
+[INFO 02:24:27] pymarl Running command 'my_main'
+[INFO 02:24:27] pymarl Started run with ID "1"
+[DEBUG 02:24:27] pymarl Starting Heartbeat
+[DEBUG 02:24:27] my_main Started
+[INFO 02:24:27] my_main Experiment Parameters:
+[INFO 02:24:27] my_main 
+
+{   'action_selector': 'epsilon_greedy',
+    'add_value_last_step': True,
+    'agent': 'rnn',
+    'agent_output_type': 'q',
+    'batch_size': 1,
+    'batch_size_run': 1,
+    'buffer_cpu_only': True,
+    'buffer_size': 5000,
+    'checkpoint_path': '',
+    'double_q': True,
+    'env': 'cognac',
+    'env_args': {   'graph_path': 'src/envs/cognac_assets/basic_directed_network_10.npy',
+                    'map_name': 'binary_consensus_10',
+                    'max_steps': 100,
+                    'seed': 1234,
+                    'task': 'binary_consensus_10'},
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'evaluation_epsilon': 0.0,
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'hidden_dim': 64,
+    'hypergroup': None,
+    'hypernet_embed': 64,
+    'hypernet_layers': 2,
+    'label': 'default_label',
+    'learner': 'q_learner',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'log_interval': 2000,
+    'lr': 0.0005,
+    'mac': 'basic_mac',
+    'mixer': 'qmix',
+    'mixing_embed_dim': 32,
+    'name': 'QMIX_COGNAC',
+    'obs_agent_id': True,
+    'obs_individual_obs': False,
+    'obs_last_action': False,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'repeat_id': 1,
+    'runner': 'episode',
+    'runner_log_interval': 10000,
+    'save_model': False,
+    'save_model_interval': 500000,
+    'save_replay': False,
+    'seed': 1234,
+    'standardise_returns': False,
+    'standardise_rewards': True,
+    't_max': 101,
+    'target_update_interval_or_tau': 200,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 1,
+    'use_cuda': True,
+    'use_rnn': True,
+    'use_tensorboard': True}
+
+[INFO 02:24:28] my_main Beginning training for 101 timesteps
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/maisa/src/components/episode_buffer.py:103: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  v = th.tensor(v, dtype=dtype, device=self.device)
+/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/maisa/src/components/episode_buffer.py:103: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  v = th.tensor(v, dtype=dtype, device=self.device)
+[INFO 02:24:29] my_main t_env: 100 / 101
+[INFO 02:24:29] my_main Estimated time left: 0 seconds. Time passed: 0 seconds
+[INFO 02:24:29] my_main Finished Training
+Exiting Main
+Stopping all threads
+Thread Thread-1 is alive! Is daemon: False
+Thread joined
+Exiting script
+[DEBUG 02:24:30] my_main Finished after 0:00:03.
+[INFO 02:24:30] pymarl Completed after 0:00:03

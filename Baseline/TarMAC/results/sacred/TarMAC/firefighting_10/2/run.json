@@ -1,0 +1,108 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "/root/autodl-tmp/AAAI/LLM_Communication/Baseline-cognac/TarMAC/src",
+    "dependencies": [
+      "numpy==1.24.4",
+      "PyYAML==5.4.1",
+      "sacred==0.8.7",
+      "torch==2.4.1+cu121"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [],
+    "sources": [
+      [
+        "main.py",
+        "_sources/main_6cb8d57f32ec2021cd3b81908051c5de.py"
+      ],
+      [
+        "run.py",
+        "_sources/run_32622ca5b41728b3e5f961ceccf2e08c.py"
+      ],
+      [
+        "utils/logging.py",
+        "_sources/logging_6de07f73c35cb14e63db4e8b6ec892ec.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-07-19T17:42:19.601799",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Platinum 8470Q",
+    "gpus": {
+      "driver_version": "595.71.05",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 49140
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 49140
+        },
+        {
+          "model": "NVIDIA GeForce RTX 4090",
+          "persistence_mode": true,
+          "total_memory": 49140
+        }
+      ]
+    },
+    "hostname": "autodl-container-11hz88zfkm-b9b665df",
+    "os": [
+      "Linux",
+      "Linux-5.15.0-78-generic-x86_64-with-glibc2.17"
+    ],
+    "python_version": "3.8.20"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "name": "TarMAC_COGNAC",
+      "save_model": false,
+      "seed": 1235,
+      "t_max": 2050000,
+      "test_nepisode": 32
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "seed=1235",
+        "t_max=2050000",
+        "name=TarMAC_COGNAC",
+        "test_nepisode=32",
+        "save_model=False"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2026-07-18T18:29:23.549870",
+  "status": "RUNNING"
+}

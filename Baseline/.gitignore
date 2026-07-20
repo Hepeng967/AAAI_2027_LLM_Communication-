@@ -11,3 +11,9 @@
 **/*.py[cod]
 **/*.swp
 **/nohup.out
+
+# Publish the requested TarMAC and MASIA experiment results.
+!TarMAC/results/
+!TarMAC/results/**
+!maisa/results/
+!maisa/results/**
