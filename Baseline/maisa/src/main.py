@@ -36,7 +36,10 @@ def my_main(_run, _config, _log):
 
     # run the framework
     # TODO: add a property to determine whether use msra
-    if "masia" in config["name"]:
+    # Launch scripts may use an uppercase/display experiment name such as
+    # MASIA_COGNAC. Select the MASIA training path from normalized metadata,
+    # not a case-sensitive name check.
+    if "masia" in str(config["name"]).lower() or str(config.get("learner", "")).startswith("masia"):
         msra_run(_run, config, _log)
     else:
         run(_run, config, _log)
@@ -138,4 +141,3 @@ if __name__ == '__main__':
     # ex.observers.append(MongoObserver())
 
     ex.run_commandline(params)
-

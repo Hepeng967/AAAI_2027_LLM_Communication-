@@ -1,10 +1,53 @@
 #!/usr/bin/env bash
-set -u
+set -uo pipefail
 
 export TZ="Asia/Shanghai"
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$ROOT_DIR"
+
+# Run both algorithms by default. A child invocation executes one concrete
+# config, which keeps the original task/seed scheduling logic in one place.
+if [[ "${COGNAC_METHOD_CHILD:-0}" != "1" ]]; then
+  IFS=',' read -r -a requested_methods <<< "${METHODS:-masia,qmix}"
+  child_failed=0
+  for requested_method in "${requested_methods[@]}"; do
+    method="${requested_method,,}"
+    case "$method" in
+      masia|maisa)
+        method_config="masia"
+        method_name="MASIA"
+        method_log_name="masia"
+        ;;
+      qmix)
+        method_config="qmix"
+        method_name="QMIX"
+        method_log_name="qmix"
+        ;;
+      *)
+        echo "Unsupported method: $requested_method (supported: masia/maisa, qmix)" >&2
+        exit 2
+        ;;
+    esac
+
+    method_log_root="${LOG_DIR:-$ROOT_DIR/log/cognac_multi}/$method_log_name"
+    echo "Dispatching method=$method_name config=$method_config log=$method_log_root"
+    if ! env \
+      COGNAC_METHOD_CHILD=1 \
+      CONFIG="$method_config" \
+      METHOD_NAME="$method_name" \
+      LOG_DIR="$method_log_root" \
+      bash "$ROOT_DIR/cognac_run.sh" "$@"; then
+      child_failed=$((child_failed + 1))
+    fi
+  done
+
+  if (( child_failed > 0 )); then
+    echo "$child_failed requested method(s) failed." >&2
+    exit 1
+  fi
+  exit 0
+fi
 
 PYTHON_BIN="${PYTHON_BIN:-/root/miniconda3/envs/gfootball/bin/python}"
 CONFIG="${CONFIG:-masia}"
@@ -13,6 +56,8 @@ RUNS_PER_TASK="${RUNS_PER_TASK:-5}"
 MAX_PARALLEL="${MAX_PARALLEL:-$RUNS_PER_TASK}"
 T_MAX="${T_MAX:-2050000}"
 DRY_RUN="${DRY_RUN:-0}"
+TEST_NEPISODE="${TEST_NEPISODE:-32}"
+BATCH_SIZE_OVERRIDE="${BATCH_SIZE_OVERRIDE:-}"
 IFS=',' read -r -a GPU_IDS <<< "${GPU_IDS:-0}"
 
 if (( $# > 0 )); then
@@ -104,8 +149,9 @@ for task in "${TASKS[@]}"; do
       "--config=$CONFIG" "--env-config=$env_config" with
       "seed=$seed" "t_max=$T_MAX"
       "name=${METHOD_NAME}_COGNAC"
-      "test_nepisode=32" "save_model=False"
+      "test_nepisode=$TEST_NEPISODE" "save_model=False"
     )
+    [[ -z "$BATCH_SIZE_OVERRIDE" ]] || command+=("batch_size=$BATCH_SIZE_OVERRIDE")
 
     if [[ "$DRY_RUN" == "1" ]]; then
       printf 'DRY RUN CUDA_VISIBLE_DEVICES=%q ' "$gpu" | tee -a "$task_log"
